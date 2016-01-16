@@ -13,7 +13,7 @@ public abstract class Voxel : MonoBehaviour {
 	}
 
 	void VoxelInit(){
-		Level.Instance.SetVoxel (this, col, row, height);
+		Level.Instance.SetVoxel (this, col, height, row);
 	}
 
 	virtual protected void SnapToGrid(){

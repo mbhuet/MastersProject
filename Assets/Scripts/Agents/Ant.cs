@@ -133,9 +133,9 @@ public abstract class Ant : Voxel {
 		//TODO CHECK Server for conflicts
 		switch (com) {
 		case Command.FORWARD:
-			Vector3 forFloorPos = forwardDirection + new Vector3(col, row, height - 1);
+			Vector3 forFloorPos = forwardDirection + new Vector3(col, height - 1, row);
 			if (Level.Instance.GetVoxel(forFloorPos) != null){
-				Vector3 nextPos = forwardDirection + new Vector3(col, row, height);
+				Vector3 nextPos = forwardDirection + new Vector3(col, height, row);
 				if(Level.Instance.GetVoxel(nextPos) == null){
 					Debug.Log(nextPos);
 					return true;
@@ -143,9 +143,9 @@ public abstract class Ant : Voxel {
 			}
 			break;
 		case Command.BACKWARD:
-			Vector3 backFloorPos = forwardDirection + new Vector3(col, row, height - 1);
+			Vector3 backFloorPos = forwardDirection + new Vector3(col, height - 1, row);
 			if (Level.Instance.GetVoxel(backFloorPos) != null){
-				Vector3 nextPos = forwardDirection + new Vector3(col, row, height);
+				Vector3 nextPos = forwardDirection + new Vector3(col, height, row);
 				if(Level.Instance.GetVoxel(nextPos) == null){
 					return true;
 				}
@@ -161,7 +161,6 @@ public abstract class Ant : Voxel {
 			return true;
 			break;
 		default:
-			return true;
 			break;
 
 		}
