@@ -1,24 +1,26 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 using UnityEngine.Networking;
 
 
 public class Player : NetworkBehaviour {
-	AntType antClass;
 	int playerNum;
+	ProgramManager programManager;
 
 
-	/*
-	 * Player objects should spawn at (0,0,0) and know which class of ant they will be controlling
-	 * Should have a list of command tiles
-	 * 
-	 * Should be able to send their command list, with class of Ant to the server
-	 * Recieve command lists for other Ant classes
-	 */ 
-
-	[Server]
-	void DeclareReady(){
+	void Start(){
+		programManager = this.GetComponent<ProgramManager>();
+		int num = NetworkServer.connections.Count;
+		Init(num);
 	}
+
+
+	void Init(int playerNum){
+		this.playerNum = playerNum;
+		programManager.LoadBlueprint(GameManager.Instance.programProfiles[playerNum]);
+	}
+
 
 	void SubmitCommands(){
 	}
@@ -26,10 +28,4 @@ public class Player : NetworkBehaviour {
 	void RecieveCommands(){
 	}
 
-
-	[Client]
-	public void Test(){
-	
-	
-	}
 }

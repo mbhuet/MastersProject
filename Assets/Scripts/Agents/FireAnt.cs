@@ -4,9 +4,11 @@ using System.Collections;
 public class FireAnt : Ant {
 
 	// Use this for initialization
-	void Start () {
+	protected override void Start () {
 		base.Start ();
-		StartCoroutine (Execute ());
+		type = AntType.FIRE;
+
+		//StartCoroutine (Execute ());
 	}
 	
 	// Update is called once per frame

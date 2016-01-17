@@ -7,7 +7,7 @@ public abstract class Voxel : MonoBehaviour {
 	public int height;
 
 	// Use this for initialization
-	protected void Start () {
+	protected virtual void Start () {
 		SnapToGrid ();
 		VoxelInit ();
 	}
