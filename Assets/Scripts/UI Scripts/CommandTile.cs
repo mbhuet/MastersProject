@@ -36,8 +36,9 @@ public class CommandTile : Tile {
 
 		if (fromBank) {
 			GameObject freshTile = GameObject.Instantiate (this.gameObject);
-			freshTile.transform.SetParent (this.transform.parent);
+			freshTile.transform.SetParent (this.transform.parent, false);
 			freshTile.name = this.name;
+
 		} else {
 			placeholder.transform.SetParent (this.transform.parent);
 			placeholder.transform.SetSiblingIndex (this.transform.GetSiblingIndex());

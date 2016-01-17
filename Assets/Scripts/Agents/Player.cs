@@ -16,6 +16,9 @@ public class Player : NetworkBehaviour {
 	public void Init(int playerNum){
 		this.playerNum = playerNum;
 		programManager.LoadBlueprint(GameManager.Instance.programProfiles[playerNum]);
+
+		ProgramUI progUI = GameObject.FindObjectOfType<ProgramUI>();
+		progUI.BuildUIFromBlueprint(GameManager.Instance.programProfiles[playerNum]);
 	}
 
 

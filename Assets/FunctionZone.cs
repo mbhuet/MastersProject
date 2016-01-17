@@ -1,9 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 
-public class ProgramZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler {
+public class FunctionZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler {
+	string funcName = "myFunc";
+	Text funcTitle;
+
+	void Awake(){
+		funcTitle = GetComponent<Text>();
+	}
 
 	#region IDropHandler implementation
 
@@ -39,4 +46,6 @@ public class ProgramZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IP
 	}
 
 	#endregion
+
+
 }

@@ -20,4 +20,8 @@ public class ButtonTest : MonoBehaviour {
 		}
 		Debug.Log (comString);
 	}
+
+	public void hello(){
+		Debug.Log("Yeah, am button. But sometimes, is there more than button?");
+	}
 }
