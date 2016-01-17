@@ -9,14 +9,11 @@ public class Player : NetworkBehaviour {
 	ProgramManager programManager;
 
 
-	void Start(){
+	void Awake(){
 		programManager = this.GetComponent<ProgramManager>();
-		int num = NetworkServer.connections.Count;
-		Init(num);
 	}
 
-
-	void Init(int playerNum){
+	public void Init(int playerNum){
 		this.playerNum = playerNum;
 		programManager.LoadBlueprint(GameManager.Instance.programProfiles[playerNum]);
 	}
@@ -27,5 +24,6 @@ public class Player : NetworkBehaviour {
 
 	void RecieveCommands(){
 	}
+
 
 }

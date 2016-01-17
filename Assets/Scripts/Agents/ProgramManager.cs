@@ -23,10 +23,11 @@ public class ProgramManager: NetworkBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 
 	public void LoadBlueprint(ProgramBlueprint blueprint){
+
 		antType = blueprint.antType;
 		functions = new AntFunction[blueprint.availableFunctions.Length];
 		for(int i = 0; i< blueprint.availableFunctions.Length; i++){
@@ -35,7 +36,8 @@ public class ProgramManager: NetworkBehaviour {
 			functions[i] = func;
 		}
 		myAnts = GameManager.Instance.getAntsOfType(antType);
-	}
+	
+}
 
 	[ClientRpc]
 	public void RpcTest(int val){

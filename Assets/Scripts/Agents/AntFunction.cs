@@ -10,7 +10,7 @@ public class FunctionBlueprint : System.Object
 	public Color color;
 }
 
-public class AntFunction : MonoBehaviour {
+public class AntFunction {
 	public int numSlots;
 	public bool isGlobal;
 

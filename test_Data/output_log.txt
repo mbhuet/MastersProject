@@ -1,0 +1,219 @@
+Initialize engine version: 5.2.0f3 (e7947df39b5c)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon R9 200 / HD 7900 Series (ID=0x6798)
+    Vendor:   ATI
+    VRAM:     3051 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\Unity Projects\MastersProject\test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.120 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\System.dll (this message is harmless)
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 1fe0 -> priority: 1 
+  Thread -> id: cc -> priority: 1 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.367107 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1018.
+Total: 0.214828 ms (FindLiveObjects: 0.034197 ms CreateObjectMapping: 0.018998 ms MarkObjects: 0.154617 ms  DeleteObjects: 0.006137 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Ant.Start () [0x00000] in <filename unknown>:0 
+  at ScoutAnt.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Ant.Start () [0x00000] in <filename unknown>:0 
+  at WarriorAnt.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Ant.Start () [0x00000] in <filename unknown>:0 
+  at FireAnt.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Ant.Start () [0x00000] in <filename unknown>:0 
+  at CarpenterAnt.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+RPC Function RpcTest called on client.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+RPC Function RpcTest called on client.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Log: connection {1} has been disconnected by timeout; address {::ffff:192.168.0.105:7777}
+aissp: time {30564} lastRecTime {28517} DisTme {2000}, rtt {0} 
+ 
+(Filename:  Line: 1848)
+
+UNet Client Disconnect Error: Timeout
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.508572 ms
+Multiple NetworkManagers detected in the scene. Only one NetworkManager can exist at a time. The duplicate NetworkManager will not be used.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 228.
+Total: 0.246687 ms (FindLiveObjects: 0.010522 ms CreateObjectMapping: 0.010814 ms MarkObjects: 0.179461 ms  DeleteObjects: 0.045303 ms)
+
+Log: cannot connect after 10 attempt address {::ffff:192.168.0.105:7777}
+UNet Client Disconnect Error: Timeout
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.321803 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1020.
+Total: 0.358631 ms (FindLiveObjects: 0.030397 ms CreateObjectMapping: 0.016660 ms MarkObjects: 0.304851 ms  DeleteObjects: 0.006430 ms)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+RPC Function RpcTest called on client.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+RPC Function RpcTest called on client.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Log: connection {1} has been disconnected by timeout; address {::ffff:192.168.0.105:7777}
+aissp: time {384558} lastRecTime {382519} DisTme {2000}, rtt {0} 
+ 
+(Filename:  Line: 1848)
+
+UNet Client Disconnect Error: Timeout
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.531663 ms
+Multiple NetworkManagers detected in the scene. Only one NetworkManager can exist at a time. The duplicate NetworkManager will not be used.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 228.
+Total: 0.197875 ms (FindLiveObjects: 0.008183 ms CreateObjectMapping: 0.007599 ms MarkObjects: 0.148772 ms  DeleteObjects: 0.033320 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.261301 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1020.
+Total: 0.225350 ms (FindLiveObjects: 0.024844 ms CreateObjectMapping: 0.011983 ms MarkObjects: 0.182384 ms  DeleteObjects: 0.005845 ms)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+RPC Function RpcTest called on client.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+RPC Function RpcTest called on client.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Log: connection {1} has been disconnected by timeout; address {::ffff:192.168.0.105:7777}
+aissp: time {572861} lastRecTime {570822} DisTme {2000}, rtt {0} 
+ 
+(Filename:  Line: 1848)
+
+UNet Client Disconnect Error: Timeout
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.476421 ms
+Multiple NetworkManagers detected in the scene. Only one NetworkManager can exist at a time. The duplicate NetworkManager will not be used.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 228.
+Total: 0.216874 ms (FindLiveObjects: 0.006430 ms CreateObjectMapping: 0.007014 ms MarkObjects: 0.172447 ms  DeleteObjects: 0.030397 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.230026 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1020.
+Total: 0.249902 ms (FindLiveObjects: 0.030689 ms CreateObjectMapping: 0.010814 ms MarkObjects: 0.201675 ms  DeleteObjects: 0.006137 ms)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+RPC Function RpcTest called on client.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+RPC Function RpcTest called on client.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Log: connection {1} has been disconnected by timeout; address {::ffff:192.168.0.105:7777}
+aissp: time {628340} lastRecTime {626291} DisTme {2000}, rtt {0} 
+ 
+(Filename:  Line: 1848)
+
+UNet Client Disconnect Error: Timeout
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.500388 ms
+Multiple NetworkManagers detected in the scene. Only one NetworkManager can exist at a time. The duplicate NetworkManager will not be used.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 228.
+Total: 0.259839 ms (FindLiveObjects: 0.009937 ms CreateObjectMapping: 0.010814 ms MarkObjects: 0.186476 ms  DeleteObjects: 0.052318 ms)
+
