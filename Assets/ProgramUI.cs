@@ -16,6 +16,7 @@ public class ProgramUI : MonoBehaviour {
 	public CommandTile wait;
 
 	Dictionary<Command, CommandTile> commandDict;
+	List<FunctionZone> functionZones;
 
 	Command[] antCommands = {
 		Command.FORWARD, 
@@ -36,6 +37,15 @@ public class ProgramUI : MonoBehaviour {
 	void Awake () {
 		canvas = this.GetComponent<Canvas>();
 		BuildCommandDictionary();
+		functionZones = new List<FunctionZone>();
+		FindFunctionZones();
+
+	}
+
+	void FindFunctionZones(){
+		foreach(FunctionZone funcZone in gameObject.GetComponentsInChildren<FunctionZone>()){
+			functionZones.Add(funcZone);
+		}
 	}
 	
 
@@ -58,6 +68,7 @@ public class ProgramUI : MonoBehaviour {
 
 		for(int i = 0; i< numFunctions; i++){
 			GameObject func = GameObject.Instantiate(functionZonePrefab);
+			functionZones.Add(func.GetComponent<FunctionZone>());
 			func.transform.parent = canvas.transform;
 		}
 	
@@ -74,6 +85,14 @@ public class ProgramUI : MonoBehaviour {
 
 	public void SetProgramManager(ProgramManager prog){
 		programManager = prog;
+	}
+
+	public void SetCommandTileCollision(bool isOn){
+//		Debug.Log("ProgramUI is turning collision " +isOn);
+
+		foreach(FunctionZone funcZone in functionZones){
+			funcZone.SetTileCollision(isOn);
+		}
 	}
 
 	void UpdateProgram(){
