@@ -1,3 +1,13 @@
+Mono path[0] = 'E:/Unity Projects/MastersProject/test_Data/Managed'
+Mono path[1] = 'E:/Unity Projects/MastersProject/test_Data/Mono'
+Mono config path = 'E:/Unity Projects/MastersProject/test_Data/Mono/etc'
+PlayerConnection initialized from E:/Unity Projects/MastersProject/test_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55506
+Multi-casting "[IP] 192.168.0.105 [Port] 55506 [Flags] 3 [Guid] 2741199618 [EditorId] 1716486167 [Version] 1048832 [Id] WindowsPlayer(Marc-Desktop) [Debug] 1" to [225.0.0.222:54997]...
+Waiting for connection from host on [192.168.0.105:55506]...
+PlayerConnection accepted from [192.168.0.105] handle:0x214
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56618
+PlayerConnection already initialized - listening to [192.168.0.105:55506]
 Initialize engine version: 5.2.0f3 (e7947df39b5c)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -15,205 +25,148 @@ Loading E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.UI.dll in
 Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.120 seconds
+- Completed reload, in  0.130 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
 Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\System.dll (this message is harmless)
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1fe0 -> priority: 1 
-  Thread -> id: cc -> priority: 1 
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.367107 ms
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1018.
-Total: 0.214828 ms (FindLiveObjects: 0.034197 ms CreateObjectMapping: 0.018998 ms MarkObjects: 0.154617 ms  DeleteObjects: 0.006137 ms)
+  Thread -> id: 1380 -> priority: 1 
+  Thread -> id: 2208 -> priority: 1 
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.481975 ms
+Ant start at 1.612126
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Ant:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:36)
+ScoutAnt:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\ScoutAnt.cs:8)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 36)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at Ant.Start () [0x00000] in <filename unknown>:0 
-  at ScoutAnt.Start () [0x00000] in <filename unknown>:0 
+  at Ant.Start () [0x00066] in E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:37 
+  at ScoutAnt.Start () [0x00000] in E:\Unity Projects\MastersProject\Assets\Scripts\Agents\ScoutAnt.cs:8 
  
-(Filename:  Line: -1)
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 37)
+
+Ant start at 1.612126
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Ant:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:36)
+WarriorAnt:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\WarriorAnt.cs:8)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 36)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at Ant.Start () [0x00000] in <filename unknown>:0 
-  at WarriorAnt.Start () [0x00000] in <filename unknown>:0 
+  at Ant.Start () [0x00066] in E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:37 
+  at WarriorAnt.Start () [0x00000] in E:\Unity Projects\MastersProject\Assets\Scripts\Agents\WarriorAnt.cs:8 
  
-(Filename:  Line: -1)
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 37)
+
+Ant start at 1.612126
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Ant:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:36)
+FireAnt:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\FireAnt.cs:8)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 36)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at Ant.Start () [0x00000] in <filename unknown>:0 
-  at FireAnt.Start () [0x00000] in <filename unknown>:0 
+  at Ant.Start () [0x00066] in E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:37 
+  at FireAnt.Start () [0x00000] in E:\Unity Projects\MastersProject\Assets\Scripts\Agents\FireAnt.cs:8 
  
-(Filename:  Line: -1)
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 37)
+
+Ant start at 1.612126
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Ant:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:36)
+CarpenterAnt:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\CarpenterAnt.cs:8)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 36)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at Ant.Start () [0x00000] in <filename unknown>:0 
-  at CarpenterAnt.Start () [0x00000] in <filename unknown>:0 
+  at Ant.Start () [0x00066] in E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:37 
+  at CarpenterAnt.Start () [0x00000] in E:\Unity Projects\MastersProject\Assets\Scripts\Agents\CarpenterAnt.cs:8 
  
-(Filename:  Line: -1)
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 37)
+
+Game Manager Awake at 1.612126
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+GameManager:Awake() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\GameManager.cs:12)
+UnityEngine.GameObject:SetActive(Boolean)
+UnityEngine.Networking.NetworkServer:SpawnObjects() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:1749)
+UnityEngine.Networking.NetworkManager:FinishLoadScene() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:545)
+UnityEngine.Networking.NetworkManager:UpdateScene() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:568)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:889)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Environment/GameManager.cs Line: 12)
 
 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+MyNetworkManager:OnServerAddPlayer(NetworkConnection, Int16) (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\MyNetworkManager.cs:12)
+UnityEngine.Networking.NetworkManager:OnServerAddPlayerMessageInternal(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:654)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(Int16, NetworkReader, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:183)
+UnityEngine.Networking.NetworkServer:InvokeHandlerOnServer(ULocalConnectionToServer, Int16, MessageBase, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:1643)
+UnityEngine.Networking.ULocalConnectionToServer:Send(Int16, MessageBase) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalConnections.cs:83)
+UnityEngine.Networking.ClientScene:AddPlayer(NetworkConnection, Int16, MessageBase) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:174)
+UnityEngine.Networking.ClientScene:AddPlayer(NetworkConnection, Int16) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:111)
+UnityEngine.Networking.ClientScene:AddPlayer(Int16) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:104)
+UnityEngine.Networking.NetworkManager:OnClientSceneChanged(NetworkConnection) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:907)
+UnityEngine.Networking.NetworkManager:FinishLoadScene() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:552)
+UnityEngine.Networking.NetworkManager:UpdateScene() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:568)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:889)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Environment/MyNetworkManager.cs Line: 12)
 
-0
+OnStartLocalPlayer
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnStartLocalPlayer() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:21)
+UnityEngine.Networking.NetworkIdentity:SetLocalPlayer(Int16) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:649)
+UnityEngine.Networking.NetworkServer:SetupLocalPlayerForConnection(NetworkConnection, NetworkIdentity, PlayerController) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:1026)
+UnityEngine.Networking.NetworkServer:InternalAddPlayerForConnection(NetworkConnection, GameObject, Int16) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:968)
+UnityEngine.Networking.NetworkServer:AddPlayerForConnection(NetworkConnection, GameObject, Int16) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:932)
+MyNetworkManager:OnServerAddPlayer(NetworkConnection, Int16) (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\MyNetworkManager.cs:13)
+UnityEngine.Networking.NetworkManager:OnServerAddPlayerMessageInternal(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:654)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(Int16, NetworkReader, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:183)
+UnityEngine.Networking.NetworkServer:InvokeHandlerOnServer(ULocalConnectionToServer, Int16, MessageBase, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:1643)
+UnityEngine.Networking.ULocalConnectionToServer:Send(Int16, MessageBase) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalConnections.cs:83)
+UnityEngine.Networking.ClientScene:AddPlayer(NetworkConnection, Int16, MessageBase) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:174)
+UnityEngine.Networking.ClientScene:AddPlayer(NetworkConnection, Int16) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:111)
+UnityEngine.Networking.ClientScene:AddPlayer(Int16) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:104)
+UnityEngine.Networking.NetworkManager:OnClientSceneChanged(NetworkConnection) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:907)
+UnityEngine.Networking.NetworkManager:FinishLoadScene() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:552)
+UnityEngine.Networking.NetworkManager:UpdateScene() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:568)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:889)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Player.cs Line: 21)
 
-RPC Function RpcTest called on client.
+System memory in use before: 23.3 MB.
+System memory in use after: 23.3 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1297.
+Total: 0.521140 ms (FindLiveObjects: 0.061087 ms CreateObjectMapping: 0.042673 ms MarkObjects: 0.409488 ms  DeleteObjects: 0.007307 ms)
+
+2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+MyNetworkManager:OnServerAddPlayer(NetworkConnection, Int16) (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\MyNetworkManager.cs:12)
+UnityEngine.Networking.NetworkManager:OnServerAddPlayerMessageInternal(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:654)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:416)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:522)
+UnityEngine.Networking.NetworkServer:InternalUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:684)
+UnityEngine.Networking.NetworkServer:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:546)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:887)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Environment/MyNetworkManager.cs Line: 12)
 
-RPC Function RpcTest called on client.
+Log: connection {1} has been disconnected by timeout; address {::ffff:192.168.0.105:55227}
+aissp: time {41953} lastRecTime {39918} DisTme {2000}, rtt {0} 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Log: connection {1} has been disconnected by timeout; address {::ffff:192.168.0.105:7777}
-aissp: time {30564} lastRecTime {28517} DisTme {2000}, rtt {0} 
- 
-(Filename:  Line: 1848)
-
-UNet Client Disconnect Error: Timeout
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.508572 ms
-Multiple NetworkManagers detected in the scene. Only one NetworkManager can exist at a time. The duplicate NetworkManager will not be used.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 228.
-Total: 0.246687 ms (FindLiveObjects: 0.010522 ms CreateObjectMapping: 0.010814 ms MarkObjects: 0.179461 ms  DeleteObjects: 0.045303 ms)
-
-Log: cannot connect after 10 attempt address {::ffff:192.168.0.105:7777}
-UNet Client Disconnect Error: Timeout
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.321803 ms
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1020.
-Total: 0.358631 ms (FindLiveObjects: 0.030397 ms CreateObjectMapping: 0.016660 ms MarkObjects: 0.304851 ms  DeleteObjects: 0.006430 ms)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-RPC Function RpcTest called on client.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-RPC Function RpcTest called on client.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Log: connection {1} has been disconnected by timeout; address {::ffff:192.168.0.105:7777}
-aissp: time {384558} lastRecTime {382519} DisTme {2000}, rtt {0} 
- 
-(Filename:  Line: 1848)
-
-UNet Client Disconnect Error: Timeout
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.531663 ms
-Multiple NetworkManagers detected in the scene. Only one NetworkManager can exist at a time. The duplicate NetworkManager will not be used.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 228.
-Total: 0.197875 ms (FindLiveObjects: 0.008183 ms CreateObjectMapping: 0.007599 ms MarkObjects: 0.148772 ms  DeleteObjects: 0.033320 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.261301 ms
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1020.
-Total: 0.225350 ms (FindLiveObjects: 0.024844 ms CreateObjectMapping: 0.011983 ms MarkObjects: 0.182384 ms  DeleteObjects: 0.005845 ms)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-RPC Function RpcTest called on client.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-RPC Function RpcTest called on client.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Log: connection {1} has been disconnected by timeout; address {::ffff:192.168.0.105:7777}
-aissp: time {572861} lastRecTime {570822} DisTme {2000}, rtt {0} 
- 
-(Filename:  Line: 1848)
-
-UNet Client Disconnect Error: Timeout
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.476421 ms
-Multiple NetworkManagers detected in the scene. Only one NetworkManager can exist at a time. The duplicate NetworkManager will not be used.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 228.
-Total: 0.216874 ms (FindLiveObjects: 0.006430 ms CreateObjectMapping: 0.007014 ms MarkObjects: 0.172447 ms  DeleteObjects: 0.030397 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.230026 ms
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1020.
-Total: 0.249902 ms (FindLiveObjects: 0.030689 ms CreateObjectMapping: 0.010814 ms MarkObjects: 0.201675 ms  DeleteObjects: 0.006137 ms)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-0
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-RPC Function RpcTest called on client.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-RPC Function RpcTest called on client.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Log: connection {1} has been disconnected by timeout; address {::ffff:192.168.0.105:7777}
-aissp: time {628340} lastRecTime {626291} DisTme {2000}, rtt {0} 
- 
-(Filename:  Line: 1848)
-
-UNet Client Disconnect Error: Timeout
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.500388 ms
-Multiple NetworkManagers detected in the scene. Only one NetworkManager can exist at a time. The duplicate NetworkManager will not be used.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 228.
-Total: 0.259839 ms (FindLiveObjects: 0.009937 ms CreateObjectMapping: 0.010814 ms MarkObjects: 0.186476 ms  DeleteObjects: 0.052318 ms)
+(Filename: C:/buildslave/unity/build/Runtime/Networking/UNETHost.cpp Line: 1848)
 

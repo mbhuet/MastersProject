@@ -33,6 +33,7 @@ public abstract class Ant : Voxel {
 			{Command.TURN_R, "TurnRight"},
 			{Command.TURN_L, "TurnLeft"}
 		};
+		Debug.Log("Ant start at " + Time.time);
 		GameManager.Instance.RegisterAnt(this);
 	}
 	

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 [System.Serializable]
 public class FunctionBlueprint : System.Object
 {
+	public string funcName;
 	public bool isGlobal;
 	public int numSlots;
 	public Color color;

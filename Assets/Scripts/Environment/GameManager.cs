@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour {
 	List<Ant> allAnts;
 
 	void Awake(){
+		Debug.Log("Game Manager Awake at " + Time.time);
 		Instance = this;
 		allAnts = new List<Ant>();
 	}

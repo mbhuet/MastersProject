@@ -5,20 +5,28 @@ using UnityEngine.Networking;
 
 
 public class Player : NetworkBehaviour {
-	int playerNum;
+	int playerNum = 0;
 	ProgramManager programManager;
 
 
 	void Awake(){
 		programManager = this.GetComponent<ProgramManager>();
+		if(isLocalPlayer){
+			Debug.Log("Local Player here");
+		}
+
 	}
 
-	public void Init(int playerNum){
-		this.playerNum = playerNum;
+	public override void OnStartLocalPlayer(){
+		Debug.Log("OnStartLocalPlayer");
 		programManager.LoadBlueprint(GameManager.Instance.programProfiles[playerNum]);
-
 		ProgramUI progUI = GameObject.FindObjectOfType<ProgramUI>();
 		progUI.BuildUIFromBlueprint(GameManager.Instance.programProfiles[playerNum]);
+	}
+
+
+	void Update(){
+
 	}
 
 

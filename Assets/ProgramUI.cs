@@ -1,12 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class ProgramUI : MonoBehaviour {
 	Canvas canvas;
 	ProgramManager programManager;
 	public GameObject functionZonePrefab;
 	public GameObject commandDockPrefab;
+	public Text textPrefab;
 	public TileBank tileBankPrefab;
 
 	public CommandTile forward;
@@ -32,6 +34,8 @@ public class ProgramUI : MonoBehaviour {
 	Command[] carpenterCommands;
 
 	GameObject commandDock;
+	public GameObject functionsPanel;
+	public GameObject executeButton;
 
 	// Use this for initialization
 	void Awake () {
@@ -54,22 +58,25 @@ public class ProgramUI : MonoBehaviour {
 		int numFunctions = blueprint.availableFunctions.Length;
 
 		commandDock = GameObject.Instantiate(commandDockPrefab);
-		commandDock.transform.parent = canvas.transform;
-		RectTransform comDockRect = commandDock.GetComponent<RectTransform>();
+		commandDock.transform.SetParent(canvas.transform, false);
 
 		foreach(Command com in antCommands){
 			TileBank bank = GameObject.Instantiate(tileBankPrefab);
 			CommandTile tile;
 			commandDict.TryGetValue(com, out tile);
 			bank.Init(tile);
-			bank.transform.parent = commandDock.transform;
+			bank.transform.SetParent(commandDock.transform);
 		}
 
 
 		for(int i = 0; i< numFunctions; i++){
+			Text funcTitle = GameObject.Instantiate(textPrefab) as Text;
+			funcTitle.text = blueprint.availableFunctions[i].funcName;
+			funcTitle.transform.SetParent(functionsPanel.transform, false);
 			GameObject func = GameObject.Instantiate(functionZonePrefab);
 			functionZones.Add(func.GetComponent<FunctionZone>());
-			func.transform.parent = canvas.transform;
+			func.transform.SetParent (functionsPanel.transform, false);
+			func.GetComponent<FunctionZone>().Init(blueprint.availableFunctions[i].numSlots);
 		}
 	
 	}

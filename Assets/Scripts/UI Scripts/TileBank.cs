@@ -7,7 +7,7 @@ public class TileBank : MonoBehaviour{
 
 	void Start(){
 		if (tilePrefab != null){
-			Init (tilePrefab);
+			//Init (tilePrefab);
 		}
 	}
 

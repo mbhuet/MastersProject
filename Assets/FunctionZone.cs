@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -8,6 +9,7 @@ public class FunctionZone : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 	string funcName = "myFunc";
 	Text funcTitle;
 	CommandSlot[] slots;
+	public GameObject commandSlotPrefab;
 
 	void Awake(){
 		funcTitle = GetComponent<Text>();
@@ -15,6 +17,15 @@ public class FunctionZone : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
 	void Start(){
 		FindSlots();
+	}
+
+	public void Init(int numSlots){
+		slots = new CommandSlot[numSlots];
+		for(int i = 0; i<slots.Length; i++){
+			GameObject slot = GameObject.Instantiate(commandSlotPrefab);
+			slot.transform.SetParent(this.transform);
+			slots[i] = slot.GetComponent<CommandSlot>();
+		}
 	}
 
 	void FindSlots(){
@@ -37,7 +48,7 @@ public class FunctionZone : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 	}
 
 	public void MakeGap(int index){
-		Debug.Log("gap requested at " +index);
+//		Debug.Log("gap requested at " +index);
 
 		bool spaceAvailable = false;
 		foreach(CommandSlot slot in slots){
@@ -61,7 +72,7 @@ public class FunctionZone : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 	}
 
 	public void CloseGaps(){
-		Debug.Log("close gaps");
+//		Debug.Log("close gaps");
 		for(int i = 0; i< slots.Length; i++){
 			if(slots[i].tile == null){
 				bool tileFound = false;
@@ -79,10 +90,10 @@ public class FunctionZone : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 	}
 
 	public void MoveTile(CommandSlot from, CommandSlot to){
-		Debug.Log("moving tile from slot " + from + " to " + to);
-
-		to.SetTile(from.tile);
+//		Debug.Log("moving tile from slot " + from + " to " + to);
+		CommandTile movingTile = from.tile;
 		from.RemoveTile();
+		to.SetTile(movingTile);
 	}
 
 

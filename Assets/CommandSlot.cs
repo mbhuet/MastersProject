@@ -12,12 +12,13 @@ public class CommandSlot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IP
 
 	public void SetTile(CommandTile newTile){
 		newTile.transform.SetParent(this.transform, false);
+		Debug.Log("set parent to slot");
 		tile = newTile;
 		tile.slot = this;
 	}
 
 	public void RemoveTile(){
-		Debug.Log("tile removed from " + this);
+//		Debug.Log("tile removed from " + this);
 
 		if(tile.slot ==  this){
 			tile.slot = null;
