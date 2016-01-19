@@ -2,12 +2,12 @@ Mono path[0] = 'E:/Unity Projects/MastersProject/test_Data/Managed'
 Mono path[1] = 'E:/Unity Projects/MastersProject/test_Data/Mono'
 Mono config path = 'E:/Unity Projects/MastersProject/test_Data/Mono/etc'
 PlayerConnection initialized from E:/Unity Projects/MastersProject/test_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55335
-Multi-casting "[IP] 192.168.0.105 [Port] 55335 [Flags] 3 [Guid] 920082164 [EditorId] 3727678313 [Version] 1048832 [Id] WindowsPlayer(Marc-Desktop) [Debug] 1" to [225.0.0.222:54997]...
-Waiting for connection from host on [192.168.0.105:55335]...
-PlayerConnection accepted from [192.168.0.105] handle:0x20c
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56164
-PlayerConnection already initialized - listening to [192.168.0.105:55335]
+PlayerConnection initialized network socket : 0.0.0.0 55122
+Multi-casting "[IP] 192.168.0.105 [Port] 55122 [Flags] 3 [Guid] 3995977192 [EditorId] 3727678313 [Version] 1048832 [Id] WindowsPlayer(Marc-Desktop) [Debug] 1" to [225.0.0.222:54997]...
+Waiting for connection from host on [192.168.0.105:55122]...
+PlayerConnection accepted from [192.168.0.105] handle:0x1a4
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56192
+PlayerConnection already initialized - listening to [192.168.0.105:55122]
 Initialize engine version: 5.2.0f3 (e7947df39b5c)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -25,143 +25,8 @@ Loading E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.UI.dll in
 Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.042 seconds
+- Completed reload, in  0.129 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-<RI> Initialized touch support.
-Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\System.dll (this message is harmless)
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 26e8 -> priority: 1 
-  Thread -> id: 1a34 -> priority: 1 
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.309820 ms
-Ant start at 5.285032
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-Ant:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:36)
-CarpenterAnt:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\CarpenterAnt.cs:8)
- 
-(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 36)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Ant.Start () [0x00066] in E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:37 
-  at CarpenterAnt.Start () [0x00000] in E:\Unity Projects\MastersProject\Assets\Scripts\Agents\CarpenterAnt.cs:8 
- 
-(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 37)
-
-Ant start at 5.285032
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-Ant:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:36)
-WarriorAnt:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\WarriorAnt.cs:8)
- 
-(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 36)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Ant.Start () [0x00066] in E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:37 
-  at WarriorAnt.Start () [0x00000] in E:\Unity Projects\MastersProject\Assets\Scripts\Agents\WarriorAnt.cs:8 
- 
-(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 37)
-
-Ant start at 5.285032
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-Ant:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:36)
-ScoutAnt:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\ScoutAnt.cs:8)
- 
-(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 36)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Ant.Start () [0x00066] in E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:37 
-  at ScoutAnt.Start () [0x00000] in E:\Unity Projects\MastersProject\Assets\Scripts\Agents\ScoutAnt.cs:8 
- 
-(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 37)
-
-Ant start at 5.285032
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-Ant:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:36)
-FireAnt:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\FireAnt.cs:8)
- 
-(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 36)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Ant.Start () [0x00066] in E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:37 
-  at FireAnt.Start () [0x00000] in E:\Unity Projects\MastersProject\Assets\Scripts\Agents\FireAnt.cs:8 
- 
-(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 37)
-
-System memory in use before: 25.2 MB.
-System memory in use after: 25.2 MB.
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1142.
-Total: 0.415042 ms (FindLiveObjects: 0.063717 ms CreateObjectMapping: 0.033320 ms MarkObjects: 0.310697 ms  DeleteObjects: 0.006722 ms)
-
-Game Manager Awake at 5.342399
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-GameManager:Awake() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\GameManager.cs:12)
-UnityEngine.GameObject:SetActive(Boolean)
-UnityEngine.Networking.ClientScene:ApplySpawnPayload(NetworkIdentity, Vector3, Byte[], NetworkInstanceId, GameObject) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:395)
-UnityEngine.Networking.ClientScene:OnObjectSpawnScene(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:499)
-UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:416)
-UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
-UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:522)
-UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:554)
-UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
-UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
- 
-(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Environment/GameManager.cs Line: 12)
-
-OnStartLocalPlayer
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-Player:OnStartLocalPlayer() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:23)
-UnityEngine.Networking.NetworkIdentity:SetLocalPlayer(Int16) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:649)
-UnityEngine.Networking.ClientScene:OnOwnerMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:724)
-UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:416)
-UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
-UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:522)
-UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:554)
-UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
-UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
- 
-(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Player.cs Line: 23)
-
-RPC Register as player 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-Player:RpcRegister(Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:33)
-Player:InvokeRpcRpcRegister(NetworkBehaviour, NetworkReader)
-UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
-UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
-UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:528)
-UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
-UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:416)
-UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
-UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:522)
-UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:554)
-UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
-UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
- 
-(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Player.cs Line: 33)
-
-RPC Register as player 1
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-Player:RpcRegister(Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:33)
-Player:InvokeRpcRpcRegister(NetworkBehaviour, NetworkReader)
-UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
-UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
-UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:528)
-UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
-UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:416)
-UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
-UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:522)
-UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:554)
-UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
-UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
- 
-(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Player.cs Line: 33)
-
+Waiting for finish
