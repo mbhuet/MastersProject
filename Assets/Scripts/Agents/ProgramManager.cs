@@ -15,16 +15,7 @@ public class ProgramManager: NetworkBehaviour {
 	AntFunction[] functions;
 	Ant[] myAnts;
 	int testVal = 0;
-
-	// Use this for initialization
-	void Start () {
-		RpcTest(1);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-
-	}
+	ProgramUI programUI;
 
 	public void LoadBlueprint(ProgramBlueprint blueprint){
 
@@ -36,8 +27,18 @@ public class ProgramManager: NetworkBehaviour {
 			functions[i] = func;
 		}
 		myAnts = GameManager.Instance.getAntsOfType(antType);
-	
-}
+	}
+
+	void Awake(){
+		programUI = GameObject.FindObjectOfType<ProgramUI>();
+	}
+
+
+	public void GetFunctions(){
+		for(int i  = 0; i < functions.Length; i++){
+		functions[i].SetCommandTiles(programUI.GetCommandTilesFromFunctionZone(i));
+		}
+	}
 
 	[ClientRpc]
 	public void RpcTest(int val){

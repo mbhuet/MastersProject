@@ -5,36 +5,38 @@ using UnityEngine.Networking;
 
 
 public class Player : NetworkBehaviour {
-	int playerNum = 0;
 	ProgramManager programManager;
+	NetworkPlayer netPlayer;
+
+	[SyncVar]
+	bool isReady = false;
+
+	[SyncVar]
+	public int playerNum;
 
 
 	void Awake(){
 		programManager = this.GetComponent<ProgramManager>();
-		if(isLocalPlayer){
-			Debug.Log("Local Player here");
-		}
-
 	}
 
 	public override void OnStartLocalPlayer(){
-		Debug.Log("OnStartLocalPlayer");
+		//Debug.Log("OnStartLocalPlayer");
 		programManager.LoadBlueprint(GameManager.Instance.programProfiles[playerNum]);
 		ProgramUI progUI = GameObject.FindObjectOfType<ProgramUI>();
 		progUI.BuildUIFromBlueprint(GameManager.Instance.programProfiles[playerNum]);
+
+		netPlayer = Network.player;
 	}
 
-
-	void Update(){
-
+	[ClientRpc]
+	public void RpcRegister(int num){
+		//Debug.Log("RPC Register as player " + num);
+		this.playerNum = num;
+		PlayerManager.Instance.AddPlayer(this, num);
 	}
 
-
-	void SubmitCommands(){
+	[ClientRpc]
+	public void RpcTest(int num){
+		Debug.Log("RPC Test " + num);
 	}
-
-	void RecieveCommands(){
-	}
-
-
 }

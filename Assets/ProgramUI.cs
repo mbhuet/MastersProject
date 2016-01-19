@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class ProgramUI : MonoBehaviour {
 	Canvas canvas;
-	ProgramManager programManager;
 	public GameObject functionZonePrefab;
 	public GameObject commandDockPrefab;
 	public Text textPrefab;
@@ -51,6 +50,11 @@ public class ProgramUI : MonoBehaviour {
 			functionZones.Add(funcZone);
 		}
 	}
+
+	public CommandTile[] GetCommandTilesFromFunctionZone(int index){
+		if(index >= functionZones.Count) return null;
+		return functionZones[index].GetCommandTiles();
+	}
 	
 
 
@@ -88,10 +92,6 @@ public class ProgramUI : MonoBehaviour {
 		commandDict.Add(Command.TURN_L, turnLeft);
 		commandDict.Add(Command.TURN_R, turnRight);
 		commandDict.Add(Command.WAIT, wait);
-	}
-
-	public void SetProgramManager(ProgramManager prog){
-		programManager = prog;
 	}
 
 	public void SetCommandTileCollision(bool isOn){

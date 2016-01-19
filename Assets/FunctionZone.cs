@@ -96,6 +96,16 @@ public class FunctionZone : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 		to.SetTile(movingTile);
 	}
 
+	public CommandTile[] GetCommandTiles(){
+		List<CommandTile> tiles = new List<CommandTile>();
+		for(int i = 0; i<slots.Length; i++){
+			if(slots[i].tile != null){
+				tiles.Add(slots[i].tile);
+			}
+		}
+		return tiles.ToArray();
+	}
+
 
 	#region IPointerEnterHandler implementation
 
