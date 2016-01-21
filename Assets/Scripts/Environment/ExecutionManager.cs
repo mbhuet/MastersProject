@@ -11,19 +11,10 @@ public class ExecutionManager : NetworkBehaviour {
 	[SyncEvent]
 	public event BeginExecutionDelegate EventBeginExecution;
 
-	public delegate void TestDelegate();
-	
-	[SyncEvent]
-	public event TestDelegate EventTest;
-
-
-
 	// Use this for initialization
 	void Awake () {
 		Instance = this;
 		EventBeginExecution += BeginExecution;
-		EventTest += Test;
-
 	}
 
 
@@ -31,20 +22,15 @@ public class ExecutionManager : NetworkBehaviour {
 		Debug.Log ("Begin Execution");
 	}
 
-	void Test(){
-		Debug.Log ("test successful");
+	[Server]
+	public void TriggerExecutionEvent(){
+		EventBeginExecution ();
 	}
 
 	[Command]
 	public void CmdReady() {
 		EventBeginExecution();
 	}
-
-	[Command]
-	public void CmdTest() {
-		EventTest();
-	}
-
 
 
 

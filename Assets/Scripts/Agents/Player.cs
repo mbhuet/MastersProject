@@ -8,6 +8,7 @@ public class Player : NetworkBehaviour {
 	ProgramManager programManager;
 	NetworkPlayer netPlayer;
 
+	[SyncVar]
 	public bool isReady = false;
 
 	[SyncVar]
@@ -46,16 +47,18 @@ public class Player : NetworkBehaviour {
 	}
 
 	public void SetReady(bool isReady){
-		//this.isReady = isReady;
+		this.isReady = isReady;
 		CmdPlayerReady (isReady);
 		//PlayerManager.Instance.CmdPlayerReady (); //Tells the server to send out a message to all other clients that a player is/ is not ready
 	}
 
 	[Command]
 	void CmdPlayerReady(bool isReady){
-
+		this.isReady = isReady;
 		RpcPlayerReady (isReady);
-
+		if (PlayerManager.Instance.AllPlayersReady ()) {
+			ExecutionManager.Instance.TriggerExecutionEvent();
+		}
 	}
 
 	[ClientRpc]

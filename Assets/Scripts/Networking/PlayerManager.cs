@@ -36,7 +36,14 @@ public class PlayerManager : NetworkBehaviour {
 			if(players[i] != null && players[i].isReady) r++;
 		}
 		numReadyPlayers = r;
+
 		UpdateReadyButtonText (numReadyPlayers);
+	}
+
+	public bool AllPlayersReady(){
+		UpdateReadyPlayers ();
+		Debug.Log (numReadyPlayers + "/" + maxPlayers);
+		return numReadyPlayers == maxPlayers;
 	}
 
 	void UpdateReadyButtonText(int numReady){

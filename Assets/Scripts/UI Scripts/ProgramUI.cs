@@ -110,7 +110,7 @@ public class ProgramUI : MonoBehaviour {
 
 	public void ReadyButton(){
 		PlayerManager.Instance.localPlayer.SetReady (!PlayerManager.Instance.localPlayer.isReady);
-		readyButton.image.color = (PlayerManager.Instance.localPlayer.isReady ? Color.white : Color.green);
+		readyButton.image.color = (PlayerManager.Instance.localPlayer.isReady ? Color.green : Color.white);
 	}
 
 
