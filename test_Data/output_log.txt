@@ -1,32 +1,501 @@
-Mono path[0] = 'E:/Unity Projects/MastersProject/test_Data/Managed'
-Mono path[1] = 'E:/Unity Projects/MastersProject/test_Data/Mono'
-Mono config path = 'E:/Unity Projects/MastersProject/test_Data/Mono/etc'
-PlayerConnection initialized from E:/Unity Projects/MastersProject/test_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55122
-Multi-casting "[IP] 192.168.0.105 [Port] 55122 [Flags] 3 [Guid] 3995977192 [EditorId] 3727678313 [Version] 1048832 [Id] WindowsPlayer(Marc-Desktop) [Debug] 1" to [225.0.0.222:54997]...
-Waiting for connection from host on [192.168.0.105:55122]...
-PlayerConnection accepted from [192.168.0.105] handle:0x1a4
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56192
-PlayerConnection already initialized - listening to [192.168.0.105:55122]
-Initialize engine version: 5.2.0f3 (e7947df39b5c)
+Mono path[0] = 'C:/Users/Marc/Unity/MastersProject/test_Data/Managed'
+Mono path[1] = 'C:/Users/Marc/Unity/MastersProject/test_Data/Mono'
+Mono config path = 'C:/Users/Marc/Unity/MastersProject/test_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/Marc/Unity/MastersProject/test_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55112
+Multi-casting "[IP] 192.168.0.104 [Port] 55112 [Flags] 2 [Guid] 2169608251 [EditorId] 2028476956 [Version] 1048832 [Id] WindowsPlayer(Marc-Lenovo) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [192.168.0.104:55112]
+Initialize engine version: 5.2.2f1 (3757309da7e7)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: AMD Radeon R9 200 / HD 7900 Series (ID=0x6798)
-    Vendor:   ATI
-    VRAM:     3051 MB
+    Renderer: NVIDIA GeForce GT 750M   (ID=0xfe4)
+    Vendor:   NVIDIA
+    VRAM:     1986 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading E:\Unity Projects\MastersProject\test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.129 seconds
-desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+Platform assembly: C:\Users\Marc\Unity\MastersProject\test_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Marc\Unity\MastersProject\test_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Marc\Unity\MastersProject\test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Marc\Unity\MastersProject\test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Marc\Unity\MastersProject\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Marc\Unity\MastersProject\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Marc\Unity\MastersProject\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Marc\Unity\MastersProject\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Marc\Unity\MastersProject\test_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.337 seconds
+desktop: 1920x1080 59Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-Waiting for finish
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Marc\Unity\MastersProject\test_Data\Managed\System.dll (this message is harmless)
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 223c -> priority: 1 
+  Thread -> id: 424 -> priority: 1 
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.351943 ms
+Ant start at 2.16664
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Ant:Start() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Ant.cs:36)
+CarpenterAnt:Start() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\CarpenterAnt.cs:8)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 36)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Ant.Start () [0x00066] in C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Ant.cs:37 
+  at CarpenterAnt.Start () [0x00000] in C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\CarpenterAnt.cs:8 
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 37)
+
+Ant start at 2.16664
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Ant:Start() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Ant.cs:36)
+WarriorAnt:Start() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\WarriorAnt.cs:8)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 36)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Ant.Start () [0x00066] in C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Ant.cs:37 
+  at WarriorAnt.Start () [0x00000] in C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\WarriorAnt.cs:8 
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 37)
+
+Ant start at 2.16664
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Ant:Start() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Ant.cs:36)
+ScoutAnt:Start() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\ScoutAnt.cs:8)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 36)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Ant.Start () [0x00066] in C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Ant.cs:37 
+  at ScoutAnt.Start () [0x00000] in C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\ScoutAnt.cs:8 
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 37)
+
+Ant start at 2.16664
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Ant:Start() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Ant.cs:36)
+FireAnt:Start() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\FireAnt.cs:8)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 36)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Ant.Start () [0x00066] in C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Ant.cs:37 
+  at FireAnt.Start () [0x00000] in C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\FireAnt.cs:8 
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 37)
+
+Game Manager Awake at 2.16664
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+GameManager:Awake() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Environment\GameManager.cs:12)
+UnityEngine.GameObject:SetActive(Boolean)
+UnityEngine.Networking.NetworkServer:SpawnObjects() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:1767)
+UnityEngine.Networking.NetworkManager:FinishLoadScene() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:560)
+UnityEngine.Networking.NetworkManager:UpdateScene() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:583)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:911)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Environment/GameManager.cs Line: 12)
+
+Register new Player as 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerManager:RegisterPlayer(Player) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:61)
+MyNetworkManager:OnServerAddPlayer(NetworkConnection, Int16) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\MyNetworkManager.cs:14)
+UnityEngine.Networking.NetworkManager:OnServerAddPlayerMessageInternal(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:669)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(Int16, NetworkReader, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:183)
+UnityEngine.Networking.NetworkServer:InvokeHandlerOnServer(ULocalConnectionToServer, Int16, MessageBase, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:1661)
+UnityEngine.Networking.ULocalConnectionToServer:Send(Int16, MessageBase) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalConnections.cs:83)
+UnityEngine.Networking.ClientScene:AddPlayer(NetworkConnection, Int16, MessageBase) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:174)
+UnityEngine.Networking.ClientScene:AddPlayer(NetworkConnection, Int16) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:111)
+UnityEngine.Networking.ClientScene:AddPlayer(Int16) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:104)
+UnityEngine.Networking.NetworkManager:OnClientSceneChanged(NetworkConnection) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:922)
+UnityEngine.Networking.NetworkManager:FinishLoadScene() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:567)
+UnityEngine.Networking.NetworkManager:UpdateScene() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:583)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:911)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Networking/PlayerManager.cs Line: 61)
+
+System memory in use before: 22.6 MB.
+System memory in use after: 22.7 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1148.
+Total: 0.608524 ms (FindLiveObjects: 0.083816 ms CreateObjectMapping: 0.041052 ms MarkObjects: 0.474246 ms  DeleteObjects: 0.008552 ms)
+
+Local Player here
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:RpcRegister(Int32) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:36)
+Player:InvokeRpcRpcRegister(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
+UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:533)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:194)
+UnityEngine.Networking.LocalClient:ProcessInternalMessages() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:137)
+UnityEngine.Networking.LocalClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:65)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:774)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:910)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Agents/Player.cs Line: 36)
+
+Player(Clone) (ProgramManager)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+FunctionZone:Init(ProgramManager, Int32, Int32) (at C:\Users\Marc\Unity\MastersProject\Assets\FunctionZone.cs:28)
+ProgramUI:BuildUIFromBlueprint(ProgramBlueprint) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\UI Scripts\ProgramUI.cs:89)
+Player:BuildUI() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:71)
+Player:RpcRegister(Int32) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:37)
+Player:InvokeRpcRpcRegister(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
+UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:533)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:194)
+UnityEngine.Networking.LocalClient:ProcessInternalMessages() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:137)
+UnityEngine.Networking.LocalClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:65)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:774)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:910)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/FunctionZone.cs Line: 28)
+
+Player(Clone) (ProgramManager)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+FunctionZone:Init(ProgramManager, Int32, Int32) (at C:\Users\Marc\Unity\MastersProject\Assets\FunctionZone.cs:28)
+ProgramUI:BuildUIFromBlueprint(ProgramBlueprint) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\UI Scripts\ProgramUI.cs:89)
+Player:BuildUI() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:71)
+Player:RpcRegister(Int32) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:37)
+Player:InvokeRpcRpcRegister(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
+UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:533)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:194)
+UnityEngine.Networking.LocalClient:ProcessInternalMessages() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:137)
+UnityEngine.Networking.LocalClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:65)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:774)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:910)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/FunctionZone.cs Line: 28)
+
+Register existing Player at 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerManager:RegisterPlayer(Player) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:66)
+MyNetworkManager:OnServerAddPlayer(NetworkConnection, Int16) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\MyNetworkManager.cs:14)
+UnityEngine.Networking.NetworkManager:OnServerAddPlayerMessageInternal(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:669)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:416)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:522)
+UnityEngine.Networking.NetworkServer:InternalUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:702)
+UnityEngine.Networking.NetworkServer:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:564)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:909)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Networking/PlayerManager.cs Line: 66)
+
+Register new Player as 1
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerManager:RegisterPlayer(Player) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:61)
+MyNetworkManager:OnServerAddPlayer(NetworkConnection, Int16) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\MyNetworkManager.cs:14)
+UnityEngine.Networking.NetworkManager:OnServerAddPlayerMessageInternal(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:669)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:416)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:522)
+UnityEngine.Networking.NetworkServer:InternalUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:702)
+UnityEngine.Networking.NetworkServer:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:564)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:909)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Networking/PlayerManager.cs Line: 61)
+
+UpdateReadyButtonText
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerManager:UpdateReadyButtonText(Int32) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:43)
+PlayerManager:UpdateReadyPlayers() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:39)
+Player:RpcPlayerReady(Boolean) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:64)
+Player:InvokeRpcRpcPlayerReady(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
+UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:533)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:194)
+UnityEngine.Networking.LocalClient:ProcessInternalMessages() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:137)
+UnityEngine.Networking.LocalClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:65)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:774)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:910)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Networking/PlayerManager.cs Line: 43)
+
+UpdateReadyButtonText
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerManager:UpdateReadyButtonText(Int32) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:43)
+PlayerManager:UpdateReadyPlayers() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:39)
+Player:RpcPlayerReady(Boolean) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:64)
+Player:InvokeRpcRpcPlayerReady(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
+UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:533)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:194)
+UnityEngine.Networking.LocalClient:ProcessInternalMessages() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:137)
+UnityEngine.Networking.LocalClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:65)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:774)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:910)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Networking/PlayerManager.cs Line: 43)
+
+UpdateReadyButtonText
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerManager:UpdateReadyButtonText(Int32) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:43)
+PlayerManager:UpdateReadyPlayers() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:39)
+Player:RpcPlayerReady(Boolean) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:64)
+Player:InvokeRpcRpcPlayerReady(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
+UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:533)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:194)
+UnityEngine.Networking.LocalClient:ProcessInternalMessages() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:137)
+UnityEngine.Networking.LocalClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:65)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:774)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:910)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Networking/PlayerManager.cs Line: 43)
+
+UpdateReadyButtonText
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerManager:UpdateReadyButtonText(Int32) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:43)
+PlayerManager:UpdateReadyPlayers() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:39)
+Player:RpcPlayerReady(Boolean) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:64)
+Player:InvokeRpcRpcPlayerReady(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
+UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:533)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:194)
+UnityEngine.Networking.LocalClient:ProcessInternalMessages() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:137)
+UnityEngine.Networking.LocalClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:65)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:774)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:910)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Networking/PlayerManager.cs Line: 43)
+
+UpdateReadyButtonText
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerManager:UpdateReadyButtonText(Int32) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:43)
+PlayerManager:UpdateReadyPlayers() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:39)
+Player:RpcPlayerReady(Boolean) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:64)
+Player:InvokeRpcRpcPlayerReady(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
+UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:533)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:194)
+UnityEngine.Networking.LocalClient:ProcessInternalMessages() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:137)
+UnityEngine.Networking.LocalClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:65)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:774)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:910)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Networking/PlayerManager.cs Line: 43)
+
+UpdateReadyButtonText
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerManager:UpdateReadyButtonText(Int32) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:43)
+PlayerManager:UpdateReadyPlayers() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:39)
+Player:RpcPlayerReady(Boolean) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:64)
+Player:InvokeRpcRpcPlayerReady(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
+UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:533)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:194)
+UnityEngine.Networking.LocalClient:ProcessInternalMessages() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:137)
+UnityEngine.Networking.LocalClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:65)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:774)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:910)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Networking/PlayerManager.cs Line: 43)
+
+UpdateReadyButtonText
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerManager:UpdateReadyButtonText(Int32) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:43)
+PlayerManager:UpdateReadyPlayers() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:39)
+Player:RpcPlayerReady(Boolean) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:64)
+Player:InvokeRpcRpcPlayerReady(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
+UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:533)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:194)
+UnityEngine.Networking.LocalClient:ProcessInternalMessages() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:137)
+UnityEngine.Networking.LocalClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:65)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:774)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:910)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Networking/PlayerManager.cs Line: 43)
+
+UpdateReadyButtonText
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerManager:UpdateReadyButtonText(Int32) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:43)
+PlayerManager:UpdateReadyPlayers() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:39)
+Player:RpcPlayerReady(Boolean) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:64)
+Player:InvokeRpcRpcPlayerReady(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
+UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:533)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:194)
+UnityEngine.Networking.LocalClient:ProcessInternalMessages() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:137)
+UnityEngine.Networking.LocalClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:65)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:774)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:910)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Networking/PlayerManager.cs Line: 43)
+
+UpdateReadyButtonText
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerManager:UpdateReadyButtonText(Int32) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:43)
+PlayerManager:UpdateReadyPlayers() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:39)
+Player:RpcPlayerReady(Boolean) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:64)
+Player:InvokeRpcRpcPlayerReady(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
+UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:533)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:194)
+UnityEngine.Networking.LocalClient:ProcessInternalMessages() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:137)
+UnityEngine.Networking.LocalClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:65)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:774)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:910)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Networking/PlayerManager.cs Line: 43)
+
+UpdateReadyButtonText
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerManager:UpdateReadyButtonText(Int32) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:43)
+PlayerManager:UpdateReadyPlayers() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:39)
+Player:RpcPlayerReady(Boolean) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:64)
+Player:InvokeRpcRpcPlayerReady(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
+UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:533)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:194)
+UnityEngine.Networking.LocalClient:ProcessInternalMessages() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:137)
+UnityEngine.Networking.LocalClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:65)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:774)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:910)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Networking/PlayerManager.cs Line: 43)
+
+UpdateReadyButtonText
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerManager:UpdateReadyButtonText(Int32) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:43)
+PlayerManager:UpdateReadyPlayers() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:39)
+Player:RpcPlayerReady(Boolean) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:64)
+Player:InvokeRpcRpcPlayerReady(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
+UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:533)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:194)
+UnityEngine.Networking.LocalClient:ProcessInternalMessages() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:137)
+UnityEngine.Networking.LocalClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:65)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:774)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:910)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Networking/PlayerManager.cs Line: 43)
+
+UpdateReadyButtonText
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerManager:UpdateReadyButtonText(Int32) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:43)
+PlayerManager:UpdateReadyPlayers() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:39)
+Player:RpcPlayerReady(Boolean) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:64)
+Player:InvokeRpcRpcPlayerReady(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
+UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:533)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:194)
+UnityEngine.Networking.LocalClient:ProcessInternalMessages() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:137)
+UnityEngine.Networking.LocalClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:65)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:774)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:910)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Networking/PlayerManager.cs Line: 43)
+
+UpdateReadyButtonText
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerManager:UpdateReadyButtonText(Int32) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:43)
+PlayerManager:UpdateReadyPlayers() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:39)
+Player:RpcPlayerReady(Boolean) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:64)
+Player:InvokeRpcRpcPlayerReady(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
+UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:533)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:194)
+UnityEngine.Networking.LocalClient:ProcessInternalMessages() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:137)
+UnityEngine.Networking.LocalClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:65)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:774)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:910)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Networking/PlayerManager.cs Line: 43)
+
+UpdateReadyButtonText
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerManager:UpdateReadyButtonText(Int32) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:43)
+PlayerManager:UpdateReadyPlayers() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:39)
+Player:RpcPlayerReady(Boolean) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:64)
+Player:InvokeRpcRpcPlayerReady(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
+UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:533)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:194)
+UnityEngine.Networking.LocalClient:ProcessInternalMessages() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:137)
+UnityEngine.Networking.LocalClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:65)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:774)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:910)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Networking/PlayerManager.cs Line: 43)
+
+UpdateReadyButtonText
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerManager:UpdateReadyButtonText(Int32) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:43)
+PlayerManager:UpdateReadyPlayers() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:39)
+Player:RpcPlayerReady(Boolean) (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:64)
+Player:InvokeRpcRpcPlayerReady(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
+UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:533)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:194)
+UnityEngine.Networking.LocalClient:ProcessInternalMessages() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:137)
+UnityEngine.Networking.LocalClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:65)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:774)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:910)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Networking/PlayerManager.cs Line: 43)
+
+Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:64260}

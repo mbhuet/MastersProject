@@ -4,20 +4,45 @@ using UnityEngine.Networking;
 using System.Collections.Generic;
 
 public class ExecutionManager : NetworkBehaviour {
-	Dictionary<NetworkPlayer, int> testVals;
+	public static ExecutionManager Instance;
+
+	public delegate void BeginExecutionDelegate();
+	
+	[SyncEvent]
+	public event BeginExecutionDelegate EventBeginExecution;
+
+	public delegate void TestDelegate();
+	
+	[SyncEvent]
+	public event TestDelegate EventTest;
+
+
 
 	// Use this for initialization
-	void Start () {
-		testVals = new Dictionary<NetworkPlayer, int>();
+	void Awake () {
+		Instance = this;
+		EventBeginExecution += BeginExecution;
+		EventTest += Test;
 
-		if(isClient)
-			SetVal(2);
-		else if(isServer)
-			SetVal(1);
 	}
-	
-	public void SetVal(int val){
-	//	CmdSetVal(Network.player, val);
+
+
+	void BeginExecution(){
+		Debug.Log ("Begin Execution");
+	}
+
+	void Test(){
+		Debug.Log ("test successful");
+	}
+
+	[Command]
+	public void CmdReady() {
+		EventBeginExecution();
+	}
+
+	[Command]
+	public void CmdTest() {
+		EventTest();
 	}
 
 

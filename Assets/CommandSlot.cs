@@ -12,16 +12,20 @@ public class CommandSlot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IP
 
 	public void SetTile(CommandTile newTile){
 		newTile.transform.SetParent(this.transform, false);
-		Debug.Log("set parent to slot");
+//		Debug.Log("set parent to slot");
 		tile = newTile;
 		tile.slot = this;
 	}
 
 	public void RemoveTile(){
-//		Debug.Log("tile removed from " + this);
+		Debug.Log("tile removed from " + this);
 
 		if(tile.slot ==  this){
 			tile.slot = null;
+			// the tile is being removed because it was dragged out and not because they were being rearranged, functionZone should remove it
+			if(Tile.tileBeingDragged == tile){
+				functionZone.RemoveCommand(slotIndex);
+			}
 		}
 		else{
 			Debug.Log("tile's slot is not this, it is " + tile.slot);
@@ -38,8 +42,12 @@ public class CommandSlot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IP
 	public void OnDrop (PointerEventData eventData)
 	{
 		if(tile!=null) return;
+//		Debug.Log ("Tile " + this + " OnDrop ");
 		SetTile(Tile.tileBeingDragged);
+		Tile.tileBeingDragged = null;
+		functionZone.AddCommand (tile.command, slotIndex);
 		functionZone.CloseGaps();
+
 		 
 	}
 	
@@ -71,7 +79,7 @@ public class CommandSlot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IP
 	{
 		if(Tile.tileBeingDragged != null){
 
-			Debug.Log("pointer exit slot " + slotIndex);
+//			Debug.Log("pointer exit slot " + slotIndex);
 
 			functionZone.CloseGaps();
 		}

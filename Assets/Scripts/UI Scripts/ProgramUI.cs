@@ -34,7 +34,9 @@ public class ProgramUI : MonoBehaviour {
 
 	GameObject commandDock;
 	public GameObject functionsPanel;
-	public GameObject executeButton;
+	public Button readyButton;
+
+	ProgramManager localProgramManager;
 
 	// Use this for initialization
 	void Awake () {
@@ -51,11 +53,14 @@ public class ProgramUI : MonoBehaviour {
 		}
 	}
 
+	public void SetLocalProgramManager(ProgramManager prog){
+		localProgramManager = prog;
+	}
+
 	public CommandTile[] GetCommandTilesFromFunctionZone(int index){
 		if(index >= functionZones.Count) return null;
 		return functionZones[index].GetCommandTiles();
 	}
-	
 
 
 	public void BuildUIFromBlueprint(ProgramBlueprint blueprint){
@@ -71,6 +76,7 @@ public class ProgramUI : MonoBehaviour {
 			bank.Init(tile);
 			bank.transform.SetParent(commandDock.transform);
 		}
+		//TODO CHECK ProgramBlueprints for other players and make TileBanks for their global functions
 
 
 		for(int i = 0; i< numFunctions; i++){
@@ -80,7 +86,7 @@ public class ProgramUI : MonoBehaviour {
 			GameObject func = GameObject.Instantiate(functionZonePrefab);
 			functionZones.Add(func.GetComponent<FunctionZone>());
 			func.transform.SetParent (functionsPanel.transform, false);
-			func.GetComponent<FunctionZone>().Init(blueprint.availableFunctions[i].numSlots);
+			func.GetComponent<FunctionZone>().Init(localProgramManager, blueprint.availableFunctions[i].numSlots, i);
 		}
 	
 	}
@@ -102,7 +108,13 @@ public class ProgramUI : MonoBehaviour {
 		}
 	}
 
-	void UpdateProgram(){
-		
+	public void ReadyButton(){
+		PlayerManager.Instance.localPlayer.SetReady (!PlayerManager.Instance.localPlayer.isReady);
+		readyButton.image.color = (PlayerManager.Instance.localPlayer.isReady ? Color.white : Color.green);
+	}
+
+
+	public void SetButtonText(string text){
+		readyButton.GetComponentInChildren<Text>().text = text;
 	}
 }

@@ -7,24 +7,32 @@ using UnityEngine.UI;
 
 public class FunctionZone : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
 	string funcName = "myFunc";
+	int funcIndex;
 	Text funcTitle;
 	CommandSlot[] slots;
+	List<Command> commands;
 	public GameObject commandSlotPrefab;
+	ProgramManager localProgramManager;
 
 	void Awake(){
 		funcTitle = GetComponent<Text>();
+		commands = new List<Command>();
 	}
 
 	void Start(){
 		FindSlots();
 	}
 
-	public void Init(int numSlots){
+	public void Init(ProgramManager localProgMan, int numSlots, int index){
+		localProgramManager = localProgMan;
+		Debug.Log (localProgramManager);
+		funcIndex = index;
 		slots = new CommandSlot[numSlots];
 		for(int i = 0; i<slots.Length; i++){
 			GameObject slot = GameObject.Instantiate(commandSlotPrefab);
 			slot.transform.SetParent(this.transform);
 			slots[i] = slot.GetComponent<CommandSlot>();
+			slot.name = "CommandSlot " + i;
 		}
 	}
 
@@ -33,6 +41,24 @@ public class FunctionZone : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 		for(int i = 0; i<slots.Length; i++){
 			slots[i].functionZone = this;
 			slots[i].slotIndex = i;
+		}
+	}
+
+	public void AddCommand(Command com, int index){
+		if (index > commands.Count) {
+			index = commands.Count;
+			Debug.Log ("FunctionZone does not have a slot at this index");
+		}
+			commands.Insert (index, com);
+			localProgramManager.AddCommand (funcIndex, com, index);
+	}
+
+	public void RemoveCommand(int index){
+		if (index > commands.Count - 1) {
+			Debug.LogError ("trying to remove command at index " + index + " from list of length " + commands.Count);
+		} else {
+			commands.RemoveAt (index);
+			localProgramManager.RemoveCommand(funcIndex, index);
 		}
 	}
 

@@ -24,6 +24,7 @@ public class CommandTile : Tile {
 		Canvas canvas = FindInParents<Canvas>(gameObject);
 		if (canvas == null)
 			return;
+		tileBeingDragged = this;
 
 		if(slot != null){
 			Debug.Log("removing picked up tile from slot");
@@ -45,7 +46,6 @@ public class CommandTile : Tile {
 		}
 
 		this.transform.SetParent(canvas.transform);
-		tileBeingDragged = this;
 		GetComponent<CanvasGroup> ().blocksRaycasts = false;
 
 
@@ -70,8 +70,8 @@ public class CommandTile : Tile {
 		tileBeingDragged = null;
 		GetComponent<CanvasGroup> ().blocksRaycasts = true;
 
-		if (transform.parent.name == "Canvas") {
-			Debug.Log(this.GetComponentInParent<Canvas> ());
+		if (transform.parent.GetComponent<Canvas>() != null) {
+			Debug.Log("Parented to " + this.transform.parent.name);
 			Destroy(this.gameObject);
 		}
 		fromBank = false;
