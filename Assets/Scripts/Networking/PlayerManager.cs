@@ -1,13 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.Networking;
 using System.Collections.Generic;
 
-public class PlayerManager : NetworkBehaviour {
+public class PlayerManager : MonoBehaviour {
 	public static PlayerManager Instance;
 	public int maxPlayers = 4;
 
-	[SyncVar]
 	public int numReadyPlayers = 0;
 
 	
@@ -54,11 +52,6 @@ public class PlayerManager : NetworkBehaviour {
 
 	public void AddPlayer(Player player, int num){
 		players[num] = player;
-	}
-
-	[Server]
-	public void RegisterPlayer(Player player, int playerNum){
-				//player.RpcRegister(playerNum);
 	}
 
 	public void RemovePlayer(int index){

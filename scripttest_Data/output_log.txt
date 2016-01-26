@@ -1,0 +1,58 @@
+Mono path[0] = 'C:/Users/Marc/Unity/MastersProject/scripttest_Data/Managed'
+Mono path[1] = 'C:/Users/Marc/Unity/MastersProject/scripttest_Data/Mono'
+Mono config path = 'C:/Users/Marc/Unity/MastersProject/scripttest_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/Marc/Unity/MastersProject/scripttest_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55427
+Multi-casting "[IP] 128.61.17.228 [Port] 55427 [Flags] 3 [Guid] 2843165367 [EditorId] 2226222818 [Version] 1048832 [Id] WindowsPlayer(Marc-Lenovo) [Debug] 1" to [225.0.0.222:54997]...
+Waiting for connection from host on [128.61.17.228:55427]...
+PlayerConnection accepted from [128.61.17.228] handle:0x190
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56367
+PlayerConnection already initialized - listening to [128.61.17.228:55427]
+Initialize engine version: 5.2.2f1 (3757309da7e7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GT 750M   (ID=0xfe4)
+    Vendor:   NVIDIA
+    VRAM:     1986 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Marc\Unity\MastersProject\scripttest_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Marc\Unity\MastersProject\scripttest_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Marc\Unity\MastersProject\scripttest_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Marc\Unity\MastersProject\scripttest_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Marc\Unity\MastersProject\scripttest_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Marc\Unity\MastersProject\scripttest_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Marc\Unity\MastersProject\scripttest_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Marc\Unity\MastersProject\scripttest_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Marc\Unity\MastersProject\scripttest_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.193 seconds
+desktop: 1920x1080 59Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Marc\Unity\MastersProject\scripttest_Data\Managed\System.dll (this message is harmless)
+Ant awake at 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Ant:Awake() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Ant.cs:27)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 27)
+
+Ant start at 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Ant:Start() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Ant.cs:40)
+FireAnt:Start() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\FireAnt.cs:8)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 40)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Ant.Start () [0x00066] in C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Ant.cs:41 
+  at FireAnt.Start () [0x00000] in C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\FireAnt.cs:8 
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 41)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 263c -> priority: 1 
+  Thread -> id: 20ac -> priority: 1 
+Waiting for finish

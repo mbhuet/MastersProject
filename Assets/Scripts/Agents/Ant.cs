@@ -23,6 +23,10 @@ public abstract class Ant : Voxel {
 
 	protected List<Command> availableCommands;
 
+	void Awake(){
+		Debug.Log("Ant awake at " + Time.time);
+
+	}
 	// Use this for initialization
 	protected override void Start () {
 		base.Start ();
