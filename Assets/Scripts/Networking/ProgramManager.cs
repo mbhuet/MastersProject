@@ -19,7 +19,6 @@ public class ProgramManager: NetworkBehaviour {
 	AntFunction[] functions;
 
 	Ant[] myAnts;
-	int testVal = 0;
 	ProgramUI programUI;
 
 	public void LoadBlueprint(ProgramBlueprint blueprint){
@@ -40,6 +39,20 @@ public class ProgramManager: NetworkBehaviour {
 		}
 	}
 
+	public void ExecuteCommand(Command com){
+		Debug.Log("Execute Command " + com);
+		foreach(Ant ant in myAnts){
+			Debug.Log("Executing in ant " + ant);
+
+			ant.ExecuteCommand(com, 1);
+		}
+	}
+
+	public Vector2 GetFollowingCommandCoordinates(Vector2 current){
+		return current + Vector2.up;
+		//TODO return actual next command by looking at the current one
+	}
+
 
 	public void GetFunctions(){
 		for(int i  = 0; i < functions.Length; i++){
@@ -47,14 +60,21 @@ public class ProgramManager: NetworkBehaviour {
 		}
 	}
 
-	/*
-	void SubmitFunctionsToServer(){
-		for (int i = 0; i<functions.Length; i++) {
-			CmdUpdateFunction (functions [i].SerializeCommands (), i);
+	public Command GetCommand(int funcIndex, int comIndex){
+		if (funcIndex >= functions.Length || comIndex >= functions[funcIndex].commands.Count){
+			Debug.Log("GetCommand out of bounds");
+			Debug.Log(funcIndex + "/" + functions.Length);
+			Debug.Log(comIndex + "/" + functions[funcIndex].commands.Count);
+			return Command.NONE;
 		}
-
+		return functions[funcIndex].commands[comIndex];
 	}
-		*/
+	public Command GetCommand(Vector2 coords){
+		int funcIndex = (int)coords.x;
+		int comIndex = (int)coords.y;
+
+		return GetCommand(funcIndex, comIndex);
+	}
 
 	public void AddCommand(int funcIndex, Command com, int comIndex){
 		Debug.Log ("AddCommand local ");
@@ -98,11 +118,5 @@ public class ProgramManager: NetworkBehaviour {
 	void RpcRemoveCommand(int funcIndex, int comIndex){
 		Debug.Log ("RemoveCommand Rpc");
 		functions [funcIndex].commands.RemoveAt(comIndex);
-	}
-
-
-	[ClientRpc]
-	public void RpcTest(int val){
-		testVal = val;
 	}
 }

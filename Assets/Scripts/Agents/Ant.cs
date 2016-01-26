@@ -42,15 +42,6 @@ public abstract class Ant : Voxel {
 	
 	}
 
-	public void ExecuteStep(){
-	}
-
-	public void AddCommand(int i, Command com){
-	}
-
-	public void RemoveCommand(int i){
-	}
-
 	protected void SnapDirection(){
 		Vector3 forward = transform.forward;
 		Vector3 abs = new Vector3 (Mathf.Abs (forward.x), Mathf.Abs (forward.y), Mathf.Abs (forward.z));
@@ -71,10 +62,9 @@ public abstract class Ant : Voxel {
 		transform.rotation = Quaternion.LookRotation (new_forward);
 		forwardDirection = new_forward;
 	}
-	/*
-	protected IEnumerator Execute(){
 
-		foreach(Command com in func1){
+	public void ExecuteCommand(Command com, float stepTime){
+		Ant.stepTime = stepTime;
 			SnapToGrid ();
 			SnapDirection ();
 
@@ -84,11 +74,7 @@ public abstract class Ant : Voxel {
 			else{
 				//TODO run error co-routine
 			}
-
-			yield return new WaitForSeconds(stepTime);
-		}
 	}
-			*/
 
 	protected IEnumerator MoveForward(){
 		float timer = 0;

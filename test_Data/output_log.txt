@@ -2,12 +2,12 @@ Mono path[0] = 'E:/Unity Projects/MastersProject/test_Data/Managed'
 Mono path[1] = 'E:/Unity Projects/MastersProject/test_Data/Mono'
 Mono config path = 'E:/Unity Projects/MastersProject/test_Data/Mono/etc'
 PlayerConnection initialized from E:/Unity Projects/MastersProject/test_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55140
-Multi-casting "[IP] 192.168.0.110 [Port] 55140 [Flags] 3 [Guid] 829033559 [EditorId] 1788544663 [Version] 1048832 [Id] WindowsPlayer(Marc-Desktop) [Debug] 1" to [225.0.0.222:54997]...
-Waiting for connection from host on [192.168.0.110:55140]...
+PlayerConnection initialized network socket : 0.0.0.0 55060
+Multi-casting "[IP] 192.168.0.110 [Port] 55060 [Flags] 3 [Guid] 1427361951 [EditorId] 1788544663 [Version] 1048832 [Id] WindowsPlayer(Marc-Desktop) [Debug] 1" to [225.0.0.222:54997]...
+Waiting for connection from host on [192.168.0.110:55060]...
 Timed out. Continuing without host connection.
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56559
-PlayerConnection already initialized - listening to [192.168.0.110:55140]
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56951
+PlayerConnection already initialized - listening to [192.168.0.110:55060]
 Initialize engine version: 5.2.0f3 (e7947df39b5c)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -25,17 +25,2781 @@ Loading E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.UI.dll in
 Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.042 seconds
+- Completed reload, in  0.128 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Mono path[0] = 'E:/Unity Projects/MastersProject/test_Data/Managed'
+Mono path[1] = 'E:/Unity Projects/MastersProject/test_Data/Mono'
+Mono config path = 'E:/Unity Projects/MastersProject/test_Data/Mono/etc'
+PlayerConnection initialized from E:/Unity Projects/MastersProject/test_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55135
+Multi-casting "[IP] 192.168.0.110 [Port] 55135 [Flags] 3 [Guid] 1884943827 [EditorId] 1788544663 [Version] 1048832 [Id] WindowsPlayer(Marc-Desktop) [Debug] 1" to [225.0.0.222:54997]...
+Waiting for connection from host on [192.168.0.110:55135]...
+Mono path[0] = 'E:/Unity Projects/MastersProject/test_Data/Managed'
+Mono path[1] = 'E:/Unity Projects/MastersProject/test_Data/Mono'
+Mono config path = 'E:/Unity Projects/MastersProject/test_Data/Mono/etc'
+PlayerConnection initialized from E:/Unity Projects/MastersProject/test_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55251
+Multi-casting "[IP] 192.168.0.110 [Port] 55251 [Flags] 3 [Guid] 2823468400 [EditorId] 1788544663 [Version] 1048832 [Id] WindowsPlayer(Marc-Desktop) [Debug] 1" to [225.0.0.222:54997]...
+Waiting for connection from host on [192.168.0.110:55251]...
+Timed out. Continuing without host connection.
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56827
+PlayerConnection already initialized - listening to [192.168.0.110:55135]
+Initialize engine version: 5.2.0f3 (e7947df39b5c)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon R9 200 / HD 7900 Series (ID=0x6798)
+    Vendor:   ATI
+    VRAM:     3051 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\Unity Projects\MastersProject\test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.043 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
+Timed out. Continuing without host connection.
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56400
+PlayerConnection already initialized - listening to [192.168.0.110:55251]
+Initialize engine version: 5.2.0f3 (e7947df39b5c)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon R9 200 / HD 7900 Series (ID=0x6798)
+    Vendor:   ATI
+    VRAM:     3051 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\Unity Projects\MastersProject\test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading E:\Unity Projects\MastersProject\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.044 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\System.dll (this message is harmless)
+<RI> Initialized touch support.
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 480 -> priority: 1 
+  Thread -> id: 1a2c -> priority: 1 
 Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\System.dll (this message is harmless)
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 6b4 -> priority: 1 
-  Thread -> id: 1a70 -> priority: 1 
+  Thread -> id: 2360 -> priority: 1 
+  Thread -> id: 2740 -> priority: 1 
+<RI> Initialized touch support.
+Platform assembly: E:\Unity Projects\MastersProject\test_Data\Managed\System.dll (this message is harmless)
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 2148 -> priority: 1 
+  Thread -> id: 1d6c -> priority: 1 
+UnloadingU4 Unusading i4l Unu fed Se (Seriael fid filesenow lioedd d:f0)
+s now loaded: 0)
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.180725 ms
+UnloadTime: 2.539064 ms
+UnloadTime: 2.170202 ms
+Ant start at 91.87712
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Ant:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:36)
+WarriorAnt:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\WarriorAnt.cs:8)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 36)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Ant.Start () [0x00066] in E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:37 
+  at WarriorAnt.Start () [0x00000] in E:\Unity Projects\MastersProject\Assets\Scripts\Agents\WarriorAnt.cs:8 
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 37)
+
+Ant start at 91.87712
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Ant:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:36)
+FireAnt:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\FireAnt.cs:8)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 36)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Ant.Start () [0x00066] in E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:37 
+  at FireAnt.Start () [0x00000] in E:\Unity Projects\MastersProject\Assets\Scripts\Agents\FireAnt.cs:8 
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 37)
+
+Ant start at 91.87712
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Ant:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:36)
+ScoutAnt:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\ScoutAnt.cs:8)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 36)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Ant.Start () [0x00066] in E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:37 
+  at ScoutAnt.Start () [0x00000] in E:\Unity Projects\MastersProject\Assets\Scripts\Agents\ScoutAnt.cs:8 
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 37)
+
+Ant start at 91.87712
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Ant:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:36)
+CarpenterAnt:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\CarpenterAnt.cs:8)
+ 
+(Filename: E:/Unity ProjActt st/arttertProjec5368
+UnityEngine.Debug:Intnt.cs Line: 36)
+
+ String, Object)
+UnityEngine.Debug:Log(Object)
+Ant:Start() (at E:\Unity NrullReferestersProject\Assets\Scripts\Agents\Ant.cs:36)
+WarriorAnt:Start() (a
+ E \Unity Projects) MastersProject\Assets\Scripts\Agents\WarriorAnt.cs:8)
+ 
+(Filename: E:/Unity Proje
+cts/MastersProject/Assets/Scripts/0]gin nEs/Ant.cs Line: 3s)
+
+astersProject\Assets\Scripts\Agents\CarpenterAnt.cs:8 
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 37)
+
+Ant start at 80.44741
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Ant:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:36)
+WarriorAnt:Start() (at E:\Unity PNojucts\MferenrseException: ets\Scr ieferencenntt \Warrio Aan.instanc
+e 
+oFilename: E:/
+Unity PrAot.Star/Mastersx0o06c]ti/As:\Uns/SyriptsjeAge\Mts/Ant.ProjLine: 36)
+
+\Scripts\Agents\Ant.cs:37 
+  at WarriorAnt.Start () [0x00000] in E:\Unity Projects\MastersProject\Assets\Scripts\Agents\WarriorAnt.cs:8 
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 37)
+
+Ant start at 86.95368
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Ant:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:36)
+FireAnt:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\FireAnt.cs:8)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 36)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Ant.Start () [0x00066] in E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:37 
+  at FireAnt.Start () [0x00000] in E:\Unity Projects\MastersProject\Assets\ScNultRsf\Agents\FireAnt.cs:8 
+ 
+(efilrename:n tEs:t/Unity Projance of aneocjects
+  Ma Ast.Srsart ()ro[0ect/Assets/SEr:\Unity Prs/jects\Maste sLrine: 37)se
+t
+s\Scripts\Agents\Ant.cs:37 
+  at WarriorAnt.Start () [0x00000] in E:\Unity Projects\MastersProject\Assets\Scripts\Agent s\arar at 86.9.c368
+U
+ 
+yEnginame: Eug:Iniernal_Log(tI/MasterStProject/Asect)
+UnityEnsgine.Ds/bAg:Log( Line: 37
+)
+
+:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:36)
+ScoutAnt:StArnt start atUnity Proje
+Unts\MEngiense.Debug\Asseernacripts\Agt32, StriutgAnO.bject)
+
+n(Filename: ebug:Log( Pbjojccts
+Ant:Start() (at E:\Unity Projects\MtstersProjecineAs 36)
+
+Scripts\Agents\Ant.cs:36)
+FireAnt:Start() (at E:\Unity ProjectN\MastersProjeException: Object referesc\ ForeAntt to )ni 
+(Filename: E:/jnity 
+Projects/MastersP r0x00066A sn ets/Scry ProAgens\Masters Line: 36)
+
+ets\Scripts\Agents\Ant.cs:37 
+  at ScoutAnt.Start () [0x0eE0ceptin E:\Ubity Prreferts\Me sneost set to an instancp ts\Agents\Sco
+utAnt.cs:8 
+ 
+(() [0name: E:/Unity Projects/MastersProjectrAosject\Asipets/Agents/Ant.cs Line: 37)
+
+ 
+  at FireAnt.Start () [0x00000] in E:\Unity Projects\MastersProject\Assets\Scripts\Agents\FireAnt.cs:8 
+ 
+(Filename: E:r/Uatity Pr5368ct
+UnityEngine.Debug:Internalc_iLos/Agents/ Strins , One:ec37)
+U
+n
+ityEngine.Debug:Log(Object)
+Ant:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\AntAcnt sta
+rt pat 80.44:S41
+Ut() (at E:\Unituy:Internal_Log(Iert32ro Sect\Assets\Sctri
+Unit\Agents\CDerbug:LrAg(t.cs:8t)
+ 
+(Filename: (at E:\tynitro Projects\MasterojProj/Act\etss/Scs\Sptrs/ts\Agents\Ancscs:36e:
+S36)
+
+Ant:Start() (at E:\Unity Projects\MastersProject\Assets\ScriNts\lReferenSceException: Ob
+j
+eFilename: E:/Unity Projects /Masters orojen t/Aject
+ /Scr iptsStart () [0x00066] in E:\U
+n
+ity Projects\MastersProject\Assets\Scripts\Agents\AntNcsllR7fer
+enceException:Ant.Start () [0x00000] in E:\Unity Projects\MastersProj
+  at\Ass.Sts\Sc () [0x00066] in E:\Unity Pro:8 
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets
+/Scripts/Agents/Ant.cs Line: 37)
+
+n E:\Unity Projects\MastersProject\Assets\Scripts\Agents\ScoutAnt.cs:8 
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 37)
+
+Ant start at 80.44741
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Ant:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:36)
+CarpenterAnt:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\CarpenterAnt.cs:8)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 36)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Ant.Start () [0x00066] in E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:37 
+  at CarpenterAnt.Start () [0x00000] in E:\Unity Projects\MastersProject\Assets\Scripts\Agents\CarpenterAnt.cs:8 
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 37)
+
+System memory in use before: 27.2 MB.
+System memory in use after: 27.2 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1551.
+Total: 1.741715 ms (FindLiveObjects: 0.129773 ms CreateObjectMapping: 0.073070 ms MarkObjects: 1.524257 ms  DeleteObjects: 0.013152 ms)
+
+System memory in use before: 27.2 MB.
+System memory in use after: 27.3 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1551.
+Total: 1.318489 ms (FindLiveObjects: 0.228565 ms CreateObjectMapping: 0.045011 ms MarkObjects: 1.025914 ms  DeleteObjects: 0.018413 ms)
+
+System memory in use before: 27.4 MB.
+System memory in use after: 27.4 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1551.
+Total: 1.127336 ms (FindLiveObjects: 0.074532 ms CreateObjectMapping: 0.031274 ms MarkObjects: 1.011592 ms  DeleteObjects: 0.009353 ms)
+
+Player awake
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:Awake() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:22)
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineObjectBindings.gen.cs:60)
+Ulayer PwgainyeO iaecntinInUeiuttiategOijnLeg.Ine32o r3ttQuaalgeLrbgecnn 
+tn3 C,\SugrienDgbuvOL\unicy\)t)
+
+niRulayiimA\.xeobt g:tLoEngibneecybPro
+jeccsrMA0ate
+U)nroyeEtgiAne.nietworkitg\ gPnrs\jelte:OnOasecerSp
+anntjyNtt\AirneetOsb\jSecti:p\Nu\iAdLentveL\Pl\eynniayl2b2s)
+Un\tayteegingl\eN(jbworki, V\cNoT3&N\ _liaLt_Ictinee.)
+rni3lyEn
+gineyEbnesteanteewonkileInNgla(ntbiectte,t on:eacdeet3e ,eeQNaer3n rkReer
+Udier, n(i32,.Inbtildj)eavat\ Ii:t\ruuldlnstantiftaS\nb\ielerjtxcecnomimno\r3nt QeaUninn\ER)gntamOej\cbBwnrislo.ge\nucnsc6s0u4
+U6d\t
+rnntfaEtsgijnne.Netd\ckmiaoge(NbttecoUnityEngineQn:tcrtdinoit) (.tet.c[\,6i0t32,ait\tnn2i)ne.Objed\b:ilnsmlavtx\unity\bityEn iVeceori, nsu:e0ewr
+UniitngE\gt nCi\muw\odtklao.Clieitycbeuen.c\O37e)cm
+UniEtnyEngine.Metsgaknn (.etet.cbsu80ln)ea
+cti\yninyanup.led\wocienni.yCe\[et Sonen2egIORtbjt)tmaatln:(Nbctwloe.avseu4iay\) ildyEE\tiunsdonlswo\tknontk.\b\Rod\ECtonsiowosnkCHwnodrteingnerst:5m2\k)
+eaneyS nntgi,s.n3ttor
+k)inag CNi\wbNritCwloevituU.pdta\ru(o (eEttC:sniialddstwoaavne\(uetwibru\eN\dterrnkIin3nec Inent)crsti1n\\
+uultyslnNin\uNritClibnitg\Nsx:onkio
+UnsnyEcttwoikoNg:Rarnkimny\teetBooeClon nctU3nd I:e36)e
+Uni((an  ia:\ bN\bloisksava.\\eutitor\uuioldeEEtitenioons\Neyteorkyng[\Runntmee NNet32orkCoiCectio.nldsl8a)e7
+2)i
+U\EiiyEd\gxNteNtitokonkenetoNrkioI\dCuntiity:on\NUNwtotrkRocievttBy)e[]t CI\
+buitysIgtne)u(nato Ciuild\Elornlane\unitn\ouanng\putrtRsiienw\(rktIdekitnt[]y,.g\nt32,8ti e
+\NeiwolrCaC:n:nE:/Unity Precoajn\u.cnity:\b52roj2)
+enct/sions\Networking\Runtime\Netsork/opcnectionat C:\buildslaAe\ent5u/Plan)
+Uity\build\Exs Liwernsine
+.
+Noeking\Runtime\NetworkClient.:cs:554\
+UnityEugine.Netwlrkinage\Nuetworkuild\ExtUpdatensienttsor) in(\atn Cme\bNutwodslrvk\linni.cty\buil
+d\Extensions\etetworking\etwntrmkCli\Nt:UpdattwClrknCslienatcCs:768ld
+slatvEn\gine.\Nueldw\ExtensNetwsorkIwoelrkyen: Uwuntit
+enittworiCel(D) .(s:t68Ce\
+Uuildylagni3u, Styw\ou kd\ExtNet)ir
+UIsetNEtwyiUe.ee\Suna:Li\NUtpbjkaItd(
+)la (e.rs:\Au8ie
+d)
+(lFivlen\nU:tyty Prty\ ProjeEts/ensitrejrsPetw\AssttAsunttsmpc\ietpArkeAgesntiayler.y8:2.cs2
+Li
+UFii E2na
+ne.EO/bject:I NTPRoNec_Cs/MLaIstterslPInostatntsieateScingls/Agejnts/ Playorr3&, Qnae: 22)
+&
+)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, QuatePniayn) (awakCe
+Uuildslavee\Dunuityn\ebnuilLo\arInit32, Sgeninrat ed\ccomm
+Uon\rungtimeD\Uni:LoEg(Objecte)
+Plnayer :awaae.k):
+(na
+tn Et\Einge.Deojeects\terInelastir(tnc(2bjec ttr\ctor3pb,ecAgenUrn\otya nri.n CD2\)b:
+LnidyObgjne.Obtey
+tliyedr\:un_CAm(L_ xnttr n\:liUtyttngnroatOcjtcglM.sctersP) o
+encttyEs,g iu\t.cNeipw&s\
+UintgtCn\PinaS.eeb:cOt:2j2teUnpia_E(NgtnortOaetceSaNgTE(RaN AL\C uLec_srt3e\unl_ttnebuantdiateat i:\bunjecl, vortinriR,yQ\itue\Crninn&tS
+Uni\tneyrcgted\.O
+bnjtemontrinet.reeUtiltInnggaNeOiateSingneniOcgecog Vecnd.e3s:deu(
+eerwoErone .Ob(e I t3:n2t,ltIstt32e\)nect,b Cl:\tailt3ifQucta\erniot) (dat Cm\mouidrdEnttie\initi\\beiiworking\ROetiemtp\ndeinos.t\Ungintctni:n6Ob)j.cs:
+4cs68y
+U
+Une.yOggiee.:NItwwrontiatki(ntb.cecwe:OoekcecnSnarc(Nie wHukatsdragBy)es(By(e[]u,i usnas2\,nvI\tt\tui\(dalRdunxt\esElxdsolNtveworniyygg\inudO\EmxttCsls0e)n
+USNtnwEogi4ienNe
+UwortyiggeCnNiNentkCekn:O.Ncbjec.So:nectie
+UnwtoykEnsgsideere ewar rik\eaders, Int32, Inb3iT)r(EtxsCp\rboenli\eeave\ykn[itn\bnuildtixtensieas C:etb.os:k3lng\euntim\\uet.Networking.Networons\Ne
+tnitrn:Engine.RReadiekeNNt.orktrkConRenaior,cnInt3)d 
+UnitysEngineB:Ne[uw IditngvN \nto3iCy \iain \Cp:tbtusiod(\leCweruulgilR\vbtimet\\xteisko\os\eeciwoon.cNgtRu6n
+knmg\\ntunn.kioworking.Networkt.
+sni5yEng
+ineaNEdtlereyiNst.BrtteorkNoItnwc3kC i:nntanUspot C:\buildsyaet]\,:nntiy, Iiale2u xiteCbsuouns\Neaewsurning\RuwtdrmEn\g\einwisrNCNwnwertnloRunsics\27
+t)i
+tyEngingcntetoNrtwon5.Nnt
+woitkyoonkeietiiNn:wTrktnptoattieciUie(Bte(ea ,et C:3b, I:\sba)v \latve:y\bitylslaxl\dentxy\build\Enssiees\Networkinnk\mne\\ien\wmeeI\Nentlotrt.osse858i)
+
+UnityEngin
+Ue.tNEngi e
+(Nniw.nNmetw E:CwUoier :rlodneetp/daete() Pr(jte:\buusdltsa/v\urnipt\build\t\buili\ext.eesnorkin\ 2tu)ntig\RuntworekCliwntrkClient.c
+s:768)
+UnityEngine.Networkiong.NetworkIdentity:UNetStaticC:Ubpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\Networ
+kIdentity.cs:888)
+Pln
+(.er etamwkIed
+e/ititEy :inNetDesug:snptatP(ojeLat( nse3b2/S drliags Aubnicsy)\
+Uauter\nsiteinDi nsgNL
+t
+working\Run
+Ptime\NetworkIdentity\.cs:888)
+ 
+(Filename: PE:/Unity Perojects/Ms\Agents\Player.cs:22)
+rinpts/Agent.s/Player.cs Line: 22)
+
+ternal_InstantiateSingle(ObjPct,y r awake
+UnityEngine.Debu
+Ug:InEngiale_Log(Int32, String, Object)
+Single(ngine.Debug:Log(,Object)
+Player:Awake() (at E:\Unity ProjecPsraaest trwakrn
+UertyEAsgeons\Sc\rbunts\egrUtityLngi(rnOcj2ecS)
+indtn s.giee..cb
+e60)yI
+UNiEty.EL_CAn:Log(Obnecln_
+tlayntiiAteaOijg)etO,aec c,:\Ve,toQrr3je ciu\)tstni sn\ru
+Ulect\EveeuseiSbc\iuttI\\eAgentsnPxtaaneraciS:yEln
+UOgiiyceObjecctbcr3::0uN
+aternin_nnA(.tInternal_InltventuianyeOiObllec(rSbiaeat(tVecworr3&, Quam)mn(nt ):
+bnielUElgtvE.\guecttbyneeinal\Eitsea.ntonct:e0iwo
+le(nbj\gt, VOmtor3, Quatentica):43Ot 
+Unc\, Eicdsnrv. \euawteribgonNd\arotC:\buni\gtnlanraaenitcoeaudndr(Netmme\kneptorn, Unei2bEegntBO2bjent sc\b:i.0)l
+an0eyu
+UngittyEnigwdikingeCeiie:s\sNaenorking(RubnSpawe Nettork3eC snnac)e(ntioC:)41ual
+ Civ\\nngiles\Neutwu\ritnenseolwd\kutnwmekinxnpuorime\ClyEntgyiene,bI:c3.6c :
+80i32UnityEngineorkilgor\itnoty\build\Extensions\Nedeo(nNNte\ruReader, en)wo,ktnoC3ectial .:l\:eu7nitsnbatiEug\iEy.tbunlionixgeNnoiwoik\N\eutwtroe:gTlunsnimoctNee.wiskv4(nn)ct
+U]nitcts:416)
+32)t (rg ing.NNeildsrakeConnec\tukni:H.ntetsiRraConnectionk:Reunelr, Int32, Ino3n )tnot Cs, 5Iindt
+32)te(nt in\y.ieuslldvkEitgiNet\wniksl\NenteUrkiiasg\()u otaimC\\RuendtorkC\\ntnoityobcu:l4\En)c
+Unit2s
+\iietENgknw.rkRnwgtiiegNwettoorreCcniocttancleBytp)
+BnRtcy[Eeg BIeetN2, Iontt2n2g. Net w:\r uCi:dtu:apdsaluCityunis(y\(xu il:\Enuindeilave\unity\buildRNetteme\Cotn\recworking\on.cs
+U22i)w
+orktlientNnstNo6r)r
+kni.tyENwoitk.rentierti:U:praaen)s IotnC:etcuUlvs(Saaei]cUpntbt,(lI(\ax32: (iu n:sblivw\srlity\buitdyEx\einso\ks\Censeio.s\ge\4)
+rniie\N\enuwnteImoetkitno.ckst88n)r
+e
+(enilet:name2p)d
+:/Uttiyyentgoi e.Ne/CwsteklnP.revjwork/Cssbetnt\Sxrdatti()ge\at C:\bkel.d\l vntiu:e y\2t)l
+
+r\EClteensi.cns\Net
+UnityEngRinnie.NetwworkingenNetwor55I4)nt
+Uiity:UNetStaticUpdatg.NetworkC:\ient:UpdateCunity\build\Exte\nsildsslave\unity\build\me\tePnwiyes\ entier.
+Usg\tR8n
+ 
+(Fe.etwumk:Cli/rniac_ Pr8g(I
+nt32, String, Obcrc/i
+gett/Soriitesn/Aby:nNLe/(ltaeictc
+sltei) (A 2kC(
+ 
+(at E:\Une\tunity\build\Esxtensions\Networking\Runtime\eNtetworkIdentity.c
+s:888)
+ 
+(e.Objname: E:/Unity Projects/MastIersProject/ingsles(Scripct,s/Agents/Playereayeor&)a:
+U 2kt)
+Un
+i
+tyEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:Awake() (at Ei\facts\grejeertte\MacsmtersProject\Assets\ScriObtsectBindsingP.eay.sr:62a)
+U
+intEEgnggnObObject::Internal_LLg(Intt, VetIortg, tubject)n
+Ul)i(btEeg:\b uDictg:Log(Obiaytbr
+ilaoR&n)A
+mnetEE(ptoE.tbUnicy PnrgrnacObj\satscei:ar0)
+cntlts(entei\e,cercwotr\ing.CseentSycr (e:OnO\b
+uncdySlgane.Object:IiedsNaet iaLL_tn\build_atstantiam\nuingltExtenst, nsectori3me\ niuRyttrgien\O)
+Ucntynceni.ceg:n.cecU:It
+UEntiang_.nNs.Oaojeii:eS.Nalte(aktecnOnbVtioto aendtuora3ni(nua w(natRn:)e (atdnt:3b2,ldstyav u\u n\atr\iifldc\e\gentyebeu\cldmt\otneutiynse\itwoObjEng.neR:8n)
+initiEtngonnC.cNecwoir
+nncigy16gin
+ntiOtje:nngIiestNpntwo(tktwObjeetwoge) t(nn, Q\iunernsodlve\une:sb\Byuild, xnt32, nsu\l2d Rru ni\ebExposelalnentScng\nesbld3E)x
+.nei80yon
+Us\NyEngine.g\RunrNmteg.CCtwnetcticon:HOniOln.csaS37w)(N
+UtorkReader, In(at C:n\.Netwo(rlkCvebnundiioyvTraiity\buicndv\o(BsyNie[s\NettoR2,iIim\\2lienmtcene.csr4dsl)n
+vci\oynntcye:Nui6)d\
+EnkingsNeinw.reCowoecking\.HNntworlkR\aenec(kCntnoacnkionBcrt52(n
+3te[, n Itt22)N (tto2k)nb(Nttdorkbuildsnavutitpta\bel(\lxt\nCxo\e\ustlonkiaNetworvienNu\Rwitimb\NutldiwEnxcse4sien
+Unintwcori372N
+RnnitmEngNgtetekCrkCeNneecti5n:Ha
+nngtByEngone.keCwo,rIection:Ttan2)s(ae t:Rbeitdelae(Byte[]y (uat C:t32i innt\vetu(oity\b\uud\ExtevniseoNtsw\bNetloneEtx\on.ssi:e\Ns)t
+NeitkErkennt.\cswn7i6eg\NN
+twotyrngCne.nencTtaksn..t:eciev
+kniyynei]t e:NUNet tnn3i.NUtwo tC(lbe(at:Cp\aeeild lyvte\Cu\d\Extensao\ex\uniwir\sbgNeld\ExtensionsiNoewertion.cI\e5un2yimU\n88twEor 
+(kFileena.eg: e:wUr
+UiltyyEngUjde.s/MastersCr\etuclr/sllient:ipr\bueCA\innsePsionarN e :\buil22\)u
+t
+ime\NetworkClienen.cson554)
+UnityEng\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.Netwolkadve\unity\buStati\cUpdate() (at C:\buildslave\u\nity\build\Extensions\
+Networking\Runtime\NetworkIdentity.cs:888e)
+ 
+tFilename: E:/Unity Projects/MasnersPrbojeO\nSAtenettoscalriprtin
+UARuytsigine.Dtbcor LInettit2ac_:
+
+88)
+ 
+(Filename: E:/Unity 
+PnioteyEngine.Debugoject/Assets/S
+cripts/Agents/Player.cs Line: 22):
+
+nity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:35)
+UnityEngine.Networking.NetworkIdentity:SetLocalPlayer(Int16) (at C:\buOldnStartLocalPlayer
+EnxtyEnsginne.Debug:Internal_Log(Int32, String, Object)
+U
+nityEEngine.Debug:Log(OCjniSt)
+rSaeec::nhtarkFro
+cOwner(get(or kaIu n:i\ynr al t C:\btt2\ larvee\rubjeot)
+ildtEEetennSioipts\Agentsbnj\ycut.c
+:35)e
+UeiOyScnaentc.oeal6lry
+er(.y ngaonkE.dUenti ryoneg.ClaMPnatysere:OnO\j cstSspScbniid\iahends\PytboirdcsEx:s5s
+onetNE(witrkiNbgworksla.\NewwooykIIdnttti:tetcocalPlat
+UrorktEggRu(eiNeC:\ireidnScave\unity\c
+niidChEcgFensOonner(tetnok.NIt\oRtutty)ectetnCHan\ddlnRtidyv.(Nsent9)r
+Unuild\Extensions\Nitw)r iag\ R:nebnmleCselave\unity.Nbt7oldk
+Endetstinnyn)ee(at kC:\twulrdslanvN.uwltentoSucldi\e.Otsb:ie6st
+UNaeynnrikn.nht\R(reking.CNienwS) (at C:\buin
+sHlaydnuineiyeewouBkdi[gx.Ietein nneNetworking\tbuiwtsFeanilhnd(tS\bornklceEsxte
+ natt\Enebiurel.des\orkiugmteetNurkldo\nnnttcnninanss\Rea)wo
+UkNtytwontime\tewio knSc2nNe.Istr5)19nne
+Utituyirdasnns.\rnReoyiinve(etExtenCInnestNItnt32) (aRRentime\Netwvorunitadbtuoild\:x t6ens
+Uo(itNeE:ogkunld.Runwtrumi\gyNtburorCoCoxnnncion.c:se:n2rlie
+UniRuntime\[NttwInt32, Neti3n.cs:416:\
+bpitydEngine.Nlaverki\nniaveburikC\EntctniioEnt:Heawnrs\nyteRo(kiimeg],eInwtm2kN tntct) (at ::\buil
+Udit
+yEngiEn.nttwnbuiind\rNktnnork.NetworkClient:spdateClients() (at C:\obu.esc3av2e(B
+UyityEbuild\te2w,rking32) (at C:\buitdos:e\NntunoitCe\benle(By:768,
+onstNEetwnr.ke)t(\o k:ibmeldsttwvk\kuotnty\:tiend\cEa522)s
+iott(\yetagtr e:N\buildslagetworky\knieeniEUn.cs:522(att wornkiuildsnaioe\kneg.NetIilrdtlixeecsi8ns\Ne
+ workin
+\F\lbuile\la:eorunityrnbuces:Es/4)a
+UnioeyE\NgiteecNtt/w\orktisg.NetworkClient:Up:ate4Cci
+ nnnesng) )(
+atNetw\buildslaete\orkCtyienuilUdd\teCteienton() (at Crk\bngilRuntivee\Neitworkuilient.tes:7io8s\N
+etworking\eRuntime\NetwortwClikInt.cs:768)
+UnityEngine.Networking.NetworslIdee\titityUNbutStaticUpdsite() N(at rkin\b\Ruldsimeve\unity\buintid\Extensi8)
+ s
+NFetename: E:/Unity Projects/Mastey.csPro88)
+ t/
+Assetnam/Scripts/Agents/jPlayer.cs Line:j ct/A
+
+sets/Scripts/Agents/Player.cs Line: 35)
+
+Game Manager Awake at 91.96434
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+GameManager:Awake() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\GameManager.cs:12)
+UnityEngine.GameObject:SetActive(Boolean)
+UnityEngine.Networking.ClientScene:ApplySpawnPayload(NetworkIdentity, Vector3, Byte[], NetworkInstanceId, GameObject) (at C:\buildslave\unity\build\Extensions\NGtwomre Manager Awake at 87e.02839
+Un)G
+UmEiMgaEagDibuAeaInternal_Lo2.(I
+nentScene:O.gb ecb:patt)na
+l_L(gEeIgoriMn strsbag:e)Ljectb
+:\ityEn
+gslae.Debug:Lou(lbj) xae
+nsmeonsMNetnroakent:\Rasn(ems\arijneSUt\Aty Projer
+pnMt\snnvgrorne.mce\ws\sang.Necaiopts\En1vir
+okmton\ngine.GameObjecReade
+r(NetworkReaaeme
+Object:SetA.tive(otoliegnbC
+UiiesnagSeeu.eetw\bkiid\wn.taenioans\Networking\Rtytimelcaeotwor(CNnnw, kidtwtoty, nsectnoe3, By4em6O,
+ cN)t(aotkgin\bNaildslaeeI.,nNtatwObkedoE)xeceioions\Nlewlyvenu(Byte[],lId\E2ttSnnines)ceta9r)i
+g\Runtime\ClientSreie.d.\39x5t)n
+UnitOns\Nine.Netwwg\rente.(l\ietworkCo:aeet) n.tcpC::72cui
+dnlatvenunesy\Networt nt\bNetwor\CoenworktnngTuild\Extenliions\Nytw.[]i:49n)3
+Unt me\CinenaSeew:o.cs:499)veworkCygnieelteown:king.Ns\Naetw(renwnotkReader, Int32, (nn3t2ctioat C:\buintUnitIEnni2ty buawt rk:nen.iidonwv\kelneoy\buila\e(tensions\Networniegcutioty\ebuel6)
+rntknyoinoisnio.w.erson16k
+ugttitmorine.NettorinnngaNd:55ry)ot
+Uection:Hne.Ienwyr2ing.Ntt[2o,rIn 3i\,uIntU2paae\unitybtusdll (Ex e:\ty\buildtEeoeusiogsbReinwirmite\nutwoine\oetworkiCng\Runtime\
+Ue372orn
+kgileE.t.cse:k6enw.
+UnitywE.Nkeiwnektoeot:cTiki:TsponrttwoikIieve(Byte,]e Snta32, In2)3t(a (Ct t:uiudblusiave\uny\buiuiy\build\Exo\netwoskNnkgng\Runmime\NiwookNetworkIdentcc:y22cs:
+nn88)E
+En
+ginl..aetworEkiUnit.NProjectCsi:Mpsteadete)  ca/A:sbtubSlcsilas/Envittn\enulGlEm\tEnageroiss \inN:otwk)r
+
+gn\\Runttie\NetworkCliClnt.cs:554)
+4n)
+UEnigyEngine.NetworkiNntg.NetworkClientteClients(l)en(a() (a: C:u\lbuiave\unvi\un\build\uxtelsd\Ex\Netwionksng\Ruwotrking\Runtime\Networ:kClie
+nt.cs:768)
+UnitwyEngine.Networking.Ntyt:UrkIdentity:UNetStaticUpdateu() (at C:\buildslave\\unity\build\Extenisg\Runtiete\NetworkIuntime\Netw:8rk8)
+ 
+(Filename: E:
+/U
+nity Project:/Unitte PsPojoeect/Assetse/sPrripect/Assets/ScriRtse Eenggsrenc en pineeeM20
+a
+Unit.cs Line: e12)
+In
+ternal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:Register() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:42)
+Player:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:27)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Player.cs Line: 42)
+
+RPC Register as player 0
+UnityEngine.DebugRIntC Regrstal_Lag pInti2,   1s 
+Ug,atyjngi
+tn)tD
+EnnignyEnDgere.D:Ingeg(ogInbg3cI, P3tyrr:Re,nib, tOrb)
+Un(itt
+E:itnni.tynPe:LogbusgMjLoersP
+roaye)
+ePlti\Syrter(\Ae ent E:\egilat\y(irtca:r2)
+oUjeycysSMtrrtre)ProaMat\A:eerisSPProjescAgents\Player.cs:42)
+Pl\Scriptart() (a\Pl
+ayen.r:Staroj
+ec
+(s\iMaaatEe:sPUn/UtyitP joejee\cAs/sastte\ScPoiojse\cAs\tts\Sclapts/Agents/P
+la
+yerycn .Line: m2e:7
+)
+ 
+(Filename: E:/Uasity Projejetc/tastertsP/Scrcipts/Agsents/PlayAer.cs Line: 42)
+
+ine: 42)
+
+Local Player here
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:RegistRrPC (Register aty player 1
+\MnityEngire.Debt\C nseria\_ecrogp s\lAgentS\
+Pnaiyy rnjicn).
+)ei
+ulgEyIrt:rSDablg:LoggIEObje,i)
+ Pioej:eejgsc\e)st
+ersPrEnjecn\y Dsets\Scg\ipjseersPr
+tl\PytaresR.gs:2t7)
+()
+((Ai lenamnl ty Projects
+\oaeeteSrarProject o:sUttts Prro/pcs\iAtea/stenaPreject\A.s)
+sLaSerr:pts\
+A
+gentst Elayer.cs Pr7)j
+ 
+(Filename:r E:/Unity Psrojects/MastersProaject/Assets
+/
+(Filename: Et/Us/ty Projects/inaste42sPr
+o
+ject/Assets/Scripts/Agents/Player.cs Line: 42)
+
+RPC Register as player 2
+UnityEngine.Debug:IntPe Register as pl,y Stri
+ng, Object)
+UnityEInternal_Log(Ing(t32, Str
+ing, Object)
+UnityEntgine.Debug:Logectbs\Mast
+ersPer:Regi\Ater() (at EptUs\tA gronetts\PaltarsProjec4t)\
+Assets\Scaripts\Agents\Player.cs:42)
+Player:Start() (at E:\Unity P\roejec\Ps\ayer.css:27)
+ 
+(Filename: E:/Unitynts\ojeacts/Ma:ster
+sP
+rojecntme: E:/Unity Prsojecent/MaPlayer.csecLi/Assets/Sc
+
+ripts/Agents/Player.cs Line: 42)
+
+RPC Register as player 3
+UnityEnginL.Debug:Plnaerenal_Log
+Unitny3Engine.Debug:Intern
+ali_Log(Int32, String, Object)
+P
+UnityEngine.De)bug:Log(Objec P)oj
+ects\MaRegister() e(at E:\Un\Sty crrjicpts\Agenrts\Playe\rsacye42)
+olta)e g:rosrrt(ayenat eE)\6
+Uit
+Pl Enrijetts\Ma) (It tr\Unial\Assets\Ss2MaptreisPeros\Play)ss
+cs:27)
+i
+tF\lebug:Logl:ajecr.cs
+P2n7t
+c
+nFZineeIrsme:jEecramManagerc,tsIMn/Agents/Player.cs Line: 42)o
+
+Agcts\Mastayer.cs Line: 46)
+
+unctionZone.cs:28)
+ProgramUI:BuLldUal Player here
+UnityEngine.Debug: (nternal_Log(Int32, String, Object)
+UnityEngiScriptsg:UIog(Object)
+Player:Recs:89)
+Player:BuildUI()ro(aec Es\Master Projects\Mastes\sPcripts\Agssnts\Playert.\Agents\
+Player:.ctart() 
+Player:Register() (at EMasterty Poject\Assets\Scripojs\At\AstsetPlayer.cs:27)en
+ts
+\Playeame: E:/Un
+ity Projects/MasatersProject/Assject/ScriptsrsAgents/Player.c\S Line: 46)
+
+ts\Player.cs:27)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/FunctionZone.cs Line: 28)
+
+Player(Clone) (ProgramManager)
+UnityEngine.Debug:Internal_Log(Int32,PStayern(Clone) t)Pro
+gramManager)
+Unug:Log(Object)g:
+ntunctionZone:Ini2t SProgramManager, 
+Intty2,ngIit3e.Debug:Log(nObject)
+FunctionZone:Init(tProgeramManager, Int32, Int3
+2) (at E:\UnityU ProjBects\MastersPrrjacm\ABsetepFrint) (at E:\Unity 
+Projecmts\MastersPrrmBluet\Aint(ProgramBlue\UI Scripts\ProgramUIPrcsjects\
+PsleasProjeuacet(ClAn(a (sr\gncrMpntgerU)I 
+\citsEperinsPrDjerct\:Icstee9s)\_
+Poi(yer:Au,ildUI() (OtjcEt\
+9nit
+yE nrio:eDtgbug:Log(Oboeje)
+Funsnity ePsrSortetc\AgrMaMs\PlaPe,.cecst99)
+Player(at E:\Uni)y PPt Ects\cty e7)sProjsctasAstees\Fu(o)i ctat s:\Uni8tS
+crPgpojm\tg\ntaste\IsrPyer.es:47)s
+PProgrrmiSuasrA(nents)P(atlE:aUnetyr j:27s\
+Ma
+(\MastermPe:tjeA/\nsietSs PSotsi\UI\ gSatitpelsyPrr.ce:cI./c
+ss
+89)l
+P/luacyiE:Z/Uen.dityL (rotee:c2n)/
+M
+asteojects\MasrsProject/Asssset/\unripionZone.cs Line: 28)
+
+9)
+Player:Register() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:47)
+Player:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:27)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/FunctionZone.cs Line: 28)
+
+Player(Clone) (ProgramManager)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+FunctionZone:Init(ProgramManager, Int32, Int32) (at E:\Unity Projects\MastersProject\Assets\FunctionZone.cs:28)
+ProgramUI:BuildUIFromBlueprint(ProRraPBC eegisnt) (at E:\Unit2
+Unitjects\Masterbugroject\Asse_Ls\Script3s\UI Striipts\ProgramUI
+.nsi8tyE
+ngine.Debug:Log(O(at ect\Uni
+tyayProjects\MasrersPro(e) (Asset:\SUripts\Agentsts\MastersPro9j
+PlayerseRts\Scrripts\Agen\Uns\Py yerocs:42)\
+Mlayer:SProject) A(aet \Sc\rnitptsr\jegenstMa\PtlrsProject\As
+Plets\SStrart() (at E:\Unity Proje)c
+ts
+\Mastname: E:/UnitssePtojectsipMaPtergPeyee\Place/r (Pe2os)
+ c
+(rnilen/Agm
+Uns EPlgUne.rDce junc: sn)as
+r
+nersProg(ecnt/A2,setsrinFunctionZone
+.cs Line:n28C)De
+b
+gg:Lote(O ajectl
+Funcrtio
+UnietyningiPro.Dambugnager,:InI3nt Irt3al_Log(Int32, String, Object)
+UrsPtrEnjeit\nseets\bung:Log(Object)
+Pla
+yer:Register() (at E:\Unity nro(ProgramBlueprinoj) (at E:\Unity iProjAectts\Player.cProject
+\Assert:Start() (at E:\UnityPrPrgrjects.cMast9er
+sProjecBu\AsdUet() Scat E:s\Unity s\rojayctr.\cs:27)
+ 
+(File\aAe: Ets/\Scripts\Agent/s\Player.cjs:t99s)e
+P/Syeri:pts/Agent) (Pla Ee:.cUn Line: o4ect
+s
+\MastersProject\Assets\Scripts\Agents\Player.cs:47)
+Player:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\AgenRsC Registecr as p
+l
+aFyer 3
+UnityE/Unity Peboug:Internal_Log(Int32, String, Object)e.cs Line: 28)
+
+ug:Log(Object)
+Player:Register() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:42)
+Player:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:27)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Player.cs Line: 42)
+
+AddCoddCommamd Rpc
+Un
+inttyEEgine.ineb.g:ebug:Inttennal_Lag(_Lot3(Int2, String,, Objject)
+UUnityEngiene.Debug:LoOb(Obj)
+ProectmM
+PnroerraRpcAddgCommand(dInmm32, Command, Int32), (at E:\Unity Projtects\MastersProjecPtoje\Assets\Scriptpt\s\teworking\\PrPgramrogaramManag1er.
+cs:113)
+anager:InvokgeRrA:pcdCommand RpAd
+UCoAdmiCommandndetNetwoekaiha.ur, NeDtwwruRkaRegde
+Ueinyayg_nLeoNe(Nnot3o2ni Ngrinogko OkBjeaviouc:okv
+opictecneiate(Int32, ,g(wbjwktr
+aderramMana:C:b:biidAlsdvao\emunt(Ib\3i,ldoEEatdnssIons\\)etwwtrkingURRun tPirNejNwts\Mastvrsoirrr.cs332)
+
+tin\EcyEietint.etrkiogi.ng.NrowkoaBkaeaavviu.rsIn1oo3RRP
+Crotrt2m2,aeNwgtkrrenReod (pcRpcAddCommandvN\etnwuoibk\ld\Extexs, nstons\Netkdnr)\n
+UntiunEemgeteo.wethorkinv.iNe1rw)ck
+:113)
+ogityENvonwRNetworkaeegont32oeNtedentitd:aeaRrd) (at C2t32ueNweskwoeaReader)bt(lC \\xtuilsslavs\\untwyykbuill\uEtitennNions\NeBtohkkingur.cRi:t3iet\N
+oektIreIgtnntitct:52r)2
+in).t
+UtiwgoigeBnehNwiwrr:InvokilPCt(tScene,ROCMessage(Nedtet)rkMessa\bu ldaaa v:\buuillyslaavd\uExtenbsuildd\ENtetsnsiksisN\Neurwimneingn\RomtieClvCnotucS.cesc1c6):
+
+3ii)E
+UEigteeENNttnorkNetgwNtrtwrrgoIdenoitoCHHnnneceRe(:dHr2nNdeNRwwrreReaaeetr )nR(2a eIrbntl2t 32, \Inn3il dablCiebdnixtys\sve\dsniNtenswbrolsnENRetworking\RuntimengieR.corm5onnecwitnECcgn:ne16ien
+Unsi4kEng
+Cne.NntScekeegOentwoCrkinnaNction:HronMlction:HB(ateB]t\Isil3y2ea ]n\3n2t \2t  ld\\3ix (sstvCn\unNiydwulkvd\u\iuntime\sdlNxtensiins.\Rs:n32rk
+ngN\tyEngine.NetworkCcng3N7twor
+kCisn37cti
+n:iNytwlgkReg.eettNerroCnRnNetroikInntr2ctIoon3:erc(apoe:tybci[ve,(ant32, ,n 3un)l32a, xInbu2)o(ss vN\builtk\age\lnuntyemu\NetE\rekwsrnoingtRtnwicrsNieg1o)uC
+otnmy\cntion.kC:52nw
+ckiog.Nsgt5eo)k
+UCwinrEkgiig.eaettlorBiCegiBetterU]CaiIe() (aaICe3\) uaad C:abbu\ilnsav\\e\ild\Exbieldi\xxt\snetworkNtnworuknt\\e\Nttwme\NCetwnok.Colnene
+.ncn.ycsg)3
+Uni
+tnyotnEgiingeeNttworrkilg.eNe:wUrdttonCleilien:TranspeC:\builss(ayeea], ty\tu3iddsExatv2siuni \Cbutld\kEsngeRs\ionmt\yetwoli\ElRiensmicNns\8e)wC
+onrtniE.\g:768)
+enetwkrnngo.NetwnnoIcittgt.Netew5tati
+UentdatE(Ug(ne.Netbcripidlge()twoit C:bnuidlUxslavsi\)ni(Nt\t:\rudiElgesusvtismNnittotboiiIg\euxttny.\Ni8nws\N
+ t
+(ntikeynacm::n8E:)U
+ \
+(ty woljCeaet:scEasU54rs
+ ProjencgA/ssstes/rkrrjgesNNAtwerkrCing/troUsr/Netewlientg()cs( t Cmebu1l1e3l.
+
+s Line: 1b3)i
+
+\Extensions\Networking\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 113)
+
+AddCommand local 
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:AddCommand(Int32, Command, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:80)
+FunctionZone:AddCommand(Command, Int32) (at E:\Unity Projects\MastersProject\Assets\FunctionZone.cs:53)
+CommandSlot:OnDrop(PointerEventData) (at E:\Unity Projects\MastersProject\Assets\CommandSlot.cs:48)
+UnityEngine.EventSystems.ExecuteEvents:Execute(IDropHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:87)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:269)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:294)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:382)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:277)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:265)
+UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:179)
+UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:277)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 80)
+
+System.Collections.Generic.List`1[Command]
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:AddCommand(Int32, Command, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:81)
+FunctionZone:AddCommand(Command, Int32) (at E:\Unity Projects\MastersProject\Assets\FunctionZone.cs:53)
+CommandSlot:OnDrop(PointerEventData) (at E:\Unity Projects\MastersProject\Assets\CommandSlot.cs:48)
+UnityEngine.EventSystems.ExecuteEvents:Execute(IDropHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:87)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:269)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:294)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:382)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:277)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:265)
+UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:179)
+UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:277)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 81)
+
+AddCommand Rpc
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:RpcAddCommand(Int32, Command, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:113)
+ProgramManager:InvokeRpcRpcAddCommand(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
+UnityEngine.Networking.NetworkBehaviouAddonmomaend d(IRRcp
+32itcEnt
+wnnrkEngdne.DebuatteCr\bull_oLgg((nuni32,  \Surnln\EO ejsecct)\
+NeiwtErEiig\Runtime\Neo.goeOkg:eog(ti)ju
+err)og
+:r13ra
+mManyEngine.aeCeomRpinn.Ndtmank32dtentitymmand,te ) nPt 2)n(an2iENy\wPrkoReaPsrjMcas t:a\turldjrace\unAsys\ets\lct\pte\ewosiroing\\NProgramManar.cs:s1\N)t
+)
+orkIrmnmnMagegeI5n8)o
+keiRpyRnccdned.ommawnr((iegtwokikenevicvie:OnRteCreosakdea)e
+Urot
+knMgennsNiee.woaktnr:.Nguwldslevka\einav:yunu:klvRocxetpgnDsi(oIsnete3nw 2,i gorknriaeeaC eert (Ca:. su:iuld)s
+llitvyuungiyny\Niild\Extensions\\eCewnokrkiin\\Rnnntime\\rtNewokBkrheeaiier. .s:332)
+
+nti2)Engite .Nebtoiokslgg.N\twwoty\ehuavlu\u:rtnvvseoeP\PCetnt32i Newt\konakier\ erwo Ckt\bu:\buoll.slavei)
+yiityEngin\ENnsnwoonkssgNNteoorkrkCgouRnuiteoNetHNonrwlBkByetaou(u.tce:1]11I)t
+U
+Un IytEngiinet.NCww\kukg.NetworuIneidtit\ytiHaadEdxle(RIPon(Intet2wo rkena\oRk (tadCerbN ltaol Cv:nnuecttyoa.eisu\i72)nb
+UindsE\Eetwore.iNnegworukinng.NetNmotketnkockeiettTtyansso:5Rec)e
+U
+nn(tyyng[i,eentet2w,krnn.tgientScene.:lOldelaMe\esaet(n\RtPolMMEsssege(Net\oC:Mwbsrlks) (etuutitm\eiNelwlavtC\uinnscN\toiocs:x2t)R
+UsiiiynnCleeewSocwke.csnRu3nNeUenCktyeieinS.:eepewtes)i63at) 
+en:\buildslave\unikan\bueRldrkEC(onseors\oetdwrrk nRnea3et Ine32tro(ek el:\bt.l32, ve\u
+ni yy\b ild\Extedoilinsge\uwiokinul\Ru\t:mpenaeotnloreCtwn(ek(at\o:ucut:41s\)ve
+twiriyon\iuielod\txtr1si)o
+.n\eytEtrkorokNng\Rironn:.Na\tlerBoCeknCytee[:t an:leB8tIe
+s(Byte[], Intu3ld,sInt32) twtr Ide\ld\y:xNetns\aoiis\Upetitlr)\n(tRuns:ionuiNeeswoovkk\onnitynobuild\Ex)on
+Unintys\tNoet.wotk3ikn)g\
+UNnitmeo\Neto.rkecteooki:ygan:p88rrk
+Co
+nnectiont:T]En Upoiry Rrnoee2) (aa Ct,rsPi3os,canvt3u)tiaSyCrbbpitlslNextunonysions\r\twxtremnagagsn\tciwLeirek: g1kR)ot
+nee\NetworkConn)e
+Union.Eng:ine.N
+eniotkyEngine.Netwoirnin:Update() (at C:\buildslave\uni:ty\build\Extensiy\build\Extensgions\ime\NertworkCliente.Ncs:554)
+Uent.tys:n5i4ne
+UnittwEnrinengN.Nwotkwno.NktColkienet:UppdaaeCeClients(() (at C:\lduildselunvi\uynbuiyld\Elxtentsisions\NetwnrsinN\Rtuortiime\NetworkCNetentr.Clsien8)
+s:768)
+UnityNEtworking.NetworkIdeettiotkI:UNetSty:UNetSttaticUpdate() (at lC:\buildslave\unity\nbuils\Networking\Runtirki\gNetwtome\Networty.dcs:888)
+s:8
+88)
+ 
+(me: eE:/UniEy:/Unity Projetcts/Maject/Assees/t/rissts/N/twSrkiipgts/NetamManager.cs Line:na13er
+
+cs Line: 113)
+
+AddCommand local 
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:AddCommand(Int32, Command, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:80)
+FunctionZone:AddCommand(Command, Int32) (at E:\Unity Projects\MastersProject\Assets\FunctionZone.cs:53)
+CommandSlot:OnDrop(PointerEventData) (at E:\Unity Projects\MastersProject\Assets\CommandSlot.cs:48)
+UnityEngine.EventSystems.ExecuteEvents:Execute(IDropHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:87)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:269)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:294)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:382)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:277)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:265)
+UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:179)
+UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:277)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 80)
+
+System.Collections.Generic.List`1[Command]
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:AddCommand(Int32, Command, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:81)
+FunctionZone:AddCommand(Command, Int32) (at E:\Unity Projects\MastersProject\Assets\FunctionZone.cs:53)
+CommandSlot:OnDrop(PointerEventData) (at E:\Unity Projects\MastersProject\Assets\CommandSlot.cs:48)
+UnityEngine.EventSystems.ExecuteEvents:Execute(IDropHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:87)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:269)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:294)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:382)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:277)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:265)
+UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:179)
+UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:277)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 81)
+
+AddCommand Rpc
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:RpcAddCommand(Int32, Command, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:113)
+ProgramManager:InvokeRpcRpcAddCommand(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReaAerCom)a d apc
+Un:ibtyEngine.Debug:Intern\Eal_Log(Int32, Srking\RuOntime\N
+etwoyrkBehavDiour:Log(Object)
+ProgramMancs:a32g
+UnetyEngidne.mNetd(Irktng.NetoorkmmhandiouInAt3vok(atedERCcU
+Unii32yEojNeetes.\eeuatdrrsP rnao_ Cc(I\bsuil, sSctiei\u,eiObykctb)g
+\dirognrinesaDnnugr.ecw(O1bje
+irog
+PgrgammMan\agteorRIpcAoiouocRpaAndd(I
+omma2,d(Nnetnd,eBIwhork noatNe \otroIrtdeenoirtt
+MastUesRrPEngineAN,setstwocgreptdwoer)oratn viougrimMlonagpare.cni1te3)
+ildg,rtmetwnonrr:Invwkrkingt R:uCotilaesNavtwownoirav\ioerndiEttyorsie5nd8ee
+U
+Uiityg\giune.NeiwwooNrnk.ioetBehaiehnotiuruc::O3voCeM
+psialEegane.NNte2, kekwsng.NetworkBehau:\bd:lldve\usRity\latie\,\ENeytbwolio\Edetrn)t ws\tNCtnoguilRu\Ruimevilie\tySceunl.rskBtenh
+snvtyEurg\Ne..w:ert)n
+grninttEnmewoNrgCnn.eNtihavrHui.cle.1eado
+enri(teEigiunRIne.oer, Ink3nR NCt3Inr (2dt NetworkRealervC\(nat C, Networkavsiode\)ye(tu rdk:xnguRiodstNme\ortitg\kRuoltnmceieoentnssrN16)wa
+UkioyErRcit:ee3Net
+worikyngnnitetNy.rwsr:inn.)e
+UonrtyEnIeBenteeNse(BdtreR]ng IItet32, Itet3kOneaRdeCre)siadg Cve:u\btit\doraveduEstieysions\NeuwildisgxtRe\utntme\tbwildkConnnuiotnmonNcet:o7r)
+Uen\tintyinc.N:en8tSrknnyE.Nseitnwe
+onkCononecnEo.glrnenpeSrcewer:OnveN(MByragC],nNento3k2HaInte)e( d( (: eCwo\duReasdlave\n\n2uyldnt3x2t (asn nsoNnetlorktago\kunntgibR\lCtEiee\nNseinorkcCon3eo)tk
+Uinictu5n2imn
+UenityEngrki.NeiNnowk:r1g6oen
+nnickCilieHanUpdaeea)er(ketit Cneader\borunConsnance2unntaa dC:Bb\us(Bytevons\Iitto\r,u In\3Eune(ate\Netuilrolaliinnt.csy\5uel\\
+UnioeEksgoneeNNetnoockk4ng6\NR
+tnwioyrNnClwiernNeowpoetcegilennwssk3 o)nt
+Uc:itynildslnave\ynisryBnteiled \ntxkConnnt32)n(aorC:i\ob\iRedseva(vNe\uo,tkCluiel3dc, xtnt3s
+U nst\ Cei\ne.litnga\ekinu.imtyNebIoirk\iotnn:sUieons\N3cwporUnn)gyRugin:\bNuworking.nectioonvCcsnn5ity)
+bnialyspEgteReeieiws\eNeBy.tre[],o\knlii3e2, Inta3I()enat y::c\u8udld
+v
+vuniti\mye\lEuEUtdeysirnjsioss\orkingsProgjiuct\/eANwswokronCelctstN.csso5254)
+U
+/nitogrngiMn.NaeerwwsrkLinnNeet 1o1kC
+l
+iennt:UpdateC)i (tat C:\buildblave\unity\unitd\\bxtens\ons\NetEorting\Runtime\NetworkCliest\cse55wor
+kiitg\Engine.NeteorkirgkNetwortkClient:U
+pnityElinngs(in(a. C:twbuikldslaete\uniIy\built\ExtensionsiNetcUpdatg\(R (at Ce\\NetworkCl\ient.cs:768)
+xniensionsnNetwNetworking.NetworkIdentittime\NetworkcUddetn() (at s:888)
+ d
+(Filename: builU\ExtenPsijocts\NetworkiPgrRuntitmAssets/Scridpts/Networking/
+Pr
+ogramMame:g r.:/Unity Pr13)
+
+s/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 113)
+
+AddCommand local 
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:AddCommand(Int32, Command, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:80)
+FunctionZone:AddCommand(Command, Int32) (at E:\Unity Projects\MastersProject\Assets\FunctionZone.cs:53)
+CommandSlot:OnDrop(PointerEventData) (at E:\Unity Projects\MastersProject\Assets\CommandSlot.cs:48)
+UnityEngine.EventSystems.ExecuteEvents:Execute(IDropHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:87)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:269)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:294)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:382)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:277)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:265)
+UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:179)
+UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:277)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 80)
+
+System.Collections.Generic.List`1[Command]
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:AddCommand(Int32, Command, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:81)
+FunctionZone:AddCommand(Command, Int32) (at E:\Unity Projects\MastersProject\Assets\FunctionZone.cs:53)
+CommandSlot:OnDrop(PointerEventData) (at E:\Unity Projects\MastersProject\Assets\CommandSlot.cs:48)
+UnityEngine.EventSystems.ExecuteEvents:Execute(IDropHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:87)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:269)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:294)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:382)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:277)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:265)
+UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:179)
+UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:277)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 81)
+
+AddCommand Rpc
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:RpcAddCommand(Int32, Command, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:113)
+ProgramManager:InvokeRpcRpcAddCommand(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buiAddCsmmaand Rpc
+Abnily\mxaensieo.Dc\b
+uet:trkngninal_nogtIimeg,:SIniergk,BLObj(ocr32,s:33t)S
+
+niit,yEnnjectginet)Debug:.yoetwirjeB.)h
+Piogrganmveoatg
+ProgntpcmM NeagorrmRed(dent m,aatnmCmatdu , sl32)a(aitnd \ :i\3UEi(aetsPioonistsP\otesrtsrngsoueecPm\oNsewets\sSetavptc\rNist:oN13)n
+Ug\ProkrnngMPnegrgeM.inser1tcw:r
+Prog
+nrMtgyaageMd:eRevo(Ievto32e,RdpeCtpmorakommdee(twtwrarehCviourbu ie twetwk\reity\du
+ir)\t
+ytintyEe.NNntwoNkingo.RiegtNomtworaBvhrovi:InoukrtI.ccoel52acDUIlegEatgN(net.32tw Rkednerr)e (dnatc C:nbuilbuPCaselavneey(bitw\r\kEdesExstensiats\twbuiwkikingR\Rntnimbu\NmieldrEwBohnsBoohuretosork3n):
+UR2)
+nUnni\Neiwoikcen...Nteto)r
+kneiavintunr:Nevhaokkiun:gC.oIeet3w2,IktConnrectadiNen)w (dke eCR\r)e(iddrl:Ne\wildsoaviRudite\t, IdnoEs2t tnsioni(gttw:\ktuil\dRueatmer\nBtwhrkBelurvcotrecs:11
+3\N
+etwtyriinieRunNttworktgngkeNonworcIdion.csty1aHad
+dniRyPn(InntNetwNNrtkwingeeddtr)r((t n C\:uonu:dsanvveu\ntiytbB\itud[l,xIEtnti, inons\ otkwor\\nu\tisn\vteumeotNIeetnti\yIdes:5o8)
+U:ityrEn
+gni\nRngNtemwetNwetwoCnkgentlceni:O.eRseMO7sP
+ages(Egg(weerwMoestkere(sn g.:Nbuiatd loCv:\utitonsTralvspoxutnitiobu\Nlettx[]kniIi\tRs2,eIitmo)rlkin \SRebnei.c\l:6ve\Sn
+Unie.buig63ex.
+enitsyoknggeNew.rkenonnection:HandleReader(Ntntnoacs:522)
+Unit32E,orineeaet rorking.Networlaveeatn idt\\uu ldd\EvtCes\ouiilydslave\ungi\tsu\itine\\EttworkiognRuntime\net\ion.won:i16)io
+n.its:E4g6wne
+UNetwEngknsn:g.5oektUgnretwyConnection:HandleBytes(Byte[], Int32, Inrn2gon(aeNCeitu:olknslgaByetworkCl\sn(uUpdateClients, ) (at C:\buildslave\unity\Int32) (at sions:\buildslave\unity\buitworkCli\ntucs:768)
+UnityEngine.NExwtrensi.ietworkNdentity:UN\tEtaticnUpdai\o(ntimat\Ne\kwunildulavt\u\N.tc\:b3onn)ct
+Utnn.siyn3\ge)
+UNeiwtng\Rginie.tNeotrwokoine.nionioy.cCso8or)R
+eo
+(nviTBraeme: E:/Unity Pro[p]ct Inciters(nBy3j[e](/at 3:t\InSi32)laat Cet\ioi\busngavrterasionasiN.\csr insie:nn113et
+
+NetwngrRkCtimeection.ckson5n2ec
+tiity.cs:522E
+nngtiEne.Nnetwotrking.NetetworkClient:UUpdate() (at C:\buildslave\uniity\buy\ld\ild\Extensions\Networking\Runtime\NetCloikent.cs:cs:554)
+
+UnityEngine.Netorokking.NetworkClient:UpdataeeCilients () t Ct \builuillasle\unitnitbuibud\lExtensisis\Networking\Runtime\NetworkClieient.cs:768
+)
+UnitnyiEenginwo.Nketw.Nrkiwng.NdetworkIdUentitay:UcNpeatSt) tict pda\bui) (alave\\buildsluveiuniyy\buuild\Extnssionss\NNteorking\Rg\nRunetNimewNotwkIrkedettity.cs:88888)
+ 
+ 
+(
+(FilFnamlename: Ee/:n tE Projecy P/MajetctssPMaojectsAssrsProject/Asset//ScriptN/NetworkingtPwooraminan/PgeogrcsmMLinage: .c13 Li
+
+ne: 113)
+
+Found 4 ProgramManagers
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ExecutionManager:BeginExecution() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:38)
+ExecutionManager:InvokeSyncEventBeginExecutionDelegate(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeSyncEventDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:349)
+UnityEngine.Networking.NetworkBehaviour:InvokeSyncEvent(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:144)
+UnityEngine.Networking.NetworkIdentity:HandleSyncEvent(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:424)
+UnityEngine.Networking.ClientScene:OnSyncEventMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:652)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:416)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:522)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:554)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Environment/ExecutionManager.cs Line: 38)
+
+Begin Execution
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+<Execute>c__Iterator3:MoveNext() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:49)
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:62)
+ExecutionManager:BeginExecution() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:40)
+ExecutionManager:InvokeSyncEventBeginExecutionDelegate(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeSyncEventDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:349)
+UnityEngine.Networking.NetworkBehaviour:InvokeSyncEvent(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:144)
+UnityEngine.Networking.NetworkIdentity:HandleSyncEvent(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:424)
+UnityEngine.Networking.ClientScene:OnSyncEventMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:652)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:416)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:522)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:554)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Environment/ExecutionManager.cs Line: 49)
+
+Execute Step
+UnityEFgonundeb4 Progg:IrternamMaLoagers
+Uni String, ObjFco:un
+Ini4 Pteyramnanging(ge.eerug:, (tibnygcg nebjec.DE
+bxgtcytinrgai_gee(InEux2Logettrp()g),
+ExO:\UeicyM)rn
+Ugnc:tyEngierBer.jDexcg\Assoe:s\Sctri:tObnect)o
+EPecutioreMaeuns\gasterggrn.je:ct\)n
+<E)xtstut:>Ut_s\tEnvrtojem:esota\Exe(su (oaneEa\\Ugstt. \Scj8)ct
+\sxvMirtneoenPtonaecruAioveMksnaygcipves:tne)
+oxEecctitEManDgeienIanaeer.St:oc)k
+vnetayginnire.MoteBoohekiegdr:(t
+atitryoEoginenourwuNoitIgorNmeerato)eh
+UniitunEgIinokMSytocoreaivDgerNeStatt(kBntht,veNoErwuorekReaor))va(naC:Cleuutd(dns3e2, Netwt\k\bulirlr Eftenssobeneletwlrkinm\nonttrbneiiNmEtwUtiksyhavsioNe.wo:koBeha
+vuiuyiineiien.wsrtwnrhcnv:.o)e
+.tesr3te)
+vnaotyEngine.iSeyxwEceiigonet 2( kBe:a\ronr:dyvPo jScy \E\ste(lsnsr3ov N\\usnetR\\Scrid tsxtnn:ronnusildsecut\inM\tRabeuicedNe0xwoEskcBu\Naoiwuar.aine1R4Inv
+okeSytnEovek.Nheawiikin..tseo1we4kI
+daei(yety:raenhelvwincuvg,NNetnwork,I dNet)
+rkHtader) nc. ent(bri3is l.NeworkReBehruv(i\tx::\nbiukelNyswoavetDeieynautel(dtnEox3ed,e NieNt.worRk2an)eR
+U)ti(e\ Cg:\brNltdolaietgniCci\4b2tl)e
+UExttnEsgnnn.NeNnetkMoe.ingienuNctiom:kNeSswcgEkv (nvteoC:\.cuNe4wsol
+rnit\snngey ebaNi t\\otuninilNnstueottyohkuilguExIuvotieesCneiewetrS(Ien\3.u si6t\)lr
+knitScy)E(ncti::5.u)el
+Uoskltgvne\nenNkty\nkicti\NnxtHeonrkeinndstrieontHkaine\eduea,mIr\3e,twrkRk2ahe(io uInbcs:144)t
+Ue2i) (at C:ilbu\ldslani\NnstNo\tkioenEittey\iuntdNetwoeciwgerRunInn3ect Noew.cok:k41ea)ei
+rn.t(sag4iCn)e
+.NittsErkgennunettwwurking.NetwsokoHonndtcBrtoi(HgnRen[em,y\Iee3wB,reI[t]2)i n.a2t: C2nbu
+U2idy(ln viee\butlwsrbivgelldnEnyt\cbunn:O\ESyeworinnMs\NsagorkenttwontMoesnaectwiroCn (a:3t7:o)b.
+Uil:tl7v2inU.nttybrikinnx.eeewtwro\ronngcrNoeg:TrkanoenoeiRectieene(Byoe[.n s:nt2)
+ ntney3ieg i(ne.NCtworiing.aeew32r t(onbn Cct\oxi:dHiaasde\etietreinu\eudw\irteReNdotew, rnt3rk2n,\ unoin2.c(a:w2C2k\bUnutitlndice.N2twu
+UniintyEngineECtensnro:iUpdNetwoikClau nt:\pdatedws (atCC:nbuilbdilnaEe\:e4syo)bs
+Undetxoensgons\\RNnttwoi\N\Rtwnterw\CleiContn.cCtlon)
+Un:sHy554ieB
+ytNtstwBorte.Net eow3o2k l.Nttworp aient:epuliteCliev s((unaat bu:\\db\iExdenelaovn\\nNetdoErtkn\Ei\ns\ReonorkeenNgeRrntinkCRnetcwioe\Nstw3en2tl
+icint.Ecsin
+e8iNeUEnginnegNnetw.krekwergting.:TerwwnkIkdoerttiRey:UiUvNetttca[tdaiInt32datC:t bui l:dbuilduel\asei\un\ub\iitlyd\xtxuenoinEstNnewiwoonsk\RuntiminNetwotimeerNkIteyt.Ccnnse8c8
+ 
+on
+(
+.Fclen522e: 
+E:://EUnygPinPeocects/MasttgeNrtjPct/Ajsest/Asstcsr)i(ipts/C/:viviniend/entcextuouttynMagergds .xis Ls n3s\
+e
+8)wo
+r
+king\Runtime\NetworkClient.cs:554)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/EnviBoBmeet/gxeiut oonea
+unitrE.
+UnseLyDebuge9I.
+n
+tbernIaternal_Lol(_nto32,nt3tr inrgng, Ojbcte
+Ut)
+UEnitine.Debug:Lbog:Log(Obgect)je
+<Execu
+te>c__tte>ato_Iterator3:M) (at E:\Unity Projects\MPastersProject\Assets\ScrPpttayeviClcnnept(Pr\egviatoimanganxegc
+Ur.ocMyE:a4e9r)D
+ebu4:I)
+Unity_nng(Ie.haMiournSnB,eCaorieotr:UntiAuto(ioentiebeuAatoLI)(
+nbitetano
+Execu
+tnniMynhnvrgEiecnteStep()o(etiaaitIErnuUmneitarout) je(t E\:m\ratoil) ojtve\\Ausild\Syrvpuitdstyrnuifloc\artifacts\dinenMatn\rucet.moe\\rUn
+ntExEnuteeMyonotnraatooMrBModiNes.(en (cBinEi:g
+E.eitut Pr6M2ectg
+e\:BueioasExnrutirn() (aAsBet\UnicEyxpesutEicis(n mstner\PxnieytPAsMeenster.ai:5ers
+Priotement\ExecutionManager.cs:tm0)tu
+Exnecutuonn(nEgam.rctIo4v
+o
+EetyyntiEoentaBogern:eenutoouSrDcElaengCBrouennwecutBiuamioltog )eeNtw or:kBbeiaedil
+rvie\yutgink.batuerr\
+inig.yEntiw\.Neewhoevkoon:gn.roktSmykcBvetnEvDilneMonvIntSan,i vrBtwdlrksR.eanens)26a2t)t:
+Erkeieusder)\aang yr:buglis\Eaxve\nistnn\b\aNldt\xoiein \iojetNsmt\NosktrkrBProjeime\sretw:o4Sk)i
+Uhtii\Engirn:nNet)
+Ukiecgngeot.MNraBwravksur:In
+vxwecutichMvenna(:In:o3ve yeeEyorkR(aneB3 (at C:\btildslae)ete(i C:boild\Eataine\u,o n\e\iwtrkReiedsrR)nt
+imNeNyotgoin.NRtaotioun\.Ne:wwokkBehhtaEvngri.eIse14weS
+ynnEtNenwgonreNadtenoIkt32, aetdoreRIndEer) (ana 2d butworkRvedeIn) 3yt\bNi\tduoElReader) (at C:\builE\ltaeve\unityortbouhavdoRunecs:34e)\
+UntwIoykninn\.ce:tw4mei
+\n.eyewwrirdentaetw.rs:nI4vo
+lSettcSncnt(Innetyw2E,ieNgeCesoengReadew:O(aMy s:avbu tMdt sC:gbunietworveyeuusitgyE)uiantsECns\bselwnrl\Nve\tnuot\benie\RuntiBesea\CiNeurocck:nne4Ru
+n:t5ty\
+nnityn.ngenno.ckiw6.r2it
+gniteydogrinto.HeenwdrkinHn.netwenradetnnectieonokakaleRe,drn((2e  on\ku)eadlr v :\bitiy, live\Ex) tyao u\:dtbutrdnsli\RsuettuwioetworlId\exttme\sce:sw4)
+Cwotnentgin.e.NetwoN
+tnnrg.CEnigcinSn.en:ew6)
+ynnEtNeeniwoe.sCtwonNeitworN:tasraCeBytes(Byt:b]anIdelBv,eenuB3tte(b,  dn\bt2isioln\v2)uwotkyCnb\\ilidtdEmltCvsiunitScbunoldcsgxR5nn
+inis\yeetwoerCenneo\kinn.i.s:Nt2twonotCnngnec.N:otnork:R3aN2etw
+or(CeEnoerne.oenw:rransportRwoneCeo Bnnt32o](aIrCa2,b plotst2ae \(vn (:\yutld[dlEIvtt\n2n,o I\beu)lo(\iagtReC:siiuelsNelwwoo\kCnnny\ubttloenxNe:tsi6ks
+UonnwcoiEongcsn:n2eiw
+UeikNnE.oNnktNnnrkckino.e.eswor2:C
+lniittEtegaiBytNe[], ICn3guiNenw3a2e)lnatnt\\pdatdd(x ansions\N\tldsl\vnxtensions\iedtExrkClient.ct:wm5rk)
+wgrtRCEtniice\oeewcork7Cg.
+Nnntw.nrki5l.)
+tnwoykatgenlewore(workic gioenuildslave\tRecyate(llet\[(t,(sint3:2b, Intlia g\aun t:m\uuNled\Ext\Csnityt\Nsuwlo8ki
+e\iRuoyisg\neewweorkClient.cseo6re
+IoinkEotgentN.Networkin
+dNetw(o (itd Cteiwbr:lNnsSaNettucoipkyalte(td\apxCan\bi nl\ elaobr\iiigtluane\idity\btsidrnxIeeetiwos.iseg\wor
+ti(g\lRtanrem dNn/Uirkt.ciP8ot.cs
+s/
+54)enriPryo gin/enAetywsP/kjnr.Nsts/EktvirotPeop/acxecAlsoenssn(ariptc/s Lbirlemea49)
+e
+nity\builnager.cs Line: 49)
+
+king\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Environment/ExecutionManager.cs Line: 63)
+
+Execute Step
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ExecutionManager:ExecuteStep() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:59)
+<Execute>c__Iterator3:MoveNext() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:52)
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutinE(xEeuceuator)S(ttpF
+UCi:y\RbWnelRdDu
+aUne\rnilgL\nuilDt3bt f:artts\genjl_at)e
+dnityEn,iSrernDni,euOUjecyE
+gjneMEng)nee
+avioutio.nDingsg.:execcOe:ec6)
+E e
+(uti nionaneiryE err:teeiSEexM) stt E:\Uniey tP:rsUeitst P\MiepetrE\Moisecte\nroject\Axesutts\EnManinprn.E\:v59cout
+eExecEteecutics_6_M
+<Eratc.c3::>4e_e
+Ee) cut3:MMoUeityxPI(voe tayMas:tenitB rioEjxcet\c\utisrsPlSeegattAsNEeto\SrBipts\EnvxecNmtiow\ExaerutionMa)n
+agetr
+Encsn52gM
+initehEawgiruen.t.ontwCoroetinvu_:uSto(ItEvoneoutntceE_
+Unnoy(Eengiate(Inoo3e)
+ NittorEaRtaCer. MiatBeh:EnbueraStart(CutoC:yibnued(Ilxuemsnrts\t\ietw (rk i:f\Rtuldseanereunery\\ehovlio\aunismecUn
+UnEtyiaeino\coemwho\vrinugimedtUwnogknEeha6nie
+ux:ecvhtkvenurnnnadgn(Is.gge,nENs:wu)t
+kRecudi ()Mt(aE C:rbiegyiPEdjlautioaity(aberldP:EjUtt\nssoPesojNecwoptkM\Envirstrijme\\tsswxsk\ehctiiuta\cnnvi4onUe4it
+Enxcutioneanaogeg:rI.cvok40k
+cEvtunty:HganEleryIcnonDelSgate,(NenwwrkBknhEdve)cr,aietDorbReiaedes)
+avrt\BeEavgoiui,l .etxtrksronie\rNe
+twwtyEnninavinttimeIiNvgoorkIwoertvihtvDouer::I4Int3
+,SiNeyEoninReldgeorkInnt.t, NetSoerdkRleavee\)nEtyt bCMe\ls\Edt(lestiooiskMbesso\Eekt(g\su:obii\\dtearvriuBityavnioime\tN:eio9nrk
+\ehtvonri.i.sg:tw9r)i
+g\iCtwinrnBeSNavient:.nvoik52S)e
+nnwEyvegBieneti3twoInkeote.oetREoadetk)ntn32t i ::twioddrReRedud(Nr)tu(ork \a:xbt,isIso32,e\Nnti2tk(at CRuntbutldesion\unity\boklr\.\Rtensm)o
+Nn\tNoEwnBrnkv.Nu\twotk1n4.Ne
+tnirykongentety.cso4rkSinc
+Event(Inin2, tNty:oandlNSyr) k(vnn e:nti3ildsNaavw\BukRe(\dyild[), (an 2i,onI\d3seava\tkiCg:Rbiitldextenwunnkt\\entioldcsxg\2nsno
+Uime\NeworkrNetwortitmg.cNl:ten4)C
+UnetOcEingcov.Ncs:372a
+ngiCtyengkicssageOnSyntEg.Neteolrsl(vntwueiktissalda\E oerns:ecneselNydsle[ave\unIiiym2u\Clld\t3t2e (nt Cc\sN65twovennntiREu\bumi.NdiEeornicene.Nteo6w2Con
+UngiRtiyi:giandlNerkCorr(Nc.towt.osRC:anee)t 
+Ini3:yHIndt3eR)etear Ceg\wboukRdsaadnr,unid3tb,u inad\ )xt(atsli:obusedNuevttyuniiiylR\untt\msit\N\etiowoorrkkCrk\Rgctunin.mee4tt)o
+rrikoEniecnt...ct:5o)6
+k
+UinyNttwoneC.enteeocrkion.getwelrkBkyneensiUByHdateCalntd2tes()e ) aytteC:b bInitdalave\ni3i) (uy\dCiE\buixndsloiv\N\ut\otywibnkidR\ExtemniNionotretCkioninccs\t68nti
+Unmse3\gie
+enityEwnrnktine.csotr2k)k
+I.iNyitngik:.UnNttcStiani.rNUetdoaRe(o)enae(tCito[i: Isn3ap,eItRiti\euvl(aByCt:eb],lons\Netw\o3n2ty \(uatldCExtenolroknIe\\nenioryb.igs:8E8tem
+ne\(nFtiwtreonknnecRtEt/Une\Ns:tw22)
+UnityEngine.oe5eo2tiA
+g.ete/tcgiret.N/eEworkingee)et/EoeCk\liiendanlagaeru.(ts (LunlC\ 5b)
+n
+sions\Netwto\bkildg\ERuntime\NetworkrClie\ntn.cs:55et)w
+UoirkCnlien.N.ct:554)
+Ung.tNEegiwer.CNetnworkdangeCletewts()Cliett:U:dabtuCliesnts() n(ay\ buibud\Extense\unsiNetworking\Rtension\s\tNorkwoaknt.cC:7n8) 
+PnrtygnranM.nNgtsw:
+Uni8t.
+UEngwoekgibue.NttwrrkaNe.Statickpd,tStri gUaNOtCSebti)
+snaateEnnityt. Duiblgd\ol(teeneicnts\
+NueecuoEkiMg\RunnimEN\ctetoweo(kIdenn E:\UnNtyt)w
+ o
+(kIclttnam.stE:rsU8nit
+  P
+rosjeeamteScMaEptUs\PtyjictoAectet//xSccutpPnsoaEeavirAss:e3s
+/Ecxrcutei/nMnainoagenrr/sMeLvunt:xo5()a
+ 
+a(er.cs Line: 67roj
+e
+cts\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:52)
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UPitylayer(Clone)h (PoroBirdiamManager)
+Unit
+ExecutionMabaueg:Bengernnal_Ltgiont) (atStE:\ngni yOProjects
+\MastergiPnejeDet\Assets\Scjeipt)
+EEnecErticnne ComMand a\eRr:EDti
+oniattna(gi(asD4:u)U
+IietcPrialcLsn\gnars,IStrknoyn cEtectsB
+tsntcxEpusinnDerbont:n(NE(wojukt)e
+PMionarg Mrtnog:Rea
+ec)e
+Unoimc__ICimataNetwookavt.Neewor(t haPr oe\:nsitkeSterocscPs\MascersAasejtct3SA sreitp\SsraNetroErkv nro\Pbont\Execugiuenta\sbu3ld\E:t52)
+UoiMyEnwogrekr:onBgu\avioepm:\) twtr oB\ethiay Pruo.oesIts49as
+atit)Er
+nnict\eEseeiwserSMcoiptes\avnirronhanirtErxrevuutioneaEveer.ern:tor))
+<E(xorutRe>cuir) teat \oCn:\b\ilused\(rtifitt \b:e\lrnaxted Pcrs\Noct\runtime\untjmeEnNAtwoMok\BeraavsuE.cino:mngt.
+UgenyEcgn:M.N
+gwecutiog.Net
+wneitIEdegnnEMocaotieohncEiotu(:I\ati3oy,oPretj_euktoe\Iaeumeerratooj)ut
+U\sltyensineripntBedEExioon:ensa\rEtCorintonR(nanmemNetatsor4 de
+Exttu.cso4u4)d
+Uler:InnitkyS.NeildrkarBtggnaxics\gSnneeeaegatnc(vmetwn\kuBnehmNetnur,Meseigw)Mr(ae der)b
+UuirByisnini.\Nuntw.\bki6l)
+deeEcotikoiMoav\gotworkivg\eSytimevnClie(ntSte:enUs2,6 5r)t
+weitkREnagserer (tojt tCAg\.tNelScsrkvpn\tniEiviuoHdmEdnttensieou(N\NntorrRena.Rcn,i4Int3
+ext oIkite32)ni(gr.C:Ibv4k)d
+Unit\ennty\buENecEworokDiloggsNteetwrrkBrh\Bvihauie\Net eeryCorERveetno).(:Unt6t2,
+ NineyoNeRweerdktr)rN(awg kBehouikudo:laInvoke:yHcEdildDBxetes(Bgots(N],tInt,3n, Iwuor)kma\a erw\bk(aldsliaovrl\sla1it)
+Unttlbu\glie\nEi.ts\Nirwoi\NgntNReuknrt\meuenemtworkCnorneyetEhen.ioIu732c):3
+Ut)
+tyEneaige)e(eawtC:irgkiNnlavr\woointcyiobuurl:\nvsknsriceEsveNe(Byte[i2  NetworkR\Net))oart IC:\nuitl.lalae4u\unt
+ytybituE\gine.tsnionos\Net.wokintSgcRuuet:ieeSNenwworkorkMonavioei.Nesw:54M4)s
+aUe) tnE iCg\i.ildNetrk\kngg.Netborrd\Eltetytonsadedto(kin(\Run:imbtuC,ldNetSoeekun.cs\b6)5 l
+d\ tyengsido.lN\veounriiyg.butnwdirxetonnteoors\nitHar.is:e\aRe
+UnnitywnotikneakNetn oIrtcs,:4ne42)r 
+UCntint:\EpuinedCNevnw\ouniiy gu\lbueElSdesliaveS\yneitentMeilga\xt(Nesmow\NeNewewskkanne\)tuntt C\\4btwirkllaeny\.gnne.6eb)wl
+UniEnyennigiwe.Neetnwnortknn:\antworytee(CBiynye[Nn tctt:35c,)pI
+natt)(E)gt(aC:Nb:twbsrikdelga.ieey\iuiyod\nltd\sxtoHnsnieoenReiedwrRuntwmeRkNetwiomkenoe3n2e Itdonn3t):(ytcs:
+:88b
+i
+(isl.Netueoikin/.niittEoxteCecnsseasteron:Tran\tuArteRecietewpBrk/En,nIonte2ntInEse:4132) 
+Unntey.:c\ nuilesl 6e\
+giNetworilC\oxtnectonon\HandwoBrkin(\Runtime\Net32,rkInt32e (at C.\buildsl
+UnetyEngine\.uNletworkinio.Ns\twetworking\Rupdaiem) \at tw:\rkuildsnectioun.ty:b3i72\)
+UenitonEs\NetwNrkiwnrg\ng.nttioerkCtwneckCon:Trancs:ortRec
+UevityEngin],.Nett2,oIrt3in) .Nt tw:r\buiilt:slpvd\unity\buti() \EtARC:
+buiisl\Nlnwe\rkbingy\\ReuinldimEgxet\Net ost\inet crbje.tc
+sn:ty\2gi
+ne.keElginnt(Ns:7wec
+k
+Eit.NEtnooiMknlieer:Urpdate.te(ep w :rkb dildslav:PuNettta\tbsildrEPxreo)jient\ NssetsiSisgavReE\vumnity\w\Exldclxiiesnioage5\Ncs
+:wio)r
+<kxincguetuwnr_iiI\t.reotrkr:dMonttNtUx.tcte (li eE
+ 
+\(U ieaatP  j:\ctniMdsPtovesProseyMa\iArssPtrsoiSenri/eAswotsirgo\mintt/mEeviceoiornkCaiecnut.cssMa58g
+
+.nty yEine:Ne6tw
+o
+nrBeinav.our:Strardtntityutine_AtatoicIEpdumte() oatr)
+\buildngine.unintBe\avioldr:ExaentCorou\Nitwo(kIng\Ruerator) (atrk dC:\buildsla88)\
+un
+itil\buimeldE\/rUifatty\gProjects/Masters\runtimeAsnsets/SineMponoNBeharkinrB/Pndiggsm.anen.ersc: 6ine
+E 4ec
+
+ionManager:BeginExecutionF)O(WARD
+UnityEynProne.DebugastersProject\Ass:Internipal_Log(Int32, String,iobnMata
+UgityEngine.D
+ebugutLog(Object)
+ExecutionManager:ExecuteStep() leat E:\UNeityworkBechaviour, NetworctR\Adesrts
+UnityEtgi\En.vironment\ExecuorioBeMhaviour:sInvok
+eSyncEventDeltegateorIn:Move Next() (at E:\Unity Projueldtla\vestuniPtoyebcild\ssets\Scrnpts\Environmg\nRuEntime\Networkere.Gs:o2u)ands:yEt) o
+f iMoyuEdsg
+Uint.NE:nwtaki.DebNti:w_tABronvl_nuomeranto2rSynUEiitt, gtjn2,t.
+UtotoekReinorDr:bu rto\r(utijnclav)n\
+uunigtromb)a(ld\eC:ebuionslNet(\urkitygI\Ri3t\i tiat tw:\geniravio\rjos:o4\\au
+ntitsEPniitc.nAsstwMrSingieNhtw\irktBorntity:HaggnlaemM2an
+EgErvucntnMata
+g2rgraegtnaExrcuGie) omman:d Vi\ldsr2)a vret\E:\Un\tsyiPrdrEots\nasAesseeswoSrr\pss\euvtrioc\rnettE\xrtcorkinignagcs:o24)
+)n
+atmcMaioae.nagw::Ikn
+EvgkclyinnoEcaetaggniExnecvetStnM()leget e(N\eoniMr sBegjeci(\Mt C NebsPiojeeatee)se
+Us\S\ybEutiln\v.xennmseiot.sExtwctrkiohMaioage:I.imk\SCy
+icxnetttc>ene_Iat:a5no
+32MiNvyEngriRe.a(at )o(\kn t:.\rowiodslCMeaectiotPy\bueeR\Exernsit\nscriats\rn vikoing ntuExt)iutaoNeC:ageikBcsha2ie
+Uuntyysngile
+.nEonyEnsaioie\reeSwwortCog.\utntnrmABtNetionr:mIneocttyrnE
+.nst:EI1tin2
+,MoNeBetwiroueretr)oraktrogt\newuEnkulaeeeauni)on(ualn Cltebuilon(\Nvew[uri nIbuRu3dt\aIt\fe2t)s raB ehrbatoud.cave14n4)u
+ytibe\UniteENntiiorsk\nng.NerkwirkIientigm:ee\n.ecwoy2no
+nxecttionMacn:a7er):B
+eniReaderne (at(C:k\nguilUdsitkve\reoiteo\n:Tra\sxrsrtsojceecte\Bysteki],\Sunr3ip e\NetworkIden:i\b.us:424)v
+Ueaitityn\iue)Ne
+\weorking.alns\neStworkOnSn\REvnntieeei\NetworionneMesgtti(Netasot22B
+hnvioysng Ne\wnerworbanel.\N
+UxtetnriknClNeNetworkiage.(e wamre e:lavitSc:slvcvee5ynit
+y\btnlEe\enx.teen(inkin,.eetewrrkCogeacen)ti:t\ nCwlbkCilddn(aNee\5rk)
+a\bur, \nnt3ns tnotN2ntwoetinwgr\knuiidsNetvU\kaityCvuiodt.E(st n4ai CU\\teilwslavnN\twtorbinietwtworoBsecvoour\NIn:wok)
+Uy\Ruyneigte\Iettet2C,kiNnnt.Nrswoare8)n
+naicyiogbHu.nNetBortkinniyt\et]ld\ktdeensnit2):\NetwCtkabnuiUdsnltimeuNiet\wu\ikulhlvslaunsioni\4y\t
+UonityEngusetiNse\etwwkkrkConnection.cstty:Ha
+Unietingcnc.:8t8Io
+nt3
+2,gl.eNaoteoRkConrit (ao :j:\ts/platRecievonByce/bs inl3d,r\pxtt/n)nvornsm:\tuiodeinug\eRnnninagerucls\kidenni6i)s\.
+e
+tworking
+\Runtimgine.NetwkCrkingeCction.cs:522)
+UnityEngine.Networking.NetworkClient::\pdate() ave\un:\tuilbuilave\unity\buildetExtensions\Networkiieg\Rucetim.c\Network
+Unlient.cs:e.54)
+UnityEngNetworekCornning.NetworkClient:UpdetteClientser) (att3C:\buildE) ecu\ uComma\duild\Extens
+ions\Networking\Runtime\NetworkClient.cs:768)C
+Unnint)t
+on.ietNyEngr
+ning.NetworkIdentrty:UN
+etotgarkmoanngter)En:HanuCe\buildslave\un dy\t3tld Ex\e3niiy PrNjteboukinasstnet\ureijNtttAossets\tctniipnts\N)e
+ w
+(kilgngaue: gm:\Unitayr Crcjse43)
+Exsce:siorn
+jactyAsseEiecucNepts/En irn E.\teEieoc ktononManag:st.rnP rortRet6e)s
+t
+By\te[], Int32, Inment\ExecutionManager.cs:7nit
+y\builte>c__Iterator3:MoveNext() (at E:\Unity Projectsion.cs:rs2Pro
+jeittAsEets\Scripts\Environment\ExecutionManager.cs:52)
+UnityEngine.itonoBehaviour:entartCorouttworking\Runtime\Networ
+kClient.cs:5Mo4)x
+cnavi uog:nana ttCWrARun
+Ug.ieyEnoikeraior) :Up a:\nal_Log(svt3\(a ttC:ibgildsljte\ua
+nti\y\builat\ebugmmonorOu\eNtim
+PooUnag\aEngtrn:\MNeowtBehaminon(toinsandg (
+Ugent\Enngi e
+r.Netwo\kainerNreBwgcrnkxIcetsoi(cripts\Netwoty Pg\ProgramManerer.cs:43)
+ExecutbuilinpEtr\enxscuonSenettEo(at E:\Untime\Nojects\M
+asteryicrn:a88a\e
+ s
+(tFvoeSarme: \:ntvironmxetujixenuDeleMansegoNect/w70)
+tesa/utr>rt_ NeIwerator3erovUeMitnEn) (.e . :entio 65iro
+g
+eNetsw\MastersProj:ctn\oAeSyetcEvecnitDelengatenment\ExecutionManeader)s:52)
+UnityEngine.voeo\uhnvity\:StartCoroensiieons\NetEorking\Runtime\Networnuehavator)
+Usit349)in
+e.MonoBehnaviouwrr:StgaNrtCoroutianio(Ir:IumeokatSor) (at C:\bui,ldslaoerukiRy\buer) \arti:\bcuildslavae\u\ctymmon\runttenesUnits\NetwoerkioBgeRhntiioe\rBindorks.gen.cs:62cs
+Execut
+UnityEnagine.BNetnEorkcitig.N() (ork E:\ntitt:Handle/Sty
+\nacstnvgnn(.entbug,Ietst\oc_kReaIer) (aS mr:tbEx cdslave\u
+nntetr.iEdnEgti
+nxeiotennsgaNeowe(:knjnvt\eStnigeaeNnatBegrkEdeentiitnel(snt4t42, Unir3EehavioNr: wUrtionkgeader)
+UnityEngineoNEevtrnAiessage(NetkoskhMvswaurkiInvokeSynuilennlevelcs:ti()y\
+b2ig rextensionsdee)ComktnnC:\nbiteoCrli neaSuenety.cs:ld2E)te
+nsions\Networkjeor\Assets\wNctwoptBehavionkrnacsPl4g)r
+UaiM(yEaggor.cRee7w)r
+r inutio2e wnnge3:2)viour:InvokeSyncave\unItty\brNletwtx\kRasaterr NPtwCoobeking\lenve\un\pet\wuirdiCoxmtnc\EixncscNi:nworak
+gniryc\Runne.
+NetworoeicBe_.Neiwuo.3s:Mnvc4i
+nnityEngine.Netwoe[r,jInt32oMIst3eetrsy: ojn\cuildslavsn\SucIrt\b,sNlEnvorkReade\)E Natti:nbinn\dRslave\unit
+wobtylo\gxtensions\Network
+r:St\Rnngrinut\Nne_Aukkd(nEt.ueyrwos:r2o)
+nn
+incttnogg:ne.nMeonotkencveClur(Sytar]e,OnSyi32veIInum2rga(ot)t(:ar ildsluge)d(as \:ueld\nxile\sions\Netwufiidt\xueesieoa\Ns\\wtrorkiCg\Rneuniiome\CUie2tS
+Uneineyong6Be2a)v
+UwirkingnNg..wet.krl:e6t:U
+pdwce() (at CtgbrniBHdgsleEexecution() (aeader,nity Projects)Mgsat CPire\lect\As\Cnlient.ild\Exti
+ronment\iExecutio\king.Ne\Network
+Cot:uptiaon.cs:4gsr))I
+(votky:\bnuivneelatN\euirEixecutiooEkelegnienctiewnrkBendliBRte,tByeeN]o,kteatreC) I
+nt32)E(76 Ce.
+Networlgnne..eeiwyobkBldg.NitwunriIInsnteety:UrveitSteReuctiede\Ne32,r CtenCe:\kRuiansela:3(\ant
+ n\\tuiElnsgate.sunito\NiuildrextworRuCns\NetitororTgdRespirme\cc:8ew8ek
+(e
+htivli ont32,:I4tU)n
+)ittty ngj:ntusltMsaasvn\r.NPryoecuB/As\Eeouen/:inip\tSe/twoewo(IgngRP ntgrmomrkaentgwer) (Ltnee::b inlds
+
+av2)
+UnityEngine.Networking.Netwoorkinient:Update() (at C:\buildslave\unity
+\build\Exteensions\Networking\Idunenti\NetworkClient.cs:554)
+UnityEngine.Network(ang.NetworkClient:UpdateClients() (at C:\buildslave\uninty\bu\Nld\ExrkeIsions\Networking\
+Runtime\NetworkClient.cs:768)
+Unne:OnGynceoemnnwo ouanof.NetwodkMsd
+Unit)E(UNtetnSbaueldspave\tni)yal(at d:\builtdx,laserousiNObject)d
+UE\iuntimenne\eDeetue:Li.gsObjei)
+
+nritwEagkMdantegewrr.Gseg8.8mea
+nd
+(rit3nn een ion:U(indye:\ojects/rawtrrtReaMesc, IAt3oeject\AipestN\:cripts\N/vw\orgina\\rauaiamMcEa erini: 43)
+
+ProgramMRunager:GetCommand(Vecttiron.cs:416)
+UnityEngine.Netwsoerking.NetworkConnection:HandleBytes(Byte[], Intger.cs:76)
+ExecutionManaglave\xunity\bep() (at E:\Units\ Nretwors\MastersProject\Assets\Snerction.cs:ronment
+\ExteEngine.Networking.Netw
+orkConnectionteTratGro3ttCcommand tu  (, Ib:3uU Ist
+U32) yatct:\baebtugaInee\ncn\_Log(Inl3d\Extenni,oOsbjectwoUeity\nguntimebr.tcork2o)bj
+ect)
+ProgramMan
+ager:Getio:mSNartCntoutinetA2otk(lienEmU\Udirt(
+ naie C:\\iied.losoee\anctous\Suta\d\coirenuiioneworkingePiono\am uant ger\ceu:ild
+lrivg\aunity\bri
+Gld\amtgfnd(Vectoera)ted\cEm\Urk\tluPrnijUetd\MasElrisnetro)j ecaa\AusB:\tdiSdrs.gts\Nes:62\i
+ui\cuoixanMnaiaans\Ne:e6)nExecutionnea(e get: E:\enticy P)o(je
+cts\Mastyneroreeceo\kaAnsess\rSoript\esnseir\nmUNt\ttecEnivipdantag)t(rExs:c\ut
+EieMauaaveM\ansige4:I
+nildcuSxetcn_intBegitnoxMcvge\Rxn(eime\ EteowkirtyetaviyertsNMeste
+or
+(RFidectme
+Asi:ttns\SicrrpNje\onkMasgn.eNteEteecrkBehMti/agrrrnvts:52)
+UnititEe/gronrtmMonoBeha vceswL:rnaRrtCor)
+tine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnBuhmeroartcs:) (at C
+:\buildgilave\etwotrking.NetworfaBehaviouerated\common\runtime\UnityEngineMonodehav (at C:\ings.gen.cs:62)
+ExecutionManager:Begintwxocution()1(a1mE
+:\Unyty Proeevios\.gctI:rser)je
+lti\yg(Inne\Scrwpts\Envibotment\
+ExecutionManager.cs:40)bt
+exI)t3
+2ro Netwager:InvokCoam mE:n\(tuei3dnExIcvte2)u iely ba:e(Netwt PksjhontsNur, NesirogkeRe\nseer)SUc\tNEng\nre.ortkirkginrog:tmoM)BUeier.iour:i7nvo
+keSyrckvnnnDClerg:GeeICetmOnn dneVeveroM2) dete)EN(tt CorkMiosegcave\tstCe\\bProjdstaxAesuntsns\briiosk\Nxe\Rwiotksi\NetworkBehavinurrcec7sl:3
+nxSc
+UuetionEngin
+e.Networking.NetwoktnBehaviour:InvekcSis\cEasatetlIeto2,ecNr\wsrswtorSeRraipts\:Etbi2roslatn3un)te(utuCl:\butlnrsilnv74)
+tnEwyrcintg\RunIitseaNne\w:erwveNeati() (cs:1:4\
+Unritoy ngoneitN\.cs:41ks)nr
+.Nieycorkidets\ty:HansdEe.vetworkConInxec2,tNoonMrkaeadeer)t(s:(B)t
+Ub[i]tsynateinun In\3Behlditxr eta\rtuC\reolavrn\ingioRI\Enumm\Exttorsk
+ode\tinwoici.:4n24B
+iamituetwgtork.oetwttionngs.um7rnto
+cnentyOECSynb.viensMkinsg.untietrkobukMc\sar:T) (spt C:ecebeteddcyamee\],iunttib2, Ild\Enx (entMono:ebavwldkinveRunitge\Cicle6tS)ee
+ns.cu:s6n5eano
+Ukiing\gine.Nc\twernworkConnection.cs:522)c
+Usn\lyasenaiPe.NNttworkinadNetworkClient:3n2d nat\E x\buildslave\unvtcs:\i0y\EdiEdttnxsneoaiaoNst:IrveinSo\cRunttmR\uNtimEoxNktotnnenDelegcts4565
+Un
+inyityine.Ne.NotkworkiedweN)k
+UonrtclEigitnUednNleBwtosn(nyt)NetwI tk:2e havi2luv(:e\tokeSyubuvslave\unityesuNnetwo, Neig\RuRnaime\NetagrRC:\tumt.Ns:av6rkCon
+nectuinn.cs:t7nti
+UnityEwgenk.oNktIdentne\NeNwtorkkConnection:T(at C
+:\buildsvnv.\yee[]y\ Inin3.Ee tnorsionhaNe C:rbking\Rane\ueettN\build\EeewnsrokReae8wo k(
+a
+(FR:lnnildslavewUniky Pbnuccds/Maet522)
+Uneetywnsreti.Networki/geNetworikBeiariourpdMae(g4ra.
+ nstybuil:ne.Net
+w
+oity\bg.ild\Eortensinoity:HandleSyng\Evunti(Int32, NetworkReacs:554)
+UnityEngine.Networking.Netd\orkClient:UpNdateClients()t met Netwbuildslavit\unity\b4u
+ilid\Extensions\Nerworkg.ng\liuntime\NetworkCcEiventMessag)e
+(NetworkMnessagworking.NetworkIdentity:UNetStaticUpdtetnsi (at C:\buildslave\uime\ClbuenldtExtene.ons\652)
+Urking\Runtime\NetworkId.NettworkCo888)ec
+ 
+(Filename: E:/Unity Porojects/r,aster3sP rnt3ect/AsseCs/ScriptslaNetworitin\/bruirad\/2n
+Unesicsns\iNntwob65g:I\
+Rurnalme\Ne(IwnrkConnStrtinn.cs:41ect)
+Un
+ititEEngiineeNDebtworkinObject)
+ProonnmMction:r:anetlCeBmynd(InByte[]n,32Int32, EIn\U32it ya PCrojectdslMave\unsty\bje0l\2\s
+ens\nScring\NeetDwbrki:ngt\Prungal_e\Nnaget32, Se)ionr cr:mc7a2)U
+nn:ytnyinnme.eed(uewtoo(k2ngeNetwE
+rroCrnmyeanijorcGTrtCsportR(cojeect\AInt32) (ri t :Nettoty Projer:tsbMasalersarro\esn:t6\
+Euied\txoensinage\oekecnr\Siogprumtiat E:\wosk6oP)no
+Pects\Mas:at2)re
+UrGiectCgAmsenNseSewoop2n \Eae E:\Unittn :rocecte\nMa(agers:s:uj4)d
+tExesets\ccy\buel\\Eetworking\\r(otramtkEag\ricyi:P6oee
+Exec\tionnarnPger:Exe
+cuteStnpS) (atetwornity Nrotwotrc\Ctisoet:Updgjr.ct\5nAs)s
+e ityECr\inp.ldo\oBehaviniren\\uild\rttensin_A\Neo.osknumer
+ator)
+UN>c_wIrtelator3:Movei8urt
+UnatyCngiutUne(wyn mergtec)swMartCr:sPtoitecU\eseSeat\Scriatd\() (at Ct\eun\deneratti\no\mnager.ns:enesU
+onisyynniwnnMkingn\eRaaiiure\:SdinotroeIn.cs:62)
+Eoec8Ein
+n
+Meratnrm:
+UnEiyEUnity ionj)c(s/Masur:sttrojCeocott/Assets/Scripts/N(Aworti\buildslave\aiaonmenui\dx\er 6ifa
+c
+ts\gen.es:40)
+ExecutionMnanag\Ur:ityEngineMonoBehaviourBindingnDelegats:62)
+ExecutionManager:BeginReader)
+UnityEng Ene\Unity Projects\MastersProjec:I\Assets\Scripts\Environment\E, ecutionManager.cs:t40)\
+Ere(lutsneaMe\unigramMande\yrxt
+UniiynesiNetwDckutnoInReretiaeL\gN(Iot3krek vioung, Object
+Uo
+UnitaEgni)i
+Ue.itebng:nn.g.Ntworkk)g
+ehaviourkInvokeoSryIncckenSy(I() n, eeE:oariR(ynPr32o  ettswo:\ReradPera ectt C:ybbiSlldisxse\envononNynwobEkecdgiERueatiaoer.ctwowor
+<kinguoR>.ci_metNeraorokB3:ineeourwo.ki(g34 t):o
+UkndetnynitijeHaN\lwerSisncEoNjne(Iont3eshtNv\tocorikReaEkrvSryamc v:\nbxecud3o,a eeaugoirk.cs:52)\E
+(tit s:\bise.MosooehiaviouirySb\aetw\Ekodeitity.cs:424r
+mngttEurtnm
+enNetywnrgkienae.Mur.cs:144)
+UnityEngCiresNetno(Neinnumeetware)Idant ::\buildlllSeyencuyibty\dutile\ aetnfocNtR\oederr teu\ combuildsnnSvtene.tUy\buil
+giittMnniioesaNittooBkkidg.NRt.notkmonn6e)w
+En:cHdentite.acs::2e4w
+nnxRteuEdiri I.nt32,rkingit (aroCecene:OnSencE\rojMessagelNs\SwxtortMiessageownoet ing\Ruutlmol\Ne\ugirCynbei)
+Exnctunii4nM)na
+ger:knnni\Se.tcEmo\king.NeEcoenco.tnontio)e
+UHntne(eetwtes(Byaoi]kr,Int3etwIrReCdor(nn
+ectiyn:lainleReader(intworkReadBr,hant32, Int32) (at vimeb\tNeswava\Ce(nny3t,oN.etEot7kn
+UnityEngineC.ibgiwdnrkane\NetworkConneectiens.osn4\1ert
+eniivgEngiet]. etnNe32,g.nt32)r(Cto.csc349ldsnanvdEeuytesyB\twor[dn, Net32, Int32) (at C:\buiSdmelNve\wnrkCy\buiNdtooxtensions\
+Networ:ibnegdNslaorm\\ingtNeorkConnectio:.Uon:a7e)
+ oiayEngRun.iedeloakteounNtey\vukCdrnxe:en4oon
+\rietwErkiec\RvetiBotkeng. enCw3rkI.esnttt)2
+U (at CS\ineENeslovrInii3g.N titd\rkRendi:rp) (at r:int\(udtiaeve\unityCbnievtiontecny\b2)lNUEwioynEiion\e\Netwmoe\Nieg\Ruokrdeeneniw:Urcdsi42).
+(s:768)g
+Ubne.NyElwvnruneito\kligenEeceeenknIdesctvtnwyesUsegSetuattioceMedatta(oe)(at t t\cusul55dla
+Uanuenyuy\bne\ld\tlweoxkiennsetetoeokwkrignng\RundateCCloieentesn(i t(y652)
+\nuit
+ s
+(File.uNet \o:kUligy Ptwnsions/neasworkina\eulntime\NetworoCtiRnaeecs:76n)3
+/2r Ignt32) (at CwsbkildsNev6o
+k
+Identity:UNetStaticUpdatewo) (at C:\buildslave\unity\build\Extension
+s\Networking\Runtime\NetworkIdentnection:Han)
+ 
+(Filename: E:/Unity Projects/MastersProjectve\unity\build\ExNenswonrking/ProgramManager.cs Line: 66)
+
+ion./1s:
+372)
+Engine.Debue.:Ietteornain_LoNetworkConntectionO:Terans
+portRecieve(Bytug[]L, Int32, In
+t32) amatanC:\buildslave\u(Iitt32b, Id\E32tensionE:\Unity Projects\MastersProject\Actietn.\Ss:ripts\
+Unit1Er1k
+ing\yrngirae.anager.ctk6l)ae
+nroogIdnt3e() (rtngC :\build
+lntveyE)ngiteyE\b\uiLlg(y Pjnoji)n
+t\NgMrormianager:cemtA\semanr(Irtpet,\Int5w4)
+Un i:PUEngiymPNeoworrci\n6a)N
+exrcProielneans:UpraExcclientsee(( (at E:\Ulots aavMjecigs\Mait:r7)P
+Poject\M\aNns\SrrGittC\mnand(Vector2) (atiEot\Mns:a 6eroj
+Unts4EM
+<nxeNstweo>k_nItesator3c:reovtity:()N oak t:\Unioyt PManagtrCc\su7lrsl
+EvoejeitiAsa\tsirScrepceuEsionpon)tn(at Ee\uuitnya\aeewe.rtI\e2tit
+enitP8Ej)
+ce
+(MAnlBntmavS cr::tUsirEyn Piruemist_AMxac(IEisPmeaatoe/
+.sisys4Si
+<npxsMouverocamvtota:Eoac3tiovnMNenxeg()r.ac r \Lonrney: to)C
+e
+\bcts\Maste\unirojbuit\d\artifaSctipts\Eenvirdocnmmnt\ExecutionMnintgeEngineM2)no
+BnihtyiEurgine.inonoBen.csour:)S
+taerutCorMautiner_AutonIWeuDei
+oni(ty
+ ngin yD:\uini:. ProBectviMurISet3srrCSjectg\Aeb(ecstu)epUtir) iagnmCn\.\ildslaioeguaity\ru)
+sxe4u)
+foncMstgonMrrated\ctmSokeS() (iven:UBegtn xnocjtctnDeBseheavsiourBindinhetieS.ripN6\)w
+EvrerRuaien)\
+UnageE:Benne.aNerw.tion() (
+<toEkceUhi>c__Ir:jnaots\ManterNexo(e ea\t esI\tt3S,y PrwsjEctsadas)enstrECjebu\Asneanagenrtpt:bEuil
+d\ExtnisoEoxse\atior:Invng\Runtivent
+BegirkBehav.toiorehae:i4tur
+(nietytrkBrhe.Netur,uNnt.IoermRorader)v
+UnotryEngineeSencoovkengtNItworkteNretoorrkneainee) IannEC:\rutted)l vgaue Cy\bu2l d\ExtenReodsbuildworkiifgitu\tleverNetworkBeha\iEotrimsi\on4t\N
+EniwoyEogonRentNime\Nrtni.dinehaveIoenrs.y62:3
+49ee
+UnitEEenninne.32, oeEworgRtNder)w(o  (:tbuilUslavn\vnjte\ysuild\ttrsnstojs,cN\AswerkiRSadurpt \anNetwobkmedsnlExecunity\b
+iaieyExge:n4e)oe
+nxo\ukionrkinggRuntimn\kNSyncEvBvtnetinEs.ce(si144)e
+Ugats(Ee)twae.Networiisg.NetwtnworkbueadyrHxn
+enseonsgievwnrkiwg\32,tNetw\rolRkBehecinu(:Is:652Su
+inlEselntgD\inetaN\t(onrdiEx eNsitoorkReader) na\HaCu\nuime\Netve\unity\buyed,Ex4e432i
+ nnis32NntaonkC.\ebRwindslavN\tnnrSBehaliOourncss:34n9\)s
+snwi(rykwigr\eRNutwgomr ket gCreCtooinBsecaeooucri4tnvb
+UniyydEEegeinnenioe2\ oNtkwonrRNkadogrRunt(nm C:\CulHanlleveyuestsyBybti
+U[diExIegtsi,oNnt3N2er(ora. C:RuoiikCsNnatweounriyon:HiinoErteses44n)r
+NnitwoErnkiagdRNretinte\ngI.tw2tw(CrtnnC:t\bu:.lssda72)
+Untyynniln\exte sions\Neewerking(CutntCme\NelTsankvonntieiin.cs:4y1e)e]
+UsiIyn\N3et. Nreki2o)R inntmegN\buildslave\tut.ic:HandleB
+UEet(nnite[]\,eIwoo3kn,\.nl32nt eeNe tnoyrkEvdnteese\unityeb22)d
+EniseEngoin(ateCworkinl.senatimu\Nttnt:Upoa\eet)on.is n37\be
+iwidyElave\u.nte\buClkinEntNceseorkConnect
+rUnntyEaninertRecievenCl.Ne[w]crkCo54)
+tiitn2Hanat C:\teiorsetao.N\Rneadker,iIld\Extennltesn\se() (ktn i:\bnltime\Niety\bCon\ebtion.ssx:5s2s2t)osk
+Uni\ountiigeRenwtre\oeitgoNiCtwork:l1:)n8U
+idyttEigineaNtwtrking.Nstwor\kCkIne\ntityd\NetStaitnU\(Bett[or, In\ u:,bime\NetwvrtkClibn\iudsd\lave
+\suont\ngineoNkEnge\ksnt.Ns\tetworriient:Updyte\CN:e88)sk
+) 
+(Fat C:\bcisd37lna
+Un\uninyite.NedsEotrknsg.Networwsotkn/ScRiun:TmenNporrRing/eevneracMte[],r
+Inis3 ,giIne326 ()
+t 
+Ci:\buildslave\unity\builSd\Extensitons\Naetwo\buildslaveimunity\build\Extensions\Networ
+king\Runtni.Ne\NetworkIdentitrkClien88:
+ p
+(Feilename: E:/Unity Projects/MastersProject/Assets/Pcaiep(uslteet\Netwng/kCmligaamManage)e
+c)
+LyiteE n7.
+e
+t.Doebing:.IntternCaie_not(:Ut32, Stringts() (at C
+:\buyEndsneve\unigtyobgiOld\cxtens
+ions\NietMwnarkir:ERuenutime\Np(tworatClientn.cs:768)
+Utsatyrstline. otPeortkmssensgw\ScrIdtynsgine.Debug:Itt\cxapc_aoi(onnMaa n:\bierl,sO:a3ect
+<Ex
+ty\tti>dcE_etIeebsaooor(Networtxn
+(\eu(uti E:\UaworkIxecntittMcp(8)8 r
+(P
+(o ieenUnity tr/Unetis PMaEntersProjeetxAssets\Scripts\Environm
+eEntyEnocnment/Execut.osr:3Sn
+<rgCeroutteec_eIto(Iat
+o
+r3:MoveNe
+xt() (at E:\Unity Projeurt:\MaatersProject\AssetmeraStor) (\EtviC:\bunildslave\unnity\builsd52ar
+tiifactgine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBeha
+viour:StartCoroutiEeiIcEnemcuoimonn)d at C:\bui
+ldslareguents\Mbug:Inartijects\generated\com\EnOvjrtitn
+\eititEEgine.Deonganehovirub.cs:)4n
+Pgr.
+EgneacM:onaag
+agecEuevooteCnnmaventBeginExecution()l(igtyEePNUejects\MjhstveiMsastoeswrorkRtateA)s
+sets\ScrintworEenw\orkgramMatwork.esh4vaou
+er:Icuti0en
+EyecauetiExDMuteSaee(I:t(2vt EeeUyirkyv Pdeojei(s\ ecuetbPoioDeseecvee(NetworuBrlh\vEoxrv,rnsieorkRxecurrkUnigyaunrtcs:e\N0et
+<wxkerkBee>two_rtB.ca:vtour:
+U:ivoyeneixt() tworking.eeywotrBjhecto\rMkReader) ocjetct\Asstlt,lNSvt\irite\\brn ldronment\EnlcdNetworking\Runtim2\ExttwnrsionavieMonoo:eking
+Uourt:mtgrNet.oretuetirki_og.u.tso:144)
+UnityE
+gnne.Netwoveint.IoBth2vkoue:woatkC:rourdne(Sy cuvebnit(rsn tae\unittyouuRdddsE)v (\in sC\:tublkldnsgiaRa\tcmie\\bntritldk\ExhmeinnsrnncsN:twn)k
+UniiRentimee.atworkriBegd.intgsosren4cn
+U6ityExaeicueSontwanngn(rInBtii,nSNxetcetrkonea)crEt eat\eni\yu lPrltvwtourkatysebugPdr\ajtCe\Abssesd\Sacw\puingy\bRintimExtetworkIteotwtrnicgg\.4st4)m
+Ue
+ityEngine.anetgweo:Ik)vo
+U.iSiycnneiceBeginESecini.enDMwessage(Netooon:Heasndogere d(atworkRerkldsla
+ve\unity\build\Extensions\Networking\RtnIime\CliectSnent.ce:Ne52war
+Uei(gnRtg3ne.NetworkingodnrworkConn:ebtiol:
+UHiay\Eunite.be(wlo\kxreneaoesrNkCtnonkinIit32timed NCyt\s(ryBelhavionr32t :n3u3l
+\nxat C:\buildswarvkingRNet\orkBNdevitoekIovnne\NetEn.ekt:Ig1R)u
+n itee\goent.Nderw)oo(aing.Netwosr3C72)
+Unioy:EaidleBytes(Bykn[ng.Nttt32ring\Run)t(aoN:C:robnslesrtRecievctBy\4uild
+UEnit2nE Int32) twtrrki\g.\etwotkI\untiey\wurdllo\Eytctnsoenns(:n73w
+,kiiegEnRrnRt.Net\N)e(itwgtreC:obreCltnnecte\unity\
+buotytRxcenesvoew(skitntw,rktworku,tient3:)Update() (at Cl\vbuild
+slave\ud\Extensions\Networking\Runtime\NetwonkM\nsettgwoN.ts:i2kne
+sci:5yE)a
+ n.N\ttylogine.Netwwtrkklueg.d\tpottnsl)o t(UNp C:\euCng\Runti\ nity\buicdindxslsve6nusi
+Nnytyrugiide.Neenotknne.\eewwwoinCC\RintioncsN5td)or
+kCltey(.cent68o)kt
+woatkirn I.nt.wN, tnt32) (napdCt:Clbtwtd()d(en\ i:tbytyNesStaavei\tenayeo)u\itet\:Erxiinnsaoens\ity\wotkidkgo\tecttons\Ns:tw6rki
+l\iteyt.igm7e\N)e
+UonitydegttietkN.nwsctinn:.
+ n
+eFeBerkmsdeEtetn]U I PS3oaects/M)st((rt Car:CjuicudAllseae/ucniits\Ebuiironmene/sExecuNetworkinnr\Rcnn imi\\:ee3wor
+
+Ionnection.c:8:372)
+Un
+iFilenamne: E:/Unity Projects/MastersPn:ojrant/Aorsets/Scripts/En,vInronment/E32) (at C:\buger.cs Line: 63)
+
+uild\Extensions\Networking\Runtime\NetworkConnection.cs:522)F
+UORWARD
+Une.NEntworking.Ne:Internal_Log(Int3te,() (at C:\buildsl
+UvnityEnginue.Debug:Loig(Objetwt)
+ExecutnionM\anagor:ExecentFOtce:R(4)U
+Uait En\gin.ettDerukj:c.ns\errakl_iPon(eUn\A2teStrent,iObject)v
+robmtiEd\gEvecutitgMLnug(Orjcx:t)
+
+xEcs\ionManager:ExecuieMeveNee)t)at E:\Unityty Proct
+s\Masterersoject\r\isne.\tcriprtIpeEntity:rmNmttnt\xecutionManager.r:\:s:5l)
+s
+Uve\ynicgynbuiMonoBe:eoveNuxtN)taroC Erou\iun_APtooNIEnts\Masters
+Projecn8\A)sM
+on
+oBehavamo\: Sv:iUCitnoePrinExccEsnMonesanegr) .(r:t 2ctb
+Uisseslsaveru.Mon/Bbeiawoirrtiir:ctPaogrnarMutnnegAem.ons uIinnm:\ 43)
+E
+)n
+UgityEngine.MonoBehavioiur:.gen.cs:62ut
+Ene(IEnumerator) (at C:\buildslave\unity\build\artifacts\generated\common\runs\Scr\ipttyEngiireMoment\EavecutionMainagegr.cs:40)
+
+ExecutiionManager::InvoEkecuGien() taang :Eun cfy Poounds
+UnMastegworo.Debtigour, eerwoiakl_\Enger)
+Unet Strice.t,oetwoagi)rg
+cnsey0w)gk
+Bne.vuebuungInLooerOIncvEoke
+PyDeEvamtBa(iagEx3:uti Nemeard(tna3Net onk3eC:a(utur, Netw\unirojeutl\
+UMaitteErsiinejece\wsoetsgngrNntime\NetworkughPrnvgra.SM:3n9ge
+U.ie:6Ena
+ProIrNt3M,onrgtw:G.Reoter)rd(Bac v:r\u uInv kave\unEtvynbjeitl\M,sxtessoroReadNr) (erkinc\riptidseNevewwonrkByg\uPvro\Extcs:349s\
+Uct:orkig
+E\nu.netwimk\ager:rxorkBehaviours(nv4kE:
+\ynctyynginIjtetsoMastno.kPetdee)t(destet\builndslavncuvnrnny\bu\32, NetwoMainneader) r7t nC
+\\becite>\levt\oukioy\bvMoveNextn)4(at\
+UetUorkini\eoNecim\r\NetworrIwentk\tsyect:4c4:)at
+dnlnyiyncEv.nteEtnou3kinngaClgerrRcadere)(
+Un t:cbnildslevo\oBeitv\tuur:\MEartanreon(aneCAworoilds\ume\utmtr\e
+tnd\tkxtentne.MonoBeha)in
+UnRSnyrigmeneCuiinwecknng.ClientS
+cene:OnS\ync.Netnawessuing.NeworrM\ssage)t(ot Ca\edildelave(ueity\tkieed\ExtInsionn MnetworkingCuunbtnlislalieutSicyn62uicd
+E:x5cun
+innntaNEteg:ne.Networtung.NetworkConnection:Handle6e
+dsrteysPgojekR\estre rk\ng.rNptIst32) (atct:obnxildslavBytes(Bytei]d,Ex
+teecuoiI\Nenw)o(k:n \oRubtnmEeelave\irkExecuuitiod\.xcsnsions
+wnrtBwhnovieiuge,Runtime\.ettder)
+UnityEin.ineandleB
+yketnE.tg[t], Ine32r Int32) vao eCkn\nuvelnsiael:ugateyo\t3e,ieeextBrkse[],e\Netwo  ing\Rlntimeve\unboik\slaolee\utiny.ioni3\NEx
+onrtionsgune.orektenrorknBtNieaeoiNetwns:3t9on
+eTranEnnrinse:ct2ovr
+e(ig.teg]io ekne3hwovIint.2It(vrteCly\ncuUvenat(ven u3ai,C:bublwi\kExaanduirin y\atetlod\ixngdnsitaseeNuNwtwy\nbkRCo\nmettNnsn.ors\C5iwe)rt
+icg:Runti
+meityEngikine.aewwrur.cl:ent:)rUCie() (:gU dateCtwerkln(v eatwo:\buildsdy:v\aunity\buiv\\nxtewto2r ietwotuntiimd\Nu) w(me\Clt:obu.llient.cs
+u7it8E
+nuiiye\ENteeweriinr\NeetworkClieuntimdtt:UClotknIts(U dyatsC42()u
+lnitbaigd\unive\unitd\Eguieln\Eotsc\sionwnrynwEgekitMeRmsa\metwotworkIde.tgse7 8s
+8nC:\
+Eu
+iFllsnavt\:uEk:tUg\build\kxeettitynstNrtStaticnp/\Atetim(\Sl C:\buildsvase\uni)y\
+Uxild\ExteaesNoetwoekiigrkinet7)nt
+
+kConnetworkIdentity.cs:888)
+ 
+(Filename: E:/Unity Projects/MastersProject/Aityets/Scripts/Environment/ExecutionManager.cs Line: 67)
+cs:416)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslavee Command Fld\Exte
+Unsiots\yEngine.Debug:InternalwLoorkConnectionncs, 37bj
+Ucn)
+UnityEngine.Derkuing.Networct)
+ProgramManager:Extcuecieommand(C[]mmaIndt (2a I nt3U)n(at  :Projects\MastnersProject\Assets\ns\rNetworkinorking\ProgramManager.cs:43)
+Execution
+MantyEnginecuteStep() (at E:\Unitlientojects\ a (emtaCoj\eFt\dsAsete
+UuniryEpgsl\e\Debugnsinern\xecutgrIniM32, Str.enNe w
+rkxetitn
+>n_ist5yrEtg
+one.Debui:eLtg(Object)
+ProirorkMrijne:t:p\MctsteComnrsject\mtsdCe(at Er:s\tav\tu Prty\butts\EaxteutsionsaNettwsert.i\s\c2)t
+pni\syeNgioeoMCniogteca:7iaurM
+aSiagEnroirs.:iet_
+Axec(nE.NnmtawaaoI)dE
+UxittunUeieeStonicaeUEp\UntiS(ar(PC C:etune(sEltars\tnj)ct\\tssltsbEcilinlsvnEu\iettm\ork\dgeauutime\Nseagwenekrcetn7\)o
+mmos:88en
+ m_
+(FtltynEamg:: E:oUNety Prv(oar E:\Uaitsr Proojesc6/\M)s
+EtersProoipMcn\Nsetw:BegigEpts\tnainron(ent\c:e\uUnitn Pan)gj
+
+.cs:52)
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+Uni
+tyEngine.Manoaehaviour:StartCoroutine(IEnumerator) (at C:\buildslave\unity\build\artifacts
+\generated\common\runtime\UnityEngineMonoBehaviourBindingls.gen.cs:62)
+Execu0iRnMadiag)rngat CnDbbilu:sina(e)n n(_t ob(iUnn3tt,yntioojects\Masten
+gPioteyEngine.DebcBeLog(OEn.cs:nme)o
+grameEnatiinGn.aCtmgrrking.N)
+,orkBt32n (atrEe:nUokiokyycnceojetIB\egsntNeestwioenet\degatt (crttts\rNBetworkiure Punitya\baild\Ex
+tensyEnn
+PetogramMgrnaget:ietwooeBtwodikVur:Inovok.c E1\E)n
+UntiePengacne.NMttt32,sgNNejtectoAkRnetes)y(araiplbu\yedwslrvt(\g\Pio,yNeManlreR.xsension
+s\t Cw\rning\duntime\ceteytrbB(hi idar cse3U9)ot
+UyiPyworkicgsR\nawose\NetworjoreB\hitvyotss:Scrip
+kni\tnvinonmenINnx32outinonMonkegtSadcrsO74atcE:xntMiseas__v(teeaiwor3kioedeNeete(ast C:sb\iNldslave\untwsrkinitdRruxnrtsject\Nttserks\iSavRiunt\ms:\i4)
+nnScenx.gine52eM
+UnityEng.ne5woek
+UdornyEgginH.nonoBohnacEieunt:HnandloRrtaotriRNetAerkR(atnume Cr\at3ldsl,
+UI\it3y2n\giut d:onbouilavniaveetuoaikingbuilinEiItnnNiets\ortk)Ikeng iRunti:e\Net
+Uornnton\Ecniidne..Neac1o)kinegeElnteincSoeme:Oniyncimet\MrnstanEgec(ionnoHraaMvssBrgtin (ayte[C, nnuc2ds l6t)e)
+E (attCy\nMuilag\E:veesnintxNbutwiornxteg\siR nt:m\t\Cotiiyn RScejme.s\easw2rk
+Urotnne\Asse.s\st:3ors
+iUvi.rEntinotNktoonutcnnoNe:gHoacksClo)R
+eaetriNon:MoraaseoerI Ivck3iS IncEB2et [a,iIn:3buutionDel\gat CN:btbirikEBtlnvienu\, NttoorlieadRu)t
+Unot\EeteonkookengcRrkit.g.eeNtt
+rnkCenneciiu.Networking
+.Networklnnnect(oor:ia, Neeworkesl(ayt:r) ]a  nt32, Int32b i(dt C:\b\illd\axeueusiEtsyenetilnrskNng\Ruiniime\NetworkB\havtoumC\cet3o.9cC:
+n5ie
+ytiogi.c.:n72)N
+UtiorkingnN.keothwaovno:np:.aevolkeSktc(vn (aI t:2bualedwlraRe\dnevr) B(tt[d,:Ixneildsls\N3t)i(atibu\\Rd\ltiml\aienunNtktlounli\Exten)ii
+ons\tNEwowoBehNe\woonkcise1N4etw
+Unitoentiine.Netwtrki)
+pnatyErkIna. C:ybuildslavetuEoiknt(Innl2\ Ndeetew)n(a\ et:wru klnt\lu:nbume\Neabwuukiddextetdy.Ent8N8itw
+ rs
+inig\wuate:eE:RUnwiirePCNoetetorsIMa4)
+initcE:g24n
+UeityEngineng.Netwoikin./ProgtdcMenng:enSysc)v(netM s\)u
+ie(NetwverkMnity\build\Extensions\Networking\Runtime\NetworkClient.cs:76\8un
+UnmtyEngine.Networking.Net
+workIdnentity:UNetStag.icUpdare(Co (at C:on:ildslave\unity\buwork\Extder,siInns32N, Int32) (at C:\builtworkIdentity.cs:888)
+ 
+(Fiotsoametworuitg\RunPiuo\ese
+UnityEnginProebcgs:41eetUsniScyipnsiNetNwStrkkng,.Oeroort)C
+Unnecti.nine.Debcgs:LeoseB(O4[e)c
+
+)n
+t3ograInt32) er:t C:\obmaild(slat3e\, Inty\b)ild\txtE:nUnity PNetjwctr\kaiteg\Rrntict\\NsetwsrkScorniptionN.tws:rki2)g\
+PnoitayMangagne.Ncs:wo5)
+Pro.NratwoaknannercGttion:Transectrtr2eci(taoBman\],o i yf3b2uj Itt
+U3ns teEtgro:.eDue\dusslett\ecripatb_Niglwort32e \Progn\,eaOboreking
+U:7nt
+mx\neu.ierbnC:Lnectbjects:5
+22)
+Ua(iM (Eta Er\.eeCwo kand(InttwoaIttr3Prtoat at\Asn tt \ Cc\bcts\dnasitonsPunnteE\tcuiienMa\aecei.pns\NNtt
+woxkingtRe>nt_mterataw3:k.vsien5.) (rog )a:
+UMUnigen:iret.oceswdMVkctor.Pr jtct\E:ClnetycPrpjtc\En\irontmrs)t(oject\AbonisanSgvripts:5e\b
+Unild\E\ProgromMaNehwv.cs:nS\)u
+EtCoro\toene_nutCe(:Etuecu:aeSte)
+(n
+) yEyEnin\nn.eoy BrkjavcoseraSrkIreProueinU\(IEtnemsUpatar)p)st av:i:uobmueial\sxaie\\nunlya\niti\rxcsn7io
+sEaeetwormion\reuntire\nMotyoEkgtn(nonoyt Ea88o)rB
+ n
+(Fijnesame: E:/Unr)y
+ExecjAconM/MaseerBstroExnv/roimeest SEaectti/UMinwaPrr.ies/ts\)g
+snityEneirecM\AssBets Si6i
+t
+s\Environmentne_AututionnMmeragtor)
+UnityE
+ngicut.MonManager:InvokeSyncEventBeginExmerator) (at C:\(NetworkBehaunioty\build\artifacts\g
+enetyEngd\common\runtngme\UnityEngineMonoBehaviourBiEnditngs.gen.cs:62), 
+Execut1oRM
+anate E:gBng.nebugc:tionv)n(al Ly:bUiidt, ttrniicgt \bjtcterk
+irojeuntimAes\ebeuwcoigkBejEevto
+or.cnamMana
+unioeMEnogmnr.NIn:w30r, IngtNut ont Bn\UevrtuIPIvooecSy\ccvtenstBongc2E, eecusoScniDad\eN (twt(rC:\bw\rlkgraavi\uanrr, bsetd)E
+PxoRremasaeoa)se
+reitetnigg\RdNnewormring.Nerko:eBhnivio urrjIcctk1e\4Mc
+Utietrenlgona.ttet(sIet3k\SnriNtstweowkdrrkt (\ytHog\amManageare\unity\ 
+uNetworkReader) (axt cCk\bteRu)tiaetN\t:wUoitbuPlvjiExtenci:t4s\)P
+rowjrkEtniAReettemSworiptorNIvdrnrkBe.tcs:4x:c)t
+UnitynagerecN:t4)o
+2kxegeCworkReatere) (3aMtnv:Eexnt) ssatve\uninotk Pisljectx\Ma ti:\suroeewoareing\RuntiielN\EntersBmensa\Etwcutin:nRanna
+ge\Clsnnt2)en
+e.cs:6n5in..
+Uetotyehaeinit.NetwaretiSro.tNntworkCo32Ecuion:Handle
+enatyEnNitworkRloBehaviuti2,t\nttlo oExtensiIninldstaoro\r) (atbCi\e\ExtsnorkInens\N\twosrdinr
+\nauytsmggnetNrtwCrdincctionncS:ntim
+\nUtyinEyEng.Neewoenoinew.akteoukroei (dt C:\baenldslate
+uxBetce[], ndM32, Int3on (attCc\rtiin(gl(\tvEeiuUnitlienuildnt.xs:s5sion
+U\NetwogAnsetR\Swtrpis\E.netwrnCmConnEeotcutionn2dager.tdEn0iNe
+ewNctkReadergager32, ICe3yneEveitCeginEnscotit\uniiev\atyitN[], rnnsion \ntr2wo(kinorkuntime)
+ani\unnton\eciitn.cxk41nsion
+UnortBogkneio\urttnvekeNyncewvwkCoreCetion.con532a
+UNleyynrin(.yde[], Int3.:e bInt3kd l(at C:\bti\l)s(ld\ExtensidslavetExoenkiions\nexime\ketogoRrnBehworkun.csk34ni)ee
+UienwcEng72)
+NnityEngnn.
+NniwyrkBkingioutwIrrkiognSnewtEve:lienn:sUortNtctwloerkystd) ](  (Ct \,:\nltsilv \uanety:ubuitldbsile\esxutnitsy\esiworkwotgknnui\tsumntwNmre\iketwortiehevcN:urwc)s
+14nn)ctUEnicinn5gNen)wN
+eniirtyEgnteonekrdeIndoiniynUy:NtnwoaStncEenate(dn(e(3 C( \e Cld\kluavles) nat u\nbutyd\laxle\uniotensiond\kintwRsniiis\NRNtwwtriIdeeneiuyo.kils:n8e.ws:
+rkIden
+tnim.y:sEg/i4e
+tN tyrojece.NeNastkonkPlCjent:Apsette/OnSyncEv(neMtwo k:\NgitroglkmMa\sgnare\c slad\ne: 6uil
+
+slavtworniing\Runtime\NetworkClient.cs:768)
+UnityEngine.Scetworcs:652)
+UnityEdegitity:UNetStaticUpdatrk() (at t:\buildslave\unity\etworkReadten,sion32, Int32) (ng\Runtime\Nsltwve\unient\btu.is:d88)
+ ens
+ions\Nemtwor:kinity/ u
+PriteetsiMtew.oDsbCrgnnect/rsnal_LS6(rn
+pts/yeStrinkiNntgjoPco)
+UnmMenEwnrgcsoLnect: n5)g
+(
+Object)
+Progre[mM, Iagt3r:GetCommand(Int32, Intsl2)ve(at E:\Unityd\Projenctio\Ma\NtetwsProject\Assets\NSctwiprks\NetworionngcsPr37gr)
+UManager.cs:.Ne)t
+workiamg.Neater:rkCtCnnmmctndonVector2) (at E:\Unity Projects\2,as/e2s
+ProjyaEngine.Debug:InterntlwLogikint\tensioans\Na tw.br:ict)\
+Rnnctut\ontno.kebnnection.js:t)
+)r
+onrEtyManiger:oeteotr\Mns(.ensworkClient UasaSe:\U(at\C \iuildsnt\Exueirtibruild\gxrensso7c)i
+<tsoNkunto>rkingtePratoa3kMMlieeex.s(: 54a)
+
+U:ignrtnyMnn.Njecore\CammendworkClrt)A(Usd t:\Unity P(o nacts\Mbent\rdPrujvion\nntgerbucs:52)ennionsorginerMPiogge\Rauitger.ce:76)
+rxeiunt._M:7to(
+:numyengate.N(
+Uw(oyr ngngUeNitow oBrojvntisr:MUNsetCtsoPropncte\E u(ets\Cc\ iuastEsCli\eb\mlnts\avc\udiEtx\ennlgdo\ac\tie4awo
+tExigngtreanc_deteretno\r:Inveitxi()ni(stEE8g\
+UM
+(FyoePhro:iot/rBiitiygsPreoejcsAs/)ts
+\ScripijocEManagoer:/nSgcrEpescuteowMaraigtr.csogra
+U nityEngi\Lineenr6se)av
+j
+our:StartCoroutipte_\EnviroEnumerator)
+UnityEngagne.MonoBeha
+ExecutiStnManaoroutine(IEnumeratntB)egit C:\buildslave\une(NetworkBeartifact, \Nenerated\common
+\nityEngine.PyaweoiCeong).BerhwvramMahanvro
+griIynvocin:62)
+egecnteogMte_Iog(InB NenEwtrikteaoO(e ct)
+Et U:ibgynedselctv:Mounitbsbci)dEEecAeisetssS\Niprws\kinnei\ronmine\NetwoUtnety Projec.ssM49)
+U
+sxecutionMsnegts:oSnrokeSstcnrvBrtnegintExxIuvionDSeancgvtenteI6nr3
+2, Nctouo>kReadorr Raad:ro\b
+unlxts(ag \utiE:\bnritlg NPttojects\aMieurrInkoongecucAvsmttseScrortseEavvo2,.Netn144kee
+UnieryEngine.Netiodki
+ng.Netwgine.eont\thx:vHnnrieSns\tetworking\RAutomwErnumerrtBerht 
+C:\br.cgs:l.a9enu
+Unehy\bngir:etEretCwroirnsiN(g.NetkirgorR)htvio C:\nuokeSynncityincsbIin432
+,nittEorsRneanNertwd\konm:.\rlneiteceen:tnSEtc\ieeMoe\oBxh(NvtwurB\Neisngs.gn(\tsCntime
+\Networen\Maaaitu\bBis:1\4xe
+uniiynns\ n(at k:no\nityi.eroteots\IeeseteryPHone
+Uce\AsseiveStNrinws\Ennietwomkne\dxenu iion:HandlrRcsaader
+(uNntttonMaRiaa\E:xn,osintys,\Nenwte2ri(iatgc:tuoniimlesNaaweo\rnitdrkuily\cxtu:rs2 )N
+nenwNtyEngike)n
+et\wyunntnng.CNlwonrkkonn.:nnScntEoenhaM:4osagUnnetyEnSrknE.sanwe) (gga.:etbtildsonanwot\oknHayerlil(aesxC:e\bion \netw32kn nyn\bu2lt(ixm \nsbuotnSscaene\rni:tg2\bu
+inditexNegini.NBt\Nerwirk.nNs:tuo9rkm
+onnetctEonogonnecNetn.rsir(g.2Nt
+Uorrkeehev,ouN:t32, IntSyNe) vearkCo\n2ucNionworransportReual vC:B\tnslodsI\tNv,t\ornit2\buindiCm\bee\dsetwoekueowtry\nbiRnld\Eme\6n
+tnory\NhgtworrN.tg\Runtnm
+.NetwEroCinnonnicnoHandlsBN522)(
+BnIdentity:H.2ntlorty2ncg.NetCo\nuC3idsnt:UpdatRt)a(eati C(at ei\duoldvlavunotkingiRbu\Exteex\eet\oretwnrectiknRcntime\Nm
+tn\oetworkIdeneit5.rkin
+g.Net
+workCongentoioitwrNktng.ClieniSve(Bdtt[C,ncEnttns MI(sst2ge:(eb i:k\slbuildslavabu n:d\E\ublsdln\a\eetwity\s\ilt\oxte\ng\twnrNeteoentnws:k6otnm
+U\tioyentsieee.Ne
+:65tiE
+gnnetworwIrentig.yrekNentktlttwco:kdpoane)t  oat::Ca\iduildaadeu(\enw\ryuRild\Exxtenn32onsINt32or(ii g:\bnildse\NeewwuriICdienu.ltyE5cts
+nsion)n
+i
+(.NlekwomeR:ngimeUwitrkClkeontnU/ptist.rsPertsj6)
+anit:EngiSclrsNesvN\kunnk.Ne/wriog\oEnMeensaonnrH.netloiret sgB)y
+tntime\NetworkClient.cs:768)
+UnityEngine.Netwuilding.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\u
+nnity\build\Extensikins\Networking\Runtime\NetworkIdentity.(Byte[],
+ 
+(Filename: E:/Unity Projeclave\uniety\buiect\/1
+enssiyErsiNt.twNrkgorgInnet/PrlgLet(MorkCa,nrtestngnnOb 6sc)5
+2
+
+UtyEnyinegDibnge.oN(ebtework
+Prng.ramMworkClienet:Cpdmman()( ntat2, Intui2ldsal Eve\UnnttyyPrboild\Ex\MensteonsProjewor\ins\suettse\criwotr\NCltworkis:g5\)P
+UogitamManneg.er.
+cnit6ing
+PnegDtbmo:rnkCgir:ntelUodmtanlde(2,sctriag) (ajbut\ds
+UlityPnnotn\.ts\Mag:LogPOojjescc)
+PAwgramMaSaRei:tis\NemwoorkCgnte2o, InM7n)g(
+t E:\Unit
+ye.cretjnraisggeretErsPrIeeeetA(s (NetS\Ect\inpdytPeo) ocaingMartigrdrmMaeve\er.iey\7\Sc
+ripgsanMnnogrsnmenwoEkeann\ouneitmre\.e(sa74 Ed
+eUxicyycePcoje)tt
+ra\Fri:ename: E:/Units  tPr\otects/MasttroarteiscP\Pregrts/acaiptS.cip7son
+eitoumect\taonManaiEeeMcsnteSnrp:)6 3)a
+t 
+UnitUEngiy Projeocetsviour:SrarPrCooject\Assets\Scripts\Envir
+onment\ExecutinonManager.cSsar74)
+<Execute>c__Iterator3:MovCNe:\buildtsE:\Un\ty Projects\MastersPrs\gecn\Arsattedcripms\En\iruotiment\ExecutionMaonogeeavics:rBi)d
+nnityEngine:62ono
+Beecauiour:SatagrtCoBeoutinx_euto(IEn() erattEr:
+\nUtyity inro.eMto\MaBtersPviourct\AartCtsroutinpt(I\Enumiraronme(an t:\bxuiltdFnlMAveD\
+Uni.y\bnu4le.
+EDrbugioIntMreneer:Iedv\kcSy2mEoentrinin,Ee\UnetyEnD
+eliganeoBehaor.uebBgv:dLnggsetwgckn
+Exde6))i
+EnneaEuniin:axeautorkBeg.NExtc Eiok(\e hta  o:\eUtsiMts Projects\MastsrsProject\Assetr\Rcaien)\\EnvironminldExecutiManManaageer.css:4t6)b
+ux
+ecdt\uot>acngstrnasv\k:StwvEkvnenRtBntgiEnE\UectuyoPoojeclegMutecsNr49o)r
+UeieyEnAus, .sNSctwoRrtdsr).
+Nvetoyoegnetevioetc:riviog.agywcrv.ntc(aI52u32
+Iniotwongineder) (atgCit\(rnSldartaNvreu\rneRe\burIdnEaxteaCs\bu
+Ul\slitwoyEkiingibnue.MeENBetwsirkne:\Nerturrrintin4unt)
+nn\NeenawineB ehavrkunbcNl3swovk
+UInintyEbyi:de\artewfyknsnEgvnenroateB3\,omNon:oInvokdeSUnr)c (ent(I\b3i,h lNatu\oBikRebgs.rdg(ett.nCi:b62\d
+tleacet\oRuntyagueld\ExieExdinttsoN()cs:42En
+\nuntiEegProjoNktBeMaisgeul.ertSce4)e:
+ssnty\cyvengiM\e.sieeoNoeknwtg\EMetcwtosoIdMat)ag(ra n::e\)bc
+Eieldt(Inta\agnit:yr\buildneEv)etai C:Es\uciuwtrlkDvlge\atuntyiteoiCklBixhttvisonuns\:eNe)w
+roringnRir)tiUeei\oNnginneoNetwdortkitny.ects:4:H4andliiue:Eneg(NetwonwkorkaDnelC,laiettS23n I:Nety)oEav e:\beri)d l(aeeC\ouniMtysaage\ (ix Cenbuiilds\Eaete\sonnting\buitd\ExtRnuionwimekCenrnonck\ihna.vcoCr16es
+U3ic)ny
+UEntgE65e2Net
+Unikyong.ne.NetrorkkinavtNitwo:nHCanedyncEvena(nntl2R,e detroN,ktIotd2Reade ,:Cbnt32d lalae\uniat b:\uui\Exteve\snonNyN\buirking\Runttinmme\NetrorrCoBnhnvctiore\c:e:37))
+UC
+niitenngioee.Nstt4or6kin
+gg.tewEnoiknd.ntitwyorrinnl.NornRorvkCvenecte2, Netwol,RIantr(  aa C]Cb bini3dl ane\u2ity\\t Cld\bEuildslave\uniory\bgi\dunxtensionw\oNrkIonkcni\on..tc4:4)N
+Utw
+onyEtyEne.NeeNtworring
+UnktinngSiene.:OntSoykgcg.ventwerlkgCoNntdeorkoneTtsansportReslavb\inydtl\a]ui uInt32build3E) tew C:ons\Nesuntii\e\NiuynwurikdCliettSnssne.5s):
+6nitEnniieynntime\NietwNrrCwirngltionntcCop:nt2Ct
+ineHtndlsgR a.ereCNotkuorkRelaeveC unnt3yp, Il(t 2a n s:\Cusl\disdsreviniunity\bmild\\xNeetsoros\Neetwcrkki6g\\
+UntiiyEe\iNeewNokCoCoint.ct:twor)I
+dn6)t
+UtE:gine.Networking.Ne. erwork:\bticUdtaoave\annis() (at CE\b[i, Iit32,\Inety2) (nl\RExteiedoenave\undty\btg.dustx888)
+it
+oFkeleearte:gE:/7n8i
+y PNotneitsC.NntworkPno.eNt:tA2s)tUnSttEnpi:eNNetSorrking.Netra)M(naneCr\csoinineaase\rn
+R
+ecievuild\textension32\N Inwork) ng\RuC:\buildslave\unity\tyuics:8Ex8)
+ 
+(Filename: E:/Unitnt Projects/MastnnrsProject/Assets
+/Scripts/Networking/ProgramManager.cs Line: 67(at
+ 
+C:\buildslave\unity\build\Extensions\Networking\Runtime\NePwoayer(Clone) (P54)
+Unitynanger)
+.Networkinne.Debug:Intiernal_LogteClientsSt) ing, Object)
+UnityEngine.Duibud\ExtenObions\Ne
+Etworking\Runtime\NetwteStCpiynr(.toE:e6n)(t
+rn tyEnMgiae\.rNst
+ersrrEnneit\ADeeug:dncttrnyl_Log(rntt2, ttraixnc) ibjecC)\b
+eil.cyslgav)\
+unitug:Log(\Ijxtrnsi
+Ere:utionexn(ge(:EximetNeStw r(ro(ntctsy\casters)r
+ o
+ject\Assee sS/rnptectPAosrtcts/critts\uPtvoncanaAeete.EseS5rti
+pnstyangin..Mo:toEx
+<uvionManagrt.Cerouion3:A67e
+(
+IEnumeratoE)
+UnityEngine.MonoBastersPuroject\Assets\Scripts\Environment\Execbuildonlaane\ueritcs\b52)
+UnityEngine.MonoBehaviour:StartCoroutinie_yEuto(IEnumeratorio
+UnitndEngine.Mons:Be2)av
+iour:StartCoroutine(IEnumerator)  (at C::\uuildslmvj\ncdsFOMRWuArRD
+UnityEcssngenerated\common\rnment\Executiogian, ObjBehav
+io
+urBindings.gangcrLog(v
+bxeeytio
+ManagemraBagcrnEieecutlCoomm nd(CoEm\Bnh)y iruo EcNestwyrtersaeocect\
+AnsetyEngine.NeEwvitrk\ng.Np\t\xotrtoehaMnioage:gra:m0eSy
+nxecutionMa
+axee:Initn2anagerEoxnkueeaieep(e(a(ionE\\uilatsy Nr\tjwor\s\uhadersurnr oetcoN\ksoeksi)gc
+\iptsE\ne\vet.oonwore\Eviour..cse3t9i
+UnBnaharicne.:e
+nworkunygcN_veIttraBeohe3vaMou(Inxv(2keSNnctEUvitt( Prdo2, Ntt C:kburisdr) jvct\A\sueylbd\ldcvxtens\Eoynroneieo\ExtxgnRcioinsn\NNnttgor.kB\:5niom
+e\NstwogkBe
+UaMtiyoEr.cs:1viout
+woitkrngiNrowNornkoekhiagiNemworktor)
+UtcE:HandlnS.32noNettoIotRe,dNrr C(at Ciaderinums a:\bu lday av:ibndtEd\lnuiion\E\tebswiokdng\Runricte\geunotimrhavidwcrkcdon\t4iny
+imetUnityE
+enNtytEwginh.veourBinrni.elstigtn:ccnelOnS
+EcEvettMInMaan N(r:wBekReaxse)u(etoC((at Cl\blave\lniteouunitd\ExselesisxPsrojecw\rNine\orking\RunetwvrkICentittyxecut.24s:6
+5ngitU.ng:n0ngi
+ne.oNkitnn.CningnrScwnv:OnSyncEventtBeginExNateriNkeDeworket)e(ert,C:kBehlvsIou3e)un(ttoC:ubuil\sxa
+vn\siots\iuetlw\Ekoeks\Rns\NeewrkBehavioun:ics:652)
+orkCynnecteon.es:416)
+U NttwwrrkConnection:Hgn\lbtiadeC(aenwouktRoaneu,alnddE32,yItes32) ee[w],kIbuild, Ine32nety\build\Extesraco:\un9ttw
+orkid\\gunenmi\nsrNworkooking\Runtasi4ur:Io
+UkityEngEtent(Inworking
+.NerkReadonnecti n:iandiNdslave\unnec\build\EnIenort2)c\eat C:\tuni]d nttve\Nnntw\2ukBeda vxournisios4nv\\
+UniworEbugi\edNetwtersiens.NertkorkinecRtion.cs:3e2eS)y
+ncnntec(igine.Ne52owr
+UrkRyangino.kaetnw:rkini.NesaaskeoltRecieve(Byte[t(,n Ions\Networking\titCy\iuiildd\Extenswave\unitydsbuiey.Eo:tk2ngs
+unnt\yeneiworoiegC\Rkeitimc\:5e4tw
+SnriC:Enectionvent:rk2i)
+(gntNttEwnMiCsieNtew)pdki eg.leeioldsCl)v(nt ::t\\builddsEt Cn\\bisydNlatedorEitng\uiontEitNesilrkieetwuntin.csN6tti)m
+r\ketyiennglcsen7et8s:
+Uii)gy
+UeiginyEneinwe.NetworktnoekNeentity:UNetkUatiateCaIet() (at C:\C i\auslCvde\unedyunbiiedu\Euildsbiine\NextewsNrktnngrNitntr\ment\iuno\mke\eotwitk.enn:.tion
+68(F
+ini
+Une: Ee:inetwo tkwjerkNent.sttekrPrConcit/A:oeet:tSctices/ates(rBotnt],nIn/i2xesIutv2nuMa(ya eu\cul dELiaes:\onni\t
+
+tworking\Runtime\NetwtrkIdeinig\Rcun88i)
+e\
+NFilenrme: E:e/tion.cs:roject
+s/MastersProjetwo/rkiegtNetworkCts/Environment/ExecutionManager.cs Line: 63)
+
+32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:522)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:554)
+UnityEngine.Networking.NetworkClient:UpdatD
+UnienyEngine.DebugbuFldrWAaDl
+UnigyInu3in, .Strunn:inntjrNett_L
+Uri(nntR2n SDebug,Logbject)
+t.)t
+E7ec)t
+UnityEn:ior(ENxtwcrtkS
+Ene.(e (noakager:ixy :rtejtSta\ capdate() (at CA\buiss\lacriets\ryjvict\Asnx\esxSirotionManager.cs\6\Ex
+cEt\onuawe>ckr_ctt:ty.c
+s:8ecut
+N>
+(ci(l Iamt:  o\3nititeyePjects\tM stMrUsPeoys trAoject\AMsstetsProjeco\Nsent\skienuiiong\anvarnnment\Exe
+cnetynEnga
+ger..cs:B52)
+UnityEngitne.MonioBehavioIur:StartCoro
+Uutine_Auto(IEnumehrvioor)
+UtartCoroutine(IEnumerator) (at C:\buildslaveumunraty\b) ild\ Crtifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:62Be
+EavecutionManagGrgBCogcm:nx2cut
+ of bounas n
+anent:EngireEDeeuutMastersProject\Assets\Scris\sOEnviso)r
+jnctyAcusisets\nager.csOb0ert
+n)m
+PetnoaEManugee::GetakmSr.ccEve)ntxecutixn2autgotD E:\oaeSyneErojectegMavieoutiooDelcogkRtader)
+UnktsyNetgoork.networkiegdMr)t
+UgirrBehavio
+rrongokieManeEvortGetCagitne(Intv2r e) tncEvRnaUDilegat oCnt3b,iMNdteoave\unity\build\\Sxtilidiolave\uwiringbnirogrxtMesNoger.cstwork
+ioncucRuotnme
+UnneayorrneEne.ietew.cs:3g (et
+Eo:rkBeitnePueojonktone.aeynwrEPkBohavi\3srsetsowkriptndcr)v(at i(:ntb32, slevtmuntktyxeuuld\Exte:\bor.css:awv)ei
+nnxRucbtiimd\\INernsorr3BNMetieurkeitg\Run)i
+Un:tUeEigikeBNohtvirur.cs.N1r4orkI
+Unct\EtygiHns\.SetworkiEn.(etot3rmknNdeEtetutionMa)eg(n.tEC:ntu(l
+ds32,veN\iuno.ykbuoaB\hrti)us(:nt Cet\buildslavnAutei(IE\buird\notens
+ions\Netw
+UekMto\nRuitiaeNetworkork.ClnoniiScecs:42u)
+naEoy)ntMessage(Netwolk.Clssagec b(it n:yrtcfadtn\aeessuaite\twcrkMesstenns ons\Cn\twuildslave\unityCbueutBindings:o5s\Ne
+two)k
+Engicnt.tome\ClgegtSBetw.rkC652)c
+Uni(): nadine.\eer(Nekino.Retsoekaonnet3t,on:Htno2e eaaAr s:\builkcliavse\,nvnrynb,ent\Exetutsoon:sbNetw.skan:e\unn
+imyc\tieod\MxnConiroItnovt.ceS:kc6v
+entBeEig\ENe.Nwtwrknoenn.caitworcCsone4Be6)v
+UandleBytes(.yReta]o rIi
+ng.2yEngi3n) (atcCo\okunlgnlNeBttwor(Behaviour:Invo sSnns2Nv tnworkingtR(nnt32e Nenwotk\boilndc)tx(onn cio\s72)
+dnltyEn\ine.Netu\ld\Eo.retwonnc\Niow.tro:i72r)R
+untite\Neine.Netwovk,iIgtNs2, Int
+32) (at C:\buildslrveRecieve(bytha]i xuntI2voke\tn2E (ati(gnt32, dml\vr\unoay\C)u(la\t o:nbsuols22)
+Un\oykiny\\bntime\xetwnr.Cne\NerwiCoient:Upda
+te() (at C:\builvskane\cnet1orbu
+ildnyExtgiate()t\oetwo:gkNetworkIieneiietworkCld\ynn.cnEvent(
+Unit2Ek Ni\R.NtimerNeing.NeCwirkCuild:l:ve)u
+teCtyents() (at C:obs\NNewwrreiClgtynRunldiEteClntnosr)Ideat tr:itu.ldslaiem
+\itytoEnCiient.cs:768)\
+UetworEtnine.NetweyNietventCeient.e(Nte8two
+:UnetSsatii)e(aNteC)o (atg.:\auildslayeitynlietExaenscons\Ne(workainN:twoitdilg\vR\intiSeceueild\kxd2eti
+Uync\E:g88)
+i
+gFilnknnm.Netto/kCoIneePttitec.cs/Mast)
+s:H
+arojeen/ees: rs//cripks/Eroveronment/EIesPuo)ie(MtnAsgsrtsslcsiaes Euvni
+t
+y\build\EectutionManager.csingine: 67)
+
+NetworkConnection.cs:416)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
+UnityEngine.Networking.NetworkConnection:TranspExtRecie Command FORWARD
+UnityEngine.DeEug:clts raov_Log(Int32, Sd
+UEngt,eOnneots\N
+DtitrEngnnterDaimue:LIn(32, Strie
+g,tgobm.Mcct)e
+2n:t
+yEngyte.oemug:Logomking)N
+trogEk\Unity:PpEojecus eCasmend(uimomeaatvAssets\Scripty\\xeensisns\gePwosProjeRtagesrets\Sc)i
+ECecuettonoana5ngr:
+UnogcrunmMineege)e.cw Erkin
+gx.NetworMents\Mn:s:tpetrterpj) ta\tss(e\ n\tcbipts\EnvironsiersProject\otManager.ripts\
+nExr\nmentiEeINeraiorkCnioneNext(768)(
+<
+Un tyEngin__ ttrorkc3sMNetworkId (at E:\Unity Scripts\EM)isoetmCn\ject\Aslevn\\Sciiet\\cunvir)n
+Unitt\ExiNettoonkMne\aReuntim5t)rt
+torruInene_AuyonsI8n8amei
+ou
+r:Ste
+nameyE utineMAtto(Ihnveoersr/r)s
+UnisProject/Assete/actirur/Networobniltsrae(IEnity\beir)\aatifectsuie
+
+rated\comm\build\artifactsyEngineMond\Bcommon\ruintiine\s.gen.csgi62)
+ExecehaivnManager:Beg.gnEn.cs:62)
+E) ecat E:\Unity PrBejecntxe\MastersProject\Assets\Projeicts\MastersPeno\ExecutionManager.cs:40)
+ExecutionManager:InvokeSyncEve)t
+
+xeiiEyiocuiae.DeblggvtetNrnnwlr_BLhtBegir,xNeuwirkReader)t
+U(
+enwonrEngineN.Drwog:eLnorkReader))
+er
+anioarEIavanerSyGcECkmmand(Itaote3Int32, NetwoarkReadec)ye aPDeljegual\MlIntr2, Ney\btiRds\Eet)ncripts:NbwtwoingaRe\ntotm\muietwgxee.cso6i6\
+.rsgoam9ing
+gernyGitCommant(VoeBtor2)e(utorkBehnv)o
+U rrIyEvckineyaecEvent(Int32, sektorkReadursI nvtk C:\bcgveno(vna\3n,nNy\buildREa)er
+)seau s:obMalarking\Runuiye\NetworkaB nsions\retcr:1rk)ns
+\MusteimP\e.jecw\Aorktng\vioupots:\4n)
+iny:maEdl\Sne.Neewt(Ianage .Nws:w4Ik
+<atecrte>(d_etC:\cuve3:MoveNe,ti)y\boilE\Exten)ions\ ecat \kiag\Rrntlre\eeuniorsbuesti\E.ce:424n
+snNenmertine\eRuntimeManagerkcsS5ntit
+y.is:4cn)i
+Ue.MensnginevNetwo:Stnrs.aore)ntSceCu\Oo(iynumeretoe)i
+UayebuEldwExrkeessianeeN (aurkCtar\tudosiletvCelIenitSyene.cr:\5Ea)tC
+Unnstyinginetworwirtg\ng.NetwrrCCoenttsSgcennerat:d5aome
+onityrugtkneadeityEniti.ee owo32)a(nnocti:i\:Hunglsseaan.e\u6ioy
+\xeiddironMana3ien:Btg3t2)ekaun gCRu buim el\NU\nort CbuoljeEixnM.nss:oPnr
+NeitwosngisngSeruntsiiegi.toomkeorkCotnouc.ts:onaHga
+nrilte4Bnte
+sxByctwoo Int3.2e Iwnnvok)nyctiEventBeuildsles(Buntiee[\a Il(tE3woe IBe3as)Netw, kituglRuntidm\u\N
+UtyorEkgione.ectino.is:3.2N
+ttiokBihgiRuoutr:InNrtiSyn.Cennettkoennne(Ino2n: rNetyworktReneieNrtwBrtin[:Nbenwldslavenucity\t:ird\nbpildslaneeuenwtoytbunglRIuEttme,NiItnos\kBtho kiour.Rsns3mae)e
+utwtyrkgonneNeioe.ksions\N
+wnorkBEh\auntouNeItwekteSynCcoNeneo(iICn3i2n: Updat
+e(ietaEnei\ .uitdwolkvun\.nsetywvb\uliitExtensioE)\ netoor:kNet\lrkitime\Netw\bNetd\Ektecasioo4\N
+Uciork4ng)Rn
+U.NityEogkneoN.NetworkCcl.N5t)Ur
+UnateEigte:HaN(etSytcC:\buildsl3vC\ innty:bUidaader)e(sat C:\buildslag\dulitymbuiettyEotkilient.cs:768)k
+UNe\wurngine\RNetworek\Ne.wte.ws:42n)e
+Uciity:UNe
+tStattcgpdatn()twar Ct\ceNelOworkIdenentMesuelS(Netwnrsiate() (ao r Cn\uildnsliveeuNneitwyrkuiild\Etttennsoos8se
+tw
+orkilgngRRe: mi:/elNitw rcIode.ts:tM2st
+Uri8yo)n
+g
+nA.sentsmerc ing.Use/yorrwjonneg//on:HandmMReactdrArc( tit/eo r3)
+
+/Networtking/ProgramManager.cs Line: 43)
+
+\build\Extensions\Networking\Runtime\NetworkConnection.cs:416)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(ByGe[etCommand Gut32)f(at nostu
+Ulisoyuvd\in
+nny.bEunig:de.EDtensiolnLergntn_Lo,(nnt32g  Omject)
+UbreConng
+cnno.Eebsg:eo2)(
+Ubityog(be.Net
+oMknager:GetermCaedCotm:3p, Ine(3 ) (ttt32) Uaids lrnvi\cyiPrMobeilsdrMjseetrAssstect\ArskitngNRuntts\Neg\wwrrkCaiPMon.gemMasag6
+5)i
+tyEgra
+mManager:GetComGttoommacdor2) (atn)t:\ptiEteCliey ctrojecssC:rbstPrrorajce\\ssssey\su\rict\\ixtsonsktngs\NetwarkingamRMantger.cs:w76)
+
+lxeunti.ncMa:n68)
+UniceEtgSne.Ne) (at Eg\\UnityyP Ijrensittss:esstrSrsectject\Assets\ tC:ipuilEsvieoe\ent\ux\cutionaaer.cr:cn:\
+NEx
+<Euki>g\Run_ert\retwoMoIMevttN(yxcat E:)tn
+iE
+y irnity er astersProjPrro\ects/MascsitsrS\Ervpros\entvScriptioneancgtinn/P:ogram
+Ucit52r
+cn .yineBehe6.
+o
+noBehartCoroutiart_Aoroutine_Auto(Ir)
+UnityEor)
+UniMoyEnBeine.Moor:StartCoroutitae(IConumeraneorIEnumerC:tobu) (at C:\bunildslauild\nity\buits\generateds\coenerated\common\runtime\UnityEnhaineouonoBehaviourBindings.
+Een.cs:i1n)nE
+Ueit:BngnnExeeur:gogIn)x(rnaEi\Un)t(a P,o\etcin\ M abseet)
+UnisyEnsiroeett\Sgrspts\\SvertptPenErvxicantangert\Exer.csond(nn
+Ex3er.cs:40)
+EaerEutUooiaeayPncEvevtB\gintexsvcetjenDgleEascttionweiekgete(Nwtuw,irne\worvgouader)t
+Uer.cs:67))
+
+.ngiamrakaiee.Networking.NeuwtrInBo heat E::Unity eSrnjectsnMDsteeswrr(Rnt3dArsett\trCR\taueldswork\initPi\dguaae\Ennagerucs:\Ext
+enscunsoNMntwier:NntwcruteSmepN)rt.ask Behan
+ityr.co:i3c4.s)e
+UnstrEnsnioeect\Arsrking.repws\nnBehaviountInvokutioc aeewt(Incsa3e4,)
+<N(at o:\>u_ler)eratuCi3\:\iudslave)u(ni y:\snildey wrrjsinons\Netwr\NktwogcRuAhsvmts\Scs:p4Beh
+avityE.gin1\4xt
+crtiogyEeganer.cstwork
+Un:tHEtnglneIyMonniBnhaviour,SynaEveorRead32e_AN(o(Ir:Rbmildsl (a
+ C:\buildll.EMononBtonasuNltwSraingsRoos\Networkwog\Ruteit) (aesw:rk4uil
+dittyEngine).
+Unuwtydnantn.ClientreieraOed\yotcEcenrMnOnSme\UvetworkMaegage) (ao koe\sBieldsltv .gunuicl:sluv
+\xecuyibsiMd\Extensooki\nE\eRrukiign(RCniint:\Unity Pr5n)
+Un\tyEn)ir
+enityEwgt\enN.ete\rcrkpgtseEntirkn:oaneExeconeioanManagkdreds:N40)
+nx3ecuIir, Int32, C:Inuildslave\unildslaiE\unity\buDelne\EetensiktswNrkBehkmno\R,nNeoweoNkReadeion
+.nity4t6ine
+Unit4E6gin
+U.Netwwrkine.aevwour:innoekcSeicEv:nanDnlecgtte(Int3edleBInt3rBReene3) I((t3t, Ib:ibuildstaC:\btnyl\\uild\EuExntioibsu\Ned\orkingiuuttime\Norking\Cuehavmi\out.sor379)
+nUnttyEEngie3N2)w
+UworkinngieerwkronBeectioo:.r:ItvorekSoenccEeien:(ran,32nrtt3RwerkRetade2) (a]at \n\ub2disldts\luve(tayi\y:\ibul\l\Eslnvnosus\isy\buiielworking\Runtime\NetworkConnec1d\nx)c
+s:it2)ng
+UNee.Nerknor.Runw.NrktenogokNCenntoety:iinndUplatS)y 
+U(ivtyC:\gIni.d2e,w erkiwi.rkbuidedC (iee n:o:nUi\ddtelr kan n\tybuili\le\eotkitsi\ns.islwd5EkeUsii\Runnimi\rNiNew\runkidegtNetyorkCl4eit
+ntptyEeC4li
+nnttyetn(irknegCClwbuntSgsnle:Oery\CEieen\buslatg\(lients() s(ae ge)r(ild l:ube\lns\teetuwild\Extelt\Extenetons
+\Nktygnrkunt\muttime\orieleicwnnr..Is:e68)
+UniityEngaite..Uetote() (N.tCtobuIlenstnte:UieitSHatdllRpaEdtee(sions\N\teudrkril ave\u2imtyNb32l (Ettnnibuynds\lete)
+uki(y\beinam\e\ e:swoikyNProjitkync\Rut8im
+\
+eFilenamen e:/cioip sroje6)
+/nast/Esgooja.NttAorrits/SLrnpts/Ceow
+o
+rking/PrograeMBytes(ByteLine: 65)
+
+ Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:522)
+UnityEng0ne.
+UetworkingneNeDebo0g/2
+tnrtalELgane.Debug:Internal_Ljact)
+tnityEngine, Otject)
+gnObjwErki
+Pg\.uemtum:\geg(GorCocmlie
+dnoI.cs:,a a
+nt:t2e)Cgonm.N:t(oIitny.P Itte2r)s\Mas e:sUnatt CtioAetets\MastersProject\avng\Pr\SramMasaExeeworking\P
+ertogrMkmaaeageriGmt\
+NrmgonmManegerrG):(at E:
+\UnitytProje(at E:\UnityrPwoerkcdssMtts\yeUsietsecetAUsdkisg\) (attC\aNbatwlr.ciave\un
+irymManager.cs:76E
+xxcueetionkin (Runtime\ttetwtep()t(nttriE:.\st88\ya
+ 
+orePtsaMe:\Ee/sPtiotec PrAtsctentistersProSexricussontanager.pts/Ne
+cErioinganager.msrato)
+:Exe eNtx>:_)6t)
+ 
+ator3:MoveNext() (at E:\UsProject\Ascets\MastiprsPrEnject\Assets\Scripts\Environmen:t\Ex
+ecutionManageonoBehavio
+ur:StEnginorMonoBehaviour:StartCoror)ti
+ne_Ayungo(IEnumeoBatorvi
+UnityEngine.MonoBehaviourlaatyr) Carouti\ ((lIEsamavnaator)y
+(nityCd\buildeabug:Iunernaleb\ild\ntt2,uSts\gen,nityen\com
+mMonoBehaveouUBbuty:nog(.ejgctno
+Bxecavt
+ioucutioiegsn:gEe:BcugintxeE(ecuti(  Mat E:\UnityjPextjc\casn() (teo P:otU\A\tAets\Ss\rip\saEsteroPmoonet\nE\executooMManatesr..sv:40)
+EnExEctte>ci_nManr:Invo:sMSveNe
+xtec)Be(an a:auUt:iny ereeyattEv\ntBotirExecojecn\ eltgot\SRNeipts\
+Envayiour, NNteoutionMd.aN)eUwoi5yBeh
+avieuN:gnne.koSog.chevntwerSeegate(Int32,oketyooIventDere) (a) I
+:t32yiEdgiworkeeaBei) (atuC:S\butlensiate\uNetwnureiingoErt niio sNetwowkdBehav\oun.i\se:Nld\ar
+rkBehavionrncNe:349)
+Ug.Netwoike.NetworuingINneMoeryneEveiour:Itno2i Nnt.gon.t(:I2t
+)2e Nt C:MbknieddeB)vg\ntnity\buolld\Exteens\Uty\buildrexitsg\Ruoss\NetPwereiork\eueatimer.cs:14k)eh
+rniteErn\snx4eetu
+oiiniaEgngNie.esor4tw
+Exeny:Handoekgdentity:Hanyd3cEventBeertRxader) (ae Co\atieNdstw)vk\unityibuild\lavenrsioy\build
+\ExtensgunniNeetwtrrkingd.ueiwoyecN:424)o
+Uuit:tIgivokeSt2o)
+entD.CElgeneS(cene:OnSyetEvektRSeaser) nayt C:\bueedsage)(\ut workMessage) (at C:\buetworkin\\nounsiNeildrExonnsiRna\iiouw.lsi3ingS
+RnneiyEn\Clie
+tncene.cs:6e.t
+UnityEngv.ouNetwvkkingyencEvent(Intection:HandleReader(NetworkReader, ) (32, Int32) (aave\\buildslale\unite\bsiind\Extenskkns\a\Rutwirc\:e144unUonme\Neog.csk.16)
+Uniiyn..sN4ee6N
+rkIdektgiy:Haewworking.Networkao,dlecwtrk:eBaneleBytesC32b eild l)n(3t2nC:\buili la\ xtentuyolb\NetweErking\RustNme\NetwoignRentitwo\setw\rkCoimee\Engtnocse3ow)r
+UnttgyCngi:n.Netn
+onityEngine.NetworkeetNetworknepsraRe)c(itveaB\tperiRdcltv2e Byne[\,) (at C:\bts2odsaNetworbiitl\\sntiml\dniEentScene.cs:652)k
+ns\Netnoiiming\tuortimen.nNttoiook.Co:cti)t
+Uonacyd:nge)de
+r(NetEkriineg.eret oonk3C,ienetUo2d (at C:(atdCtd(su a(d\lnvieb\\build\Extensio\susldtEstNetnoo\siuNttRurtNingorkCwtniectiottwsrk51ie)
+tn
+UniyEnEig
+in.Nettoior.inN.NtwongCketeorkCldoe:tlUdneBteCsien t([builnsC32e\unlista\ b\tnCt\bubldslonse\tenioo\iuNitldrimteNnsiorkiNeiNotw.rnsC\7iu)t.Ue:i7etwn
+rnioty.Nceiwoor.inor7.i
+UgnwirtoryEItinn.iUytwoekaSgc.pidtwodk)Ce() (c:ti Cl:\luans\uortReycnbeiye\(Byene[], sionss\oes\Nottk3ngingtnRt\nmti\md\twoewInrtndteityty\s:s:t8e
+)siF
+sei\amteork /En:tnntrtje cNoejaeots/PootectPisoets/Scrs)tt
+s/NtcEipgiseNePwtrgoamgingroN.ca MkCl:g 6r.cs
+ 
+Line: 66)
+
+:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:554)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:8881
+/ 
+(Filenamen e.Debug:Internal_Log(IntsPr, ject/Assets/Scrip
+Uns/Envngronment/ExecogtiObnMana)
+Prrcsg amine: 63)
+
+etCommand(Int32, Int32) (at E:\Unity Projects\MastersProject\Assets\Script1\N/1
+UnityEngrogramManager.ers:al_Lo
+g(Int32, String, tComman
+U(VitctEor2) (aeb E:\Unity Prctje
+ProgramManager:GetCommans\(Snripts\Netw32) (aF OR\Uni
+y Pgejects\Mast
+exeguotnotM\AsseLs:S(Ini3t2S\NSt) irti,n\Ubneotya
+mManaEteg\naesD7eus
+:rogrambaAatert
+seScutitsManager:E2e \uteeE:\Un)tynPtgE:\Unity P
+<Execute>a_\AIsePat\jS3crt\AssNetwSr (atgEPEoUniaonaeoatcE.e\uas)
+rxPcojer.nAssnag
+\rxecutesc_tntp(ra tae t:EUnetexit() (at r.cs:52) 
+Unjije\tsina.M\nosripjv\cn\rsStas\Scropetune_vntr(nmeet\cr:cu4r
+nManage
+.nsiIyEng
+ine.MEnoBinexaMoi o(ataa:i\urr:Star(ooenumeratoeuro IProject\Asses
+lave\un\tn\.MonsdBEararfamcns\SgeeeCrtrioniaeaIEn\runaim)e)
+Uniat C:\bue.oooBehehaniturbStarsCagen.cc:e2A
+eter(uEidnMaatoen:
+runtimegeni.tyEngi)eaonoBehaUnattBirrdtents\Man.ms:a2o
+j)ecutisets\Sgrslate\uEntirouime\tr xeftcE:\nnMenerated\ct40)
+Ertcrtsmr\MnetayEn:sinsoScnSBth\vieuironmeitgExecuoiconM2na
+Egercucwon0MB
+nhecuer:BeginExecRtnoerk)S(
+Uct v:nUgBigy.PExeeurti\gDelegotPkreeacw\AsBetn\vSkouip seteoriReldmg)t
+U(IxtyuE2oiNeawartRrecki:rg.
+Eteor:teonMadsalare:InvoSeSyncEventBeginEs(Nntt2onking\otr(Nemawee)kwehkvihuvu,lNrtwas:R\4niey
+\bi
+tlEngine.Nei.onk\Norwierworkteouatime\NetvokeSoneEvent(.est3e4l)ga
+tw(tyEnginN.twoak ea\nu.)l(wtraCv:\bvildyr:Invo\ixy\cusionsxNnnsionNiteo\kruktnm\R)ne(mo \Netbarikdulhavs:144)s
+U3b9iln
+\iittEnNgtnnorNttgorking\renIientity:vaouB:Inynckovey.csI1t4t
+, ntyw2nrine.Neek)r(ka e:\b tlat C:\buiidsH\vn\uniEy\cEild\Extte3s,oNnkinekRtnoikrn\ \(uor Cd\\buildslave\uni
+ty.tuilg4Ext
+UNitoEorking.ClwintSRegnN:tworkIdentity:Hage(Ney4crv
+ne(Iya32e N .wetwo\buildslave\unine:Onsya\eEventteosbuild\ExtensM\ssagt)woratlnC:\Runtiml\Nve65o)i
+Inbittdtngcn:.sie)w
+onNieytNgerking\tworkcmio\gCCinnlScSnaencs::e5y)
+rERteEntin .saet3(, tIng32) (ote) (at C:\ol:adeldvn\Readeyi(udiEwdrERsades,oNs\NetwonktRugtRmetNie:\\Clidolavecencon.c2u
+ld\t
+xnitnEseons\Networking.teowirConneceoctnoHaHandleBdcr(4(twtr
+kReaIeng, Int32, 2ni g.Netwob:iodsladtsoaive\nnute\yuEl(\enston,i\Intw2NrkinrkRnn\Rtnei:NbtNirdosoCavecuctinnccb:372)\
+U
+UnttnEiggnne\Networkknigg.Ruttkomn\NotnectCor:HenptloBytcs:3Byte
+[n, ]nEng2,e2n t323r )iag C:\:uorkConnectioinyrab\ild\lec\exesensne[], Int3inkg\Runtniie\Netwobkikdnnectitnoitys:522)
+
+UniyEninnine.NtwwrringggNNttwoerkNCoient:UpnntTe() onport\R2uc
+Udeve(Bytnn[e.Netwodk,nxI.tetoorkCliwotkUpdsla(n)\(at Ne\bbiildlEatnnuicnt:y5e4)
+rkinyEngine.Networkingnoenecrkol.\N:twor
+CliCynnt.cs:554(
+tni:y.butiwesrNCte\uni:y\.uNedt)E(kCliC:\buidetwork\entty\buil\de:\btikdionsveeuw:ikyn)\R
+intt\ExtentworkClient.csnet54rt
+Udin\yEngiorkCettworkina7Ne() 
+orkClient:UdNlttoruiiinNs\tb(otkC\\xnensionsvetStatiyUgbauie() xtensions\NetwitrkingtR\)n
+ti
+(e\\lennaoio:slienUtity Proj
+Uciny/naetersPrtjocdking.NetworkIde
+t e
+yFUNetStmt:o r:mManag rarcje\Lbnel sta)ve
+
+roject\build\Extensions\Networking\Runtime\NetworkIdcsntLine: s:888
+)
+
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 67)
+
+Player(Clone) (ProgramManager)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogExecute C
+oxemcudtionMAana
+ger:EExgine.Debug:Intetrnal_Log(Int32, String, Pbjeoe)e
+Cnoinyen)\(cripts\P:LnogiajoMt)
+nre\Er
+UnatnangineEDxbusg6eI)o
+<eEnad_uCoe>ma_n)3terator3:Movejeroxe(
+) (tMEnEine.Detj :r\ojs(tts\MSct)r
+sProueio\Mrknetg\Scorecptme\Envi() (et E:\U
+nueti nPanaojeerecs::xas)
+rnPitj(cg\iass E:\oncehavsourvcisaMrntCertsErinejAetn(Innsetr.\sc63)
+U
+nEteEnginncenI\Eeetor3iMoveNaxt() cautiEe(Inine urrotoecrIteratte:s\boildce\Aes)unity\buili\Enriioojcts\gMnxrcertdrocMmmtagrssnctsmS\rn
+UtystgEnvMinonmehnvBoxhcBindon:Stgant.oscst5n
+2_ec
+uti(nIMaumnr.Mong)i
+nnxecuuno:it)rMCar ButUaityAu:rt(rtCsomeratone(
+IEnuyeAnsert (at C:\baEnviroaStn\tt\Executiide(rtifacts:4\og)
+Enac a:\enu\alamsoa:Ienunity\nuEivdyEnrineMonoBehanvnaourdinoinNs.gen.cs:a2Uii
+uxy,unionMonogRrBaderviUuiBynding)e(et.cs:62ni
+ty ProojnMcnhg\iMuegsIEeesProjectv ntDetEegate(ynsP3ojecNstwor\Reecueirc)\(ssgtCs\Sciidts\vxncurti\nutlnEaExtensiokeSgNnrEworkB0g\R
+untimetNitonrkel:hatvokeSurwcrEve49)B
+UiioErE,ciNttwNerDeRlainea)N(
+tnityEngheh.voer:rnr kkngoNrkReedkBrhn
+an3i,uE:envokkeewderv nat Ct\buieehavi3\, NetworkReadeen Dsalt g\tebwiodslageetwitymeaNietd orxaeBeianiolr.tsovk4nuni
+tyntuildNnexoNetwoakinur.cs:koing
+UuitiEngNnd.NetkncEaeni(.nt3w,rk4et)o
+UkuR:EavokeSyncEvent(In.3etaoNe\uwotyRbui:InvokeSyscivni\NeIlate\unietun\buRlNdtworknseotitbyeicwo:424)\
+uuint\iEngdine.eentworkingr.cs:144)
+RnityEngine.orkworage(.e.cs:r4kM)ssUgityEngilCSyncEvent(InN\eu Nerkorkiet\ExteandlnCs\NuEtlotslave\untimebukid\nttcns(ons\Ne5bw)
+knilgERgiue.Netweuwod\IdtnwnstoCcs:424)or
+k:nH\Engneie.deNttowkiokg.Clitnrt cese:OnSyn
+UcE2eE(atnCs.betworkink.Cliene\c uat C:\bunldslaMeNsage(Netwod\Mxtensiees\Netwo:kbction.cs:m1unC)t
+UynttuElng\nxtensio
+UnityEngine.Neuttoeki\ClientSrlCBy.eestion:
+a,i lnEngin .(Networkai C:\,e wnrsConn\ctn3n2\au(ld\ExteuslNostsoNetwoikinb\Rln\t,xme\Nitwosa\CCntectildng\Runtnm
+tn\beywnginx.nentioiki\ges:w16)
+knotynnciime:\ranswprrConnettoekn.ose[c],6nIn
+a3dlyByte32) Nat Co\nu3l,slawe32nCitytbcCidoEuildslave\unityotru], d\tx2e mnion2t\o(ktooCking\ou.ss:522)
+UnityEngndnExtensioksiNet
+UoetyEnginenNetworkin(rN(tonneConnecct:o72eT
+UaiiyporgRine.Networkon].,ettot32, Igetutio m:tranwopkrClieaie\u:55(\B
+tlnityEngii,.nIn\Ner)kirg in:\buikCime\N\tpoatteblield\sxnen(sitns\Ne
+tworklngine.NeteoNkitlorkCtnoriClno\n.e:sp:r22)
+UnityEn\bui.dwltvoCluegtNyecwi:dk\l)i
+Unnsions\Netw(rktno:kRuntime\wer\IorkClibeil.d\Extens
+ions\Neti)rkit \:\king.N\tetrkrClie\b:Ucspla4eCx
+tenti(nsiNetwo:wbuildsn.vetwoeiCtoient:Utitytcnse8ns\Ne
+ 
+oFiie\bueudtEimv\\teiwyrbkClid\Exaest7roP)s
+\Nittyongine.Rutiimrs/EnvietworkIdexncuty:n)
+tnttyE.cgpi tei)N:(wo3)
+C
+:\.NetworkIdentity:UNetStaticUpdate() (awt C:\buildslave\unity\bdeiltity.ces:888)
+ 
+(Filename: E:/Unity ProkIects/MastersProje
+c
+(Filename: rip/Un/EtnvProjects/MastcutrsProject/Asss Lts/R:c i3
+ts
+/
+tNetworeking/ProgreamManager.cs32, S: r43)
+Object)
+UnityEngine.Debug:Log(Object)
+ExecutionManager:ExecuteStep() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:67)
+<Execute>c__Iterator3:MoveNext() (at F:OUnityRD
+Uojects\ngistne.Debug:Internal_Log(Int32, String, Obxeject)
+UnityEngcs:eo)m
+UbndioyEngofnbjuMos)
+
+nxhauEionMetargCug:InternAStLp(gIInu3 er:SUri)g,
+ PioyEt)
+n\.astersProjeocr:Lote(Os\Scrip
+ts\EnEmumenrato\)x(Ccu Co\baitdsr.,ve:t7)i
+< Exe Etd\cnt_fyaPcaooecesnovatedtPcommot\\E:nUisetyUnrpjs\nesiMostniBshaoieurmiAasinseSceip.cs\Evir
+onmemttoEgercateCo:MBmagnExesto2)
+ n (ttE:E:\Unity Prejaei\tr:StartCsojrct\csAste(IEnumeiatt\\E
+vorroEmg\Pro.eMuoaoBger.ag:err:)S
+E:rtC
+rxutiueaioEn:anageor) vek S)nb(atnEBl\UnEtxeiPytboncls\Mgste(NePs\ojkneh\tsisuc,mNScripks\iamve\Uon
+UteiEngEnnecntioeMhavigirr.cse7i)nk
+<exgcvt.cs:6_)to
+ratoutiEovanNtxt()ggane (:nu3ni, n(tw(jac ea\eaniersProjecusilasetersProjes\\nissdtmsn\Snxicuts\nnatirorking\52xnc
+ineiNytnwnngkBrhavBohav.
+Exer:9t)a
+rnMtrnougenr:.Nenv(woruiera.er)
+BoitkneEhneviinn:IelaovkteuNntEterkBehtoutir, Netwmerator) (a
+t CtyEngiidnla.Networkinbuile\wxrefaiatvioutn:rrivtk\R\yncivenNrtulegiBm(hIntiour.csin144)R
+eader) (itiC:\buiodslave\uni)ty\buit
+ixy:HennuoieSyncawveek:(egi\Euxecution(workBeha(at C.:\rbuil)t
+UlMvas\enstyobeil\\EstentNoetsr\pBse\onkiogoR:unnoteSynctvtionMnetg32. sc4two
+kxe
+Udni)o nMan aNgtbo:InvogaeSynnEScyete:OnnyncecuntoenNDtle(gkeneorNMetsme\) (at k:\eu aliswav.\s:a44)
+bu
+ilid\nxtnn..eenworreiworetworkIdentitCoua:ntSvokeSEvent(In
+t32e,E NetIeo.kNe2d Nrt goaNetew\radeldslave\uninu\llelsladerteNetionsReadwrrkenngi2n Int32) ettnC:IudutilesylNet42r)By
+hnavioErgEcese349)o
+nsityEnoiene.ceRnw:timeyN.EtetroCrosage(Not.ro:4kvMes
+SaincEv(ent(Intt2lorlaveounity\br)nndt\iE\buHlndiens\Nes(Borkin,\IEu3t,smo\tl\e)etworkincui6d2)m
+U\iuennworkb.ilv\worrnis:g4s)e
+twoworking\RuotimHa\dlgRwordeo(nIecewook.yc:He3nd e
+nyityEIgine.nN3a2o kei\boiNdReaoder)otn\buC:\buxrenlaporuRNetyobkildt\Runtnneto2,wINekw)rnent iCnntime16slUoektInnegi\ieiydtwsrken4s.
+UeistyEnCinnecti\nurtained.eeBetrt(Ccynee]O iSyn.Es ent2)
+Us(ayEnginborkdsssage)n.at wo:\builnteUsiate() (wbuiC:db\Eiultsloeve\Nentto\rkuiln\Exteniico\Cs7i\
+ettcwoekins.N\5u)
+tnineyNneiwoe.Nolwernt.gs:.N5nsp
+oritRoecgeiie(NyHe[], Int32, Int3wol enetU e:, ICt32,lIsn)\3u)  (\\tbCdibuve\xnetsioun\te\tutonk\nxns\networ\NegwwokktinngcNion.cs:52teo
+tnisy7n8cin
+eoi.ts:4i6inUN.tewwngikegNietwo:okkngd(nti(ttkCCNntectitin:apaedue(BttesuByte[],lents3ves\Intt2r (atlC:\builn\leane\retwoektuisdRu5ttie
+nnitenEsorkedenrioikg\R:88etw
+e N
+etwornC:epdacet/li.cs:372)
+Unit\Englds.aotee\rniAgy\besl/ScrConneciinr\:emeno/koxntRRintvmanaNetworkLlnien6.nt
+:
+37) (at
+ C:\bEnilinelaNetworking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\bu
+inld\Engine.Netw\Nrktworking\Runtime\NeUpworke(dentity.cs:888)
+l 
+(Filename: E:/Unity Projects/Master\RProject/Assets/ScriptscsEn55iron
+ment/Execnt.mmenanakengRNs 
+Uwire: 67)
+.
+Debuat:IClients() (gat C:2, String, Objecty)
+UuildyEEngine.Debug:Log(Object)
+ProgrNemMwonager:ExecuteComma
+nd(Command) (at E:\inni.NetworkIdtsntiasy:UNetStaticUpdate() (aittsC\Neuildslave\Punityambuanager.cs:43)
+ExNetuuoieing\RuntiFeE\eAuwDSk
+Uni(ntnaine.Debu)tI
+nt
+ernal_Log: ntr2, Ste irAj, ctjsSMr)st
+tssProjecn/.sDebug:Log(Object)e
+r.ogramPr
+ogramMExecutrCeca aod3CMmm)n
+d)t()at(aE: EUniUny Pr Pjeojts\Ms\MasrsersProject\sesss\Scripts\Ne\Envrking\PntogramManagnMr.cs:43)
+Execut
+ionManager:ExecuBehaviour:SatartCoroutyinProjeto(IEnumerator)
+UnityEngtsneScriptsehaviour:StartCorouttineMaIEagumercs:70) 
+<(at C:\buildslave\unity\buixtld\artifacts\generated\common\runtijee\UnitsyEngineMptnsBehaviouormBnt\ExecutiennManager.
+Exsecu)
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(Itsnumerator)
+UnityEngine.MonrBp
+haiivuErgSmentDoxoutine(IEnuaeeo.tso4n)3(
+at C:\buildnaljee\un
+vno\tuyndganet.feebug:xocetOajedtcgaPmenNrtamMaeBager:Get,neMonor(knt3io rn
+initnas gEn:.Netwt)k 
+PgocjtionrkBehariseriInvecAeion(sEvectre:peUg\itywPInt32,tNrtMastersProj)cc\as 6e\s
+ProgramManager:ye\enummlxd\Extensions(at .Eso\0)ng
+iRuntumje\ts\MoskrersPoikeoty\.AEvse3st9Bri
+ginsxNetwteronintlegrkigg.aNtMtnageka.csvuo,ur:Iecurieneadnrgen
+tnEity3t,Step()eraw r:\rni.Netwo:rkctildsasteruPrvjecStuAld\ExDelerapts\nt32, Nmntnt\Exeaderi woaakaBeh.cs:7r)c
+<Execut
+\nityEngiter3:tows\Nextg.rking\RI\tnitity:Haerlts\Masvenr.cs:3e,9\As
+snrkRendrrp.s(antirC:\buildtlcorekBehtn\ogurld\E5een
+sions\Ne(wnrMi2, NetworkReNdtr)tCaI eu:tbny_ds:4v4IEUnnti\tou)n
+gd\nyx.neinoo.iogNotwihnang\Run:ime\nctovrkteiaeioue.Neew14rkM
+essage):(at C:\burkenl.nie\unouiIdeuiltyfxcand\eony\naEtwont(inotR3unt me\ClirtyESaciereM.no:6Ch2\
+iourBilave\unity\cu:6g)\E
+EteoukCons\ceaigoeraniegR\auen(tNoetwo kork de: Iniy3y,s:4t43)2
+UsiMattersProject\Assetn.iCriebstEnv\eEOmeSnniovenNMtsnorn(ge\r.ck:ees)
+egecu(it C:\buildslsv4keSyn
+tEyt\nEungld\eENetsirnk\nNletetworkCo\nrktehaoinur,nNetBonr.R(s:dee2]
+U
+ ity32ngine.N2eww(at C:\bNttdsrrkCeo\nnetri\bvnldaEyltEeastDenN\gttworkRinader, Int\NetInt32) (ac: o:\.lbui37ldsl2)
+UnitlvE\\gxiieynbuotw\Nkeneg.Nkenwog\RonticetNiRwntTraihavriRetworkCon4B)tt
+Uin,i snE13i2
+e.Ittt2) (at C:\wwordinahe\utnitk\onnokeEynnEHsndleBytes(Byte[]rRuRea3er, Itto k) nae l:ibuildsnave)u
+Uuityd\\gintdeetwookss\ons\oeowing\Regti:entNitweoNe(awtvCournicc:iln4cs\
+3unit
+yEngine.Net.ersinnskeNtgtoorkwknIkCuttiee\Hantwion:TCEisnot.Rsc:2554)
+Unity,ngine.N,twCr:i2uildt w:\bkulnets\bup\utn\txenession(ateC:\buildsetwertime\Nebwiirk\IxdenriiCynn\ect2wo
+kcn:52R2n
+inityEngini.NetltectScenee
+Unrtyligvte:Updaoeakge(gtNte:\ouildsaatie\(at y:\auilds\pdeeusity\auieCd:orxutielunlave\ueiwrr\Cngl\duct:t5e)si
+onstNetwie.k.sN\e5nor
+kniegENgrwIne.tlitncr:i8ndgtN
+eCw
+iFktlename: En:/UnilyReade\unNsyt\stukRPr\jre en/stsots/Strtio (at CRu\tbime\Nrlgvoa\knitanbu..c:\E8n
+e sio
+n
+gine.Networking.NetworkIdekCtity:UtietStca:4ic6)
+UatityE (atne.\buildslave\unity\build\Extensions\Networking\Runtime32NetInorkIdentity.cs:88ds)
+ 
+(\uilename: E:/Unity Projects/MastersProject/AssetskConnection.tcs:372)/P
+UnogramManager.tworine: 4G)t
+wCommand ctut n:f raounpos
+tniecieve(Byte[], Int32, Int32) (at C:\builds, avbjecn)
+UnityE\bgineuild\gExte(Objonst\
+ProgramManaRuer:GetCommanrkCInt32, ion.cs:522)
+Unitnity Projects\MastersProject\Assets\Scri()ts\NetC:orking\Plrvoeounity\bgird\Extensi
+sr
+UsgtyeMwnagei:Gbtg:Itmame\Nettog(CIien2.cs:U5iing
+, Object)\n
+an.terwPoikeeDg.Nut:eot(\blceitt)UN
+etworalng\ProgramMtna\euiads:(I6et
+E2ecuynb3iMdnageteEsUiits Peowor ki\taEuttime\NeewteAkClie\scessp7r8j
+cnwotsyEnsi\er.Netwmrking.mencw:xe5Iti
+PnMaraUgManager:Ge
+tCommute>c__Itrr)tldslMoeeUenity\build\\xteats trrsProjectnAsResPrSerNctwo\kseetts\ykirnpg8P)E
+nv
+(FManager.cs:76n
+EoecanageMcts/Mar
+:nriePuojgineA(s (ot Ec\UnitrNProoeking/ProgrrsManager.cs etonrc)r
+ipt
+s
+\Ennvironment\ExecutionStaaateC.oro74t)ne
+(IEnumerat__) (ataCo:3:MuiveNslat(e) (at E:\Unity Projccts\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:52)
+Unit
+yEngine.MonoBehaviogin:Executionu() (at E:\Uniumer1tr1
+Ue
+UnttyMastersProject\Asiruta\lScor(pIn\EntiiStriIE\,Emeratoio 
+(antgEngine.Deau
+exunigtObjelt)
+grrgfInmManayec:ateC\mmmid(net3t2, e\UnityEag neMonoBehavioue, sn\tnos.eee.Projec
+U
+itsEutionMaipte\:BegnnEkNetworkBehavitouEr\.Icvo6e)yo
+cjEcentDeasaeasr:reteot,mNetworkReadet( tatEir:\bmnnltslave\unity\builrrcEste40ci
+ExecNetitwoanager:uetwoe\iyncErkneBegvmourcugtr3n9s:7n)ie
+EyenginekNetworkrug,Netwowkrehaviour)
+:nnvonetgyncEvenc(Int32,eNetworkRetdaviou(:Invr:epysiEdvlnroD\lenttaxecutdoE2,tentironkRead
+rE king\C:\buildNstoaor\:BoveNbeuirt\(s 144)
+Uni\yEtgoPkine\cts\ime\NetworrkIh\nsioer.cs:349)sUcEvenE(mgt32.EetwworiRg.Netgw rraB ::\bii
+udstayvEkuSity.MonoBe\axtensienworketwodktine_Ru tt\Ibn\ieealovre
+uneittity.cs\Ex4eB
+sinvnoENgine.Netg\Runngiele\nutworte:rOhaviour.csMe1saae
+NntnoEngineaget oatfC:\.s\teonave\undiycb:Hln\Euetniie\Unit(Entr2niMg\RunkievidulB) (at C:\buni652)la
+v)\
+uxinyu\buildnworrisnoninExecutiin(e Rtnt E:\NeiworkIdentity.cs:424)
+rnitcEt\AsInNetwc(ipts\CniiiotmcntvE:\nnitycbventa\esseneiNes
+\NekweisinggR) (at C:\beiyncEven\cugionyEbe:ul16)n
+tDnligansgNetwoerkoeni\vioNimt\CtikCotScene.cs
+Un5ity
+EngteengineeNkt,ogki3gtworkBohkC(at ctibn:eSyncEveader(Netwo(IRExtersiotst\2kRInorking\R u:n\iuil\setworkConnecbuon.csxt7es
+Uni\yNEngonek.ne\Runtime\NNeworkrkehanieeuton:.:sa4n)6)
+
+nnteEyEggn(nN.tw[t]o, Int32, tnt3r) ianurC:inuo:edsydneeEyeet(Int3i[ ,etwtenseoInetrN)t oakt C:\Ruiididla\evutninty\buildd\Extensio2)
+UnitykrngnRu\titetNrki\grkNwnrwBrtkaliics:372)
+4t)
+)E(tiy Engiuwiodelawgv.iegnitytCuolke\deionitroHap\lttRyerEeieg(BRne32]mN tNwtwok2,Cdln) (atcat5:4:\u
+unldsslave\unity\bull\g.txttnsions\Netwoiwkino\nkClitne\epdaterriIonent)i(on.cs:524)
+UnityEnginey.\bwiolkingxtNetewitkCslneewOtrUida\ve(n (aetesC:\ruNleidwo.cMv:7angt)
+yniayElC\EebNnsldrnavnNueetwywkIriid\t\tuntitomas\iecwUrrikCeRen t.aes Cli54utS
+Uedislcseg6un2i
+Un\btrEin\nNetenowrknCsinet:wodwtekCliuect(mneHanNCl:wRoikdd(Nvei\wnosy:be8ie
+ \
+(Fnn3snamnn:teE:)Uniit CrR\jbcislM\NsaeeorPunijenc.ci:sd8etx
+teStyEngsnNetterwronrg\irogtNmmtaorkIdekagtne.UcNn.tSte:16c5U
+
+d
+ate(ngine.Netwoilkislave\unity\builct\Exn:ensions\Networking\Runtime\Nett32) (at C:\b.cildsl8)ve
+ 
+(Filename: \:/xtnity Projects/MasntersProject/Asoekts/Scripts/Netwo2r
+Unni/ProgramManager.cs Line: 65)
+
+nnection:TransportRecieve(B0te2[
+Un, tyEn32in InDe32) (at C:\buildslave\unity\build\Extens
+Uonis\Networ.Dinbu\Rung:Log(Object)
+ProgriomManager2)Ge
+tCitmmand(IntNe2,woInting. (etworkClietyt:Projete() (ast Crs\broject\Assets\Sc0iutl
+d\ieteosgiong\Pbut:Imtkrnag\RuntiIe6t32, StramMantgjcc:)
+4nCt
+oniagnn(geneture:Lo((king.Ne)w
+Pyr grlject:a\gaat:GeeseComj(ndtIAs e2:sIbt32) s\tvEw\unitg\ Projects\eMgeionssProwe
+txAcgt\tunManager:ExorkClieeg.cs:76a)
+:naitytn s:o6eNt
+s\Maraensn.rNjtworkIdmntast(VUretoS2\)t(irUnEm\eeity( xeru:ebnta\dslave\Proje
+<EuelsetsxScripts\N\eetoMoikNext() (iteaneteoi.kIdeo)j
+ects\tistMrn
+a
+eFjeEteAmsteSse/U)ipasP Enjecnity snoercecuoiMncs/Asserscsc:r2)s
+UnityEnorkinM/nvironment\ager.cs Line: 6r)A
+
+s:74)
+<Execute>c_
+_Iteratorne:MooneNextav) (at E:\Unity PrinjectEn\MastersProject\Assets\Scripts\Environment\Executs\onManager.csom52)n\
+UnityEnginnet.MonoBehaviBohaviSutartCoroutine_Auto(IE
+nxumeratorana
+geit:BEngine.Monoionha) (oat Eta\UnityroProjee(tsEnumetrrsProject\Ass:\buildslave\unity\build\artifacts\generated\comm
+on\runtime\UnityEngineMonoBehaviougiBindings.geDenegate(62)
+ExecutionManager:BeginExecuti
+Unn)i(ttyEE\ngitn e.Netwtrk\Mng.tNrePtwject\eAsvietsr\Scripts\EnvirnoDement\ExecutionManager.cead40)
+ExecutionManager:InvokeSyncEvenxtensionExecutionDelegate(NetworkBehaviour, NetworkRead
+er)
+UnityEngine.Networking.NetworkBehaviouroIneSokeSyventventDe(Int3e(I2,32, NetworkRderd)r  (at  C:\ublusiale\ulate\unity\\Euild\Extensions\Network\RuntRinte\meetNeorwoBehaviour.cs:cs:349
+)
+UnityEnneine.tworking.NetworkIdentity:HandleSyncEvcEve(t(Int32, NetworkReader) atat :\b\buildslave\unityuibld\Extensioins\Networking\Runtime\NetwworkIedavtity.r.cs:144)
+UnityEnginne.Netwrking.NetworkIdentity:HSyndlEeSntMessent(Int32,rkNetworkReader) (at C:\buile\slavey\unity\build\Extensions\Networking\Runtime\NetworkIdentit
+y.cs:424)
+UnitywEnginge.NNetoworkConnection:Ha:OnSyncEventMessoge(Neader, Mnt32,g Int32) (\auild:\lavildslave\bunity\build\ExstNentworking\Runtime\ClientScNene.cs:652)
+UnityEngine.N
+etworking.NetworkConnection:HandleReader(NetworkReader, Int32In Int32) (at C:\buildbuildslanity\build\Extensions\Networking\Runtime\NetworkConnection.cson.c6)
+Unity
+Engine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, IntI32) (at C:\buildslave\unity\build\tExbtilndioExs\Networking\Runtime\NetworkConnection.cs:372)
+UnityEng
+ine.Networking.NetworkConnection:TransportRe) iatve(Byte[], Iavt32, Int32) (at C:\buildssNetwo\ukiity\Ruuild\Extensions\Networking\R
+UntimyEngine.Networkition.cs:522)
+UnityEngine.Networking.N e:\worilClient:Upniate() (at C:\buildslave\unity\build\Extensions\Networking\Runt
+ime\NetworkCletent.cs:554)
+UnityEngine.NetworkinicUpdate()Cl(aen C:U\bdaildslavetsun) (at C:\buildsnsaven\\Nnity\build\Extensions\Networking\Runtim8e)
+ 
+(Filename: E:/Un68ty
+UnityEngine.Networking.NetssorkIdentity:UNetwStaticUpdate() (at C:\bu Line: 66)ni
+
+ty\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 66)
+
+1/1
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:G1t/1
+UnityEngine.Debu2g :In te\UnaltyL Projec2t StMastersProject\A
+ssets\Scrie.ts\Net:Lorking\Progr
+amManager.cs:67)
+ProgramManager:GetCommand(Vector2) (at E:\Unity Projects\MastersProjeci\ts\sets\Scripts\NogeamManager.Prs:6r7m)a
+Pgrogcram6Ma
+EnecutionetaCaommand(Vettor2ep ((t E:\U E:\U Projecotec\Ma\MaessPeroject\Ast\ets\Scriptripts\Environment\ExecutionManager.c
+s:74)
+<Execute>c__IterteStepto) 3:Mat eNext() (atojects\MastersProject\Assets\Scripts\Environments\Environment\ExecutionMa
+nager.cs:52)
+UnityEngine.MonoBehaviour:\StartCorrojects\MatoersPnroject\A)
+Uenitycripts\EMonoBehavniour:StartCoroutine(IEnume
+rator) (at C:\buiehdslave\unity\build\artifacts\generated\co
+mmon\rugitime\UnoityEngineMonoBehaviourBindings.gen.cs:62)
+ExecutionManager:Beg\inExecution() (at E:\Unity Projectuntime\UnityEnginAMonoBs\Scripts\Environmenn.\Executi
+onManagerMana:4e0)
+egecutionMaioager:InvokeSyncEventBeginExecutionDelegate(NetworkBehavs\Environment\Execution
+Mnityagngine.Netwo
+rking.NetMwoagkBr:hInvokeSynvokeSyncEventDelegtion(Int32, NetworkReadehevio ur, NetworkReladvr)\u
+Unity\Enuild\.Nxtewnrking.NNetwoorkBinhg\Runtime\NetworkBehaviour.cs:349)
+2, NetworinRe.Networking.NetworkBehaviour:Ity\obuSld\Extens(Iont32, NetworkReadeti) (at C:\buildslave\unity\bui
+ld\Extensie.ns\Networking\RuntimehaNviour:Invaviour.cs:144)
+UnityEngine.Networking.NeC:workIdentity\:HandleSuincEvent(Int32, NetworkRead\r) (at C:\buildslave\unity\build\E
+xtensions\Networking\Runtime\NetworkIy:Handl.cs:42Ev)
+ntnInt32,gine.Netweader) (ali CntSceildslave\cEvenytbuessage(NetworkMessage) (at C:\tbmeildslave\unity\build\Exten
+sions\Networking\Runtime\iClientScene.cs:6ventM
+essayEe(gine.Networking.NetworkConnectiove:Handtl\bReader(NetnsoonkReader, Int32, Int32) (at tSc\bne.cds:6ave\u
+Unity\build\Exetensions\.NetworkiCog\Runtime\NetworkConnecNetworcs:416)
+UnityEngine.Networkin:g.NetworkConnecty\on:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\bu
+ild\EExtensions\Networkint\Runtime\NetworkHandleBytes.cBy:37[])
+ Int3En, ine.Netw(at C:\butwldrkConnection:TransportReciens\(Bette[], Int32, Int32) (at C:\buildslave\unity
+\build\Extensions\Networking\Runtime\Nen:workConnection.cs:522)
+UnityEngine.Networking.NetworkClient:Update() (axte C:\bu\Nedslave\unity\bmeild\Extrknsions\Networking\Ru
+ntime\NetworkClient.cs:554)
+UnityEngine.Networkin C.NetwiorkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Netwo
+rking\Runtime\NetwoinkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\bkCilie\Etxctension
+s\Networking\Runtime\NetworkIdentity.cs:888)
+ati
+cUplename: E:/Unity ProsjavctsunMastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 
+6
+()
+
+lename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 67)
+
 Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:7777}
-aissp: time {34940} lastRecTime {32896} DisTme {2000}, rtt {0} 
+aissp: time {166264} lastRecTime {164230} DisTme {2000}, rtt {0} 
  
 (Filename: C:/buildslave/unity/build/Runtime/Networking/UNETHost.cpp Line: 1848)
 
@@ -49,7 +2813,6 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkClient.cs Line: 608)
 
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
 NullReferenceException: Object reference not set to an instance of an object
   at UnityEngine.Networking.NetworkClient.Update () [0x001d9] in C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:566 
   at UnityEngine.Networking.NetworkClient.UpdateClients () [0x00017] in C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768 
@@ -57,7 +2820,8 @@ NullReferenceException: Object reference not set to an instance of an object
  
 (Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkClient.cs Line: 566)
 
-UnloadTime: 1.465215 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.894579 ms
 Multiple NetworkManagers detected in the scene. Only one NetworkManager can exist at a time. The duplicate NetworkManager will not be used.
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:LogWarning(Object)
@@ -65,9 +2829,83 @@ UnityEngine.Networking.NetworkManager:Awake() (at C:\buildslave\unity\build\Exte
  
 (Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkManager.cs Line: 155)
 
-System memory in use before: 25.3 MB.
-System memory in use after: 25.3 MB.
+System memory in use before: 27.4 MB.
+System memory in use after: 27.0 MB.
 
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 734.
-Total: 0.714340 ms (FindLiveObjects: 0.030689 ms CreateObjectMapping: 0.049688 ms MarkObjects: 0.626362 ms  DeleteObjects: 0.007307 ms)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 809.
+Total: 0.821608 ms (FindLiveObjects: 0.034489 ms CreateObjectMapping: 0.028643 ms MarkObjects: 0.694757 ms  DeleteObjects: 0.062840 ms)
+
+Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:7777}
+aissp: time {595884} lastRecTime {593843} DisTme {2000}, rtt {0} 
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Networking/UNETHost.cpp Line: 1848)
+
+UNet Client Disconnect Error: Timeout
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+UnityEngine.Networking.NetworkClient:GenerateDisconnectError(Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:608)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:563)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
+ 
+(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkClient.cs Line: 608)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at UnityEngine.Networking.NetworkClient.Update () [0x001d9] in C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:566 
+  at UnityEngine.Networking.NetworkClient.UpdateClients () [0x00017] in C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768 
+  at UnityEngine.Networking.NetworkIdentity.UNetStaticUpdate () [0x00005] in C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888 
+ 
+(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkClient.cs Line: 566)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.819755 ms
+Multiple NetworkManagers detected in the scene. Only one NetworkManager can exist at a time. The duplicate NetworkManager will not be used.
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+UnityEngine.Networking.NetworkManager:Awake() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:155)
+ 
+(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkManager.cs Line: 155)
+
+System memory in use before: 27.2 MB.
+System memory in use after: 26.9 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 809.
+Total: 0.805532 ms (FindLiveObjects: 0.033904 ms CreateObjectMapping: 0.027182 ms MarkObjects: 0.689203 ms  DeleteObjects: 0.054364 ms)
+
+Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:7777}
+aissp: time {163724} lastRecTime {161688} DisTme {2000}, rtt {0} 
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Networking/UNETHost.cpp Line: 1848)
+
+UNet Client Disconnect Error: Timeout
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+UnityEngine.Networking.NetworkClient:GenerateDisconnectError(Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:608)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:563)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
+ 
+(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkClient.cs Line: 608)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at UnityEngine.Networking.NetworkClient.Update () [0x001d9] in C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:566 
+  at UnityEngine.Networking.NetworkClient.UpdateClients () [0x00017] in C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768 
+  at UnityEngine.Networking.NetworkIdentity.UNetStaticUpdate () [0x00005] in C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888 
+ 
+(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkClient.cs Line: 566)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.658415 ms
+Multiple NetworkManagers detected in the scene. Only one NetworkManager can exist at a time. The duplicate NetworkManager will not be used.
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+UnityEngine.Networking.NetworkManager:Awake() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:155)
+ 
+(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkManager.cs Line: 155)
+
+System memory in use before: 27.2 MB.
+System memory in use after: 26.9 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 809.
+Total: 0.784195 ms (FindLiveObjects: 0.030397 ms CreateObjectMapping: 0.028351 ms MarkObjects: 0.663190 ms  DeleteObjects: 0.061671 ms)
 

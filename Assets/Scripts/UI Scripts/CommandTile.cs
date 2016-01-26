@@ -4,6 +4,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public enum Command{
+	NONE,
 	FORWARD,
 	BACKWARD,
 	WAIT,

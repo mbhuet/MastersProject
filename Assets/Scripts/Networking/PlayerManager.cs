@@ -42,7 +42,7 @@ public class PlayerManager : NetworkBehaviour {
 
 	public bool AllPlayersReady(){
 		UpdateReadyPlayers ();
-		Debug.Log (numReadyPlayers + "/" + maxPlayers);
+//		Debug.Log (numReadyPlayers + "/" + maxPlayers);
 		return numReadyPlayers == maxPlayers;
 	}
 
