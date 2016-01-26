@@ -1,35 +1,101 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 using UnityEngine.Networking;
 
 
 public class Player : NetworkBehaviour {
-	AntType antClass;
-	int playerNum;
+	ProgramManager programManager;
+	NetworkPlayer netPlayer;
+
+	[SyncVar]
+	public bool isReady = false;
+
+	[SyncVar]
+	public int playerNum = -1;
+
+	bool registered = false;
 
 
-	/*
-	 * Player objects should spawn at (0,0,0) and know which class of ant they will be controlling
-	 * Should have a list of command tiles
-	 * 
-	 * Should be able to send their command list, with class of Ant to the server
-	 * Recieve command lists for other Ant classes
-	 */ 
-
-	[Server]
-	void DeclareReady(){
+	void Awake(){
+		programManager = this.GetComponent<ProgramManager>();
+		Debug.Log("Player awake");
 	}
 
-	void SubmitCommands(){
+	void Start(){
+		if(playerNum != -1)
+		Register();
+		else{
+			Debug.Log("playerNum not getting set before Start()");
+		}
 	}
 
-	void RecieveCommands(){
+	public override void OnStartLocalPlayer(){
+		netPlayer = Network.player;
+		Debug.Log("OnStartLocalPlayer");
+
 	}
 
+	void Register(){
+		if (registered)
+			return;
+		Debug.Log("RPC Register as player " + playerNum);
+		PlayerManager.Instance.AddPlayer(this, playerNum);
+		programManager.LoadBlueprint(GameManager.Instance.programProfiles[playerNum]);
+		if(isLocalPlayer){
+			Debug.Log("Local Player here");
+			BuildUI();
+			PlayerManager.Instance.localPlayer = this;
+		}
+		registered = true;
+	}
 
-	[Client]
-	public void Test(){
-	
-	
+	[ClientRpc]
+	public void RpcRegister(int num){
+		if (registered)
+			return;
+		Debug.Log("RPC Register as player " + num);
+		this.playerNum = num;
+		PlayerManager.Instance.AddPlayer(this, num);
+		programManager.LoadBlueprint(GameManager.Instance.programProfiles[num]);
+		if(isLocalPlayer){
+			Debug.Log("Local Player here");
+			BuildUI();
+			PlayerManager.Instance.localPlayer = this;
+		}
+		registered = true;
+	}
+
+	[ClientRpc]
+	public void RpcTest(int num){
+		Debug.Log("RPC Test " + num);
+	}
+
+	public void SetReady(bool isReady){
+		this.isReady = isReady;
+		CmdPlayerReady (isReady);
+		//PlayerManager.Instance.CmdPlayerReady (); //Tells the server to send out a message to all other clients that a player is/ is not ready
+	}
+
+	[Command]
+	void CmdPlayerReady(bool isReady){
+		this.isReady = isReady;
+		RpcPlayerReady (isReady);
+		if (PlayerManager.Instance.AllPlayersReady ()) {
+			ExecutionManager.Instance.TriggerExecutionEvent();
+		}
+	}
+
+	[ClientRpc]
+	void RpcPlayerReady(bool isReady){
+		this.isReady = isReady;
+		PlayerManager.Instance.UpdateReadyPlayers ();
+	}
+
+	void BuildUI(){
+//		programManager.LoadBlueprint(GameManager.Instance.programProfiles[playerNum]);
+		ProgramUI progUI = GameObject.FindObjectOfType<ProgramUI>();
+		progUI.SetLocalProgramManager (programManager);
+		progUI.BuildUIFromBlueprint(GameManager.Instance.programProfiles[playerNum]);
 	}
 }

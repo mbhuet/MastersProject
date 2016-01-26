@@ -13,6 +13,7 @@ public enum AntType{
 }
 
 public abstract class Ant : Voxel {
+	public AntType type;
 	static float stepTime = 1; //how many seconds should it take to execute one command
 	protected Vector3 startPosition;
 	protected Vector3 startDirection;
@@ -21,10 +22,9 @@ public abstract class Ant : Voxel {
 	protected static Dictionary<Command, string> commandDict;
 
 	protected List<Command> availableCommands;
-	public List<Command> func1;
 
 	// Use this for initialization
-	protected void Start () {
+	protected override void Start () {
 		base.Start ();
 		SnapDirection ();
 		startDirection = (transform.forward);
@@ -33,22 +33,13 @@ public abstract class Ant : Voxel {
 			{Command.TURN_R, "TurnRight"},
 			{Command.TURN_L, "TurnLeft"}
 		};
+		Debug.Log("Ant start at " + Time.time);
+		GameManager.Instance.RegisterAnt(this);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
-	}
-
-	public void ExecuteStep(){
-	}
-
-	public void AddCommand(int i, Command com){
-		func1.Insert(i,com);
-	}
-
-	public void RemoveCommand(int i){
-		func1.RemoveAt (i);
 	}
 
 	protected void SnapDirection(){
@@ -72,9 +63,8 @@ public abstract class Ant : Voxel {
 		forwardDirection = new_forward;
 	}
 
-	protected IEnumerator Execute(){
-
-		foreach(Command com in func1){
+	public void ExecuteCommand(Command com, float stepTime){
+		Ant.stepTime = stepTime;
 			SnapToGrid ();
 			SnapDirection ();
 
@@ -84,9 +74,6 @@ public abstract class Ant : Voxel {
 			else{
 				//TODO run error co-routine
 			}
-
-			yield return new WaitForSeconds(stepTime);
-		}
 	}
 
 	protected IEnumerator MoveForward(){
@@ -130,6 +117,7 @@ public abstract class Ant : Voxel {
 	}
 
 	protected bool commandIsPossible(Command com){
+		bool isPossible = false;
 		//TODO CHECK Server for conflicts
 		switch (com) {
 		case Command.FORWARD:
@@ -138,7 +126,7 @@ public abstract class Ant : Voxel {
 				Vector3 nextPos = forwardDirection + new Vector3(col, height, row);
 				if(Level.Instance.GetVoxel(nextPos) == null){
 					Debug.Log(nextPos);
-					return true;
+					isPossible = true;
 				}
 			}
 			break;
@@ -147,24 +135,24 @@ public abstract class Ant : Voxel {
 			if (Level.Instance.GetVoxel(backFloorPos) != null){
 				Vector3 nextPos = forwardDirection + new Vector3(col, height, row);
 				if(Level.Instance.GetVoxel(nextPos) == null){
-					return true;
+					isPossible = true;
 				}
 			}
 			break;
 		case Command.TURN_L:
-			return true;
+			isPossible = true;
 			break;
 		case Command.TURN_R:
-			return true;
+			isPossible = true;
 			break;
 		case Command.WAIT:
-			return true;
+			isPossible = true;
 			break;
 		default:
 			break;
 
 		}
-		return false;
+		return isPossible;
 	}
 
 }
