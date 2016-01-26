@@ -14,13 +14,6 @@ public class ProgramBlueprint : System.Object
 	public FunctionBlueprint[] availableFunctions;
 }
 
-[System.Serializable]
-class ProgramPacket
-{
-
-}
-
-[System.Serializable]
 public class ProgramManager: NetworkBehaviour {
 	AntType antType;
 	AntFunction[] functions;

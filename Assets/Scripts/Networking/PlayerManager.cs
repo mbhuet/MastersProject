@@ -11,7 +11,7 @@ public class PlayerManager : NetworkBehaviour {
 	public int numReadyPlayers = 0;
 
 	
-	Player[] players;
+	public Player[] players;
 	public Player localPlayer;
 
 	ProgramUI programUI;
@@ -57,22 +57,8 @@ public class PlayerManager : NetworkBehaviour {
 	}
 
 	[Server]
-	public void RegisterPlayer(Player player){
-		bool registered = false;
-		for(int i = 0; i< maxPlayers; i++){
-			if(players[i] == null && !registered){
-				AddPlayer(player, i);
-				player.playerNum = i;
-				player.RpcRegister(i);
-				registered = true;
-				Debug.Log("Register new Player as " + i);
-
-			}
-			else if (players[i] != null){
-				players[i].RpcRegister (i);
-				Debug.Log("Register existing Player at " + i);
-			}
-		}
+	public void RegisterPlayer(Player player, int playerNum){
+				//player.RpcRegister(playerNum);
 	}
 
 	public void RemovePlayer(int index){

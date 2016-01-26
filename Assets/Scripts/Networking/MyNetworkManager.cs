@@ -11,7 +11,7 @@ public class MyNetworkManager : NetworkManager {
 		//player.Init(NetworkServer.connections.Count);
 		NetworkServer.AddPlayerForConnection(conn, thePlayer, playerControllerId);
 		//player.RpcTest(55);
-		PlayerManager.Instance.RegisterPlayer(player);
+//		PlayerManager.Instance.RegisterPlayer(player);
 	}
 
 }

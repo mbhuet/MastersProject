@@ -12,24 +12,49 @@ public class Player : NetworkBehaviour {
 	public bool isReady = false;
 
 	[SyncVar]
-	public int playerNum;
+	public int playerNum = -1;
 
 	bool registered = false;
 
 
 	void Awake(){
 		programManager = this.GetComponent<ProgramManager>();
+		Debug.Log("Player awake");
+	}
+
+	void Start(){
+		if(playerNum != -1)
+		Register();
+		else{
+			Debug.Log("playerNum not getting set before Start()");
+		}
 	}
 
 	public override void OnStartLocalPlayer(){
 		netPlayer = Network.player;
+		Debug.Log("OnStartLocalPlayer");
+
+	}
+
+	void Register(){
+		if (registered)
+			return;
+		Debug.Log("RPC Register as player " + playerNum);
+		PlayerManager.Instance.AddPlayer(this, playerNum);
+		programManager.LoadBlueprint(GameManager.Instance.programProfiles[playerNum]);
+		if(isLocalPlayer){
+			Debug.Log("Local Player here");
+			BuildUI();
+			PlayerManager.Instance.localPlayer = this;
+		}
+		registered = true;
 	}
 
 	[ClientRpc]
 	public void RpcRegister(int num){
 		if (registered)
 			return;
-		//Debug.Log("RPC Register as player " + num);
+		Debug.Log("RPC Register as player " + num);
 		this.playerNum = num;
 		PlayerManager.Instance.AddPlayer(this, num);
 		programManager.LoadBlueprint(GameManager.Instance.programProfiles[num]);
