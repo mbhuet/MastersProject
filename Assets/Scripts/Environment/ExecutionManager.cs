@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.Networking;
 using System.Collections.Generic;
@@ -52,6 +52,18 @@ public class ExecutionManager : NetworkBehaviour
 			ExecuteStep ();
 			yield return new WaitForSeconds (1);
 		}
+		EndExecution ();
+	}
+
+
+	protected void EndExecution(){
+		//TODO signal UI to become interactable
+		//TODO signal button to switch to ready
+	}
+
+	public void StopExecution(){
+		StopCoroutine (Execute());
+		EndExecution ();
 	}
 
 	void ExecuteStep ()
@@ -60,12 +72,9 @@ public class ExecutionManager : NetworkBehaviour
 
 		List<ProgramManager> toRemove = new List<ProgramManager>();
 		foreach (ProgramManager program in programManagers) {
-			Debug.Log(program);
 			Vector2 currentCom;
 			currentCommandDict.TryGetValue (program, out currentCom);
 			Command com = program.GetCommand (currentCom);
-			Debug.Log(com);
-
 			if (com != Command.NONE) {
 				program.ExecuteCommand (com);
 			}
@@ -81,6 +90,15 @@ public class ExecutionManager : NetworkBehaviour
 		foreach(ProgramManager program in toRemove){
 			programManagers.Remove(program);
 		}
+	}
+
+	protected void FindConflicts(){
+		//GET grid from Level.Instance
+		//For each ant, get its next position
+		//Condition handling
+			//if pushing, update box position
+			//if on switch, update switch box position
+		//TODO must tell Ants that will be in conflict to run error coroutine
 	}
 
 	[Server]

@@ -1,0 +1,138 @@
+fileFormatVersion: 2
+guid: a9c25911f87f8c34ba6dbd0acb70444c
+timeCreated: 1453997736
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Body_geo
+    100004: Eye_Ball_Geo
+    100006: Eye_Ball_Geo 1
+    100008: Eye_Grp
+    100010: Eye_Pupple_Geo
+    100012: Eye_Pupple_Geo 1
+    100014: ffd1Base
+    100016: ffd1Base 1
+    100018: ffd1Lattice
+    100020: ffd1Lattice 1
+    100022: Innermouth_Grp
+    100024: Lt_Eye
+    100026: Lt_Eye_Grp
+    100028: Lt_Eye_Lattice
+    100030: Lwr_Teeth_Geo
+    100032: Rt_Eye
+    100034: Rt_Eye_Grp
+    100036: Rt_Eye_Lattice
+    100038: Toungue_Geo
+    100040: Upr_Teeth_Geo
+    400000: //RootNode
+    400002: Body_geo
+    400004: Eye_Ball_Geo
+    400006: Eye_Ball_Geo 1
+    400008: Eye_Grp
+    400010: Eye_Pupple_Geo
+    400012: Eye_Pupple_Geo 1
+    400014: ffd1Base
+    400016: ffd1Base 1
+    400018: ffd1Lattice
+    400020: ffd1Lattice 1
+    400022: Innermouth_Grp
+    400024: Lt_Eye
+    400026: Lt_Eye_Grp
+    400028: Lt_Eye_Lattice
+    400030: Lwr_Teeth_Geo
+    400032: Rt_Eye
+    400034: Rt_Eye_Grp
+    400036: Rt_Eye_Lattice
+    400038: Toungue_Geo
+    400040: Upr_Teeth_Geo
+    2300000: Body_geo
+    2300002: Eye_Ball_Geo
+    2300004: Eye_Ball_Geo 1
+    2300006: Eye_Pupple_Geo
+    2300008: Eye_Pupple_Geo 1
+    2300010: Lwr_Teeth_Geo
+    2300012: Toungue_Geo
+    2300014: Upr_Teeth_Geo
+    3300000: Body_geo
+    3300002: Eye_Ball_Geo
+    3300004: Eye_Ball_Geo 1
+    3300006: Eye_Pupple_Geo
+    3300008: Eye_Pupple_Geo 1
+    3300010: Lwr_Teeth_Geo
+    3300012: Toungue_Geo
+    3300014: Upr_Teeth_Geo
+    4300000: Body_geo
+    4300002: Eye_Ball_Geo
+    4300004: Eye_Pupple_Geo
+    4300006: Eye_Ball_Geo
+    4300008: Eye_Pupple_Geo
+    4300010: Upr_Teeth_Geo
+    4300012: Lwr_Teeth_Geo
+    4300014: Toungue_Geo
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 6
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

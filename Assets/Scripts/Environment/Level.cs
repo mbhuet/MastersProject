@@ -13,22 +13,13 @@ public class Level : MonoBehaviour {
 		grid = new Dictionary<Vector3, Voxel>();
 	}
 
-	// Use this for initialization
-	void Start () {
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
-	public void SetVoxel (Voxel vox, int col, int row, int height){
-		Vector3 pos = new Vector3 (col,row,height);
+	public void SetVoxel (Voxel vox, Vector3 pos){
 		if (grid.ContainsKey (pos)) {
 			Debug.Log ("voxel " + vox + " cannot occupy space " + pos + " because it is already occupied");
 		}
 		else{
-			grid.Add (new Vector3 (col, row, height), vox);
+			grid.Add (pos, vox);
 		}
 	}
 
@@ -43,14 +34,4 @@ public class Level : MonoBehaviour {
 		return vox;
 	}
 
-	void generateLevel(int rows, int cols){
-		for (int r= 0; r < rows; r++) {
-			for (int c = 0; c < cols; c++){
-
-			}
-		}
-	}
-
-	void loadLevel(string filename){
-	}
 }

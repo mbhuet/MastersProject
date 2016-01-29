@@ -15,35 +15,26 @@ public enum AntType{
 public abstract class Ant : Voxel {
 	public AntType type;
 	static float stepTime = 1; //how many seconds should it take to execute one command
-	protected Vector3 startPosition;
-	protected Vector3 startDirection;
+	protected Vector3 position;
 	protected Vector3 forwardDirection;
 
 	protected static Dictionary<Command, string> commandDict;
 
 	protected List<Command> availableCommands;
 
-	void Awake(){
-		Debug.Log("Ant awake at " + Time.time);
-
-	}
 	// Use this for initialization
 	protected override void Start () {
 		base.Start ();
 		SnapDirection ();
-		startDirection = (transform.forward);
 		commandDict = new Dictionary<Command, string>{
 			{Command.FORWARD, "MoveForward"},
 			{Command.TURN_R, "TurnRight"},
-			{Command.TURN_L, "TurnLeft"}
+			{Command.TURN_L, "TurnLeft"},
+			{Command.WAIT, "Wait"},
+			{Command.BACKWARD, "MoveBackward"}
 		};
 		Debug.Log("Ant start at " + Time.time);
 		GameManager.Instance.RegisterAnt(this);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 
 	protected void SnapDirection(){
@@ -93,6 +84,19 @@ public abstract class Ant : Voxel {
 
 		this.transform.position = endPos;
 	}
+	protected IEnumerator MoveBackward(){
+		float timer = 0;
+		Vector3 startPos = this.transform.position;
+		Vector3 endPos = this.transform.position - this.transform.forward;
+		
+		while(timer < stepTime){
+			timer += Time.deltaTime;
+			this.transform.position = Vector3.Lerp(startPos, endPos, timer/stepTime);
+			yield return null;
+		}
+		
+		this.transform.position = endPos;
+	}
 
 
 	protected IEnumerator TurnRight(){
@@ -120,24 +124,27 @@ public abstract class Ant : Voxel {
 		this.transform.rotation = endRot;
 	}
 
+	protected IEnumerator Wait(int numSteps){
+		yield return new WaitForSeconds (stepTime * numSteps);
+	}
+
 	protected bool commandIsPossible(Command com){
 		bool isPossible = false;
 		//TODO CHECK Server for conflicts
 		switch (com) {
 		case Command.FORWARD:
-			Vector3 forFloorPos = forwardDirection + new Vector3(col, height - 1, row);
+			Vector3 forFloorPos = forwardDirection + position - Vector3.up;
 			if (Level.Instance.GetVoxel(forFloorPos) != null){
-				Vector3 nextPos = forwardDirection + new Vector3(col, height, row);
+				Vector3 nextPos = forwardDirection + position;
 				if(Level.Instance.GetVoxel(nextPos) == null){
-					Debug.Log(nextPos);
 					isPossible = true;
 				}
 			}
 			break;
 		case Command.BACKWARD:
-			Vector3 backFloorPos = forwardDirection + new Vector3(col, height - 1, row);
+			Vector3 backFloorPos = position - Vector3.up - forwardDirection;
 			if (Level.Instance.GetVoxel(backFloorPos) != null){
-				Vector3 nextPos = forwardDirection + new Vector3(col, height, row);
+				Vector3 nextPos = position - forwardDirection;
 				if(Level.Instance.GetVoxel(nextPos) == null){
 					isPossible = true;
 				}
@@ -159,11 +166,28 @@ public abstract class Ant : Voxel {
 		return isPossible;
 	}
 
-}
+	Vector3 positionAfterCommand(Command com){
+		switch (com) {
+		case Command.FORWARD:
+			return position + forwardDirection;
+			break;
+		case Command.BACKWARD:
+			break;
+		case Command.TURN_L:
+			break;
+		case Command.TURN_R:
+			break;
+		case Command.WAIT:
+			break;
+		default:
+			break;
+			
+		}
 
-public class AntPosition{
-	public Vector3 position;
-	public Vector3 direction; //(each is -1, 0 or 1, designating movement in that direction with MoveForward)
+		return position;
+		
+	}
+
 }
 
 
