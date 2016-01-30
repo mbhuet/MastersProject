@@ -9,13 +9,20 @@ public enum Command{
 	BACKWARD,
 	WAIT,
 	TURN_L,
-	TURN_R
+	TURN_R,
+	PUSH,
+	FIRE,
+	BUILD,
+	SENSE,
+	FUNCTION,
+
+
 }
 
 public class CommandTile : Tile {
 	public Command command;
 	public Transform startParent = null;
-	bool fromBank = true;
+	protected bool fromBank = true;
 	public CommandSlot slot;
 
 	#region IBeginDragHandler implementation

@@ -14,9 +14,7 @@ public enum AntType{
 
 public abstract class Ant : Voxel {
 	public AntType type;
-	static float stepTime = 1; //how many seconds should it take to execute one command
-	protected Vector3 position;
-	protected Vector3 forwardDirection;
+	public Vector3 forwardDirection;
 
 	protected static Dictionary<Command, string> commandDict;
 
@@ -58,23 +56,20 @@ public abstract class Ant : Voxel {
 		forwardDirection = new_forward;
 	}
 
-	public void ExecuteCommand(Command com, float stepTime){
-		Ant.stepTime = stepTime;
+	public void ExecuteCommand(Command com){
 			SnapToGrid ();
 			SnapDirection ();
 
-			if (commandIsPossible(com)){
 				StartCoroutine(commandDict[com]);
-			}
-			else{
-				//TODO run error co-routine
-			}
 	}
 
 	protected IEnumerator MoveForward(){
+		float stepTime = ExecutionManager.STEP_TIME;
+
 		float timer = 0;
-			Vector3 startPos = this.transform.position;
+		Vector3 startPos = this.transform.position;
 		Vector3 endPos = this.transform.position + this.transform.forward;
+		Level.Instance.SetVoxel(this, endPos);
 
 		while(timer < stepTime){
 			timer += Time.deltaTime;
@@ -83,11 +78,17 @@ public abstract class Ant : Voxel {
 		}
 
 		this.transform.position = endPos;
+		SnapToGrid();
+
 	}
 	protected IEnumerator MoveBackward(){
+		float stepTime = ExecutionManager.STEP_TIME;
+
 		float timer = 0;
 		Vector3 startPos = this.transform.position;
 		Vector3 endPos = this.transform.position - this.transform.forward;
+		Level.Instance.SetVoxel(this, endPos);
+
 		
 		while(timer < stepTime){
 			timer += Time.deltaTime;
@@ -96,10 +97,13 @@ public abstract class Ant : Voxel {
 		}
 		
 		this.transform.position = endPos;
+		SnapToGrid();
 	}
 
 
 	protected IEnumerator TurnRight(){
+		float stepTime = ExecutionManager.STEP_TIME;
+
 		float timer = 0;
 		Quaternion startRot = this.transform.rotation;
 		Quaternion endRot = this.transform.rotation * Quaternion.Euler(0,90,0);
@@ -110,8 +114,11 @@ public abstract class Ant : Voxel {
 			yield return null;
 		}
 		this.transform.rotation = endRot;
+		SnapDirection();
 	}
 	protected IEnumerator TurnLeft(){
+		float stepTime = ExecutionManager.STEP_TIME;
+
 		float timer = 0;
 		Quaternion startRot = this.transform.rotation;
 		Quaternion endRot = this.transform.rotation * Quaternion.Euler(0,-90,0);
@@ -122,56 +129,44 @@ public abstract class Ant : Voxel {
 			yield return null;
 		}
 		this.transform.rotation = endRot;
+		SnapDirection();
 	}
 
-	protected IEnumerator Wait(int numSteps){
-		yield return new WaitForSeconds (stepTime * numSteps);
+	protected IEnumerator Wait(){
+		float stepTime = ExecutionManager.STEP_TIME;
+
+		yield return new WaitForSeconds (stepTime);
 	}
 
-	protected bool commandIsPossible(Command com){
-		bool isPossible = false;
-		//TODO CHECK Server for conflicts
-		switch (com) {
-		case Command.FORWARD:
-			Vector3 forFloorPos = forwardDirection + position - Vector3.up;
-			if (Level.Instance.GetVoxel(forFloorPos) != null){
-				Vector3 nextPos = forwardDirection + position;
-				if(Level.Instance.GetVoxel(nextPos) == null){
-					isPossible = true;
-				}
-			}
-			break;
-		case Command.BACKWARD:
-			Vector3 backFloorPos = position - Vector3.up - forwardDirection;
-			if (Level.Instance.GetVoxel(backFloorPos) != null){
-				Vector3 nextPos = position - forwardDirection;
-				if(Level.Instance.GetVoxel(nextPos) == null){
-					isPossible = true;
-				}
-			}
-			break;
-		case Command.TURN_L:
-			isPossible = true;
-			break;
-		case Command.TURN_R:
-			isPossible = true;
-			break;
-		case Command.WAIT:
-			isPossible = true;
-			break;
-		default:
-			break;
+	protected IEnumerator Push(){
+		float stepTime = ExecutionManager.STEP_TIME;
 
-		}
-		return isPossible;
+		yield return new WaitForSeconds (stepTime);
+
 	}
 
-	Vector3 positionAfterCommand(Command com){
+	protected IEnumerator Fire(){
+		float stepTime = ExecutionManager.STEP_TIME;
+
+		yield return new WaitForSeconds (stepTime);
+
+	}
+
+	protected IEnumerator Build(){
+		float stepTime = ExecutionManager.STEP_TIME;
+
+		yield return new WaitForSeconds (stepTime);
+
+	}
+
+
+	public Vector3 positionAfterCommand(Command com){
 		switch (com) {
 		case Command.FORWARD:
 			return position + forwardDirection;
 			break;
 		case Command.BACKWARD:
+			return position - forwardDirection;
 			break;
 		case Command.TURN_L:
 			break;
@@ -179,6 +174,11 @@ public abstract class Ant : Voxel {
 			break;
 		case Command.WAIT:
 			break;
+		case Command.PUSH:
+			if(Level.Instance.GetVoxel(position + forwardDirection).isPushable)
+				return position + forwardDirection;
+			else
+				return position;
 		default:
 			break;
 			

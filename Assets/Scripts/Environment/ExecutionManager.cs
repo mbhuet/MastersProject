@@ -6,9 +6,12 @@ using System.Collections.Generic;
 public class ExecutionManager : NetworkBehaviour
 {
 	public static ExecutionManager Instance;
+	public static float STEP_TIME = .5f;
 
 	//for each player, we need to know the Function and command index at each step. Vector2(Function i, Command i)
 	Dictionary<ProgramManager, Vector2> currentCommandDict;
+	Dictionary<Vector3, Voxel> intendedNextPositions;
+
 	List<ProgramManager> programManagers;
 
 	public delegate void BeginExecutionDelegate ();
@@ -23,6 +26,8 @@ public class ExecutionManager : NetworkBehaviour
 		Instance = this;
 		EventBeginExecution += BeginExecution;
 		currentCommandDict = new Dictionary<ProgramManager, Vector2> ();
+		intendedNextPositions = new Dictionary<Vector3, Voxel> ();
+
 		programManagers = new List<ProgramManager> ();//[PlayerManager.Instance.maxPlayers];
 	}
 
@@ -35,9 +40,9 @@ public class ExecutionManager : NetworkBehaviour
 			programManagers.Add (curProgramManager);
 			currentCommandDict.Add (curProgramManager, Vector2.zero);
 		}
-		Debug.Log("Found " + programManagers.Count + " ProgramManagers");
+		Debug.Log ("Found " + programManagers.Count + " ProgramManagers");
 
-		StartCoroutine(Execute());
+		StartCoroutine (Execute ());
 
 		//each player has a program manager with their ants stored
 		//execution manager needs to know where all ants inted to be in one step
@@ -49,20 +54,22 @@ public class ExecutionManager : NetworkBehaviour
 		Debug.Log ("Begin Execution");
 
 		while (programManagers.Count>0) {
+			FindConflicts();
 			ExecuteStep ();
 			yield return new WaitForSeconds (1);
 		}
 		EndExecution ();
 	}
 
-
-	protected void EndExecution(){
+	protected void EndExecution ()
+	{
 		//TODO signal UI to become interactable
 		//TODO signal button to switch to ready
 	}
 
-	public void StopExecution(){
-		StopCoroutine (Execute());
+	public void StopExecution ()
+	{
+		StopCoroutine (Execute ());
 		EndExecution ();
 	}
 
@@ -70,7 +77,7 @@ public class ExecutionManager : NetworkBehaviour
 	{
 		Debug.Log ("Execute Step");
 
-		List<ProgramManager> toRemove = new List<ProgramManager>();
+		List<ProgramManager> toRemove = new List<ProgramManager> ();
 		foreach (ProgramManager program in programManagers) {
 			Vector2 currentCom;
 			currentCommandDict.TryGetValue (program, out currentCom);
@@ -80,25 +87,107 @@ public class ExecutionManager : NetworkBehaviour
 			}
 			Vector2 nextCom = program.GetFollowingCommandCoordinates (currentCom);
 
-			if (program.GetCommand(nextCom) == Command.NONE) {
-				toRemove.Add(program);
+			if (program.GetCommand (nextCom) == Command.NONE) {
+				toRemove.Add (program);
 			} else {
-				currentCommandDict[program] = nextCom;
+				currentCommandDict [program] = nextCom;
 			}
 		}
 
-		foreach(ProgramManager program in toRemove){
-			programManagers.Remove(program);
+		foreach (ProgramManager program in toRemove) {
+			programManagers.Remove (program);
 		}
 	}
 
-	protected void FindConflicts(){
-		//GET grid from Level.Instance
-		//For each ant, get its next position
-		//Condition handling
-			//if pushing, update box position
-			//if on switch, update switch box position
-		//TODO must tell Ants that will be in conflict to run error coroutine
+	protected void FindConflicts ()
+	{
+		intendedNextPositions.Clear();
+		
+		foreach(ProgramManager progManager in programManagers){
+			Command curCommand = progManager.GetCommand(currentCommandDict[progManager]);
+			foreach (Ant ant in progManager.GetAnts()){
+
+				Vector3 nextPos = ant.positionAfterCommand(curCommand);
+				bool validMove = DeclareVoxelIntention(ant, nextPos);
+
+				if(validMove){
+					switch(curCommand){
+					case Command.PUSH:
+						Voxel voxAhead = Level.Instance.GetVoxel(ant.position + ant.forwardDirection);
+						if(voxAhead.isPushable){
+							DeclareVoxelIntention(voxAhead, voxAhead.position + ant.forwardDirection);
+						}
+						break;
+					case Command.FORWARD:
+						//check for switches
+						break;
+					case Command.BACKWARD:
+						//check for switches
+						break;
+					default:
+						break;
+					}
+				}
+			}
+		}
+	}
+
+	//returns true if can execute as intended
+	private bool DeclareVoxelIntention(Voxel vox, Vector3 intendedPos){
+		bool valid = true;
+
+		if(!Level.Instance.positionInBounds(intendedPos)){
+			intendedPos = vox.position;
+			vox.HoldForStep();
+			valid = false;
+		}
+		
+
+		if(intendedNextPositions.ContainsKey(intendedPos)){
+			ResolveConflict(vox, intendedNextPositions[intendedPos], intendedPos);
+			valid = false;
+		}
+		else{
+			intendedNextPositions.Add(intendedPos, vox);
+		}
+
+		return valid;
+
+		
+	}
+
+	 
+
+	private void ResolveConflict (Voxel voxA, Voxel voxB, Vector3 disputedPos)
+	{
+		//voxA and voxB both want the same position in one step
+		intendedNextPositions.Remove (disputedPos);
+		voxA.HoldForStep ();
+		voxB.HoldForStep ();
+
+		//TODO if voxA or voxB canStackOn, check to see if any Voxel intends to stand on it
+		if (intendedNextPositions.ContainsKey (voxA.position)) {
+			if (intendedNextPositions [voxA.position] != voxA) {
+				ResolveConflict (voxA, intendedNextPositions [voxA.position], voxA.position);
+				intendedNextPositions.Add (voxA.position, voxA);
+			}
+
+
+		} else {
+			intendedNextPositions.Add (voxA.position, voxA);
+
+		}
+
+		if (intendedNextPositions.ContainsKey (voxB.position)) {
+			if (intendedNextPositions [voxB.position] != voxB) {
+				ResolveConflict (voxB, intendedNextPositions [voxB.position], voxB.position);
+				intendedNextPositions.Add (voxB.position, voxB);
+			}
+
+		} else {
+			intendedNextPositions.Add (voxB.position, voxB);
+		}
+	
 	}
 
 	[Server]

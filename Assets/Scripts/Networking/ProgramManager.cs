@@ -14,109 +14,131 @@ public class ProgramBlueprint : System.Object
 	public FunctionBlueprint[] availableFunctions;
 }
 
-public class ProgramManager: NetworkBehaviour {
-	AntType antType;
-	AntFunction[] functions;
-
+public class ProgramManager: NetworkBehaviour
+{
+	public AntType antType;
+	public AntFunction[] functions;
 	Ant[] myAnts;
 	ProgramUI programUI;
 
-	public void LoadBlueprint(ProgramBlueprint blueprint){
+	public void LoadBlueprint (ProgramBlueprint blueprint)
+	{
 
 		antType = blueprint.antType;
 		functions = new AntFunction[blueprint.availableFunctions.Length];
-		for(int i = 0; i< blueprint.availableFunctions.Length; i++){
-			AntFunction func = new AntFunction();
-			func.LoadBlueprint(blueprint.availableFunctions[i]);
-			functions[i] = func;
+		for (int i = 0; i< blueprint.availableFunctions.Length; i++) {
+			AntFunction func = new AntFunction ();
+			func.LoadBlueprint (blueprint.availableFunctions [i]);
+			functions [i] = func;
 		}
-		myAnts = GameManager.Instance.getAntsOfType(antType);
+		myAnts = GameManager.Instance.getAntsOfType (antType);
 	}
 
-	void Awake(){
+	void Awake ()
+	{
 		if (isLocalPlayer) {
 			programUI = GameObject.FindObjectOfType<ProgramUI> ();
 		}
 	}
 
-	public void ExecuteCommand(Command com){
-		Debug.Log("Execute Command " + com);
-		foreach(Ant ant in myAnts){
-			Debug.Log("Executing in ant " + ant);
+	public Ant[] GetAnts ()
+	{
+		return myAnts;
+	}
 
-			ant.ExecuteCommand(com, 1);
+	public void ExecuteCommand (Command com)
+	{
+		Debug.Log ("Execute Command " + com);
+		foreach (Ant ant in myAnts) {
+			Debug.Log ("Executing in ant " + ant);
+			if (!ant.heldInPlace) {
+				ant.ExecuteCommand (com);
+			} else {
+				ant.ExecuteCommand (Command.WAIT);
+				ant.heldInPlace = false;
+			}
 		}
 	}
 
-	public Vector2 GetFollowingCommandCoordinates(Vector2 current){
+	public Vector2 GetFollowingCommandCoordinates (Vector2 current)
+	{
 		return current + Vector2.up;
 		//TODO return actual next command by looking at the current one
 	}
 
-
-	public void GetFunctions(){
-		for(int i  = 0; i < functions.Length; i++){
-		functions[i].SetCommandTiles(programUI.GetCommandTilesFromFunctionZone(i));
+	public void GetFunctions ()
+	{
+		for (int i  = 0; i < functions.Length; i++) {
+			functions [i].SetCommandTiles (programUI.GetCommandTilesFromFunctionZone (i));
 		}
 	}
 
-	public Command GetCommand(int funcIndex, int comIndex){
-		if (funcIndex >= functions.Length || comIndex >= functions[funcIndex].commands.Count){
-			Debug.Log("GetCommand out of bounds");
-			Debug.Log(funcIndex + "/" + functions.Length);
-			Debug.Log(comIndex + "/" + functions[funcIndex].commands.Count);
+	public Command GetCommand (int funcIndex, int comIndex)
+	{
+		if (funcIndex >= functions.Length || comIndex >= functions [funcIndex].commands.Count) {
+			Debug.Log ("GetCommand out of bounds");
+			Debug.Log (funcIndex + "/" + functions.Length);
+			Debug.Log (comIndex + "/" + functions [funcIndex].commands.Count);
 			return Command.NONE;
 		}
-		return functions[funcIndex].commands[comIndex];
+		return functions [funcIndex].commands [comIndex];
 	}
-	public Command GetCommand(Vector2 coords){
+
+	public Command GetCommand (Vector2 coords)
+	{
 		int funcIndex = (int)coords.x;
 		int comIndex = (int)coords.y;
 
-		return GetCommand(funcIndex, comIndex);
+		return GetCommand (funcIndex, comIndex);
 	}
 
-	public void AddCommand(int funcIndex, Command com, int comIndex){
+	public void AddCommand (int funcIndex, Command com, int comIndex)
+	{
 		Debug.Log ("AddCommand local ");
-		Debug.Log (functions[funcIndex].commands);
+		Debug.Log (functions [funcIndex].commands);
 		if (isServer) {
 			RpcAddCommand (funcIndex, com, comIndex);
 		} else {
-			CmdAddCommand(funcIndex, com, comIndex);
+			CmdAddCommand (funcIndex, com, comIndex);
 		}
 	}
 
-	public void RemoveCommand(int funcIndex, int comIndex){
+	public void RemoveCommand (int funcIndex, int comIndex)
+	{
 		Debug.Log ("RemoveCommand local");
 		if (isServer) {
 			RpcRemoveCommand (funcIndex, comIndex);
 		} else {
-			CmdRemoveCommand(funcIndex, comIndex);
+			CmdRemoveCommand (funcIndex, comIndex);
 		}
 
 	}
 
 	[Command]
-	void CmdAddCommand(int funcIndex, Command com, int comIndex){
+	void CmdAddCommand (int funcIndex, Command com, int comIndex)
+	{
 		Debug.Log ("AddCommand Cmd");
 		RpcAddCommand (funcIndex, com, comIndex);
 	}
 
 	[Command]
-	void CmdRemoveCommand(int funcIndex, int comIndex){
+	void CmdRemoveCommand (int funcIndex, int comIndex)
+	{
 		Debug.Log ("RemoveCommand Cmd");
 		RpcRemoveCommand (funcIndex, comIndex);
 	}
 
 	[ClientRpc]
-	void RpcAddCommand(int funcIndex, Command com, int comIndex){
+	void RpcAddCommand (int funcIndex, Command com, int comIndex)
+	{
 		Debug.Log ("AddCommand Rpc");
-		functions [funcIndex].commands.Insert(comIndex, com);
+		functions [funcIndex].commands.Insert (comIndex, com);
 	}
 
 	[ClientRpc]
-	void RpcRemoveCommand(int funcIndex, int comIndex){
+	void RpcRemoveCommand (int funcIndex, int comIndex)
+	{
 		Debug.Log ("RemoveCommand Rpc");
-		functions [funcIndex].commands.RemoveAt(comIndex);
+		functions [funcIndex].commands.RemoveAt (comIndex);
 	}
 }

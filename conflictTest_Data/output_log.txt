@@ -1,0 +1,1308 @@
+Mono path[0] = 'E:/Unity Projects/MastersProject/conflictTest_Data/Managed'
+Mono path[1] = 'E:/Unity Projects/MastersProject/conflictTest_Data/Mono'
+Mono config path = 'E:/Unity Projects/MastersProject/conflictTest_Data/Mono/etc'
+PlayerConnection initialized from E:/Unity Projects/MastersProject/conflictTest_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55019
+Multi-casting "[IP] 192.168.0.110 [Port] 55019 [Flags] 3 [Guid] 3294197909 [EditorId] 892840376 [Version] 1048832 [Id] WindowsPlayer(Marc-Desktop) [Debug] 1" to [225.0.0.222:54997]...
+Waiting for connection from host on [192.168.0.110:55019]...
+PlayerConnection accepted from [192.168.0.110] handle:0x208
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56909
+PlayerConnection already initialized - listening to [192.168.0.110:55019]
+Initialize engine version: 5.2.0f3 (e7947df39b5c)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon R9 200 / HD 7900 Series (ID=0x6798)
+    Vendor:   ATI
+    VRAM:     3051 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\Unity Projects\MastersProject\conflictTest_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\Unity Projects\MastersProject\conflictTest_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\Unity Projects\MastersProject\conflictTest_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\Unity Projects\MastersProject\conflictTest_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\Unity Projects\MastersProject\conflictTest_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\Unity Projects\MastersProject\conflictTest_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: E:\Unity Projects\MastersProject\conflictTest_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading E:\Unity Projects\MastersProject\conflictTest_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: E:\Unity Projects\MastersProject\conflictTest_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.042 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Mono path[0] = 'E:/Unity Projects/MastersProject/conflictTest_Data/Managed'
+Mono path[1] = 'E:/Unity Projects/MastersProject/conflictTest_Data/Mono'
+Mono config path = 'E:/Unity Projects/MastersProject/conflictTest_Data/Mono/etc'
+PlayerConnection initialized from E:/Unity Projects/MastersProject/conflictTest_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55268
+Multi-casting "[IP] 192.168.0.110 [Port] 55268 [Flags] 3 [Guid] 2698913835 [EditorId] 892840376 [Version] 1048832 [Id] WindowsPlayer(Marc-Desktop) [Debug] 1" to [225.0.0.222:54997]...
+Waiting for connection from host on [192.168.0.110:55268]...
+PlayerConnection accepted from [192.168.0.110] handle:0x208
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56835
+PlayerConnection already initialized - listening to [192.168.0.110:55268]
+Initialize engine version: 5.2.0f3 (e7947df39b5c)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon R9 200 / HD 7900 Series (ID=0x6798)
+    Vendor:   ATI
+    VRAM:     3051 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\Unity Projects\MastersProject\conflictTest_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\Unity Projects\MastersProject\conflictTest_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\Unity Projects\MastersProject\conflictTest_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\Unity Projects\MastersProject\conflictTest_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\Unity Projects\MastersProject\conflictTest_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\Unity Projects\MastersProject\conflictTest_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: E:\Unity Projects\MastersProject\conflictTest_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading E:\Unity Projects\MastersProject\conflictTest_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: E:\Unity Projects\MastersProject\conflictTest_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.043 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: E:\Unity Projects\MastersProject\conflictTest_Data\Managed\System.dll (this message is harmless)
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 132c -> priority: 1 
+  Thread -> id: 1b78 -> priority: 1 
+<RI> Initialized touch support.
+Platform assembly: E:\Unity Projects\MastersProject\conflictTest_Data\Managed\System.dll (this message is harmless)
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 1264 -> priority: 1 
+  Thread -> id: 2264 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.327159 ms
+UnloadTime: 2.276301 ms
+Game Manager Awake at 7.959906
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+GameManager:Awake() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\GameManager.cs:12)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Environment/GameManager.cs Line: 12)
+
+Game Manager Awake at 2.125074
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+GameManager:Awake() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\GameManager.cs:12)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Environment/GameManager.cs Line: 12)
+
+Player awake
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:Awake() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:22)
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineObjectBindings.gen.cs:60)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:80)
+UnityEngine.Networking.NetworkLobbyManager:SceneLoadedForPlayer(NetworkConnection, GameObject) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkLobbyManager.cs:121)
+UnityEngine.Networking.NetworkLobbyManager:OnServerSceneLoadedMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkLobbyManager.cs:423)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(Int16, NetworkReader, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:183)
+UnityEngine.Networking.NetworkServer:InvokeHandlerOnServer(ULocalConnectionToServer, Int16, MessageBase, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:1643)
+UnityEngine.Networking.ULocalConnectionToServer:Send(Int16, MessageBase) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalConnections.cs:83)
+UnityEngine.Networking.NetworkClient:Send(Int16, MessageBase) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:372)
+UnityEngine.Networking.NetworkLobbyPlayer:SendSceneLoadedMessage() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkLobbyPlayer.cs:77)
+UnityEngine.Networking.NetworkLobbyPlayer:OnLevelWasLoaded() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkLobbyPlayer.cs:95)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Player.cs Line: 22)
+
+OnLobbyServerSceneLoadedForPlayer 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+GuiLobbyManager:OnLobbyServerSceneLoadedForPlayer(GameObject, GameObject) (at E:\Unity Projects\MastersProject\Assets\LobbyAscripts\Gui aL 2b1b5yMan
+ager.cs:149)
+UnityEngine.Networking.NetworkLobbyManage
+r:SceneLoadedForPlayer(Network
+Connection, GameObject) (at C:\buildslave\unity\bAssets\xtensions\Networking\Runtim
+e\NetworkLobbyManaat E:\Uni5)
+ nityEngine.Networking.NetworkLobbyManager:OnServerSceneLoaded
+M
+(ssalen(mNetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime
+\
+NetworkLobbyManager.cs:423)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(Int16, NetworkReader, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:183)
+UnityEngine.Networking.NetworkServer:InvokeHandlerOnServer(ULocalConnectionToServer, Int16, MessageBase, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:1643)
+UnityEngine.Networking.ULocalConnectionToServer:Send(Int16, MessageBase) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalConnections.cs:83)
+UnityEngine.Networking.NetworkClient:Send(Int16, MessageBase) (at C:\builvsoxel Crate build\Extensions\Networking\Runtime\NetworkClient.cs b3cause
+ iityEngine.Networking.NetworkLobbyPlayer:SendSce
+neLoadedMessage() (at C:\buildslave\unity\build\Extens
+ions\Networking\Runtime\Networ
+kLobbyPlayer.cs:77)
+UnitcyEngine.NetwoUnitng.NetworkLobbyPlayer:OnLevelWasLoaded() (at C:\buildslave\unity\bu
+ild\Extensions\Networking\Runtime\NetworkLobbyPlayer.cs:95)
+ 
+(Filename: Ei/Unity P\Vojects/Maste
+rsProject/Assets/Lobby/scripts/GuiLobbyManager.cs Line: 149)
+
+Scripts\Environment\Voxel.cs:20)
+Voxel:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\Voxel.cs:16)
+DefaultBlock:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\DefaultBlock.cs:8)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Environment/Level.cs Line: 20)
+
+Ant start at 2.125074nUtartyEocinl.Debug:In
+UnityEngine.Debug:Internal_Log(Int
+32, String, Object)
+UnityEngin
+e.Debug:Log(Object)
+Player:OnStartLocalPlayer()t\(saet E:\Unity Projects\MastersPr
+oject\Assets\art() (tt \Agents\Playereccs:35)
+UnityEngine.Networking.NetworkIdentity:SetLocalPlay
+er
+(Int1na) (a E:/U\bity Projects/Mastersld\Extensions\Networking\Runtime\NetworkIdenti
+t
+y.cs:649)
+UnityEngine.Networking.NetworkServer:SetupLocalPlayerForConnection(NetworkConnection, NetworkIdentity, PlayerController) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:1026)
+UnityEngine.Networking.NetworkServer:InternalReplacePlayerForConnection(NetworkConnection, GameObject, Int16) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:1079)
+UnityEngine.Networking.NetworkServer:ReplacePlayerForConnection(NetworkConnection, GameObject, Int16) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:916)
+UnityEngine.Networking.NetworkLobbyManager:SceneLoadedForPlayer(NetworkConnection, GameObject) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkLobbyManager.cs:131)
+UnityEngine.Networking.NetworkLobbyManager:OnServerSceneLoadedMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkLobbyManager.cs:423)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(Int16, NetworkReader, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:183)
+UnityEngine.Networking.NetworkServer:InvokeHandlerOnServer(ULocalConnectionToServer, Int16, MessageBase, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:1643)
+UnityEngine.Networking.ULocalConnectionToServer:Send(Int16, MessageBase) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalConnections.cs:83)
+UnityEngine.Networking.NetworkClient:Send(Int16, MessageBase) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:372)
+UnityEngine.Networking.NetworkLobbyPlayer:SendSceneLoadedMessage() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkLobbyPlayer.cs:77)
+UnityEngine.Networking.NetworkLobbyPlayer:OnLevelWasLoaded() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkLobbyPlayer.cs:95)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Player.cs Line: 35)
+
+Ant start at 7.959906
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Ant:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:34)
+FireAnt:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\FireAnt.cs:8)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 34)
+
+voxel Crate (DefaultBlock) cannot occupy space (5.0, 1.0, 0.0) because it is already occupied by Crate (DefaultBlock)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Level:SetVoxel(Voxel, Vector3) (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\Level.cs:20)
+Voxel:SnapToGrid() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\Voxel.cs:31)
+Voxel:VoxelInit() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\Voxel.cs:20)
+Voxel:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\Voxel.cs:16)
+DefaultBlock:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\DefaultBlock.cs:8)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Environment/Level.cs Line: 20)
+
+Ant start at 7.959906
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Ant:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:34)
+WarriorAnt:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\WarriorAnt.cs:8)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Ant.cs Line: 34)
+
+RPC Register as player 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:Register() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:42)
+Player:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:27)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Player.cs Line: 42)
+
+Local Player here
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:Register() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:46)
+Player:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:27)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Player.cs Line: 46)
+
+System memory in use before: 30.9 MB.
+System memory in use after: 31.0 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 3399.
+Total: 1.290430 ms (FindLiveObjects: 0.154617 ms CreateObjectMapping: 0.086515 ms MarkObjects: 1.034390 ms  DeleteObjects: 0.014321 ms)
+
+Player(Clone) (ProgramManager)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+FunctionZone:Init(ProgramManager, Int32, Int32) (at E:\Unity Projects\MastersProject\Assets\FunctionZone.cs:28)
+ProgramUI:BuildUIFromBlueprint(ProgramBlueprint) (at E:\Unity Projects\MastersProject\Assets\Scripts\UI Scripts\ProgramUI.cs:119)
+Player:BuildUI() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:99)
+Player:Register() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:47)
+Player:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:27)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/FunctionZone.cs Line: 28)
+
+Player(Clone) (ProgramManager)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+FunctionZone:Init(ProgramManager, Int32, Int32) (at E:\Unity Projects\MastersProject\Assets\FunctionZone.cs:28)
+ProgramUI:BuildUIFromBlueprint(ProgramBlueprint) (at E:\Unity Projects\MastersProject\Assets\Scripts\UI Scripts\ProgramUI.cs:119)
+Player:BuildUI() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:99)
+Player:Register() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:47)
+Player:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:27)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/FunctionZone.cs Line: 28)
+
+Player awake
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:Awake() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:22)
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineObjectBindings.gen.cs:60)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:80)
+UnityEngine.Networking.NetworkLobbyManager:SceneLoadedForPlayer(NetworkConnection, GameObject) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkLobbyManager.cs:121)
+UnityEngine.Networking.NetworkLobbyManager:OnServerSceneLoadedMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkLobbyManager.cs:423)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:416)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:522)
+UnityEngine.Networking.NetworkServer:InternalUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:684)
+UnityEngine.Networking.NetworkServer:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:546)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:887)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Player.cs Line: 22)
+
+OnLobbyServerSceneLoadedForPlayer 1
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+GuiLobbyManager:OnLobbyServerSceneLoadedForPlayer(GameObject, GameObject) (at E:\Unity Projects\MastersProject\Assets\Lobby\scripts\GuiLobbyManager.cs:149)
+UnityEngine.Networking.NetworkLobbyManager:SceneLoadedForPlayer(NetworkConnection, GameObject) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkLobbyManager.cs:125)
+UnityEngine.Networking.NetworkLobbyManager:OnServerSceneLoadedMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkLobbyManager.cs:423)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:416)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:522)
+UnityEngine.Networking.NetworkServer:InternalUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:684)
+UnityEngine.Networking.NetworkServer:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:546)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:887)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Lobby/scripts/GuiLobbyManager.cs Line: 149)
+
+RPC Register as player 1
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:Register() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:42)
+Player:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:27)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Player.cs Line: 42)
+
+System memory in use before: 31.0 MB.
+System memory in use after: 31.2 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 3645.
+Total: 1.640585 ms (FindLiveObjects: 0.237626 ms CreateObjectMapping: 0.116328 ms MarkObjects: 1.269093 ms  DeleteObjects: 0.016367 ms)
+
+Player awake
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:Awake() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:22)
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineObjectBindings.gen.cs:60)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:80)
+UnityEngine.Networking.ClientScene:OnObjectSpawn(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:436)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:416)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:522)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:554)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Player.cs Line: 22)
+
+Player awake
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:Awake() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:22)
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineObjectBindings.gen.cs:60)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion) (at C:\buildslave\unity\build\Runtime\Export\UnityEngineObject.cs:80)
+UnityEngine.Networking.ClientScene:OnObjectSpawn(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:436)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:416)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:522)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:554)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Player.cs Line: 22)
+
+OnStartLocalPlayer
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:OnStartLocalPlayer() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:35)
+UnityEngine.Networking.NetworkIdentity:SetLocalPlayer(Int16) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:649)
+UnityEngine.Networking.ClientScene:CheckForOwner(NetworkIdentity) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:746)
+UnityEngine.Networking.ClientScene:OnObjectSpawnFinished(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:519)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:416)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:522)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:554)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Player.cs Line: 35)
+
+RPC Register as player 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:Register() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:42)
+Player:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:27)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Player.cs Line: 42)
+
+RPC Register as player 1
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:Register() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:42)
+Player:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:27)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Player.cs Line: 42)
+
+Local Player here
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:Register() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:46)
+Player:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:27)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Agents/Player.cs Line: 46)
+
+Player(Clone) (ProgramManager)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+FunctionZone:Init(ProgramManager, Int32, Int32) (at E:\Unity Projects\MastersProject\Assets\FunctionZone.cs:28)
+ProgramUI:BuildUIFromBlueprint(ProgramBlueprint) (at E:\Unity Projects\MastersProject\Assets\Scripts\UI Scripts\ProgramUI.cs:119)
+Player:BuildUI() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:99)
+Player:Register() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:47)
+Player:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:27)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/FunctionZone.cs Line: 28)
+
+Player(Clone) (ProgramManager)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+FunctionZone:Init(ProgramManager, Int32, Int32) (at E:\Unity Projects\MastersProject\Assets\FunctionZone.cs:28)
+ProgramUI:BuildUIFromBlueprint(ProgramBlueprint) (at E:\Unity Projects\MastersProject\Assets\Scripts\UI Scripts\ProgramUI.cs:119)
+Player:BuildUI() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:99)
+Player:Register() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:47)
+Player:Start() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Player.cs:27)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/FunctionZone.cs Line: 28)
+
+AddCommand local 
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:AddCommand(Int32, Command, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:97)
+FunctionZone:AddCommand(Command, Int32) (at E:\Unity Projects\MastersProject\Assets\FunctionZone.cs:53)
+CommandSlot:OnDrop(PointerEventData) (at E:\Unity Projects\MastersProject\Assets\CommandSlot.cs:48)
+UnityEngine.EventSystems.ExecuteEvents:Execute(IDropHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:87)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:269)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:294)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:382)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:277)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:265)
+UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:179)
+UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:277)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 97)
+
+System.Collections.Generic.List`1[Command]
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:AddCommand(Int32, Command, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:98)
+FunctionZone:AddCommand(Command, Int32) (at E:\Unity Projects\MastersProject\Assets\FunctionZone.cs:53)
+CommandSlot:OnDrop(PointerEventData) (at E:\Unity Projects\MastersProject\Assets\CommandSlot.cs:48)
+UnityEngine.EventSystems.ExecuteEvents:Execute(IDropHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:87)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:269)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:294)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:382)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:277)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:265)
+UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:179)
+UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:277)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 98)
+
+AddCommand Cmd
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:CmdAddCommand(Int32, Command, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:120)
+ProgramManager:InvokeCmdCmdAddCommand(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeCommandDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:303)
+UnityEngine.Networking.NetworkBehaviour:InvokeCommand(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:81)
+UnityEngine.Networking.NetworkIdentity:HandleCommand(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:492)
+UnityEngine.Networking.NetworkServer:OnCommandMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:1290)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:416)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:522)
+UnityEngine.Networking.NetworkServer:InternalUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:684)
+UnityEngine.Networking.NetworkServer:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:546)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:887)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 120)
+
+AddCommand Rpc
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:RpcAddCommand(Int32, Command, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:134)
+ProgramManager:InvokeRpcRpcAddCommand(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
+UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:528)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:194)
+UnityEngine.Networking.LocalClient:ProcessInternalMessages() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:137)
+UnityEngine.Networking.LocalClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:65)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 134)
+
+AddCommand Rpc
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:RpcAddCommand(Int32, Command, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:134)
+ProgramManager:InvokeRpcRpcAddCommand(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
+UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:528)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:416)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:522)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:554)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 134)
+
+AddCommand local 
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:AddCommand(Int32, Command, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:97)
+FunctionZone:AddCommand(Command, Int32) (at E:\Unity Projects\MastersProject\Assets\FunctionZone.cs:53)
+CommandSlot:OnDrop(PointerEventData) (at E:\Unity Projects\MastersProject\Assets\CommandSlot.cs:48)
+UnityEngine.EventSystems.ExecuteEvents:Execute(IDropHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:87)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:269)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:294)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:382)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:277)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:265)
+UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:179)
+UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:277)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 97)
+
+System.Collections.Generic.List`1[Command]
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:AddCommand(Int32, Command, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:98)
+FunctionZone:AddCommand(Command, Int32) (at E:\Unity Projects\MastersProject\Assets\FunctionZone.cs:53)
+CommandSlot:OnDrop(PointerEventData) (at E:\Unity Projects\MastersProject\Assets\CommandSlot.cs:48)
+UnityEngine.EventSystems.ExecuteEvents:Execute(IDropHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:87)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:269)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:294)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:382)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:277)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:265)
+UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:179)
+UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:277)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 98)
+
+AddCommand Rpc
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:RpcAddCommand(Int32, Command, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:134)
+ProgramManager:InvokeRpcRpcAddCommand(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
+UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:528)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:194)
+UnityEngine.Networking.LocalClient:ProcessInternalMessages() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:137)
+UnityEngine.Networking.LocalClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:65)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 134)
+
+AddCommand Rpc
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:RpcAddCommand(Int32, Command, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:134)
+ProgramManager:InvokeRpcRpcAddCommand(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
+UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:528)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:416)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:522)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:554)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 134)
+
+tile removed from CommandSlot 0 (CommandSlot)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+CommandSlot:RemoveTile() (at E:\Unity Projects\MastersProject\Assets\CommandSlot.cs:21)
+FunctionZone:MoveTile(CommandSlot, CommandSlot) (at E:\Unity Projects\MastersProject\Assets\FunctionZone.cs:121)
+FunctionZone:MakeGap(Int32) (at E:\Unity Projects\MastersProject\Assets\FunctionZone.cs:94)
+CommandSlot:OnPointerEnter(PointerEventData) (at E:\Unity Projects\MastersProject\Assets\CommandSlot.cs:62)
+UnityEngine.EventSystems.ExecuteEvents:Execute(IPointerEnterHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:24)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:269)
+UnityEngine.EventSystems.BaseInputModule:HandlePointerExitAndEnter(PointerEventData, GameObject) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\BaseInputModule.cs:153)
+UnityEngine.EventSystems.PointerInputModule:ProcessMove(PointerEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\PointerInputModule.cs:239)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:278)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:265)
+UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:179)
+UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:277)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/CommandSlot.cs Line: 21)
+
+tile removed from CommandSlot 1 (CommandSlot)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+CommandSlot:RemoveTile() (at E:\Unity Projects\MastersProject\Assets\CommandSlot.cs:21)
+FunctionZone:MoveTile(CommandSlot, CommandSlot) (at E:\Unity Projects\MastersProject\Assets\FunctionZone.cs:121)
+FunctionZone:CloseGaps() (at E:\Unity Projects\MastersProject\Assets\FunctionZone.cs:109)
+CommandSlot:OnPointerExit(PointerEventData) (at E:\Unity Projects\MastersProject\Assets\CommandSlot.cs:84)
+UnityEngine.EventSystems.ExecuteEvents:Execute(IPointerExitHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:31)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:269)
+UnityEngine.EventSystems.BaseInputModule:HandlePointerExitAndEnter(PointerEventData, GameObject) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\BaseInputModule.cs:139)
+UnityEngine.EventSystems.PointerInputModule:ProcessMove(PointerEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\PointerInputModule.cs:239)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:278)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:265)
+UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:179)
+UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:277)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/CommandSlot.cs Line: 21)
+
+AddCommand local 
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:AddCommand(Int32, Command, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:97)
+FunctionZone:AddCommand(Command, Int32) (at E:\Unity Projects\MastersProject\Assets\FunctionZone.cs:53)
+CommandSlot:OnDrop(PointerEventData) (at E:\Unity Projects\MastersProject\Assets\CommandSlot.cs:48)
+UnityEngine.EventSystems.ExecuteEvents:Execute(IDropHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:87)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:269)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:294)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:382)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:277)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:265)
+UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:179)
+UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:277)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 97)
+
+System.Collections.Generic.List`1[Command]
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:AddCommand(Int32, Command, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:98)
+FunctionZone:AddCommand(Command, Int32) (at E:\Unity Projects\MastersProject\Assets\FunctionZone.cs:53)
+CommandSlot:OnDrop(PointerEventData) (at E:\Unity Projects\MastersProject\Assets\CommandSlot.cs:48)
+UnityEngine.EventSystems.ExecuteEvents:Execute(IDropHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:87)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:269)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:294)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:382)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:277)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:265)
+UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:179)
+UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:277)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 98)
+
+AddCommand Rpc
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:RpcAddCommand(Int32, Command, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:134)
+ProgramManager:InvokeRpcRpcAddCommand(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
+UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:528)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:194)
+UnityEngine.Networking.LocalClient:ProcessInternalMessages() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:137)
+UnityEngine.Networking.LocalClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:65)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/ScriptsANetwComoand rpc
+UniProEngira.mebanag:Inger.cs Line: 132,4)
+
+ing, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:RpcAddCommand(Int32, Command, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:134)
+ProgramManager:InvokeRpcRpcAddCommand(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
+UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:528)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:416)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:522)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:554)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 134)
+
+tile removed from CommandSlot 0 (CommandSlot)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+CommandSlot:RemoveTile() (at E:\Unity Projects\MastersProject\Assets\CommandSlot.cs:21)
+FunctionZone:MoveTile(CommandSlot, CommandSlot) (at E:\Unity Projects\MastersProject\Assets\FunctionZone.cs:121)
+FunctionZone:MakeGap(Int32) (at E:\Unity Projects\MastersProject\Assets\FunctionZone.cs:94)
+CommandSlot:OnPointerEnter(PointerEventData) (at E:\Unity Projects\MastersProject\Assets\CommandSlot.cs:62)
+UnityEngine.EventSystems.ExecuteEvents:Execute(IPointerEnterHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:24)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:269)
+UnityEngine.EventSystems.BaseInputModule:HandlePointerExitAndEnter(PointerEventData, GameObject) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\BaseInputModule.cs:153)
+UnityEngine.EventSystems.PointerInputModule:ProcessMove(PointerEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\PointerInputModule.cs:239)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:278)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:265)
+UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:179)
+UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:277)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/CommandSlot.cs Line: 21)
+
+tile removed from CommandSlot 1 (CommandSlot)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+CommandSlot:RemoveTile() (at E:\Unity Projects\MastersProject\Assets\CommandSlot.cs:21)
+FunctionZone:MoveTile(CommandSlot, CommandSlot) (at E:\Unity Projects\MastersProject\Assets\FunctionZone.cs:121)
+FunctionZone:CloseGaps() (at E:\Unity Projects\MastersProject\Assets\FunctionZone.cs:109)
+CommandSlot:OnPointerExit(PointerEventData) (at E:\Unity Projects\MastersProject\Assets\CommandSlot.cs:84)
+UnityEngine.EventSystems.ExecuteEvents:Execute(IPointerExitHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:31)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:269)
+UnityEngine.EventSystems.BaseInputModule:HandlePointerExitAndEnter(PointerEventData, GameObject) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\BaseInputModule.cs:139)
+UnityEngine.EventSystems.PointerInputModule:ProcessMove(PointerEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\PointerInputModule.cs:239)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:278)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:265)
+UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:179)
+UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:277)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/CommandSlot.cs Line: 21)
+
+AddCommand local 
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:AddCommand(Int32, Command, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:97)
+FunctionZone:AddCommand(Command, Int32) (at E:\Unity Projects\MastersProject\Assets\FunctionZone.cs:53)
+CommandSlot:OnDrop(PointerEventData) (at E:\Unity Projects\MastersProject\Assets\CommandSlot.cs:48)
+UnityEngine.EventSystems.ExecuteEvents:Execute(IDropHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:87)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:269)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:294)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:382)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:277)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:265)
+UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:179)
+UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:277)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 97)
+
+System.Collections.Generic.List`1[Command]
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:AddCommand(Int32, Command, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:98)
+FunctionZone:AddCommand(Command, Int32) (at E:\Unity Projects\MastersProject\Assets\FunctionZone.cs:53)
+CommandSlot:OnDrop(PointerEventData) (at E:\Unity Projects\MastersProject\Assets\CommandSlot.cs:48)
+UnityEngine.EventSystems.ExecuteEvents:Execute(IDropHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:87)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:269)
+UnityEngine.EventSystems.ExecuteEvents:ExecuteHierarchy(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:294)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:382)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:277)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:265)
+UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:179)
+UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:277)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 98)
+
+AddCommand Cmd
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:CmdAddCommand(Int32, Command, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:120)
+ProgramManager:InvokeCmdCmdAddCommand(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeCommandDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:303)
+UnityEngine.Networking.NetworkBehaviour:InvokeCommand(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:81)
+UnityEngine.Networking.NetworkIdentity:HandleCommand(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:492)
+UnityEngine.Networking.NetworkServer:OnCommandMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:1290)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:416)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:522)
+UnityEngine.Networking.NetworkServer:InternalUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:684)
+UnityEngine.Networking.NetworkServer:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkServer.cs:546)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:887)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 120)
+
+AddCommand Rpc
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:RpcAddCommand(Int32, Command, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:134)
+ProgramManager:InvokeRpcRpcAddCommand(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
+UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:528)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:194)
+UnityEngine.Networking.LocalClient:ProcessInternalMessages() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:137)
+UnityEngine.Networking.LocalClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:65)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 134)
+
+AddCommand Rpc
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:RpcAddCommand(Int32, Command, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:134)
+ProgramManager:InvokeRpcRpcAddCommand(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeRpcDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:332)
+UnityEngine.Networking.NetworkBehaviour:InvokeRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:113)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:528)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:632)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:416)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:522)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:554)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 134)
+
+Found 2 ProgramManagers
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ExecutionManager:BeginExecution() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:43)
+ExecutionManager:InvokeSyncEventBeginExecutionDelegate(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeSyncEventDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:349)
+UnityEngine.Networking.NetworkBehaviour:InvokeSyncEvent(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:144)
+UnityEngine.Networking.NetworkIdentity:HandleSyncEvent(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:424)
+UnityEngine.Networking.ClientScene:OnSyncEventMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:652)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:194)
+UnityEngine.Networking.LocalClient:ProcessInternalMessages() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:137)
+UnityEngine.Networking.LocalClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:65)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Environment/ExecutionManager.cs Line: 43)
+
+Begin Execution
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+<Execute>c__Iterator9:MoveNext() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:54)
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:62)
+ExecutionManager:BeginExecution() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:45)
+ExecutionManager:InvokeSyncEventBeginExecutionDelegate(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeSyncEventDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:349)
+UnityEngine.Networking.NetworkBehaviour:InvokeSyncEvent(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:144)
+UnityEngine.Networking.NetworkIdentity:HandleSyncEvent(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:424)
+UnityEngine.Networking.ClientScene:OnSyncEventMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:652)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:194)
+UnityEngine.Networking.LocalClient:ProcessInternalMessages() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:137)
+UnityEngine.Networking.LocalClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\LocalClient.cs:65)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Environment/ExecutionManager.cs Line: 54)
+
+Execute Step
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ExecutionManager:ExecuteStep() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:78)
+<Execute>c__Iterator9:MoveNext() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:58)
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:62)
+ExecutionManager:BeginExecution() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cF:4ou
+nxe 2 ProgracMationMagenage
+Un:tyInvokeSyncEveInterenal_Logu(Int3e2, Str(ing, Objehct)
+UnitNyEnoginea.Debu
+gnityEngiecne.
+NetworkinManaNeer:BegihnExecution() S(at E:\Unity Preojetcts\MastersProdject\Asse:ts\Scripts\Ennvironment\ExecutioonManager.cs:43)
+txecitmonManager:en\okeSwonrEventBegikEBecuaivnDelegate(ieowurkrehav:3ou49)
+UnityEneginr)
+UnieyE.gine.Nrkiworking.NeNeotkBorhaveohraInvoureSyncokveSyncEeente(IInt322,N tweorkRkeaderr) (at C:\buildslave\unityunuity\bExild\Exttneions\Nitwns\Nengw\RuintiRue\Nime\orkBehaviohaviuur.ccs:1494
+)ni
+UEnityEngine.rNetworking.NethworkIdentitye:HandleSyncEve2, Netwo2k, NetworkReader) i(dslave\unity\build\nity\build\Eettworking\Runorking\Runtimee\NetworrckIdent
+UnityEngine
+.Networking.Networking.Ctity:HandleSyncEcvent(Iessage(NetworrkMessage) t at:\C:\busildslave\unity\builtenstenns\Networkorng\Runtimei\NetworkIdentitys:cs:424
+)
+UniEtyEngine.wNektworking.rClientScene::OnSyncEvelnt(Nessage(NetworkMessage\) (at C:\b\uildslbuvld\Exitenbsion\s\Networking\Runtime\NeutworkConnection.csc:1942)
+UnityEEginine.Networinig.NetworkConnnections:HandlnalMessagesw() (at Cr, Int32, Int32n) (atu C:\buildsloave\unity\builRuntximes\Lnscaltworking\sRuntim
+e\iNetworkC.oetworking.cLoca6)l
+ient:Update() (wat C:\.buildslave\uction:HandleBytes(Byns\Networtking\Run2time\Locablildslave\u:nity
+\buiyEngine.Neitworking.Nketw\rkClient:NUpdateClnients(n) (a3t2)C:
+\buiyEngine.Netwtorking.Netwonsioons\Netwo:rking\RunRtime\NetworkCl ient.cs:n768)
+(anityEnginedslave\unity\beuild\ExtensionUs\Netwoirking\Ru) (at C:\builkdslave\iunity\build
+\Extensionns\Networking\Runotime\NetworkIdeentitty.cs:888)
+l
+(Filenime: E:/Unitxy Projects/Masrkerng\Runtime\sNetworkrClient.cs:5n54)
+UnityEngine.nNetworking.Netw8or
+k
+Client:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Environment/ExecutionManager.cs Line: 43)
+
+Execute Command FORWARD
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:ExecuteCommand(Command) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:51)
+ExecutionManager:ExecuteStep() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManagerBceg8n Exe
+<Exuecute
+>c__Iterator9:bovg:Nnext() (aot E:\Un, SttriProjects\Mnst, OsbrjjeetcAs)et
+snitcrEipts\EnvbugroLog(Objeect)
+<Execager.cs__It8)
+eriaytngr9e.MovnoBeehaviour:St\Unrtty routine_Auto(IEnuProerato\As)
+Uns\yEcriint.s\nonvihrvinmur:Stt\rECoxoetcnetiEnnMmernagorr.c (:5t4)
+\bniilyEngaie\e.Mity\buhavld\artStafacts\generated\comEnuoneraunti)
+UUnityEnginee.MonoBehaviourBindings.g:n.Ss:ar2t
+Eoroutine(IanaEnr:meegraExecutiotor) (atE:C:nibty Projects\itya\build\arectifactss\generated\common\runtime\UionManagerncsit5)E
+ExecutionoBehaev:InvokeSyncEvegntBcs:ginEx
+ececutiionManagerelBegatinEee(NeiowonkBeh(v) (at Eet\UnwtyoProjkRceader)
+UniPryongiece.NAstwotskinScg.pNseEworkvirBehaviour:IntiokeManacEvr.ctselegat
+e(Inutt32,anNegetwonvkReadyecEv (ntB C:eguinExseace\uninDelegate(NetworkoBehaviour, NetRuntime\Ne)w
+UnityEngouine.Networ
+kiing.NetworNkBehavingouNetnworkSBncEventDelegate(Int32, Netwot32, NetrorkReadderr) a( a:\ Cui\buslldslavnity\tb\bilil\d\Eentenosions\Nerkwirki\RuntimRuNnttorimeea\iNue.ts:or44Beh
+anviour.cs:34e9)
+UnityEnginorkIdentityn:HandloeSBehavinour:I3nvokeSynrcEvent(Int32,C: NuilworlaReeader) (atil C:\builions\Networking\Rundtime\NetworkIdtentity.csu:424)
+UnityEngine.Netrorkcing44)li
+entSyEngine.SNetworkting.Net(workIdentitygeHandleSyncEveltdslave\unity\buildd\Extensions\uNetsworkiung\Runtiime\ClteneSnene.cs:s5i)o
+Uni\NEntworkineg\Runtim.NetworkCkonnection:Invo4ke
+Handyler(NetworkMressage) (at C:\buildslaEve\unity\beuild\Exktensions\Natt C:\buiRuntime\NeitworkCodnnection.cs:N194)
+knity\Rgunn.Networking.LocalCli:ent:P
+rocessInine.Networking.Netaor C:\bnectioan:Handle\Reader(NtetworkR\aNetworking,\Runtime\LocCalClient.cs:1u37)
+UnityEngine.Netnsorking\Loetalorlkennt:Updaite() tworkConnecldtlave.cni:t16)
+Uilit\yEnginie.Networking.Netwntomr\LCoalClctent.cs:65)
+BynityEngiene.Netw3orking.NetwarkClient: pCat\bulildstlave\ut it:y\builsd\Extensions\NetwExoersiong\Netnorking\RtwnorkConnection.cent.cs:s68372
+Uni
+tnitngingeiNeetNetrwiogrketwo.kIdentity:UNettStaticUpdate() (aeveC(\Builesl]avInt32, Inbt32) (at C:\bns\Ndetavrkenguniunytimild\EttworkIdentityo.cs:888)
+ im
+(F\Netwaor: Ennection.cs:5ec2s2M)st
+ensProEjgicne.Netwo/rkingts.Neetworrkinlient:Update() (atcs Lineb u1il
+
+dslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:554)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Environment/ExecutionManager.cs Line: 54)
+
+Executing in ant FireAnt (FireAnt)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:ExecuteCommand(Command) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:53)
+ExecutionManager:ExecuteStep() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:86)
+<Execute>c__Iterator9:MoveNext() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:58)
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:62)
+ExecutionManager:BeginExecution() (at E:\Unity ProEextecute Step
+Ujent\AtyeEsnSciipes\EnvuirIonment\Exog(cutionnManager.icg,: 5)b
+ecxecution
+MnnigerEnnvoke.DncbugenLtgBeginEx)e
+cutionDenMlnagatreE(ecettStep() (avi our, Net workRead\Masr)
+UtersProjec.N\twosekts\SNcripts\Enaviiour:In\vokeSyioncEventDanager.esl78gat
+<E(Iect32utNe>c__Iteaderor9)M (atext(  C:\buildnsty avr\oniect\suiMastlrd\Extent\Asse\Ne\Swcriipg\s\untivironement\orxeBehutionaanaourr.cs:349)
+UnityEngine.NonowBehavioNur:StartCoriour:InvokeSyIEnumncatvent
+UIni3tyEngine.MRonoBeh (at C:\buildCorostinave\unity\beilIE\nxteenations\Nattworking\Runtime\NetworkBehaviour.cs:s\44en
+Unated\commonN\runtime\UnityErngineMotoBehaanviourncEvdit(gs.gen.cNetwor
+EkReadeor) (at C:\buildslave\unity\abuild\Extensionsc\Netwotrking\Runtime\NetworkIdentity.cos:424)
+UnityEionnginge.Nerwocs:4ng.
+ElientScene:Onager:SnynkcEyncEventBevieExtMeutsaonDelegaorke(NesaworgBehavat ur:\ NuilworkReader)
+UnityEngEine.Networkitwng.Net\Rorkuntivio\CrlientScene.Ecs:652)
+UnityEngine.Networkieng.NetworkConbnectioan:InviokeHandler(NetwoorkMessage)i (at C:\buildslaveB\unity\build\Exte
+nsityEngitne.NetwoRuking.Netw\NrtwokkCoBehavion.cs:194)
+UyncEvEnginnt32,t Networ.kReader)en(a:P ocebsisdIltave\unity\build\Eat Cten:ions\Netwove\rking\RuuntimeteNetworkBehnsioonr.\Netcs:144)
+RuntyEngiLne.Neltworkcing.N)e
+twotrEnIdentet.:Naedtewynckingn.LocalClient:Urpdate() (at  C:\buildslavve\unity\buld\Extensioions\\eNworwongkiRuntime\Lmo\NalCworenIt.ntity.cs:424)
+Un:6yE)
+gine.Nenginke.Networking.NeetworkClientt:UpdateNClients()s (at C:\builbuildslaveity\buyild\Extenseions\NeNtworking\Runtiime\ClientSceine.cs:652)
+U
+nittyEnineginteorNetng.NetworkCownrkection:HanUdleReadier(NetworkRetader, ildsl2ave\unity\at C:\buitldslave\unity\kbuild\Extmensions\NIetworking\Ru8nti
+me
+(\Neenwork: on:/cUnity Proj6ec
+ts/MasterseProject/Ansg.NetworktConnection:HaPndleBytes(Ber.cs Line: 53)
+
+32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:522)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:554)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Environment/ExecutionManager.cs Line: 78E
+x
+ecute Command FORWARD
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:ExecuteCommand(Command) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:51)
+ExecutionManager:ExecuteStep() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:86)
+<Execute>c__IterEtxecute Coexmt() (at ERD
+Unity nrityEtn\Magtene.DrsProIject\alsseLosg(Int32s\,nvironmen,\ xOcubionMt)
+aniertyEngine
+.DetyEngig(eObojoBehav
+iour:Startagoerut:ne_EuxoeIEnumeratand(C
+UnityEngine.MonoBehaviourrSoartts\routinesIEnumePator) (aA ss\builSclaipts\ve\workung\Prity\ogramManaigert.\ge:nera
+ted\common\runtime\UnityEngineMonoBehavnity urBPndoject.senMactersProjsc:\A2set
+s\ecutionsanag\EnviginExecu\Eion() (at E:ager.cs:86)
+<tExecute>c__IjeeraAtor9:MoveNext\() (at E:n\Unity PiorManaects\M:4st)
+ExecutionManager:Icrvipts\Envirotnment\EecututononMlanagerNetworkB
+eniatyEnginNetworkReaderou
+r:StarntCorouetwotine_Auto(IEnBeherator)
+UniteSEnngine.MoenoBehaviour:StNetwartCoroutine(IEC:\bueradtor) (uat C\:\bui\ldslave\nunity\buiild\arntifacts\wgenerated\cr.cson3\run
+Utime\Unity.EntgineMonoBehavikBehaviour:s.nvokeSy:6c2)
+Execut32, ionMankaeader) ginE C:\build()l (at Ei:\Unity Prxojects\MaNetwsProjectu\Assetse\Scripts\Envir.cnment\sxe144)io
+nnManaggineer.cs:45)
+ExNecwtironManagter:InvokeSycEvennt(BeginExecutionRDelega te(NetworikBehaviour, NetwordkReader)
+UnityEngine.Netuworking.tNetworkBehtaviour:I)n
+vokeSyngine.Networking.Cli2,n Scene:OnSyncEventate sage(Netdsolavee\unity(\build\Exltensions\iNetwoirking\Runtoime\NetworkBgehaviour\.cs:nt49c)ne
+.cs:652)
+UnityEngine.NetetororkBg.Navtiour:InnvotkeSyncEvent(nInt32,e NetworskReader)t (at Ci:\buaildslatve\unity\builsd\Ex\tensions\N\etwormking\RuntCime\Neton.cwork4)
+UavtyEngicse:144)
+UnitgyEngine.NetwoPrkingsINeteworkIdentity:H andleS\yncEvenat(Int3ty\b2, NetworkReads\N) twork:\nbuildslmave\unitly\build:\Exte
+nsions\gNetworking\Run.time\NeteworkIdene() tity.:cbuil2slav
+e\unity\build\Extensions\Networking\Runtime\Localsaient.gse65)e
+UnityEMgine.get)or i(g.N Ctwobuildslave\punity\bents() xtaensions\Ndslaetwonrty\builu\Exiense\ClieNetwntScene.cns:65\Ne)
+UorkCnityEngsi768)N
+UeityEnkiine.NetworkCionnectwion:HandleReaNdtetrticUpwato(r (aeaC:\builnt32, Innity\but lC:\buildslaveN\unity\builuntime\NsitworkIdentkity.cs:8ti8)
+ 
+(Filonameonne:ction. cs:416)
+UnittyEnginje.Networkingc.NetworekConnect/ion:HamndleBeytes(Biyte[51)
+
+nt32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\REnteime\Netwn rknt WarriorAnt (W22r)
+UnityE
+ngine.NetworDking.NetwonrkCligent:Update() (at C:\btui
+ldslave\unity\bui:ld\Extensio
+ns\Networking\REuntume\NetwonrkCliment.cs:55E4)
+UnityEngjicne.MasterrProje.NetAwsets\Siript:sUpdateClients() r(at C:\bruildsla
+ve\unity\bauaged\Executeions\Ne(twork\Unity Ptimjecttw\orkClrient.cst:768)
+UnityEngi\Envi.Nnmewt\ExecutietwMorkIdentit8y:U
+NeteStaticUpIdeaator9)MoveNext:) \at E:\Ulaive\unity\bu\Ma\Exetensions\Netwotrking\Runtime\Nonment\Edeentitoy.cs:88r.cs
+ 
+(Fil
+enatyEng: e.MonnBihtvyour:SteartCorouersnProuto(IEnumerator)
+UnityEngineinMonoBehaviour:StartCorinet: 51)
+
+umerator) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:62)
+ExecutionManager:BeginExecution() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:45)
+ExecutionManager:InvokeSyncEventBeginExecutionDelegate(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeSyncEventDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:349)
+UnityEngine.Networking.NetworkBehaviour:InvokeSyncEvent(Int32, NetworkReader) (at C:\buildslave\unity\build\ExtenEixne\Nuttoriing iunt mentNetworkBe haviour.cs
+:1it4Eng
+Uine.Debuneg:Interning.NetworkId2entitiy:HandleSync
+Unvtynt(ine.Debug:LworkReader) (
+aro Cra\bManldger:Executty\buildd(Command) (Net working\Runtime\NetwoteIrsProjeccs\Ass4)ts
+\nScriptin\Networking\ProlirantSanenee:OnSyncEv
+entcutssonMe(naeter:EkMecssteget) (at C:\bu\UldityavPr\ujeitts\bMailte\Extensions\Networking\RuEntiironmenen\EScecue.ion:6ana)
+Ur.cty:86)in
+e.xeetute>c__I.Nertwtork9:onnecexit()In(at E:\Unity Proorects\MastersatroC:\ect\uissets\Scrinits\\builro\EmentnsExensutNeonwornainer\Rcs:ti8)e
+Uetwtyrkngonnee.MionoBehav94o)
+UnityEnginutinetwAurko(Ig.numealClient
+:ProcEnsgine.MnanoBeehaviour (Sta CtC\buouldsneavIE\uumitrator) (at C:\buons\Networkitng\build\artLofaclCl\genne.rs:ted\co
+mmintruntime\UnityEngineMonoBlClaventurBpdndte() (aen Ccs:62)
+Execue\ionManager:d\egxtnEnsecons\Nn(tw (rkt nE:\Untity \Poraljelits\Macster5)Pr
+onityEngine.Netwrirkis\g.NvitwormeClt\ent:UptiatnMClnagntr.c) :45t C
+:x\cuuiiodslaveer:InvokbuSynd\EvetetBsiginsExNecuwoiokiDeg\egateiNetworkBehkalviour, Networ
+kReaydngr)
+eniNetEnorkne.NetwtwokikIg.NetworkBNehaviaturc:InvokeSyncEventDeilegsltev(Int32y\ NuildorExReader) (aNe Cworbuingdsluntime\Nty\build\Extensicsns88Ne)
+ or
+(File\Ramnt: E:/Unity kBehavctour.cst:3rsP)
+Ujecty/Asgiete./Setriorks/ngetNetrkorkBehavioumM:Inngeok.cSyncine: t(Int
+3
+2, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:144)
+UnityEngine.Networking.NetworkIdentity:HandleSyncEvent(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:424)
+UnityEngine.Networking.ClientScene:OnSyncEventMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:652)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:416)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:522)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:554)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 53)
+
+Execute Command FORWARD
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:ExecuteCommand(Command) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:51)
+ExecutionManager:ExecuteStep() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:86)
+<Execute>c__Iterator9:MoveNext() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:58)
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:62)
+ExecutionManager:BeginExecution() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:45)
+ExecutionManager:InvokeSyncEventBeginExecutionDelegate(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeSyncEventDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:349)
+UnityEngine.Networking.NetworkBehaviour:InvokeSyncEvent(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:144)
+UnityEngine.Networking.NetworkIdentity:HandleSyncEvent(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:424)
+UnityEngine.Networking.ClientScene:OnSyncEventMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:652)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:416)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:522)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:554)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 51)
+
+Executing in ant WarriorAnt (WarriorAnt)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:ExecuteCommand(Command) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:53)
+ExecutionManager:ExecuteStep() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:86)
+<Execute>c__Iterator9:MoveNext() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:58)
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:62)
+ExecutionManager:BeginExecution() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:45)
+ExecutionManager:InvokeSyncEventBeginExecutionDelegate(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkBehaviour:InvokeSyncEventDelegate(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:349)
+UnityEngine.Networking.NetworkBehaviour:InvokeSyncEvent(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkBehaviour.cs:144)
+UnityEngine.Networking.NetworkIdentity:HandleSyncEvent(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:424)
+UnityEngine.Networking.ClientScene:OnSyncEventMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:652)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:416)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:372)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:522)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:554)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:768)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:888)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 53)
+
+voxel FireAnt (FireAnt) cannot occupy space (1.0, 1.0, 1.0) because it is already occupied by FireAnt (FireAnt)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Level:SetVoxel(Voxel, Vector3) (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\Level.cs:20)
+Voxel:SnapToGrid() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\Voxel.cs:31)
+<MoveForward>c__Iterator0:MoveNext() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:81)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Environment/Level.cs Line: 20)
+
+voxel WarriorAnt (WarriorAnt) cannot occupy space (1.0, 1.0, 3.0) because it is already occupied by WarriorAnt (WarriorAnt)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Level:SetVoxel(Voxel, Vector3) (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\Level.cs:20)
+Voxel:SnapToGrid() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\Voxel.cs:31)
+<MoveForward>c__Iterator0:MoveNext() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:81)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Environment/Level.cs Line: 20)
+
+voxel FireAnt (FireAnt) cannot occupy space (1.0, 1.0, 1.0) because it is already occupied by FireAnt (FireAnt)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Level:SetVoxel(Voxel, Vector3) (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\Level.cs:20)
+Voxel:SnapToGrid() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\Voxel.cs:31)
+<MoveForward>c__Iterator0:MoveNext() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:81)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Environment/Level.cs Line: 20)
+
+voxel WarriorAnt (WarriorAnt) cannot occupy space (1.0, 1.0, 3.0) because it is already occupied by WarriorAnt (WarriorAnt)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Level:SetVoxel(Voxel, Vector3) (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\Level.cs:20)
+Voxel:SnapToGrid() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\Voxel.cs:31)
+<MoveForward>c__Iterator0:MoveNext() (at E:\Unity Projects\MastersProject\Assets\Scripts\Agents\Ant.cs:81)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Environment/Level.cs Line: 20)
+
+Execute Step
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ExecutionManager:ExecuteStep() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:78)
+<Execute>c__Iterator9:MoveNext() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:58)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Environment/ExecutionManager.cs Line: 78)
+
+Execute Command FORWARD
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:ExecuteCommand(Command) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:51)
+ExecutionManager:ExecuteStep() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:86)
+<Execute>c__Iterator9:MoveNext() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:58)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 51)
+
+Executing in ant FireAnt (FireAnt)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:ExecuteCommand(Command) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:53)
+ExecutionManager:ExecuteStep() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:86)
+<Execute>c__Iterator9:MoveNext() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:58)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 53)
+
+GetCommand out of bounds
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:GetCommand(Int32, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:79)
+ProgramManager:GetCommand(Vector2) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:92)
+ExecutionManager:ExecuteStep() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:90)
+<Execute>c__Iterator9:MoveNext() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:58)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 79)
+
+0/2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:GetCommand(Int32, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:80)
+ProgramManager:GetCommand(Vector2) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:92)
+ExecutionManager:ExecuteStep() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:90)
+<Execute>c__Iterator9:MoveNext() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:58)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 80)
+
+2/2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:GetCommand(Int32, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:81)
+ProgramManager:GetCommand(Vector2) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:92)
+ExecutionManager:ExecuteStep() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:90)
+<Execute>c__Iterator9:MoveNext() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:58)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 81)
+
+Execute Command FORWARD
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:ExecuteCommand(Command) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:51)
+ExecutionManager:ExecuteStep() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:86)
+<Execute>c__Iterator9:MoveNext() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:58)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 51)
+
+Executing in ant WarriorAnt (WarriorAnt)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:ExecuteCommand(Command) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:53)
+ExecutionManager:ExecuteStep() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:86)
+<Execute>c__Iterator9:MoveNext() (at E:\Unity Projects\MastersProject\Assets\ScriptsEEnvecute Stei
+ronmeEnt\ine.DeEuxecuternal_LionManager.ts:58ing, O)j
+c
+(Fi
+UnenityE EginUnity Pg:ojog(cts/Object)Proj
+ExecttionMats/SercExipts/Networ() (g/t P:\ogniry Pranageojcs Line: 53s)r
+
+ect\Assets\Scripts\Environment\ExecutionManager.cs:78)
+<Execute>c__Iterator9:MoveNext() (at E:\Unity Projects\MastersProject\AsGetCoScrmmtsnd o\E of bomnes
+UnityEngine.Deagbr.gcIn:58)al
+ 
+(oF(Ilenament3:/U Sity iProjOectst)Mas
+Unsitojecgi/Ae.setbugS:ripts/Environeme)t/
+ProgramManagutr:GetCommerd(csnt32, I 78)
+)
+ (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:79)
+ProgramManaEer:cuetCommand(Vector2) 
+(nityEnginety Projectternal_LrsProject\Assets\SObriectt)Ne
+UnworyEngine.Debaug:Log(Obcject)
+ProcgramManageer:ExecuteeComma nd(Commannd) (at Ec:\Unity Projoject\MAsstetssPrcojpect\Assets\Sncripts\Networnking\Pr:ogra
+mManager.cs_:te1)
+Eor9:MovonManager(:ExecuteStep(r) (at E:\Utnity Procjects\Mastcreprs\Enoirecment\Extecutiopns\Environcent\Exe
+c
+(Filename: E:/Uni)t
+y Prcute>s/__Iterratore9:MoveNext() (ats E:\Uonkingy ProjectMs\Masters Line: 79)
+
+ets\Scripts\Environment\ExecutionManager.cs:58)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/N0t/2
+UnityEngige.Deban:Igererns l_Log(Lntne: 51)
+
+ng, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:GetCommand(Int32, Int32) (at E:\Unity ProEexecuting in ant FirAssets\eArit (s\NreAnt)
+UnityEngrine.Debug:Is:80)
+Pl_ogrg(IManag,eString, Ombject)
+tor2) (at E:.DUnbugy:Lroje(OtsjeMaste
+ProPrrjectM\Assets\Scripts\NetworCking\d) (at E:\Ungity Proje
+cts\MastersnProject\Astsets\S) (ri Ets\UNittwoPrking\PrograemManagecr.cs:53)\
+Scripts\Environment\cExecution (at E:\Ucnity P
+rojecute>c_steteratore9t\MovseNe\Sc()ip(at\Environme nt\ExecutionMeanager.cs:86)
+ts\Scripts\EnIterator9:MoveNextonMant E:\Unit5y P
+r
+(jFilename: E:/Unity \Arojets\sSMasipets\EnvironAment\ExecutionManagrer.cs:5o8)
+ 
+(nagFr.cs amiee: E:0/U
+n
+ity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 53)
+
+2/2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:GetCommand(Int32, Int32) (at E:\Unity GretCommand tersPf boundsA
+UnityEngine.Deetworking\ProgramMInt32, String)
+ rObject)
+ager:GetCome.Debug:Loorg)(Oatjec:\)
+ProgramManager:GeteromPrandecIntssets\Stc2) (at E:\Unrity ProjectsMa\MastersProje
+ct\Assets\Snager:ExecutsSteet() (at E:\UnirtmM Pragerctc\M:st9)r
+Prograt\Asnaetsr:GcriComs\nd(iVectont2)E (cut Eon\Unityer.cs:90)
+<Execute>c__ct\Assetrs\ScriNpts\Netaworkingity PromManagera.csr:92)j
+Eect\Assetanager:ExsecuteSteme) t\Et Ec:tionitay Projes:58)a
+ 
+rsPronaject\:/UnAssePrs\SectsipMts\Envirronment\ExescutionManaeger.cs:90)
+oExecute>c__r.It Lint: 81)
+
+veNext() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:58)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 79)
+
+0/2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:GetCommand(Int32, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:80)
+ProgramManager:GetCommand(Vector2) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:92)
+ExecutionManager:ExecuteStep() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:90)
+<Execute>c__Iterator9:MoveNext() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:58)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 80)
+
+2/2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:GetCommand(Int32, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:81)
+ProgramManager:GetCommand(Vector2) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:92)
+ExecutionManager:ExecuteStep() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:90)
+<Execute>c__Iterator9:MoveNext() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:58)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 81)
+
+Execute Command FORWARD
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:ExecuteCommand(Command) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:51)
+ExecutionManager:ExecuteStep() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:86)
+<Execute>c__Iterator9:MoveNext() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:58)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 51)
+
+Executing in ant WarriorAnt (WarriorAnt)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:ExecuteCommand(Command) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:53)
+ExecutionManager:ExecuteStep() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:86)
+<Execute>c__Iterator9:MoveNext() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:58)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 53)
+
+GetCommand out of bounds
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:GetCommand(Int32, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:79)
+ProgramManager:GetCommand(Vector2) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:92)
+ExecutionManager:ExecuteStep() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:90)
+<Execute>c__Iterator9:MoveNext() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:58)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 79)
+
+0/2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:GetCommand(Int32, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:80)
+ProgramManager:GetCommand(Vector2) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:92)
+ExecutionManager:ExecuteStep() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:90)
+<Execute>c__Iterator9:MoveNext() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:58)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 80)
+
+2/2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ProgramManager:GetCommand(Int32, Int32) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:81)
+ProgramManager:GetCommand(Vector2) (at E:\Unity Projects\MastersProject\Assets\Scripts\Networking\ProgramManager.cs:92)
+ExecutionManager:ExecuteStep() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:90)
+<Execute>c__Iterator9:MoveNext() (at E:\Unity Projects\MastersProject\Assets\Scripts\Environment\ExecutionManager.cs:58)
+ 
+(Filename: E:/Unity Projects/MastersProject/Assets/Scripts/Networking/ProgramManager.cs Line: 81)
+
+Waiting for finish
+Waiting for finish
