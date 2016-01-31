@@ -73,18 +73,35 @@ public class ProgramUI : MonoBehaviour {
 		commandDock = GameObject.Instantiate(commandDockPrefab);
 		commandDock.transform.SetParent(canvas.transform, false);
 
+
+		//ADD BASIC ANT COMMANDS
 		foreach(Command com in antCommands){
 			AddTileBankToCommandDock(com, commandDock, 0);
 		}
 
+		//ADD LOCAL FUNCTIONS
 		for(int i = 1; i<localProgramManager.functions.Length; i++){
-			Debug.Log(PlayerManager.Instance);
-			Debug.Log(PlayerManager.Instance.localPlayer);
-			Debug.Log(PlayerManager.Instance.localPlayer.playerNum);
+			if(!localProgramManager.functions[i].isGlobal){
 			int arg = PlayerManager.Instance.localPlayer.playerNum * 10 + i;
 			AddTileBankToCommandDock(Command.FUNCTION, commandDock, arg);
+			}
 		}
 
+
+		//ADD GLOBAL FUNCTIONS
+		for (int i = 0; i<GameManager.Instance.programProfiles.Length; i++) {
+			for(int j =0; j< GameManager.Instance.programProfiles[i].availableFunctions.Length; j++){
+				if(GameManager.Instance.programProfiles[i].availableFunctions[j].isGlobal){
+					int arg = i * 10 + j;
+					AddTileBankToCommandDock(Command.FUNCTION, commandDock, arg);
+				}
+			}
+		}
+
+
+
+
+		//ADD CLASS COMMANDS
 		switch(localProgramManager.antType){
 		case AntType.FIRE:
 			foreach(Command com in fireCommands){
