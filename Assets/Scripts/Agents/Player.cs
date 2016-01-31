@@ -5,7 +5,7 @@ using UnityEngine.Networking;
 
 
 public class Player : NetworkBehaviour {
-	ProgramManager programManager;
+	public ProgramManager programManager;
 	NetworkPlayer netPlayer;
 
 	[SyncVar]
@@ -43,9 +43,12 @@ public class Player : NetworkBehaviour {
 		PlayerManager.Instance.AddPlayer(this, playerNum);
 		programManager.LoadBlueprint(GameManager.Instance.programProfiles[playerNum]);
 		if(isLocalPlayer){
-			Debug.Log("Local Player here");
-			BuildUI();
 			PlayerManager.Instance.localPlayer = this;
+
+			Debug.Log("Local Player here");
+			Debug.Log(PlayerManager.Instance.localPlayer);
+
+			BuildUI();
 		}
 		registered = true;
 	}
@@ -59,9 +62,9 @@ public class Player : NetworkBehaviour {
 		PlayerManager.Instance.AddPlayer(this, num);
 		programManager.LoadBlueprint(GameManager.Instance.programProfiles[num]);
 		if(isLocalPlayer){
+			PlayerManager.Instance.localPlayer = this;
 			Debug.Log("Local Player here");
 			BuildUI();
-			PlayerManager.Instance.localPlayer = this;
 		}
 		registered = true;
 	}

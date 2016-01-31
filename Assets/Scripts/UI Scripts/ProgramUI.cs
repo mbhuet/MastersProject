@@ -18,7 +18,7 @@ public class ProgramUI : MonoBehaviour {
 	public CommandTile fire;
 	public CommandTile push;
 	public CommandTile build;
-	public FunctionTile funcTile;
+	public CommandTile funcTile;
 
 	Dictionary<Command, CommandTile> commandDict;
 	List<FunctionZone> functionZones;
@@ -74,32 +74,36 @@ public class ProgramUI : MonoBehaviour {
 		commandDock.transform.SetParent(canvas.transform, false);
 
 		foreach(Command com in antCommands){
-			AddTileBankToCommandDock(com, commandDock);
+			AddTileBankToCommandDock(com, commandDock, 0);
 		}
 
 		for(int i = 1; i<localProgramManager.functions.Length; i++){
-			AddFuncTileBankToCommandDock(localProgramManager, i, commandDock);
+			Debug.Log(PlayerManager.Instance);
+			Debug.Log(PlayerManager.Instance.localPlayer);
+			Debug.Log(PlayerManager.Instance.localPlayer.playerNum);
+			int arg = PlayerManager.Instance.localPlayer.playerNum * 10 + i;
+			AddTileBankToCommandDock(Command.FUNCTION, commandDock, arg);
 		}
 
 		switch(localProgramManager.antType){
 		case AntType.FIRE:
 			foreach(Command com in fireCommands){
-				AddTileBankToCommandDock(com, commandDock);
+				AddTileBankToCommandDock(com, commandDock, 0);
 			}
 			break;
 		case AntType.CARPENTER:
 			foreach(Command com in carpenterCommands){
-				AddTileBankToCommandDock(com, commandDock);
+				AddTileBankToCommandDock(com, commandDock, 0);
 			}
 			break;
 		case AntType.WARRIOR:
 			foreach(Command com in warriorCommands){
-				AddTileBankToCommandDock(com, commandDock);
+				AddTileBankToCommandDock(com, commandDock, 0);
 			}
 			break;
 		case AntType.SCOUT:
 			foreach(Command com in scoutCommands){
-				AddTileBankToCommandDock(com, commandDock);
+				AddTileBankToCommandDock(com, commandDock, 0);
 			}
 			break;
 		default:
@@ -121,18 +125,12 @@ public class ProgramUI : MonoBehaviour {
 	
 	}
 
-	void AddTileBankToCommandDock(Command com, GameObject dock){
+	void AddTileBankToCommandDock(Command com, GameObject dock, int arg){
 		TileBank bank = GameObject.Instantiate(tileBankPrefab);
 		CommandTile tile;
 		commandDict.TryGetValue(com, out tile);
-		bank.Init(tile);
+		bank.Init(tile, arg);
 		bank.transform.SetParent(dock.transform);
-	}
-
-	void AddFuncTileBankToCommandDock(ProgramManager progManager, int funcIndex, GameObject dock){
-		TileBank bank = GameObject.Instantiate(tileBankPrefab);
-		bank.Init(funcTile, progManager, funcIndex);
-			bank.transform.SetParent(dock.transform);
 	}
 
 	void BuildCommandDictionary(){
@@ -145,6 +143,7 @@ public class ProgramUI : MonoBehaviour {
 		commandDict.Add(Command.FIRE, fire);
 		commandDict.Add(Command.BUILD, build);
 		commandDict.Add(Command.PUSH, push);
+		commandDict.Add (Command.FUNCTION, funcTile);
 	}
 
 	public void SetCommandTileCollision(bool isOn){

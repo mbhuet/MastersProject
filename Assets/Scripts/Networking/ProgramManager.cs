@@ -20,6 +20,8 @@ public class ProgramManager: NetworkBehaviour
 	public AntFunction[] functions;
 	Ant[] myAnts;
 	ProgramUI programUI;
+	Stack<Vector3> functionStack;//will hold this programs place when it moves to another function
+	public bool finishedExecution = false;
 
 	public void LoadBlueprint (ProgramBlueprint blueprint)
 	{
@@ -39,6 +41,7 @@ public class ProgramManager: NetworkBehaviour
 		if (isLocalPlayer) {
 			programUI = GameObject.FindObjectOfType<ProgramUI> ();
 		}
+		functionStack = new Stack<Vector3> ();
 	}
 
 	public Ant[] GetAnts ()
@@ -51,19 +54,47 @@ public class ProgramManager: NetworkBehaviour
 		Debug.Log ("Execute Command " + com);
 		foreach (Ant ant in myAnts) {
 			Debug.Log ("Executing in ant " + ant);
-			if (!ant.heldInPlace) {
-				ant.ExecuteCommand (com);
-			} else {
+			if (ant.heldInPlace && 
+			    	(com == Command.FORWARD || 
+			 		 com == Command.BACKWARD ||
+			 		 com == Command.PUSH)) {
 				ant.ExecuteCommand (Command.WAIT);
 				ant.heldInPlace = false;
+			} else {
+				ant.ExecuteCommand (com);
+
 			}
 		}
 	}
 
-	public Vector2 GetFollowingCommandCoordinates (Vector2 current)
+	public Vector3 ResolveCalls (Vector3 currentCoords)
 	{
-		return current + Vector2.up;
-		//TODO return actual next command by looking at the current one
+		Debug.Log ("ResolveCalls(" + currentCoords + ")");
+		Command com = GetCommand (currentCoords);
+		switch (com) {
+		case Command.FUNCTION:
+			functionStack.Push (currentCoords);// will push the coordinates of the function tile
+			int arg = GetArgument ((int)currentCoords.y, (int)currentCoords.z);
+			if(arg == -1) Debug.Log("");
+			int playerIndex = arg / 10;
+			int funcIndex = arg % 10;
+			currentCoords.x = playerIndex;
+			currentCoords.y = funcIndex;
+			currentCoords.z = 0;
+			Debug.Log ("Function leading to " + currentCoords);
+			currentCoords = ResolveCalls (currentCoords);
+			break;
+		case Command.NONE:
+			if (functionStack.Count > 0) {
+				currentCoords = functionStack.Pop () + Vector3.forward;
+				currentCoords = ResolveCalls (currentCoords);
+			}
+			break;
+		default:
+			break;
+		}
+		return currentCoords;
+		
 	}
 
 	public void GetFunctions ()
@@ -75,31 +106,58 @@ public class ProgramManager: NetworkBehaviour
 
 	public Command GetCommand (int funcIndex, int comIndex)
 	{
-		if (funcIndex >= functions.Length || comIndex >= functions [funcIndex].commands.Count) {
+		//Debug.Log ();
+		if (funcIndex >= functions.Length) {
 			Debug.Log ("GetCommand out of bounds");
-			Debug.Log (funcIndex + "/" + functions.Length);
-			Debug.Log (comIndex + "/" + functions [funcIndex].commands.Count);
+			Debug.Log ("Looking for function at " + funcIndex + "/" + functions.Length);
 			return Command.NONE;
+		} else if (comIndex >= functions [funcIndex].commands.Count) {
+			Debug.Log ("GetCommand out of bounds");
+			Debug.Log ("Looking for command at " + comIndex + "/" + functions [funcIndex].commands.Count);
+			return Command.NONE;
+
 		}
 		return functions [funcIndex].commands [comIndex];
 	}
 
-	public Command GetCommand (Vector2 coords)
+	public int GetArgument (int funcIndex, int argIndex)
 	{
-		int funcIndex = (int)coords.x;
-		int comIndex = (int)coords.y;
-
-		return GetCommand (funcIndex, comIndex);
+		if (funcIndex >= functions.Length) {
+			Debug.Log ("GetArgument out of bounds");
+			Debug.Log ("Looking for function at " + funcIndex + "/" + functions.Length);
+			return -1;
+		} else if (argIndex >= functions [funcIndex].arguments.Count) {
+			Debug.Log ("GetArgument out of bounds");
+			Debug.Log ("Looking for arg at " + argIndex + "/" + functions [funcIndex].arguments.Count);
+			return -1;
+		}
+		return functions [funcIndex].arguments [argIndex];
 	}
 
-	public void AddCommand (int funcIndex, Command com, int comIndex)
+	public static Command GetCommand (Vector3 coords)
+	{
+		int playerIndex = (int)coords.x;
+		int funcIndex = (int)coords.y;
+		int comIndex = (int)coords.z;
+		return PlayerManager.Instance.players [playerIndex].programManager.GetCommand (funcIndex, comIndex);
+	}
+
+	public static int GetArgument (Vector3 coords)
+	{
+		int playerIndex = (int)coords.x;
+		int funcIndex = (int)coords.y;
+		int argIndex = (int)coords.z;
+		return PlayerManager.Instance.players [playerIndex].programManager.GetArgument (funcIndex, argIndex);
+	}
+
+	public void AddCommand (int funcIndex, Command com, int comIndex, int arg)
 	{
 		Debug.Log ("AddCommand local ");
 		Debug.Log (functions [funcIndex].commands);
 		if (isServer) {
-			RpcAddCommand (funcIndex, com, comIndex);
+			RpcAddCommand (funcIndex, com, comIndex, arg);
 		} else {
-			CmdAddCommand (funcIndex, com, comIndex);
+			CmdAddCommand (funcIndex, com, comIndex, arg);
 		}
 	}
 
@@ -115,10 +173,10 @@ public class ProgramManager: NetworkBehaviour
 	}
 
 	[Command]
-	void CmdAddCommand (int funcIndex, Command com, int comIndex)
+	void CmdAddCommand (int funcIndex, Command com, int comIndex, int arg)
 	{
 		Debug.Log ("AddCommand Cmd");
-		RpcAddCommand (funcIndex, com, comIndex);
+		RpcAddCommand (funcIndex, com, comIndex, arg);
 	}
 
 	[Command]
@@ -129,10 +187,12 @@ public class ProgramManager: NetworkBehaviour
 	}
 
 	[ClientRpc]
-	void RpcAddCommand (int funcIndex, Command com, int comIndex)
+	void RpcAddCommand (int funcIndex, Command com, int comIndex, int arg)
 	{
 		Debug.Log ("AddCommand Rpc");
 		functions [funcIndex].commands.Insert (comIndex, com);
+		functions [funcIndex].arguments.Insert (comIndex, arg);
+
 	}
 
 	[ClientRpc]
@@ -140,5 +200,7 @@ public class ProgramManager: NetworkBehaviour
 	{
 		Debug.Log ("RemoveCommand Rpc");
 		functions [funcIndex].commands.RemoveAt (comIndex);
+		functions [funcIndex].arguments.RemoveAt (comIndex);
+
 	}
 }
