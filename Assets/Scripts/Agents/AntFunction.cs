@@ -23,12 +23,14 @@ public class AntFunction {
 	public CommandTile[] commandTiles;
 
 	public List<Command> commands;
+	public List<int> arguments;
 
 	public void LoadBlueprint(FunctionBlueprint blueprint){
 		isGlobal = blueprint.isGlobal;
 		numSlots = blueprint.numSlots;
 		commandTiles = new CommandTile[numSlots];
 		commands = new List<Command> ();
+		arguments = new List<int>();
 
 	}
 

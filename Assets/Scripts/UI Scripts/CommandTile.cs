@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -24,6 +24,7 @@ public class CommandTile : Tile {
 	public Transform startParent = null;
 	protected bool fromBank = true;
 	public CommandSlot slot;
+	public int argument;
 
 	#region IBeginDragHandler implementation
 	public override void OnBeginDrag (PointerEventData eventData)

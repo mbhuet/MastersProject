@@ -11,19 +11,11 @@ public class TileBank : MonoBehaviour{
 		}
 	}
 
-	public void Init(CommandTile tilePrefab){
+	public void Init(CommandTile tilePrefab, int arg){
 		this.tilePrefab = tilePrefab;
 		CommandTile tile = GameObject.Instantiate(tilePrefab);
+		tile.argument = arg;
 		tile.transform.SetParent (this.transform);
 	}
-
-	public void Init(FunctionTile tilePrefab, ProgramManager progManager, int funcIndex){
-		this.tilePrefab = tilePrefab;
-		FunctionTile tile = GameObject.Instantiate(tilePrefab);
-		tile.funcIndex = funcIndex;
-		tile.funcOwner = progManager;
-		tile.transform.SetParent (this.transform);
-	}
-
 
 }

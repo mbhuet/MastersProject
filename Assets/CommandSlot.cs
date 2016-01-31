@@ -45,7 +45,7 @@ public class CommandSlot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IP
 //		Debug.Log ("Tile " + this + " OnDrop ");
 		SetTile(Tile.tileBeingDragged);
 		Tile.tileBeingDragged = null;
-		functionZone.AddCommand (tile.command, slotIndex);
+		functionZone.AddCommand (tile.command, slotIndex, tile.argument);
 		functionZone.CloseGaps();
 
 		 
