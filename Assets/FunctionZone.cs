@@ -44,13 +44,13 @@ public class FunctionZone : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 		}
 	}
 
-	public void AddCommand(Command com, int index){
+	public void AddCommand(Command com, int index, int arg){
 		if (index > commands.Count) {
 			index = commands.Count;
 			Debug.Log ("FunctionZone does not have a slot at this index");
 		}
 			commands.Insert (index, com);
-			localProgramManager.AddCommand (funcIndex, com, index);
+			localProgramManager.AddCommand (funcIndex, com, index, arg);
 	}
 
 	public void RemoveCommand(int index){

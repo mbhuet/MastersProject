@@ -9,10 +9,11 @@ public class ExecutionManager : NetworkBehaviour
 	public static float STEP_TIME = .5f;
 
 	//for each player, we need to know the Function and command index at each step. Vector2(Function i, Command i)
-	Dictionary<ProgramManager, Vector2> currentCommandDict;
+	Dictionary<ProgramManager, Vector3> currentCommandDict; //Vector3(Player index, Function index, command index);
 	Dictionary<Vector3, Voxel> intendedNextPositions;
+	List<ProgramManager> programManagers_inProgress;
+	List<ProgramManager> programManagers_finished;
 
-	List<ProgramManager> programManagers;
 
 	public delegate void BeginExecutionDelegate ();
 	
@@ -25,10 +26,11 @@ public class ExecutionManager : NetworkBehaviour
 	{
 		Instance = this;
 		EventBeginExecution += BeginExecution;
-		currentCommandDict = new Dictionary<ProgramManager, Vector2> ();
+		currentCommandDict = new Dictionary<ProgramManager, Vector3> ();
 		intendedNextPositions = new Dictionary<Vector3, Voxel> ();
 
-		programManagers = new List<ProgramManager> ();//[PlayerManager.Instance.maxPlayers];
+		programManagers_inProgress = new List<ProgramManager> ();//[PlayerManager.Instance.maxPlayers];
+		programManagers_finished = new List<ProgramManager> ();
 	}
 
 	void BeginExecution ()
@@ -37,10 +39,10 @@ public class ExecutionManager : NetworkBehaviour
 		//Use PlayerManager to get list of Players
 		for (int i = 0; i< PlayerManager.Instance.maxPlayers; i++) {
 			ProgramManager curProgramManager = PlayerManager.Instance.players [i].GetComponent<ProgramManager> ();
-			programManagers.Add (curProgramManager);
-			currentCommandDict.Add (curProgramManager, Vector2.zero);
+			programManagers_inProgress.Add (curProgramManager);
+			currentCommandDict.Add (curProgramManager, Vector3.zero + Vector3.right * i);
 		}
-		Debug.Log ("Found " + programManagers.Count + " ProgramManagers");
+		Debug.Log ("Found " + programManagers_inProgress.Count + " ProgramManagers");
 
 		StartCoroutine (Execute ());
 
@@ -53,10 +55,11 @@ public class ExecutionManager : NetworkBehaviour
 	{
 		Debug.Log ("Begin Execution");
 
-		while (programManagers.Count>0) {
-			FindConflicts();
+		while (programManagers_inProgress.Count>0) {
+			UpdateCommandCoordinates ();
+			FindConflicts ();
 			ExecuteStep ();
-			yield return new WaitForSeconds (1);
+			yield return new WaitForSeconds (STEP_TIME);
 		}
 		EndExecution ();
 	}
@@ -78,44 +81,62 @@ public class ExecutionManager : NetworkBehaviour
 		Debug.Log ("Execute Step");
 
 		List<ProgramManager> toRemove = new List<ProgramManager> ();
-		foreach (ProgramManager program in programManagers) {
-			Vector2 currentCom;
-			currentCommandDict.TryGetValue (program, out currentCom);
-			Command com = program.GetCommand (currentCom);
+
+		foreach (ProgramManager program in programManagers_inProgress) {
+			Vector3 currentComCoords;
+			currentCommandDict.TryGetValue (program, out currentComCoords);
+			//Debug.Log(currentComCoords);
+			Command com = ProgramManager.GetCommand (currentComCoords);
 			if (com != Command.NONE) {
 				program.ExecuteCommand (com);
-			}
-			Vector2 nextCom = program.GetFollowingCommandCoordinates (currentCom);
-
-			if (program.GetCommand (nextCom) == Command.NONE) {
-				toRemove.Add (program);
 			} else {
-				currentCommandDict [program] = nextCom;
-			}
+				toRemove.Add (program);
+			} 
+			currentCommandDict [program] = currentComCoords + Vector3.forward;
+
 		}
 
 		foreach (ProgramManager program in toRemove) {
-			programManagers.Remove (program);
+			programManagers_inProgress.Remove (program);
+			programManagers_finished.Add (program);
+		}
+	}
+
+	protected void UpdateCommandCoordinates ()
+	{
+		Debug.Log ("Updating Command Coordinates");
+		foreach (ProgramManager program in programManagers_inProgress) {
+			Vector3 currentComCoords;
+			currentCommandDict.TryGetValue (program, out currentComCoords);
+			currentComCoords = program.ResolveCalls (currentComCoords);
+			Debug.Log ("final coord is " + currentComCoords);
+			currentCommandDict [program] = currentComCoords;
 		}
 	}
 
 	protected void FindConflicts ()
 	{
-		intendedNextPositions.Clear();
-		
-		foreach(ProgramManager progManager in programManagers){
-			Command curCommand = progManager.GetCommand(currentCommandDict[progManager]);
-			foreach (Ant ant in progManager.GetAnts()){
+		Debug.Log ("Finding Conflicts");
+		intendedNextPositions.Clear ();
+		foreach (ProgramManager finishedProgram in programManagers_finished) {
+			foreach (Ant ant in finishedProgram.GetAnts()) {
+				DeclareVoxelIntention (ant, ant.position);
+			}
 
-				Vector3 nextPos = ant.positionAfterCommand(curCommand);
-				bool validMove = DeclareVoxelIntention(ant, nextPos);
+		}
+		foreach (ProgramManager progManager in programManagers_inProgress) {
+			Command curCommand = ProgramManager.GetCommand (currentCommandDict [progManager]);
+			foreach (Ant ant in progManager.GetAnts()) {
 
-				if(validMove){
-					switch(curCommand){
+				Vector3 nextPos = ant.positionAfterCommand (curCommand);
+				bool validMove = DeclareVoxelIntention (ant, nextPos);
+
+				if (validMove) {
+					switch (curCommand) {
 					case Command.PUSH:
-						Voxel voxAhead = Level.Instance.GetVoxel(ant.position + ant.forwardDirection);
-						if(voxAhead.isPushable){
-							DeclareVoxelIntention(voxAhead, voxAhead.position + ant.forwardDirection);
+						Voxel voxAhead = Level.Instance.GetVoxel (ant.position + ant.forwardDirection);
+						if (voxAhead.isPushable) {
+							DeclareVoxelIntention (voxAhead, voxAhead.position + ant.forwardDirection);
 						}
 						break;
 					case Command.FORWARD:
@@ -132,31 +153,31 @@ public class ExecutionManager : NetworkBehaviour
 		}
 	}
 
+
+
 	//returns true if can execute as intended
-	private bool DeclareVoxelIntention(Voxel vox, Vector3 intendedPos){
+	private bool DeclareVoxelIntention (Voxel vox, Vector3 intendedPos)
+	{
 		bool valid = true;
 
-		if(!Level.Instance.positionInBounds(intendedPos)){
+		if (!Level.Instance.positionInBounds (intendedPos)) {
 			intendedPos = vox.position;
-			vox.HoldForStep();
+			vox.HoldForStep ();
 			valid = false;
 		}
 		
 
-		if(intendedNextPositions.ContainsKey(intendedPos)){
-			ResolveConflict(vox, intendedNextPositions[intendedPos], intendedPos);
+		if (intendedNextPositions.ContainsKey (intendedPos)) {
+			ResolveConflict (vox, intendedNextPositions [intendedPos], intendedPos);
 			valid = false;
-		}
-		else{
-			intendedNextPositions.Add(intendedPos, vox);
+		} else {
+			intendedNextPositions.Add (intendedPos, vox);
 		}
 
 		return valid;
 
 		
 	}
-
-	 
 
 	private void ResolveConflict (Voxel voxA, Voxel voxB, Vector3 disputedPos)
 	{
