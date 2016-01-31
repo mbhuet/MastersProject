@@ -14,7 +14,7 @@ public class TileBank : MonoBehaviour{
 	public void Init(CommandTile tilePrefab, int arg){
 		this.tilePrefab = tilePrefab;
 		CommandTile tile = GameObject.Instantiate(tilePrefab);
-		tile.argument = arg;
+		tile.Init(arg);
 		tile.transform.SetParent (this.transform);
 	}
 

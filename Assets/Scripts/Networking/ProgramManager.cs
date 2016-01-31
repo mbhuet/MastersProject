@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Networking;
@@ -108,12 +108,12 @@ public class ProgramManager: NetworkBehaviour
 	{
 		//Debug.Log ();
 		if (funcIndex >= functions.Length) {
-			Debug.Log ("GetCommand out of bounds");
-			Debug.Log ("Looking for function at " + funcIndex + "/" + functions.Length);
+			Debug.Log ("GetCommand func out of bounds");
+			Debug.Log ("Looking for function at func " + funcIndex + "/" + functions.Length);
 			return Command.NONE;
 		} else if (comIndex >= functions [funcIndex].commands.Count) {
-			Debug.Log ("GetCommand out of bounds");
-			Debug.Log ("Looking for command at " + comIndex + "/" + functions [funcIndex].commands.Count);
+			Debug.Log ("GetCommand com out of bounds");
+			Debug.Log ("Looking for command at com" + comIndex + "/" + functions [funcIndex].commands.Count);
 			return Command.NONE;
 
 		}

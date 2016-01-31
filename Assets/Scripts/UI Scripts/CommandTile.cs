@@ -26,6 +26,20 @@ public class CommandTile : Tile {
 	public CommandSlot slot;
 	public int argument;
 
+
+	public void Init(int arg){
+		argument = arg;
+		if (command == Command.FUNCTION) {
+			Text text = GetComponentInChildren<Text>();
+			if (arg/10 == PlayerManager.Instance.localPlayer.playerNum){
+				text.text = "F" + arg/10+ arg%10;
+			}
+			else{
+				text.text = "G" + arg/10+ arg%10;
+			}
+		}
+	}
+
 	#region IBeginDragHandler implementation
 	public override void OnBeginDrag (PointerEventData eventData)
 	{
