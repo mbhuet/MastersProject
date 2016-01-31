@@ -12,7 +12,7 @@ public enum AntType{
 	SCOUT
 }
 
-public abstract class Ant : Voxel {
+public class Ant : Voxel {
 	public AntType type;
 	public Vector3 forwardDirection;
 
@@ -141,8 +141,25 @@ public abstract class Ant : Voxel {
 	protected IEnumerator Push(){
 		float stepTime = ExecutionManager.STEP_TIME;
 
-		yield return new WaitForSeconds (stepTime);
-
+		if(Level.Instance.GetVoxel(position+forwardDirection) == null || !Level.Instance.GetVoxel(position+forwardDirection).isPushable){
+			Debug.LogError("Ant " + this + " is trying to push something unpushable.");
+		}
+		else
+			Level.Instance.GetVoxel(position+forwardDirection).StartCoroutine(Move (forwardDirection));
+		
+		float timer = 0;
+		Vector3 startPos = this.transform.position;
+		Vector3 endPos = this.transform.position + this.transform.forward;
+		Level.Instance.SetVoxel(this, endPos);
+		
+		while(timer < stepTime){
+			timer += Time.deltaTime;
+			this.transform.position = Vector3.Lerp(startPos, endPos, timer/stepTime);
+			yield return null;
+		}
+		
+		this.transform.position = endPos;
+		SnapToGrid();
 	}
 
 	protected IEnumerator Fire(){

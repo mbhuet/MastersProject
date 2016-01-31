@@ -17,7 +17,8 @@ public class Level : MonoBehaviour {
 	public void SetVoxel (Voxel vox, Vector3 pos){
 		pos = new Vector3((int)pos.x, (int)pos.y, (int)pos.z);
 		if (grid.ContainsKey (pos)) {
-			Debug.Log ("voxel " + vox + " cannot occupy space " + pos + " because it is already occupied by " + grid[pos]);
+			Debug.Log ("voxel " + vox + " overwriting space " + pos + ", previously occupied by " + grid[pos]);
+			grid[pos] = vox;
 		}
 		else{
 			grid.Add (pos, vox);
