@@ -25,7 +25,7 @@ public class FunctionZone : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
 	public void Init(ProgramManager localProgMan, int numSlots, int index){
 		localProgramManager = localProgMan;
-		Debug.Log (localProgramManager);
+//		Debug.Log (localProgramManager);
 		funcIndex = index;
 		slots = new CommandSlot[numSlots];
 		for(int i = 0; i<slots.Length; i++){
@@ -33,6 +33,7 @@ public class FunctionZone : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 			slot.transform.SetParent(this.transform);
 			slots[i] = slot.GetComponent<CommandSlot>();
 			slot.name = "CommandSlot " + i;
+			slot.GetComponent<GridLayoutGroup>().cellSize = Vector2.one * ProgramUI.tileSize;
 		}
 	}
 
@@ -42,6 +43,10 @@ public class FunctionZone : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 			slots[i].functionZone = this;
 			slots[i].slotIndex = i;
 		}
+	}
+
+	public CommandSlot GetSlot(int i){
+		return slots [i];
 	}
 
 	public void AddCommand(Command com, int index, int arg){

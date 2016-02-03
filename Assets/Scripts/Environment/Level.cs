@@ -6,18 +6,32 @@ using System.Collections.Generic;
 public class Level : MonoBehaviour {
 	public static Level Instance;
 	Dictionary<Vector3, Voxel> grid;
+	List<Voxel> nonStaticVoxels;
 
 
 	void Awake(){
 		Instance = this;
+		nonStaticVoxels = new List<Voxel>();
 		grid = new Dictionary<Vector3, Voxel>();
 	}
+
+	public void AddNonStaticVoxel(Voxel vox){
+		nonStaticVoxels.Add (vox);
+	}
+
+	public void ResetLevel(){
+		foreach(Voxel vox in nonStaticVoxels){
+			vox.Reset();
+		}
+	}
+
+
 
 
 	public void SetVoxel (Voxel vox, Vector3 pos){
 		pos = new Vector3((int)pos.x, (int)pos.y, (int)pos.z);
 		if (grid.ContainsKey (pos)) {
-			Debug.Log ("voxel " + vox + " overwriting space " + pos + ", previously occupied by " + grid[pos]);
+//			Debug.Log ("voxel " + vox + " overwriting space " + pos + ", previously occupied by " + grid[pos]);
 			grid[pos] = vox;
 		}
 		else{

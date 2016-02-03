@@ -89,6 +89,8 @@ public class ExecutionManager : NetworkBehaviour
 			Command com = ProgramManager.GetCommand (currentComCoords);
 			if (com != Command.NONE) {
 				program.ExecuteCommand (com);
+				//if this command is local, move the playHead to it
+
 			} else {
 				toRemove.Add (program);
 			} 

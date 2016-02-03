@@ -19,7 +19,7 @@ public class Player : NetworkBehaviour {
 
 	void Awake(){
 		programManager = this.GetComponent<ProgramManager>();
-		Debug.Log("Player awake");
+//		Debug.Log("Player awake");
 	}
 
 	void Start(){
@@ -32,7 +32,7 @@ public class Player : NetworkBehaviour {
 
 	public override void OnStartLocalPlayer(){
 		netPlayer = Network.player;
-		Debug.Log("OnStartLocalPlayer");
+//		Debug.Log("OnStartLocalPlayer");
 
 	}
 
@@ -45,8 +45,8 @@ public class Player : NetworkBehaviour {
 		if(isLocalPlayer){
 			PlayerManager.Instance.localPlayer = this;
 
-			Debug.Log("Local Player here");
-			Debug.Log(PlayerManager.Instance.localPlayer);
+//			Debug.Log("Local Player here");
+//			Debug.Log(PlayerManager.Instance.localPlayer);
 
 			BuildUI();
 		}

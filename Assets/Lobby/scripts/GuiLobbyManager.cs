@@ -146,7 +146,7 @@ public class GuiLobbyManager : NetworkLobbyManager
 	public override bool OnLobbyServerSceneLoadedForPlayer(GameObject lobbyPlayer, GameObject gamePlayer){
 		int playerNum = lobbyPlayer.GetComponent<NetworkLobbyPlayer>().slot;
 		gamePlayer.GetComponent<Player>().playerNum = playerNum;
-		Debug.Log("OnLobbyServerSceneLoadedForPlayer " + playerNum);
+//		Debug.Log("OnLobbyServerSceneLoadedForPlayer " + playerNum);
 		//PlayerManager.Instance.RegisterPlayer(gamePlayer.GetComponent<Player>(), playerNum);
 		return true;
 	}

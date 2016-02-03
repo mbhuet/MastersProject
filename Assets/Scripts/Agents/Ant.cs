@@ -31,7 +31,7 @@ public class Ant : Voxel {
 			{Command.WAIT, "Wait"},
 			{Command.BACKWARD, "MoveBackward"}
 		};
-		Debug.Log("Ant start at " + Time.time);
+//		Debug.Log("Ant start at " + Time.time);
 		GameManager.Instance.RegisterAnt(this);
 	}
 

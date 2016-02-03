@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -7,16 +7,23 @@ public class GameManager : MonoBehaviour {
 	public static GameManager Instance;
 	public ProgramBlueprint[] programProfiles = new ProgramBlueprint[4];
 	List<Ant> allAnts;
+	List<Food> allFood;
+
+	public delegate void GameAction();
+	public static event GameAction OnLevelComplete;
+	
 
 	void Awake(){
-		Debug.Log("Game Manager Awake at " + Time.time);
+//		Debug.Log("Game Manager Awake at " + Time.time);
 		Instance = this;
 		allAnts = new List<Ant>();
+		allFood = new List<Food> ();
 	}
 
 	// Use this for initialization
 	void Start () {
-	
+		Food.OnCollect += CheckForCompletion;
+		OnLevelComplete += LevelCompleted ;
 	}
 	
 	// Update is called once per frame
@@ -37,6 +44,29 @@ public class GameManager : MonoBehaviour {
 			}
 		}
 		return myAnts.ToArray();
+	}
+
+	public void RegisterFood(Food food){
+		allFood.Add (food);
+	}
+	
+	public bool allFoodCollected(){
+		foreach (Food food in allFood) {
+			if (!food.collected)
+				return false;
+		}
+		return true;
+	}
+	
+	void CheckForCompletion(){
+		if (allFoodCollected ()) {
+			OnLevelComplete();
+		}
+	}
+
+	void LevelCompleted(){
+		Debug.Log("Level Completed");
+
 	}
 
 

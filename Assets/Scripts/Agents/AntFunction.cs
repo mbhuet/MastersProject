@@ -31,15 +31,10 @@ public class AntFunction {
 		commandTiles = new CommandTile[numSlots];
 		commands = new List<Command> ();
 		arguments = new List<int>();
-
 	}
 
-	//Local ExecutionManager will need CommandTile references to light them up while executing.
 	public void SetCommandTiles(CommandTile[] coms){
 		commandTiles = coms;
-		for(int i = 0; i<coms.Length; i++){
-			commands[i] = coms[i].command;
-		}
 	}
 
 }

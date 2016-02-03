@@ -17,10 +17,14 @@ public abstract class Voxel : MonoBehaviour {
 		VoxelInit ();
 	}
 
-	void VoxelInit(){
+	protected virtual void VoxelInit(){
 		SnapToGrid ();
 		startPosition = position;
+		if (!isStatic) {
+			Level.Instance.AddNonStaticVoxel(this);
+		}
 	}
+
 
 	virtual protected void SnapToGrid(){
 		Level.Instance.RemoveVoxel(this, position);
@@ -58,6 +62,11 @@ public abstract class Voxel : MonoBehaviour {
 		
 		this.transform.position = endPos;
 		SnapToGrid();
+	}
+
+	public virtual void Reset(){
+		this.transform.position = startPosition;
+		SnapToGrid ();
 	}
 
 }

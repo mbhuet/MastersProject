@@ -31,6 +31,7 @@ public class CommandTile : Tile {
 		argument = arg;
 		if (command == Command.FUNCTION) {
 			Text text = GetComponentInChildren<Text>();
+			text.fontSize = ProgramUI.tileSize/2;
 			if (arg/10 == PlayerManager.Instance.localPlayer.playerNum){
 				text.text = "F" + arg/10+ arg%10;
 			}

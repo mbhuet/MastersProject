@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 
 public class ProgramUI : MonoBehaviour {
+	public static ProgramUI Instance;
+
 	Canvas canvas;
 	public GameObject functionZonePrefab;
 	public GameObject commandDockPrefab;
@@ -37,18 +39,22 @@ public class ProgramUI : MonoBehaviour {
 	Command[] carpenterCommands = {Command.BUILD};
 
 	GameObject commandDock;
+	PlayHead playHead;
 	public GameObject functionsPanel;
 	public Button readyButton;
+	public static int tileSize;
 
 	ProgramManager localProgramManager;
 
 	// Use this for initialization
 	void Awake () {
+		Instance = this;
 		canvas = this.GetComponent<Canvas>();
 		BuildCommandDictionary();
 		functionZones = new List<FunctionZone>();
 		FindFunctionZones();
-
+		tileSize = Screen.height / 10;
+		playHead = transform.GetComponentInChildren<PlayHead> ();
 	}
 
 	void FindFunctionZones(){
@@ -66,12 +72,17 @@ public class ProgramUI : MonoBehaviour {
 		return functionZones[index].GetCommandTiles();
 	}
 
+	public void AddPlayHeadTarget(CommandSlot slot){
+		playHead.AddSlot (slot);
+	}
+
 
 	public void BuildUIFromBlueprint(ProgramBlueprint blueprint){
 		int numFunctions = blueprint.availableFunctions.Length;
 
 		commandDock = GameObject.Instantiate(commandDockPrefab);
 		commandDock.transform.SetParent(canvas.transform, false);
+		commandDock.GetComponent<GridLayoutGroup> ().cellSize = Vector2.one * tileSize;
 
 
 		//ADD BASIC ANT COMMANDS
@@ -127,9 +138,6 @@ public class ProgramUI : MonoBehaviour {
 			break;
 		}
 
-		//TODO CHECK ProgramBlueprints for other players and make TileBanks for their global functions
-
-
 		for(int i = 0; i< numFunctions; i++){
 			Text funcTitle = GameObject.Instantiate(textPrefab) as Text;
 			funcTitle.text = blueprint.availableFunctions[i].funcName;
@@ -138,7 +146,14 @@ public class ProgramUI : MonoBehaviour {
 			functionZones.Add(func.GetComponent<FunctionZone>());
 			func.transform.SetParent (functionsPanel.transform, false);
 			func.GetComponent<FunctionZone>().Init(localProgramManager, blueprint.availableFunctions[i].numSlots, i);
+			func.GetComponent<GridLayoutGroup> ().cellSize = Vector2.one * tileSize;
 		}
+
+		Rect playRect = playHead.GetComponent<RectTransform> ().rect;
+		playRect.width = tileSize;
+		playRect.height = tileSize;
+		playHead.GetComponent<RectTransform> ().sizeDelta = Vector2.one * tileSize;
+		playHead.AddSlot (functionZones[0].GetSlot(0));
 	
 	}
 
@@ -148,6 +163,8 @@ public class ProgramUI : MonoBehaviour {
 		commandDict.TryGetValue(com, out tile);
 		bank.Init(tile, arg);
 		bank.transform.SetParent(dock.transform);
+		bank.GetComponent<GridLayoutGroup> ().cellSize = Vector2.one * tileSize;
+
 	}
 
 	void BuildCommandDictionary(){

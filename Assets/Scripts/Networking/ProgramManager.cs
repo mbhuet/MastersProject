@@ -39,7 +39,7 @@ public class ProgramManager: NetworkBehaviour
 	void Awake ()
 	{
 		if (isLocalPlayer) {
-			programUI = GameObject.FindObjectOfType<ProgramUI> ();
+			programUI = ProgramUI.Instance;
 		}
 		functionStack = new Stack<Vector3> ();
 	}
@@ -70,6 +70,9 @@ public class ProgramManager: NetworkBehaviour
 	public Vector3 ResolveCalls (Vector3 currentCoords)
 	{
 		Debug.Log ("ResolveCalls(" + currentCoords + ")");
+		if(this == PlayerManager.Instance.localPlayer.programManager && currentCoords.x == PlayerManager.Instance.localPlayer.playerNum){
+			ProgramUI.Instance.AddPlayHeadTarget(this.functions[(int)currentCoords.y].commandTiles[(int)currentCoords.z].slot);
+		}
 		Command com = GetCommand (currentCoords);
 		switch (com) {
 		case Command.FUNCTION:
@@ -82,6 +85,7 @@ public class ProgramManager: NetworkBehaviour
 			currentCoords.y = funcIndex;
 			currentCoords.z = 0;
 			Debug.Log ("Function leading to " + currentCoords);
+
 			currentCoords = ResolveCalls (currentCoords);
 			break;
 		case Command.NONE:
@@ -93,14 +97,19 @@ public class ProgramManager: NetworkBehaviour
 		default:
 			break;
 		}
+
+
 		return currentCoords;
 		
 	}
 
-	public void GetFunctions ()
+	public void RetrieveCommandTilesFromUI ()
 	{
+		Debug.Log ("RetrieveCommandTilesFromUI");
 		for (int i  = 0; i < functions.Length; i++) {
-			functions [i].SetCommandTiles (programUI.GetCommandTilesFromFunctionZone (i));
+			Debug.Log(ProgramUI.Instance);
+
+			functions [i].SetCommandTiles (ProgramUI.Instance.GetCommandTilesFromFunctionZone (i));
 		}
 	}
 
@@ -154,6 +163,7 @@ public class ProgramManager: NetworkBehaviour
 	{
 		Debug.Log ("AddCommand local ");
 		Debug.Log (functions [funcIndex].commands);
+		RetrieveCommandTilesFromUI ();
 		if (isServer) {
 			RpcAddCommand (funcIndex, com, comIndex, arg);
 		} else {
@@ -164,6 +174,8 @@ public class ProgramManager: NetworkBehaviour
 	public void RemoveCommand (int funcIndex, int comIndex)
 	{
 		Debug.Log ("RemoveCommand local");
+		RetrieveCommandTilesFromUI ();
+
 		if (isServer) {
 			RpcRemoveCommand (funcIndex, comIndex);
 		} else {
