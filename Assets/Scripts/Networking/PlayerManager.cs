@@ -20,7 +20,7 @@ public class PlayerManager : MonoBehaviour {
 		Instance = this;
 		players = new Player[maxPlayers];
 		programUI = GameObject.FindObjectOfType<ProgramUI> ();
-
+		Debug.Log ("PlayerManager Awake");
 	}
 	
 	// Update is called once per frame
@@ -34,8 +34,11 @@ public class PlayerManager : MonoBehaviour {
 			if(players[i] != null && players[i].isReady) r++;
 		}
 		numReadyPlayers = r;
+		ProgramUI.Instance.controlCanvas.SetReadyButtonText ("Ready (" + numReadyPlayers + "/" + maxPlayers + ")");
+	}
 
-		UpdateReadyButtonText (numReadyPlayers);
+	public void ToggleLocalPlayerReady(){
+		localPlayer.ToggleReady ();
 	}
 
 	public bool AllPlayersReady(){
@@ -44,11 +47,6 @@ public class PlayerManager : MonoBehaviour {
 		return numReadyPlayers == maxPlayers;
 	}
 
-	void UpdateReadyButtonText(int numReady){
-//		Debug.Log ("UpdateReadyButtonText");
-		programUI.SetButtonText("Ready (" + numReady + "/" + maxPlayers + ")");
-	}
-	
 
 	public void AddPlayer(Player player, int num){
 		players[num] = player;

@@ -7,8 +7,12 @@ public class ProgramUI : MonoBehaviour {
 	public static ProgramUI Instance;
 
 	Canvas canvas;
+
 	public GameObject functionZonePrefab;
 	public GameObject commandDockPrefab;
+	public ProgramButtonsControl controlCanvas;
+
+
 	public Text textPrefab;
 	public TileBank tileBankPrefab;
 
@@ -41,7 +45,9 @@ public class ProgramUI : MonoBehaviour {
 	GameObject commandDock;
 	PlayHead playHead;
 	public GameObject functionsPanel;
-	public Button readyButton;
+
+
+
 	public static int tileSize;
 
 	ProgramManager localProgramManager;
@@ -55,6 +61,10 @@ public class ProgramUI : MonoBehaviour {
 		FindFunctionZones();
 		tileSize = Screen.height / 10;
 		playHead = transform.GetComponentInChildren<PlayHead> ();
+	}
+
+	void Start(){
+		controlCanvas.Init ();
 	}
 
 	void FindFunctionZones(){
@@ -74,6 +84,10 @@ public class ProgramUI : MonoBehaviour {
 
 	public void AddPlayHeadTarget(CommandSlot slot){
 		playHead.AddSlot (slot);
+	}
+
+	public void ResetPlayHead(){
+		playHead.Reset ();
 	}
 
 
@@ -113,6 +127,21 @@ public class ProgramUI : MonoBehaviour {
 
 
 		//ADD CLASS COMMANDS
+		foreach(Command com in fireCommands){
+			AddTileBankToCommandDock(com, commandDock, 0);
+		}
+		foreach(Command com in carpenterCommands){
+			AddTileBankToCommandDock(com, commandDock, 0);
+		}
+		foreach(Command com in warriorCommands){
+			AddTileBankToCommandDock(com, commandDock, 0);
+		}
+		foreach(Command com in scoutCommands){
+			AddTileBankToCommandDock(com, commandDock, 0);
+		}
+
+
+		/*
 		switch(localProgramManager.antType){
 		case AntType.FIRE:
 			foreach(Command com in fireCommands){
@@ -137,6 +166,7 @@ public class ProgramUI : MonoBehaviour {
 		default:
 			break;
 		}
+		*/
 
 		for(int i = 0; i< numFunctions; i++){
 			Text funcTitle = GameObject.Instantiate(textPrefab) as Text;
@@ -154,6 +184,7 @@ public class ProgramUI : MonoBehaviour {
 		playRect.height = tileSize;
 		playHead.GetComponent<RectTransform> ().sizeDelta = Vector2.one * tileSize;
 		playHead.AddSlot (functionZones[0].GetSlot(0));
+		playHead.SetHome (functionZones[0].GetSlot(0));
 	
 	}
 
@@ -186,15 +217,5 @@ public class ProgramUI : MonoBehaviour {
 		foreach(FunctionZone funcZone in functionZones){
 			funcZone.SetTileCollision(isOn);
 		}
-	}
-
-	public void ReadyButton(){
-		PlayerManager.Instance.localPlayer.SetReady (!PlayerManager.Instance.localPlayer.isReady);
-		readyButton.image.color = (PlayerManager.Instance.localPlayer.isReady ? Color.green : Color.white);
-	}
-
-
-	public void SetButtonText(string text){
-		readyButton.GetComponentInChildren<Text>().text = text;
 	}
 }

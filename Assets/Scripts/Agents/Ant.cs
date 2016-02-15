@@ -15,6 +15,7 @@ public enum AntType{
 public class Ant : Voxel {
 	public AntType type;
 	public Vector3 forwardDirection;
+	Quaternion startRotation;
 
 	protected static Dictionary<Command, string> commandDict;
 
@@ -24,12 +25,17 @@ public class Ant : Voxel {
 	protected override void Start () {
 		base.Start ();
 		SnapDirection ();
+		startRotation = this.transform.rotation;
 		commandDict = new Dictionary<Command, string>{
 			{Command.FORWARD, "MoveForward"},
 			{Command.TURN_R, "TurnRight"},
 			{Command.TURN_L, "TurnLeft"},
 			{Command.WAIT, "Wait"},
-			{Command.BACKWARD, "MoveBackward"}
+			{Command.BACKWARD, "MoveBackward"},
+			{Command.PUSH, "Push"},
+			{Command.FIRE, "Fire"}
+
+
 		};
 //		Debug.Log("Ant start at " + Time.time);
 		GameManager.Instance.RegisterAnt(this);
@@ -65,6 +71,8 @@ public class Ant : Voxel {
 
 	protected IEnumerator MoveForward(){
 		float stepTime = ExecutionManager.STEP_TIME;
+		ExecutionManager.Instance.AddMovingVoxel (this);
+
 
 		float timer = 0;
 		Vector3 startPos = this.transform.position;
@@ -76,13 +84,14 @@ public class Ant : Voxel {
 			this.transform.position = Vector3.Lerp(startPos, endPos, timer/stepTime);
 			yield return null;
 		}
-
+		ExecutionManager.Instance.RemoveMovingVoxel (this);
 		this.transform.position = endPos;
 		SnapToGrid();
 
 	}
 	protected IEnumerator MoveBackward(){
 		float stepTime = ExecutionManager.STEP_TIME;
+		ExecutionManager.Instance.AddMovingVoxel (this);
 
 		float timer = 0;
 		Vector3 startPos = this.transform.position;
@@ -95,7 +104,7 @@ public class Ant : Voxel {
 			this.transform.position = Vector3.Lerp(startPos, endPos, timer/stepTime);
 			yield return null;
 		}
-		
+		ExecutionManager.Instance.RemoveMovingVoxel (this);
 		this.transform.position = endPos;
 		SnapToGrid();
 	}
@@ -103,6 +112,7 @@ public class Ant : Voxel {
 
 	protected IEnumerator TurnRight(){
 		float stepTime = ExecutionManager.STEP_TIME;
+		ExecutionManager.Instance.AddMovingVoxel (this);
 
 		float timer = 0;
 		Quaternion startRot = this.transform.rotation;
@@ -113,11 +123,13 @@ public class Ant : Voxel {
 			this.transform.rotation = Quaternion.Lerp(startRot, endRot, timer/stepTime);
 			yield return null;
 		}
+		ExecutionManager.Instance.RemoveMovingVoxel (this);
 		this.transform.rotation = endRot;
 		SnapDirection();
 	}
 	protected IEnumerator TurnLeft(){
 		float stepTime = ExecutionManager.STEP_TIME;
+		ExecutionManager.Instance.AddMovingVoxel (this);
 
 		float timer = 0;
 		Quaternion startRot = this.transform.rotation;
@@ -128,51 +140,61 @@ public class Ant : Voxel {
 			this.transform.rotation = Quaternion.Lerp(startRot, endRot, timer/stepTime);
 			yield return null;
 		}
+		ExecutionManager.Instance.RemoveMovingVoxel (this);
 		this.transform.rotation = endRot;
 		SnapDirection();
 	}
 
 	protected IEnumerator Wait(){
 		float stepTime = ExecutionManager.STEP_TIME;
-
+		ExecutionManager.Instance.AddMovingVoxel (this);
 		yield return new WaitForSeconds (stepTime);
+		ExecutionManager.Instance.RemoveMovingVoxel (this);
 	}
 
 	protected IEnumerator Push(){
 		float stepTime = ExecutionManager.STEP_TIME;
+		ExecutionManager.Instance.AddMovingVoxel (this);
 
-		if(Level.Instance.GetVoxel(position+forwardDirection) == null || !Level.Instance.GetVoxel(position+forwardDirection).isPushable){
-			Debug.LogError("Ant " + this + " is trying to push something unpushable.");
+		if (Level.Instance.GetVoxel (position + forwardDirection) == null || !Level.Instance.GetVoxel (position + forwardDirection).isPushable) {
+			Debug.LogError ("Ant " + this + " is trying to push something unpushable.");
+		} else {
+			Voxel pushVox = Level.Instance.GetVoxel(position + forwardDirection);
+			Debug.Log("pushing " + pushVox);
+			pushVox.PrintName();
+			pushVox.StartCoroutine("Move", forwardDirection);
+
+			float timer = 0;
+			Vector3 startPos = this.transform.position;
+			Vector3 endPos = this.transform.position + this.transform.forward;
+			Level.Instance.SetVoxel (this, endPos);
+		
+			while (timer < stepTime) {
+				timer += Time.deltaTime;
+				this.transform.position = Vector3.Lerp (startPos, endPos, timer / stepTime);
+				yield return null;
+			}
+			this.transform.position = endPos;
+
 		}
-		else
-			Level.Instance.GetVoxel(position+forwardDirection).StartCoroutine(Move (forwardDirection));
-		
-		float timer = 0;
-		Vector3 startPos = this.transform.position;
-		Vector3 endPos = this.transform.position + this.transform.forward;
-		Level.Instance.SetVoxel(this, endPos);
-		
-		while(timer < stepTime){
-			timer += Time.deltaTime;
-			this.transform.position = Vector3.Lerp(startPos, endPos, timer/stepTime);
-			yield return null;
-		}
-		
-		this.transform.position = endPos;
+
+		ExecutionManager.Instance.RemoveMovingVoxel (this);
 		SnapToGrid();
 	}
 
 	protected IEnumerator Fire(){
 		float stepTime = ExecutionManager.STEP_TIME;
-
+		ExecutionManager.Instance.AddMovingVoxel (this);
 		yield return new WaitForSeconds (stepTime);
+		ExecutionManager.Instance.RemoveMovingVoxel (this);
 
 	}
 
 	protected IEnumerator Build(){
 		float stepTime = ExecutionManager.STEP_TIME;
-
+		ExecutionManager.Instance.AddMovingVoxel (this);
 		yield return new WaitForSeconds (stepTime);
+		ExecutionManager.Instance.RemoveMovingVoxel (this);
 
 	}
 
@@ -192,7 +214,8 @@ public class Ant : Voxel {
 		case Command.WAIT:
 			break;
 		case Command.PUSH:
-			if(Level.Instance.GetVoxel(position + forwardDirection).isPushable)
+			Voxel voxAhead = Level.Instance.GetVoxel(position + forwardDirection);
+			if(voxAhead != null && voxAhead.isPushable)
 				return position + forwardDirection;
 			else
 				return position;
@@ -203,6 +226,12 @@ public class Ant : Voxel {
 
 		return position;
 		
+	}
+
+	public override void Reset(){
+		base.Reset ();
+		this.transform.rotation = startRotation;
+		SnapDirection ();
 	}
 
 }

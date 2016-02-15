@@ -51,9 +51,7 @@ public class ProgramManager: NetworkBehaviour
 
 	public void ExecuteCommand (Command com)
 	{
-		Debug.Log ("Execute Command " + com);
 		foreach (Ant ant in myAnts) {
-			Debug.Log ("Executing in ant " + ant);
 			if (ant.heldInPlace && 
 			    	(com == Command.FORWARD || 
 			 		 com == Command.BACKWARD ||
@@ -61,6 +59,8 @@ public class ProgramManager: NetworkBehaviour
 				ant.ExecuteCommand (Command.WAIT);
 				ant.heldInPlace = false;
 			} else {
+				Debug.Log ("Execute Command " + com + " in ant " + ant);
+
 				ant.ExecuteCommand (com);
 
 			}
@@ -69,9 +69,11 @@ public class ProgramManager: NetworkBehaviour
 
 	public Vector3 ResolveCalls (Vector3 currentCoords)
 	{
-		Debug.Log ("ResolveCalls(" + currentCoords + ")");
+//		Debug.Log ("ResolveCalls(" + currentCoords + ")");
 		if(this == PlayerManager.Instance.localPlayer.programManager && currentCoords.x == PlayerManager.Instance.localPlayer.playerNum){
+			if (GetCommand(currentCoords) != Command.NONE){
 			ProgramUI.Instance.AddPlayHeadTarget(this.functions[(int)currentCoords.y].commandTiles[(int)currentCoords.z].slot);
+			}
 		}
 		Command com = GetCommand (currentCoords);
 		switch (com) {
@@ -84,7 +86,7 @@ public class ProgramManager: NetworkBehaviour
 			currentCoords.x = playerIndex;
 			currentCoords.y = funcIndex;
 			currentCoords.z = 0;
-			Debug.Log ("Function leading to " + currentCoords);
+			//Debug.Log ("Function leading to " + currentCoords);
 
 			currentCoords = ResolveCalls (currentCoords);
 			break;
@@ -105,9 +107,9 @@ public class ProgramManager: NetworkBehaviour
 
 	public void RetrieveCommandTilesFromUI ()
 	{
-		Debug.Log ("RetrieveCommandTilesFromUI");
+		//Debug.Log ("RetrieveCommandTilesFromUI");
 		for (int i  = 0; i < functions.Length; i++) {
-			Debug.Log(ProgramUI.Instance);
+//			Debug.Log(ProgramUI.Instance);
 
 			functions [i].SetCommandTiles (ProgramUI.Instance.GetCommandTilesFromFunctionZone (i));
 		}
@@ -117,12 +119,12 @@ public class ProgramManager: NetworkBehaviour
 	{
 		//Debug.Log ();
 		if (funcIndex >= functions.Length) {
-			Debug.Log ("GetCommand func out of bounds");
-			Debug.Log ("Looking for function at func " + funcIndex + "/" + functions.Length);
+//			Debug.Log ("GetCommand func out of bounds");
+//			Debug.Log ("Looking for function at func " + funcIndex + "/" + functions.Length);
 			return Command.NONE;
 		} else if (comIndex >= functions [funcIndex].commands.Count) {
-			Debug.Log ("GetCommand com out of bounds");
-			Debug.Log ("Looking for command at com" + comIndex + "/" + functions [funcIndex].commands.Count);
+//			Debug.Log ("GetCommand com out of bounds");
+//			Debug.Log ("Looking for command at com" + comIndex + "/" + functions [funcIndex].commands.Count);
 			return Command.NONE;
 
 		}
@@ -132,12 +134,12 @@ public class ProgramManager: NetworkBehaviour
 	public int GetArgument (int funcIndex, int argIndex)
 	{
 		if (funcIndex >= functions.Length) {
-			Debug.Log ("GetArgument out of bounds");
-			Debug.Log ("Looking for function at " + funcIndex + "/" + functions.Length);
+//			Debug.Log ("GetArgument out of bounds");
+//			Debug.Log ("Looking for function at " + funcIndex + "/" + functions.Length);
 			return -1;
 		} else if (argIndex >= functions [funcIndex].arguments.Count) {
-			Debug.Log ("GetArgument out of bounds");
-			Debug.Log ("Looking for arg at " + argIndex + "/" + functions [funcIndex].arguments.Count);
+//			Debug.Log ("GetArgument out of bounds");
+//			Debug.Log ("Looking for arg at " + argIndex + "/" + functions [funcIndex].arguments.Count);
 			return -1;
 		}
 		return functions [funcIndex].arguments [argIndex];
@@ -161,8 +163,8 @@ public class ProgramManager: NetworkBehaviour
 
 	public void AddCommand (int funcIndex, Command com, int comIndex, int arg)
 	{
-		Debug.Log ("AddCommand local ");
-		Debug.Log (functions [funcIndex].commands);
+//		Debug.Log ("AddCommand local ");
+//		Debug.Log (functions [funcIndex].commands);
 		RetrieveCommandTilesFromUI ();
 		if (isServer) {
 			RpcAddCommand (funcIndex, com, comIndex, arg);
@@ -173,7 +175,7 @@ public class ProgramManager: NetworkBehaviour
 
 	public void RemoveCommand (int funcIndex, int comIndex)
 	{
-		Debug.Log ("RemoveCommand local");
+//		Debug.Log ("RemoveCommand local");
 		RetrieveCommandTilesFromUI ();
 
 		if (isServer) {
@@ -187,21 +189,21 @@ public class ProgramManager: NetworkBehaviour
 	[Command]
 	void CmdAddCommand (int funcIndex, Command com, int comIndex, int arg)
 	{
-		Debug.Log ("AddCommand Cmd");
+//		Debug.Log ("AddCommand Cmd");
 		RpcAddCommand (funcIndex, com, comIndex, arg);
 	}
 
 	[Command]
 	void CmdRemoveCommand (int funcIndex, int comIndex)
 	{
-		Debug.Log ("RemoveCommand Cmd");
+//		Debug.Log ("RemoveCommand Cmd");
 		RpcRemoveCommand (funcIndex, comIndex);
 	}
 
 	[ClientRpc]
 	void RpcAddCommand (int funcIndex, Command com, int comIndex, int arg)
 	{
-		Debug.Log ("AddCommand Rpc");
+//		Debug.Log ("AddCommand Rpc");
 		functions [funcIndex].commands.Insert (comIndex, com);
 		functions [funcIndex].arguments.Insert (comIndex, arg);
 
@@ -210,7 +212,7 @@ public class ProgramManager: NetworkBehaviour
 	[ClientRpc]
 	void RpcRemoveCommand (int funcIndex, int comIndex)
 	{
-		Debug.Log ("RemoveCommand Rpc");
+//		Debug.Log ("RemoveCommand Rpc");
 		functions [funcIndex].commands.RemoveAt (comIndex);
 		functions [funcIndex].arguments.RemoveAt (comIndex);
 

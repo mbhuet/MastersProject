@@ -6,17 +6,39 @@ using System.Collections.Generic;
 public class Level : MonoBehaviour {
 	public static Level Instance;
 	Dictionary<Vector3, Voxel> grid;
-	List<Voxel> nonStaticVoxels;
+	public List<Voxel> nonStaticVoxels;
+	public List<Crate> crates;
+	public List<Switch> switches;
+	public List<SwitchBlock> switchBlocks;
+
 
 
 	void Awake(){
 		Instance = this;
 		nonStaticVoxels = new List<Voxel>();
 		grid = new Dictionary<Vector3, Voxel>();
+		crates = new List<Crate> ();
+		switches = new List<Switch> ();
+		switchBlocks = new List<SwitchBlock> ();
+	}
+
+	void Start(){
 	}
 
 	public void AddNonStaticVoxel(Voxel vox){
 		nonStaticVoxels.Add (vox);
+	}
+
+	public void AddCrate(Crate crate){
+		crates.Add (crate);
+	}
+
+	public void AddSwitch(Switch newSwitch){
+		switches.Add (newSwitch);
+	}
+
+	public void AddSwtichBlock(SwitchBlock block){
+		switchBlocks.Add (block);
 	}
 
 	public void ResetLevel(){
@@ -69,7 +91,7 @@ public class Level : MonoBehaviour {
 		while(height >= 0){
 			height -= 1;
 			Voxel ground = GetVoxel(new Vector3(pos.x, height, pos.z));
-			if(ground != null && ground.isStatic){
+			if(ground != null && ground.canStackOn){
 				return true;
 			}
 		}

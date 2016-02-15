@@ -81,7 +81,7 @@ public class CommandTile : Tile {
 	
 	public override void OnDrag (PointerEventData eventData)
 	{
-		tileBeingDragged.transform.position = Input.mousePosition;
+		tileBeingDragged.transform.position = Input.mousePosition;// + Vector3.up * ProgramUI.tileSize;
 
 	}
 	

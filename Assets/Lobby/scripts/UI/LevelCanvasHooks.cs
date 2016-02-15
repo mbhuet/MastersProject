@@ -20,7 +20,4 @@ public class LevelCanvasHooks : MonoBehaviour{
 
 	}
 
-	public void Test(){
-		Debug.Log("test successful");
-	}
 }

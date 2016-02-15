@@ -40,7 +40,7 @@ public class Food : Voxel {
 
 	void OnTriggerEnter(Collider col){
 		Debug.Log ("Food Trigger Enter");
-		if (col.GetComponent<Ant> () != null) {
+		if (!collected && col.GetComponent<Ant> () != null) {
 			OnCollect();
 			Collect();
 		}

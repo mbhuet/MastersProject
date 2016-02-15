@@ -1,0 +1,68 @@
+Mono path[0] = 'C:/Users/Marc/Unity/MastersProject/switchTest_Data/Managed'
+Mono path[1] = 'C:/Users/Marc/Unity/MastersProject/switchTest_Data/Mono'
+Mono config path = 'C:/Users/Marc/Unity/MastersProject/switchTest_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/Marc/Unity/MastersProject/switchTest_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55441
+Multi-casting "[IP] 192.168.0.103 [Port] 55441 [Flags] 3 [Guid] 1715998797 [EditorId] 931171339 [Version] 1048832 [Id] WindowsPlayer(Marc-Lenovo) [Debug] 1" to [225.0.0.222:54997]...
+Waiting for connection from host on [192.168.0.103:55441]...
+PlayerConnection accepted from [192.168.0.103] handle:0x1fc
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56797
+PlayerConnection already initialized - listening to [192.168.0.103:55441]
+Initialize engine version: 5.2.2f1 (3757309da7e7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GT 750M   (ID=0xfe4)
+    Vendor:   NVIDIA
+    VRAM:     1986 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Marc\Unity\MastersProject\switchTest_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Marc\Unity\MastersProject\switchTest_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Marc\Unity\MastersProject\switchTest_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Marc\Unity\MastersProject\switchTest_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Marc\Unity\MastersProject\switchTest_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Marc\Unity\MastersProject\switchTest_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Marc\Unity\MastersProject\switchTest_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Marc\Unity\MastersProject\switchTest_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Marc\Unity\MastersProject\switchTest_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.069 seconds
+desktop: 1920x1080 59Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Marc\Unity\MastersProject\switchTest_Data\Managed\System.dll (this message is harmless)
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 7b4 -> priority: 1 
+  Thread -> id: 2538 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.118070 ms
+ArgumentException: Value does not fall within the expected range.
+  at ProgramButtonsControl.Init () [0x00031] in C:\Users\Marc\Unity\MastersProject\Assets\Scripts\UI Scripts\ProgramButtonsControl.cs:21 
+  at ProgramUI.Start () [0x00000] in C:\Users\Marc\Unity\MastersProject\Assets\Scripts\UI Scripts\ProgramUI.cs:67 
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/UI Scripts/ProgramButtonsControl.cs Line: 21)
+
+RPC Register as player 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:Register() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:42)
+Player:Start() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:27)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Agents/Player.cs Line: 42)
+
+System memory in use before: 32.5 MB.
+System memory in use after: 32.6 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 3868.
+Total: 2.125767 ms (FindLiveObjects: 0.260856 ms CreateObjectMapping: 0.195856 ms MarkObjects: 1.653232 ms  DeleteObjects: 0.014539 ms)
+
+RPC Register as player 1
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:Register() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:42)
+Player:Start() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:27)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Agents/Player.cs Line: 42)
+
+Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:57671}
+Waiting for finish

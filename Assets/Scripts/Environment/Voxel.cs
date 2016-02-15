@@ -3,7 +3,7 @@ using System.Collections;
 
 public abstract class Voxel : MonoBehaviour {
 	public Vector3 position;
-	Vector3 startPosition;
+	protected Vector3 startPosition;
 
 	public bool isStatic;
 	public bool canStackOn;
@@ -48,6 +48,8 @@ public abstract class Voxel : MonoBehaviour {
 	}
 
 	public IEnumerator Move(Vector3 direction){
+		ExecutionManager.Instance.AddMovingVoxel (this);
+		Debug.Log ("Voxel " + this + " is moving " + direction);
 		float stepTime = ExecutionManager.STEP_TIME;
 		float timer = 0;
 		Vector3 startPos = position;
@@ -62,11 +64,17 @@ public abstract class Voxel : MonoBehaviour {
 		
 		this.transform.position = endPos;
 		SnapToGrid();
+		ExecutionManager.Instance.RemoveMovingVoxel (this);
 	}
 
 	public virtual void Reset(){
-		this.transform.position = startPosition;
-		SnapToGrid ();
+		StopAllCoroutines ();
+		ReturnToStartPosition ();
+	}
+
+	public void PrintName(){
+		Debug.Log ("TEST PrintName " + this.name);
+
 	}
 
 }

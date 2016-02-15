@@ -1,0 +1,52 @@
+Mono path[0] = 'C:/Users/Marc/Unity/MastersProject/playHeadTest_Data/Managed'
+Mono path[1] = 'C:/Users/Marc/Unity/MastersProject/playHeadTest_Data/Mono'
+Mono config path = 'C:/Users/Marc/Unity/MastersProject/playHeadTest_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/Marc/Unity/MastersProject/playHeadTest_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55383
+Multi-casting "[IP] 128.61.22.2 [Port] 55383 [Flags] 3 [Guid] 4172238661 [EditorId] 1588198068 [Version] 1048832 [Id] WindowsPlayer(Marc-Lenovo) [Debug] 1" to [225.0.0.222:54997]...
+Waiting for connection from host on [128.61.22.2:55383]...
+Timed out. Continuing without host connection.
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56661
+PlayerConnection already initialized - listening to [128.61.22.2:55383]
+Initialize engine version: 5.2.2f1 (3757309da7e7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GT 750M   (ID=0xfe4)
+    Vendor:   NVIDIA
+    VRAM:     1986 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Marc\Unity\MastersProject\playHeadTest_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Marc\Unity\MastersProject\playHeadTest_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Marc\Unity\MastersProject\playHeadTest_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Marc\Unity\MastersProject\playHeadTest_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Marc\Unity\MastersProject\playHeadTest_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Marc\Unity\MastersProject\playHeadTest_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Marc\Unity\MastersProject\playHeadTest_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Marc\Unity\MastersProject\playHeadTest_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Marc\Unity\MastersProject\playHeadTest_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.272 seconds
+desktop: 1920x1080 59Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Marc\Unity\MastersProject\playHeadTest_Data\Managed\System.dll (this message is harmless)
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 20b0 -> priority: 1 
+  Thread -> id: 226c -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 29.218559 ms
+RPC Register as player 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:Register() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:42)
+Player:Start() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:27)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Agents/Player.cs Line: 42)
+
+System memory in use before: 27.1 MB.
+System memory in use after: 27.2 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 3706.
+Total: 18.694902 ms (FindLiveObjects: 0.320298 ms CreateObjectMapping: 0.229212 ms MarkObjects: 18.111609 ms  DeleteObjects: 0.032072 ms)
+

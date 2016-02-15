@@ -44,10 +44,6 @@ public class Player : NetworkBehaviour {
 		programManager.LoadBlueprint(GameManager.Instance.programProfiles[playerNum]);
 		if(isLocalPlayer){
 			PlayerManager.Instance.localPlayer = this;
-
-//			Debug.Log("Local Player here");
-//			Debug.Log(PlayerManager.Instance.localPlayer);
-
 			BuildUI();
 		}
 		registered = true;
@@ -77,7 +73,10 @@ public class Player : NetworkBehaviour {
 	public void SetReady(bool isReady){
 		this.isReady = isReady;
 		CmdPlayerReady (isReady);
-		//PlayerManager.Instance.CmdPlayerReady (); //Tells the server to send out a message to all other clients that a player is/ is not ready
+	}
+	public void ToggleReady(){
+		isReady = !isReady;
+		CmdPlayerReady (isReady);
 	}
 
 	[Command]
