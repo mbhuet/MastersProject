@@ -11,7 +11,8 @@ public class ExecutionManager : NetworkBehaviour
 
 	//for each player, we need to know the Function and command index at each step. Vector2(Function i, Command i)
 	Dictionary<ProgramManager, Vector3> currentCommandDict; //Vector3(Player index, Function index, command index);
-	Dictionary<Vector3, Voxel> intendedNextPositions;
+	Dictionary<Vector3, DynamicVoxel> intendedNextPositions;
+	Dictionary<Command, int> commandPriority;
 	List<ProgramManager> programManagers_inProgress;
 	List<ProgramManager> programManagers_finished;
 
@@ -35,8 +36,20 @@ public class ExecutionManager : NetworkBehaviour
 		Debug.Log ("ExecutionManager Awake");
 		EventBeginExecution += BeginExecution;
 		currentCommandDict = new Dictionary<ProgramManager, Vector3> ();
-		intendedNextPositions = new Dictionary<Vector3, Voxel> ();
+		intendedNextPositions = new Dictionary<Vector3, DynamicVoxel> ();
+		commandPriority = new Dictionary<Command, int>{
+			{Command.WAIT, 0},
+			{Command.NONE, 0},
+			{Command.SENSE, 0},
+			{Command.TURN_R, 0},
+			{Command.TURN_L, 0},
+			{Command.PUSH, 1},
+			{Command.FORWARD, 2},
+			{Command.BACKWARD, 2},
+			{Command.FIRE, 3},
+			{Command.BUILD, 4}
 
+		};
 		programManagers_inProgress = new List<ProgramManager> ();//[PlayerManager.Instance.maxPlayers];
 		programManagers_finished = new List<ProgramManager> ();
 		movingVoxels = new List<Voxel> ();
@@ -83,7 +96,7 @@ public class ExecutionManager : NetworkBehaviour
 			ExecuteStep ();
 			yield return new WaitForSeconds (STEP_TIME);
 			while(!ReadyForNextStep()){ 
-				Debug.Log("waiting for ReadyForNextStep");
+//				Debug.Log("waiting for ReadyForNextStep");
 				yield return null;
 			}
 			foreach(Switch switchVox in Level.Instance.switches){
@@ -126,10 +139,9 @@ public class ExecutionManager : NetworkBehaviour
 
 		List<ProgramManager> toRemove = new List<ProgramManager> ();
 
-		foreach (SwitchBlock switchBlock in Level.Instance.switchBlocks) {
-			if(switchBlock.willMove){
-				switchBlock.ChangePosition();
-			}
+		foreach (DynamicVoxel vox in Level.Instance.dynamicVoxels) {
+			if (vox.NextAction != null)
+			vox.NextAction();
 		}
 
 		foreach (ProgramManager program in programManagers_inProgress) {
@@ -168,54 +180,44 @@ public class ExecutionManager : NetworkBehaviour
 	protected void FindConflicts ()
 	{
 		intendedNextPositions.Clear ();
-
+		foreach (DynamicVoxel vox in Level.Instance.dynamicVoxels) {
+			vox.ClearIntention();
+		}
 	//	Debug.Log ("Finding Conflicts");
 
 
 		//SWITCHES
 		foreach (SwitchBlock switchBlock in Level.Instance.switchBlocks) {
-//			Debug.Log(switchBlock);
 			if(switchBlock.willMove){
-//				Debug.Log(switchBlock + " will move to " + switchBlock.NextPosition());
-				intendedNextPositions.Add (switchBlock.NextPosition(), switchBlock);
-				Voxel voxAbove = Level.Instance.GetVoxel(switchBlock.position + Vector3.up);
-				if (voxAbove != null){
-					voxAbove.HoldForStep();
-				}
+				DeclareVoxelIntention(switchBlock, switchBlock.NextPosition(), switchBlock.ChangePosition, -1, true);
 			}
 			else{
-//				Debug.Log(switchBlock + " will stay at " + switchBlock.position);
-
-				intendedNextPositions.Add (switchBlock.position, switchBlock);
+				DeclareVoxelIntention (switchBlock, switchBlock.position, switchBlock.Stay, -1, true);
 			}
 		}
 
 
 		//CRATES
 		foreach (Crate crate in Level.Instance.crates) {
-			DeclareVoxelIntention(crate, crate.position);
+			if(crate.isActive)
+			DeclareVoxelIntention(crate, crate.position, crate.Stay, 10, true);
 		}
 
 
 		//FINISHED ANTS
 		foreach (ProgramManager finishedProgram in programManagers_finished) {
-
 			foreach (Ant ant in finishedProgram.GetAnts()) {
-
 				DeclareAntIntention (ant, Command.WAIT);
 			}
 
 		}
 
 		//ACTIVE ANTS
+		programManagers_inProgress = SortProgramsByCommandPriority (programManagers_inProgress);
 		foreach (ProgramManager progManager in programManagers_inProgress) {
-
 			Command curCommand = ProgramManager.GetCommand (currentCommandDict [progManager]);
 			foreach (Ant ant in progManager.GetAnts()) {
-
-				bool validMove = DeclareAntIntention (ant, curCommand);
-
-
+				DeclareAntIntention (ant, curCommand);
 			}
 		}
 
@@ -223,93 +225,148 @@ public class ExecutionManager : NetworkBehaviour
 
 
 
-	//returns true if can execute as intended
-	private bool DeclareVoxelIntention (Voxel vox, Vector3 intendedPos)
+	private void DeclareVoxelIntention (DynamicVoxel vox, Vector3 intendedPos, Voxel.IntentionDelegate intendedFunc, int priority, bool forceIntention)
 	{
-//		Debug.Log ("Voxel Intention " + vox + " intended Pos " + intendedPos );
-		bool valid = positionPossibleNextStep(intendedPos);
-		
-		if (!valid) {
-			intendedPos = vox.position;
-			vox.HoldForStep ();
+		Debug.Log ("Declare Voxel Intention " + vox + " pos: " + intendedPos + " func: " + intendedFunc);
+
+		Vector3 oldIntendedPos = vox.GetIntendedPosition ();
+		if (intendedNextPositions.ContainsKey (oldIntendedPos) && intendedNextPositions [oldIntendedPos] == vox) {
+			intendedNextPositions.Remove(oldIntendedPos);
 		}
-		
+
+
+		if (!forceIntention){
+			bool valid = positionPossibleNextStep (intendedPos);
+			if (!valid) {
+				intendedPos = vox.position;
+				vox.HoldForStep ();
+			}
+		}
+
+		vox.SetIntention (intendedPos, priority, intendedFunc);
+
 
 		if (intendedNextPositions.ContainsKey (intendedPos)) {
 			ResolveConflict (vox, intendedNextPositions [intendedPos], intendedPos);
-			valid = false;
 		} else {
 			intendedNextPositions.Add (intendedPos, vox);
 		}
 
-		return valid;
+		Voxel voxAbove = Level.Instance.GetVoxel(vox.position + Vector3.up);
+		if (voxAbove != null){
+			if(voxAbove.GetType() == typeof(DynamicVoxel)){
+				DynamicVoxel dynVoxAbove = voxAbove.GetComponent<DynamicVoxel>();
+				dynVoxAbove.HoldForStep();
+				DeclareVoxelIntention(dynVoxAbove, intendedPos + Vector3.up, dynVoxAbove.MoveDirection(intendedPos - vox.position), priority, true);
+			}
+		}
 	}
 
-	private bool DeclareAntIntention (Ant ant, Command command)
+	private void DeclareAntIntention (Ant ant, Command command)
 	{
 		Vector3 intendedPos = ant.positionAfterCommand (command);
 		bool valid = positionPossibleNextStep(intendedPos);
-		Debug.Log (ant + " intends to " + command + "\nintendedPos is " + intendedPos + " valid " + valid);
+		Debug.Log (ant + " intends to " + command + "\nintendedPos is " + intendedPos + " valid = " + valid);
 
 		if (!valid) {
-			intendedPos = ant.position;
-			ant.HoldForStep ();
+			DeclareVoxelIntention(ant, ant.position, ant.Wait, 0, false);
 		}
-		
-		
-		if (intendedNextPositions.ContainsKey (intendedPos)) {
-			Voxel voxAhead = intendedNextPositions[intendedPos];
-			//if this ant is pushing, and the voxel ahead is pushable, and it currently intends to stay put
-			if(command == Command.PUSH && voxAhead.isPushable && voxAhead.position == intendedPos){
-				intendedNextPositions[intendedPos] = ant;
-				DeclareVoxelIntention(voxAhead, voxAhead.position + ant.forwardDirection);
 
+		else{
+		switch (command) {
+		case Command.FORWARD:
+			DeclareVoxelIntention(ant, intendedPos, ant.MoveForward, commandPriority[command], false);
+			break;
+		case Command.BACKWARD:
+			DeclareVoxelIntention(ant, intendedPos, ant.MoveBackward, commandPriority[command], false);
+			break;
+		case Command.TURN_L:
+			DeclareVoxelIntention(ant, intendedPos, ant.TurnLeft, commandPriority[command], false);
+			break;
+		case Command.TURN_R:
+			DeclareVoxelIntention(ant, intendedPos, ant.TurnRight, commandPriority[command], false);
+			break;
+		case Command.PUSH:
+			Debug.Log("Declare Push");
+			if (intendedNextPositions.ContainsKey (intendedPos)) {
+				DynamicVoxel pushPosVox;
+				intendedNextPositions.TryGetValue(intendedPos, out pushPosVox);
+				Debug.Log("pushPosVox " + ((pushPosVox == null) ? "null" : pushPosVox.name));
+				//if this ant is pushing, and the voxel ahead is pushable, and it currently intends to stay put
+				if(command == Command.PUSH && pushPosVox.isPushable && pushPosVox.position == pushPosVox.GetIntendedPosition()){
+					Debug.Log("pushable and staying put");
+
+					DeclareVoxelIntention(pushPosVox, pushPosVox.position + ant.forwardDirection, pushPosVox.MoveDirection(ant.forwardDirection), commandPriority[command], false);
+					DeclareVoxelIntention(ant, intendedPos, ant.Push, commandPriority[command], false);
+				}
+				else{
+					DeclareVoxelIntention(ant, ant.position, ant.Wait, commandPriority[Command.WAIT], false);
+				}
+			}
+			break;
+		case Command.FIRE:
+			DeclareVoxelIntention(ant, intendedPos, ant.Fire, commandPriority[Command.FIRE], false);
+			DynamicVoxel firePosVox;
+			intendedNextPositions.TryGetValue(ant.position + ant.forwardDirection, out firePosVox);
+			if(firePosVox != null && firePosVox.isBurnable && firePosVox.GetIntendedPosition() == firePosVox.position){
+				intendedNextPositions.Remove(firePosVox.position);
+				DeclareVoxelIntention(firePosVox, Vector3.one * -1, firePosVox.Burn, commandPriority[Command.FIRE], false);
+			}
+			break;
+		case Command.BUILD:
+			Debug.Log("Declare Build");
+			DynamicVoxel buildPosVox;
+			intendedNextPositions.TryGetValue(ant.position + ant.forwardDirection, out buildPosVox);
+			if(buildPosVox == null){
+				DeclareVoxelIntention(ant, ant.position, ant.Build, commandPriority[Command.BUILD], false);
+				Crate buildCrate = ant.GetBuildCrate();
+				DeclareVoxelIntention(buildCrate, ant.position + ant.forwardDirection, buildCrate.Assemble, commandPriority[Command.BUILD], false);
 			}
 			else{
-			ResolveConflict (ant, voxAhead, intendedPos);
+					Debug.Log("Build Pos occupied by " + buildPosVox);
+				DeclareVoxelIntention(ant, intendedPos, ant.Wait, commandPriority[Command.WAIT], false);
 				valid = false;
-
 			}
-		} else {
-			intendedNextPositions.Add (intendedPos, ant);
+			break;
+		default:
+			DeclareVoxelIntention(ant, ant.positionAfterCommand(command), ant.Wait, commandPriority[Command.WAIT], false);
+			break;
 		}
-		
-		return valid;
-		
+		}
 		
 	}
 
-	private void ResolveConflict (Voxel voxA, Voxel voxB, Vector3 disputedPos)
+	private void ResolveConflict (DynamicVoxel voxA, DynamicVoxel voxB, Vector3 disputedPos)
 	{
-		//voxA and voxB both want the same position in one step
+		Debug.Log ("Conflict between " + voxA + " and " + voxB + " over " + disputedPos);
 		intendedNextPositions.Remove (disputedPos);
-		voxA.HoldForStep ();
-		voxB.HoldForStep ();
 
+		int voxAPriority = voxA.GetIntentionPriority ();
+		int voxBPriority = voxB.GetIntentionPriority ();
 
+		//EAUAl priority, no one gets to move
+		if (voxAPriority == voxBPriority) {
+			Debug.Log ("Equal Priority, no one moves");
 
-		if (intendedNextPositions.ContainsKey (voxA.position)) {
-			if (intendedNextPositions [voxA.position] != voxA) {
-				ResolveConflict (voxA, intendedNextPositions [voxA.position], voxA.position);
-				intendedNextPositions.Add (voxA.position, voxA);
-			}
+			voxA.HoldForStep ();
+			voxB.HoldForStep ();
+			DeclareVoxelIntention(voxA, voxA.position, voxA.Stay, -1, true);
+			DeclareVoxelIntention(voxB, voxB.position, voxB.Stay, -1, true);
 
+		} else if (voxAPriority < voxBPriority) {
+			Debug.Log (voxA + " has priority.");
 
-		} else {
-			intendedNextPositions.Add (voxA.position, voxA);
+			DeclareVoxelIntention(voxA, disputedPos, voxA.GetIntendedFunc(), voxAPriority, true);
+			voxB.HoldForStep ();
+			DeclareVoxelIntention(voxB, voxB.position, voxB.Stay, -1, true);
 
-		}
+		} else if (voxBPriority < voxAPriority) {
+			Debug.Log (voxB + " has priority.");
 
-		if (intendedNextPositions.ContainsKey (voxB.position)) {
-			if (intendedNextPositions [voxB.position] != voxB) {
-				ResolveConflict (voxB, intendedNextPositions [voxB.position], voxB.position);
-				intendedNextPositions.Add (voxB.position, voxB);
-			}
-
-		} else {
-			intendedNextPositions.Add (voxB.position, voxB);
-		}
-	
+			DeclareVoxelIntention(voxB, disputedPos, voxB.GetIntendedFunc(), voxBPriority, true);
+			voxA.HoldForStep ();
+			DeclareVoxelIntention(voxA, voxA.position, voxA.Stay, -1, true);
+		}	
 	}
 
 	bool positionPossibleNextStep(Vector3 intendedPos){
@@ -339,6 +396,23 @@ public class ExecutionManager : NetworkBehaviour
 
 		return true;
 	
+	}
+
+	List<ProgramManager> SortProgramsByCommandPriority(List<ProgramManager> list){
+		if (list.Count <= 1)
+			return list;
+		List<ProgramManager> sortedList = new List<ProgramManager> ();
+		foreach (ProgramManager program in list) {
+			Command com = ProgramManager.GetCommand (currentCommandDict[program]);
+			int priority = commandPriority[com];
+			int i = 0;
+			while(i<sortedList.Count && commandPriority[ProgramManager.GetCommand (currentCommandDict[sortedList[i]])] <= priority){
+
+				i++;
+			}
+			sortedList.Insert(i, program);
+		}
+		return sortedList;
 	}
 
 	public void AddMovingVoxel(Voxel vox){

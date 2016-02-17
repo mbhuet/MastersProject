@@ -1,17 +1,26 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Crate : Voxel {
+public class Crate : DynamicVoxel {
 
 	// Use this for initialization
 	protected override void Start () {
 		base.Start ();
-		Level.Instance.AddCrate (this);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	public virtual void VoxelInit(){
+		if (!initialized) {
+			base.VoxelInit ();
+			Level.Instance.AddCrate (this);
+		}
+	}
+
+
+	public override void Reset(){
+		if (temporary)
+			Level.Instance.RemoveCrate (this);
+		base.Reset ();
+
 	}
 
 

@@ -20,7 +20,7 @@ public class Food : Voxel {
 	
 	}
 
-	protected override void VoxelInit(){
+	public override void VoxelInit(){
 		base.VoxelInit();
 		GameManager.Instance.RegisterFood (this);
 	}
