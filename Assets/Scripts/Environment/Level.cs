@@ -91,7 +91,7 @@ public class Level : MonoBehaviour {
 
 	public Voxel GetVoxel(int col, int row, int height){
 		Voxel vox;
-		grid.TryGetValue (new Vector3 (col, row, height), out vox);
+		grid.TryGetValue (new Vector3 (col, height, row), out vox);
 		return vox;
 	}
 	public Voxel GetVoxel (Vector3 pos){
@@ -123,7 +123,7 @@ public class Level : MonoBehaviour {
 				return true;
 			}
 		}
-		return false;
+		return true;//false;
 	}
 
 	public Dictionary<Vector3, Voxel> GetGrid(){

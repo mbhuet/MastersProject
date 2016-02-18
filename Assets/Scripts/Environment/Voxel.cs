@@ -24,7 +24,8 @@ public abstract class Voxel : MonoBehaviour {
 	protected Voxel intendedActor; //if another voxel is compelling this voxel to move, it is recorded here
 	
 	public delegate void IntentionDelegate();
-	public IntentionDelegate NextAction;
+	public IntentionDelegate MoveAction;
+	public IntentionDelegate StillAction;
 
 	MeshRenderer[] renderers;
 
@@ -43,6 +44,8 @@ public abstract class Voxel : MonoBehaviour {
 		renderers = gameObject.GetComponentsInChildren<MeshRenderer> ();
 		initialized = true;
 	}
+
+	public abstract Vector3 GetIntendedPosition();
 
 
 
@@ -87,7 +90,7 @@ public abstract class Voxel : MonoBehaviour {
 	
 	public void Assemble(){
 		Debug.Log ("Assemble");
-		this.transform.position = intendedPosition;
+		//this.transform.position = intendedPosition;
 		SnapToGrid ();
 		SetVisible (true);
 		isActive = true;
@@ -101,35 +104,8 @@ public abstract class Voxel : MonoBehaviour {
 		}
 	}
 
-	public void SetIntention(Vector3 intendedPos, int comPriority, IntentionDelegate intendedFunc, Ant actor){
-		SetIntention (intendedPos, comPriority, intendedFunc);
-		intendedActor = actor;
-	}
-	
-	public void SetIntention(Vector3 intendedPos, int comPriority, IntentionDelegate intendedFunc){
-		intendedPosition = intendedPos;
-		intentionPriority = comPriority;
-		NextAction = intendedFunc;
-	}
-	
-	public void ClearIntention(){
-		intendedPosition = Vector3.one * -1;
-		intentionPriority = -1;
-		intendedActor = null;
-		NextAction = null;
-	}
-	
-	public Vector3 GetIntendedPosition(){
-		return intendedPosition;
-	}
 
-	public int GetIntentionPriority(){
-		return intentionPriority;
-	}
 
-	public IntentionDelegate GetIntendedFunc(){
-		return NextAction;
-	}
 
 
 	public virtual void Reset(){

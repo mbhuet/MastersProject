@@ -8,7 +8,7 @@ public class Crate : DynamicVoxel {
 		base.Start ();
 	}
 
-	public virtual void VoxelInit(){
+	public override void VoxelInit(){
 		if (!initialized) {
 			base.VoxelInit ();
 			Level.Instance.AddCrate (this);

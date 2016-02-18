@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Food : Voxel {
+public class Food : StaticVoxel {
 	public bool collected = false;
 	public GameObject visual;
 	ParticleSystem particleSys;

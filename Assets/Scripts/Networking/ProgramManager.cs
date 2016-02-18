@@ -49,6 +49,7 @@ public class ProgramManager: NetworkBehaviour
 		return myAnts;
 	}
 
+	/*
 	public void ExecuteCommand (Command com)
 	{
 		foreach (Ant ant in myAnts) {
@@ -59,13 +60,13 @@ public class ProgramManager: NetworkBehaviour
 				ant.ExecuteCommand (Command.WAIT);
 				ant.heldInPlace = false;
 			} else {
-				Debug.Log ("Execute Command " + com + " in ant " + ant);
-
+				//Debug.Log ("Execute Command " + com + " in ant " + ant);
 				ant.ExecuteCommand (com);
 
 			}
 		}
 	}
+	*/
 
 	public Vector3 ResolveCalls (Vector3 currentCoords)
 	{

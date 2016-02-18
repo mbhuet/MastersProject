@@ -8,7 +8,12 @@ public abstract class StaticVoxel : Voxel {
 		base.Start ();
 		isStatic = true;
 		isPushable = false;
-	
+		intendedPosition = position;
+	}
+
+	public override Vector3 GetIntendedPosition ()
+	{
+		return position;
 	}
 	
 

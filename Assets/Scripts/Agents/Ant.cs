@@ -42,13 +42,7 @@ public class Ant : DynamicVoxel {
 		StartCoroutine ("Move", -forwardDirection);
 	}
 
-	public void TurnRight(){
-		StartCoroutine ("Turn", Vector3.up * 90);
-	}
 
-	public void TurnLeft(){
-		StartCoroutine ("Turn", Vector3.up * -90);
-	}
 
 	public void Wait(){
 		
@@ -63,7 +57,9 @@ public class Ant : DynamicVoxel {
 	}
 
 	public void Build(){
+		buildCrate.Teleport(position + forwardDirection);
 		buildCrate = null;
+
 	}
 
 	public Crate GetBuildCrate(){
