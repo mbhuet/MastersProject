@@ -23,20 +23,20 @@ public abstract class DynamicVoxel : Voxel
 	//two still intentions cannot both occur
 	//if heldforstep, it cannot change moveAction;
 	public void SetIntention(Voxel motivator, Vector3 intendedPos, int comPriority, IntentionDelegate intendedFunc, bool involvesMovement){
-		Debug.Log ("SetIntention:: held: " + heldInPlace + " self motivated: " + (motivator == this) + " involvesMovement: " + involvesMovement);
+//		Debug.Log ("SetIntention:: held: " + heldInPlace + " self motivated: " + (motivator == this) + " involvesMovement: " + involvesMovement);
 		if (heldInPlace && motivator == this && involvesMovement) {
-			Debug.Log("Voxel " + this + " is held in place and cannot move itself this step");
+//			Debug.Log("Voxel " + this + " is held in place and cannot move itself this step");
 			return;
 		}
 			
 
 		if (involvesMovement && comPriority < intentionPriority) {
-			Debug.Log("Setting move action for " + this);
+//			Debug.Log("Setting move action for " + this);
 			intentionPriority = comPriority;
 			intendedPosition = intendedPos;
 			MoveAction = intendedFunc;
 		} else if (!involvesMovement){
-			Debug.Log("Setting still action for " + this);
+//			Debug.Log("Setting still action for " + this);
 			StillAction = intendedFunc;
 		}
 	}

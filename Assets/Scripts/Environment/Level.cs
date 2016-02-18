@@ -107,11 +107,16 @@ public class Level : MonoBehaviour {
 
 
 	//will check if there are any static floor voxels beneath this position that could make it possible
-	public bool positionInBounds(Vector3 pos){
+	public bool positionInBounds(Voxel vox, Vector3 pos){
 		//if there is a static voxel in this space, it is not in bounds
-		Voxel vox = GetVoxel(pos);
-		if(vox != null && vox.isStatic){
-			return false;
+		Voxel voxAtPos = GetVoxel(pos);
+		if(voxAtPos != null && voxAtPos.isStatic){
+			if(vox.GetComponent<Ant>() != null && voxAtPos.collectable){
+				//this is fine
+			}
+			else{
+				return false;
+			}
 		}
 
 		//if there is no ground below this space, it is not in bounds

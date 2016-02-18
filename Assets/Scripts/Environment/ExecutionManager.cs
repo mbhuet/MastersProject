@@ -138,7 +138,7 @@ public class ExecutionManager : NetworkBehaviour
 
 	void ExecuteStep ()
 	{
-		Debug.Log ("Begin Execute Step");
+//		Debug.Log ("Begin Execute Step");
 
 		List<ProgramManager> toRemove = new List<ProgramManager> ();
 
@@ -202,9 +202,9 @@ public class ExecutionManager : NetworkBehaviour
 
 		//CRATES
 		foreach (Crate crate in Level.Instance.crates) {
-			Debug.Log("checking crates");
+//			Debug.Log("checking crates");
 			if (crate.isActive){
-				Debug.Log(crate);
+//				Debug.Log(crate);
 
 				DeclareVoxelIntention (crate, crate, crate.position, crate.Stay, false, 10, true);
 			}
@@ -214,7 +214,7 @@ public class ExecutionManager : NetworkBehaviour
 		//FINISHED ANTS
 		foreach (ProgramManager finishedProgram in programManagers_finished) {
 			foreach (Ant ant in finishedProgram.GetAnts()) {
-				Debug.Log ("Finished ant will Wait");
+//				Debug.Log ("Finished ant will Wait");
 				DeclareAntIntention (ant, Command.WAIT);
 			}
 
@@ -243,14 +243,14 @@ public class ExecutionManager : NetworkBehaviour
 	 */
 	private void DeclareVoxelIntention (DynamicVoxel vox, DynamicVoxel motivator, Vector3 intendedPos, Voxel.IntentionDelegate intendedFunc, bool involvesMovement, int priority, bool forceIntention)
 	{
-		Debug.Log ("Declare Voxel Intention " + vox + " pos: " + intendedPos + " func: " + intendedFunc);
+//		Debug.Log ("Declare Voxel Intention " + vox + " pos: " + intendedPos + " func: " + intendedFunc);
 		Vector3 oldIntendedPos = vox.GetIntendedPosition ();
 		if (intendedNextPositions.ContainsKey (oldIntendedPos) && intendedNextPositions [oldIntendedPos] == vox) {
 			intendedNextPositions.Remove (oldIntendedPos);
 		}
 
 		if (involvesMovement && !forceIntention) {
-			bool valid = positionPossibleNextStep (intendedPos);
+			bool valid = positionPossibleNextStep (vox, intendedPos);
 			if (!valid) {
 				intendedPos = vox.position;
 				vox.HoldForStep ();
@@ -279,7 +279,7 @@ public class ExecutionManager : NetworkBehaviour
 			if (voxAbove != null) {
 				DynamicVoxel dynVoxAbove = voxAbove.GetComponent<DynamicVoxel> ();
 				if (dynVoxAbove != null) {
-					Debug.Log (dynVoxAbove + " is above " + vox + " and will be moved with it");
+//					Debug.Log (dynVoxAbove + " is above " + vox + " and will be moved with it");
 					dynVoxAbove.HoldForStep ();
 					DeclareVoxelIntention (dynVoxAbove, vox, intendedPos + Vector3.up, dynVoxAbove.MoveDirection (intendedPos - vox.position), true, priority, false);
 				}
@@ -290,12 +290,12 @@ public class ExecutionManager : NetworkBehaviour
 	private void DeclareAntIntention (Ant ant, Command command)
 	{
 		Vector3 intendedPos = ant.positionAfterCommand (command);
-		Debug.Log (ant + " intends to " + command + "\nintendedPos is " + intendedPos);
+//		Debug.Log (ant + " intends to " + command + "\nintendedPos is " + intendedPos);
 		if (command == Command.BACKWARD ||
 			command == Command.FORWARD ||
 			command == Command.PUSH) {
-			bool valid = positionPossibleNextStep (intendedPos);
-			Debug.Log ("valid = " + valid);
+			bool valid = positionPossibleNextStep (ant, intendedPos);
+//			Debug.Log ("valid = " + valid);
 
 			if (!valid) {
 				command = Command.WAIT;
@@ -317,14 +317,14 @@ public class ExecutionManager : NetworkBehaviour
 			DeclareVoxelIntention (ant, ant, intendedPos, ant.TurnRight, false, commandPriority [command], false);
 			break;
 		case Command.PUSH:
-			Debug.Log ("Declare Push");
+//			Debug.Log ("Declare Push");
 			if (intendedNextPositions.ContainsKey (intendedPos)) {
 				DynamicVoxel pushPosVox;
 				intendedNextPositions.TryGetValue (intendedPos, out pushPosVox);
-				Debug.Log ("pushPosVox " + ((pushPosVox == null) ? "null" : pushPosVox.name));
+//				Debug.Log ("pushPosVox " + ((pushPosVox == null) ? "null" : pushPosVox.name));
 				//if this ant is pushing, and the voxel ahead is pushable, and it currently intends to stay put
 				if (command == Command.PUSH && pushPosVox.isPushable && pushPosVox.position == pushPosVox.GetIntendedPosition ()) {
-					Debug.Log ("pushable and staying put");
+//					Debug.Log ("pushable and staying put");
 
 					DeclareVoxelIntention (pushPosVox, ant, pushPosVox.position + ant.forwardDirection, pushPosVox.MoveDirection (ant.forwardDirection), true, commandPriority [command], false);
 					DeclareVoxelIntention (ant, ant, intendedPos, ant.Push, true, commandPriority [command], false);
@@ -334,19 +334,19 @@ public class ExecutionManager : NetworkBehaviour
 			}
 			break;
 		case Command.FIRE:
-			Debug.Log ("Declare Fire");
+//			Debug.Log ("Declare Fire");
 			DeclareVoxelIntention (ant, ant, intendedPos, ant.Fire, false, commandPriority [Command.FIRE], false);
 			DynamicVoxel firePosVox;
 			intendedNextPositions.TryGetValue (ant.position + ant.forwardDirection, out firePosVox);
-			Debug.Log("Fire pos " + ant.position + ant.forwardDirection + " firePosBox = " + ((firePosVox == null)? "null" : firePosVox.name));
+//			Debug.Log("Fire pos " + ant.position + ant.forwardDirection + " firePosBox = " + ((firePosVox == null)? "null" : firePosVox.name));
 			if (firePosVox != null && firePosVox.isBurnable && firePosVox.GetIntendedPosition () == firePosVox.position) {
-				Debug.Log("Will burn " + firePosVox);
+//				Debug.Log("Will burn " + firePosVox);
 				intendedNextPositions.Remove (firePosVox.position);
 				DeclareVoxelIntention (firePosVox, ant, Vector3.one * -1, firePosVox.Burn, false, commandPriority [Command.FIRE], false);
 			}
 			break;
 		case Command.BUILD:
-			Debug.Log ("Declare Build");
+//			Debug.Log ("Declare Build");
 			DynamicVoxel buildPosVox;
 			intendedNextPositions.TryGetValue (ant.position + ant.forwardDirection, out buildPosVox);
 			if (buildPosVox == null) {
@@ -354,7 +354,7 @@ public class ExecutionManager : NetworkBehaviour
 				Crate buildCrate = ant.GetBuildCrate ();
 				DeclareVoxelIntention (buildCrate, ant, ant.position + ant.forwardDirection, buildCrate.Assemble, false, commandPriority [Command.BUILD], false);
 			} else {
-				Debug.Log ("Build Pos occupied by " + buildPosVox);
+//				Debug.Log ("Build Pos occupied by " + buildPosVox);
 				DeclareVoxelIntention (ant, ant, intendedPos, ant.Wait, false, commandPriority [Command.WAIT], false);
 			}
 			break;
@@ -368,7 +368,7 @@ public class ExecutionManager : NetworkBehaviour
 
 	private void ResolveConflict (DynamicVoxel voxA, DynamicVoxel voxB, Vector3 disputedPos)
 	{
-		Debug.Log ("Conflict between " + voxA + " and " + voxB + " over " + disputedPos);
+//		Debug.Log ("Conflict between " + voxA + " and " + voxB + " over " + disputedPos);
 		intendedNextPositions.Remove (disputedPos);
 
 		int voxAPriority = voxA.GetIntentionPriority ();
@@ -376,7 +376,7 @@ public class ExecutionManager : NetworkBehaviour
 
 		//EAUAl priority, no one gets to move
 		if (voxAPriority == voxBPriority) {
-			Debug.Log ("Equal Priority " + voxAPriority + ", no one moves");
+//			Debug.Log ("Equal Priority " + voxAPriority + ", no one moves");
 
 			voxA.HoldForStep ();
 			voxB.HoldForStep ();
@@ -384,14 +384,14 @@ public class ExecutionManager : NetworkBehaviour
 			DeclareVoxelIntention (voxB, voxA, voxB.position, voxB.Stay, true, 0, true);
 
 		} else if (voxAPriority < voxBPriority) {
-			Debug.Log (voxA + " has priority.");
+//			Debug.Log (voxA + " has priority.");
 
 			DeclareVoxelIntention (voxA, voxA, disputedPos, voxA.GetIntendedMoveFunc (), true, voxAPriority, true);
 			voxB.HoldForStep ();
 			DeclareVoxelIntention (voxB, voxA, voxB.position, voxB.Stay, true, 0, true);
 
 		} else if (voxBPriority < voxAPriority) {
-			Debug.Log (voxB + " has priority.");
+//			Debug.Log (voxB + " has priority.");
 
 			DeclareVoxelIntention (voxB, voxB, disputedPos, voxB.GetIntendedMoveFunc (), true, voxBPriority, true);
 			voxA.HoldForStep ();
@@ -399,10 +399,10 @@ public class ExecutionManager : NetworkBehaviour
 		}	
 	}
 
-	bool positionPossibleNextStep (Vector3 intendedPos)
+	bool positionPossibleNextStep (Voxel vox, Vector3 intendedPos)
 	{
-		if (!Level.Instance.positionInBounds (intendedPos)) {
-			Debug.Log ("position " + intendedPos + " not in bounds");
+		if (!Level.Instance.positionInBounds (vox, intendedPos)) {
+//			Debug.Log ("position " + intendedPos + " not in bounds");
 			return false;
 		}
 
@@ -417,7 +417,7 @@ public class ExecutionManager : NetworkBehaviour
 
 
 		bool validFloor = (intendedFloor != null && intendedFloor.canStackOn && intendedFloor.GetIntendedPosition () == intendedFloorPos);
-		Debug.Log ("intendedFloorPos " + intendedFloorPos + ((intendedFloor == null) ? " is empty " : (" has vox " + intendedFloor + " intends to be in place  = " + (intendedFloor.GetIntendedPosition () == intendedFloorPos))));
+//		Debug.Log ("intendedFloorPos " + intendedFloorPos + ((intendedFloor == null) ? " is empty " : (" has vox " + intendedFloor + " intends to be in place  = " + (intendedFloor.GetIntendedPosition () == intendedFloorPos))));
 
 		if (!validFloor) {
 			return false;

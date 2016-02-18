@@ -17,6 +17,7 @@ public class Ant : DynamicVoxel {
 
 
 	public ParticleSystem fireFX;
+	public ParticleSystem dustFX;
 	public Crate cratePrefab;
 	Crate buildCrate;
 
@@ -49,6 +50,8 @@ public class Ant : DynamicVoxel {
 	}
 
 	public void Push(){
+		//dustFX.duration = 1;//ExecutionManager.STEP_TIME;
+		dustFX.Play ();
 		StartCoroutine ("Move", forwardDirection);
 	}
 

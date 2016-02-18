@@ -16,7 +16,7 @@ public class SwitchBlock : DynamicVoxel
 
 	public void Trigger (bool switchDown)
 	{
-		Debug.Log ("SwitchBlock trigger " + switchDown);
+//		Debug.Log ("SwitchBlock trigger " + switchDown);
 		willMove = true;
 	}
 

@@ -12,6 +12,7 @@ public abstract class Voxel : MonoBehaviour {
 	public bool canStackOn;
 	public bool isBurnable;
 	public bool isPushable;
+	public bool collectable;
 
 	public bool isActive = true;
 	public bool temporary = false;
@@ -89,7 +90,6 @@ public abstract class Voxel : MonoBehaviour {
 	}
 	
 	public void Assemble(){
-		Debug.Log ("Assemble");
 		//this.transform.position = intendedPosition;
 		SnapToGrid ();
 		SetVisible (true);
@@ -103,9 +103,6 @@ public abstract class Voxel : MonoBehaviour {
 			mesh.enabled = isVisible;
 		}
 	}
-
-
-
 
 
 	public virtual void Reset(){
