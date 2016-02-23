@@ -14,7 +14,6 @@ public class GuiLobbyManager : NetworkLobbyManager
 	public PopupCanvasControl popupCanvas;
 	public MatchMakerCanvasControl matchMakerCanvas;
 	public JoinMatchCanvasControl joinMatchCanvas;
-	public LevelCanvasControl levelCanvas;
 
 
 	public string onlineStatus;
@@ -36,7 +35,6 @@ public class GuiLobbyManager : NetworkLobbyManager
 		if (popupCanvas != null) popupCanvas.OnLevelWasLoaded();
 		if (matchMakerCanvas != null) matchMakerCanvas.OnLevelWasLoaded();
 		if (joinMatchCanvas != null) joinMatchCanvas.OnLevelWasLoaded();
-		if (levelCanvas != null) levelCanvas.OnLevelWasLoaded();
 
 	}
 
@@ -53,7 +51,6 @@ public class GuiLobbyManager : NetworkLobbyManager
 	public override void OnLobbyStopHost()
 	{
 		lobbyCanvas.Hide();
-		levelCanvas.Hide();
 		offlineCanvas.Show();
 	}
 
@@ -75,7 +72,6 @@ public class GuiLobbyManager : NetworkLobbyManager
 	public override void OnLobbyClientDisconnect(NetworkConnection conn)
 	{
 		lobbyCanvas.Hide();
-		levelCanvas.Hide();
 		offlineCanvas.Show();
 	}
 
@@ -101,7 +97,7 @@ public class GuiLobbyManager : NetworkLobbyManager
 		lobbyCanvas.Show();
 		//Debug.Log(Network.isClient);
 		//if(Network.isServer){
-			levelCanvas.Show();
+
 		//}
 		onlineCanvas.Show(onlineStatus);
 
@@ -112,7 +108,6 @@ public class GuiLobbyManager : NetworkLobbyManager
 	public override void OnLobbyClientExit()
 	{
 		lobbyCanvas.Hide();
-		levelCanvas.Hide();
 		onlineCanvas.Hide();
 
 		if (Application.loadedLevelName == base.playScene)

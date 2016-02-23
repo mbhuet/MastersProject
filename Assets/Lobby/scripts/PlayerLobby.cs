@@ -7,51 +7,50 @@ using UnityEngine.EventSystems;
 
 public class PlayerLobby : NetworkLobbyPlayer
 {
-	public GameObject playerPanelPrefab;
-
-	public GameObject playerPanel;
-
+	public Canvas playerCanvasPrefab;
+	
+	public Canvas playerCanvas;
+	
 	// cached components
 	ColorControl cc;
 	NetworkLobbyPlayer lobbyPlayer;
-
+	
 	void Awake()
 	{
 		cc = GetComponent<ColorControl>();
 		lobbyPlayer = GetComponent<NetworkLobbyPlayer>();
 	}
-
+	
 	public override void OnClientEnterLobby()
 	{
-		if (playerPanel == null)
+		if (playerCanvas == null)
 		{
-			playerPanel = (GameObject)Instantiate(playerPanelPrefab, Vector3.zero, Quaternion.identity);
-			playerPanel.transform.SetParent(GuiLobbyManager.s_Singleton.lobbyCanvas.canvas.transform.GetChild(0).transform, false);
+			playerCanvas = (Canvas)Instantiate(playerCanvasPrefab, Vector3.zero, Quaternion.identity);
+			playerCanvas.sortingOrder = 1;
 		}
-
-		var hooks = playerPanel.GetComponent<PlayerCanvasHooks>();
-		//hooks.panelPos.localPosition = new Vector3(GetPlayerPos(lobbyPlayer.slot), 0, 0);
+		
+		var hooks = playerCanvas.GetComponent<PlayerCanvasHooks>();
+		hooks.panelPos.localPosition = new Vector3(GetPlayerPos(lobbyPlayer.slot), 0, 0);
 		hooks.SetColor(cc.myColor);
 		hooks.SetReady(lobbyPlayer.readyToBegin);
-
-		//EventSystem.current.SetSelectedGameObject(hooks.colorButton.gameObject);
+		
+		EventSystem.current.SetSelectedGameObject(hooks.colorButton.gameObject);
 	}
-
+	
 	public override void OnClientExitLobby()
 	{
-		if (playerPanel != null)
+		if (playerCanvas != null)
 		{
-			Destroy(playerPanel.gameObject);
+			Destroy(playerCanvas.gameObject);
 		}
 	}
-
+	
 	public override void OnClientReady(bool readyState)
 	{
-		var hooks = playerPanel.GetComponent<PlayerCanvasHooks>();
+		var hooks = playerCanvas.GetComponent<PlayerCanvasHooks>();
 		hooks.SetReady(readyState);
 	}
-
-	/*
+	
 	float GetPlayerPos(int slot)
 	{
 		var lobby = NetworkManager.singleton as GuiLobbyManager;
@@ -60,56 +59,53 @@ public class PlayerLobby : NetworkLobbyPlayer
 			// no lobby?
 			return slot * 200;
 		}
-
+		
 		// this spreads the player canvas panels out across the screen
-		var screenWidth = playerPanel.pixelRect.width;
+		var screenWidth = playerCanvas.pixelRect.width;
 		screenWidth -= 200; // border padding
 		var playerWidth = screenWidth / (lobby.maxPlayers-1);
 		return -(screenWidth / 2) + slot * playerWidth;
 	}
-	*/
-
+	
 	public override void OnStartLocalPlayer()
 	{
-		if (playerPanel == null)
+		if (playerCanvas == null)
 		{
-			playerPanel = (GameObject)Instantiate(playerPanelPrefab, Vector3.zero, Quaternion.identity);
-//			playerPanel.sortingOrder = 1;
+			playerCanvas = (Canvas)Instantiate(playerCanvasPrefab, Vector3.zero, Quaternion.identity);
+			playerCanvas.sortingOrder = 1;
 		}
-
+		
 		// setup button hooks
-		var hooks = playerPanel.GetComponent<PlayerCanvasHooks>();
-		//hooks.panelPos.localPosition = new Vector3(GetPlayerPos(lobbyPlayer.slot), 0, 0);
-		playerPanel.transform.SetParent(GuiLobbyManager.s_Singleton.lobbyCanvas.canvas.transform.GetChild(0).transform, false);
-
+		var hooks = playerCanvas.GetComponent<PlayerCanvasHooks>();
+		hooks.panelPos.localPosition = new Vector3(GetPlayerPos(lobbyPlayer.slot), 0, 0);
 		hooks.SetColor(cc.myColor);
-
+		
 		hooks.OnColorChangeHook = OnGUIColorChange;
 		hooks.OnReadyHook = OnGUIReady;
 		hooks.OnRemoveHook = OnGUIRemove;
 		hooks.SetLocalPlayer();
 	}
-
+	
 	void OnDestroy()
 	{
-		if (playerPanel != null)
+		if (playerCanvas != null)
 		{
-			Destroy(playerPanel.gameObject);
+			Destroy(playerCanvas.gameObject);
 		}
 	}
-
+	
 	public void SetColor(Color color)
 	{
-		var hooks = playerPanel.GetComponent<PlayerCanvasHooks>();
+		var hooks = playerCanvas.GetComponent<PlayerCanvasHooks>();
 		hooks.SetColor(color);
 	}
-
+	
 	public void SetReady(bool ready)
 	{
-		var hooks = playerPanel.GetComponent<PlayerCanvasHooks>();
+		var hooks = playerCanvas.GetComponent<PlayerCanvasHooks>();
 		hooks.SetReady(ready);
 	}
-
+	
 	[Command]
 	public void CmdExitToLobby()
 	{
@@ -119,27 +115,27 @@ public class PlayerLobby : NetworkLobbyPlayer
 			lobby.ServerReturnToLobby();
 		}
 	}
-
+	
 	// events from UI system
-
+	
 	void OnGUIColorChange()
 	{
 		if (isLocalPlayer)
 			cc.ClientChangeColor();
 	}
-
+	
 	void OnGUIReady()
 	{
 		if (isLocalPlayer)
 			lobbyPlayer.SendReadyToBeginMessage();
 	}
-
+	
 	void OnGUIRemove()
 	{
 		if (isLocalPlayer)
 		{
 			ClientScene.RemovePlayer(lobbyPlayer.playerControllerId);
-
+			
 			var lobby = NetworkManager.singleton as GuiLobbyManager;
 			if (lobby != null)
 			{

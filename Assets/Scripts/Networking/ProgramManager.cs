@@ -33,7 +33,7 @@ public class ProgramManager: NetworkBehaviour
 			func.LoadBlueprint (blueprint.availableFunctions [i]);
 			functions [i] = func;
 		}
-		myAnts = GameManager.Instance.getAntsOfType (antType);
+		Debug.Log ("gettign ants of type");
 	}
 
 	void Awake ()
@@ -46,6 +46,8 @@ public class ProgramManager: NetworkBehaviour
 
 	public Ant[] GetAnts ()
 	{
+		myAnts = GameManager.Instance.getAntsOfType (antType);
+
 		return myAnts;
 	}
 

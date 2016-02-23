@@ -44,7 +44,7 @@ public class CommandTile : Tile {
 	#region IBeginDragHandler implementation
 	public override void OnBeginDrag (PointerEventData eventData)
 	{
-//		Debug.Log("tile OnBeginDrag");
+		Debug.Log("tile OnBeginDrag---------------------------------------------------------");
 		Canvas canvas = FindInParents<Canvas>(gameObject);
 		if (canvas == null)
 			return;

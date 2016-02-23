@@ -8,7 +8,7 @@ public class PlayHead : MonoBehaviour {
 	public float speed;
 	CommandSlot home;
 
-	void Start () {
+	void Awake () {
 		slots = new List<CommandSlot> ();
 	}
 	

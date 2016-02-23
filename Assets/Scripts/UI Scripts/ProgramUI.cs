@@ -218,4 +218,12 @@ public class ProgramUI : MonoBehaviour {
 			funcZone.SetTileCollision(isOn);
 		}
 	}
+
+	public void DisableInteractivity(){
+		GetComponent<CanvasGroup> ().blocksRaycasts = false;
+	}
+
+	public void EnableInteractivity(){
+		GetComponent<CanvasGroup> ().blocksRaycasts = true;
+	}
 }

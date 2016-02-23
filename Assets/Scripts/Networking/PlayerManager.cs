@@ -21,11 +21,19 @@ public class PlayerManager : MonoBehaviour {
 		players = new Player[maxPlayers];
 		programUI = GameObject.FindObjectOfType<ProgramUI> ();
 		Debug.Log ("PlayerManager Awake");
+		DontDestroyOnLoad (this.gameObject);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
+	}
+
+	public void LoadLevelProfiles(){
+		for (int i = 0; i< GameManager.Instance.numPlayers; i++) {
+			if(players[i] == null) Debug.LogError("not enough players in this scene, that shouldn't happen");
+			else players[i].LoadLevelProfile();
+		}
 	}
 
 	public void UpdateReadyPlayers(){
@@ -34,7 +42,7 @@ public class PlayerManager : MonoBehaviour {
 			if(players[i] != null && players[i].isReady) r++;
 		}
 		numReadyPlayers = r;
-		ProgramUI.Instance.controlCanvas.SetReadyButtonText ("Ready (" + numReadyPlayers + "/" + maxPlayers + ")");
+		ProgramUI.Instance.controlCanvas.SetReadyButtonText ("Ready (" + numReadyPlayers + "/" + GameManager.Instance.numPlayers + ")");
 	}
 
 	public void ToggleLocalPlayerReady(){
@@ -44,7 +52,7 @@ public class PlayerManager : MonoBehaviour {
 	public bool AllPlayersReady(){
 		UpdateReadyPlayers ();
 //		Debug.Log (numReadyPlayers + "/" + maxPlayers);
-		return numReadyPlayers == maxPlayers;
+		return numReadyPlayers == GameManager.Instance.numPlayers;
 	}
 
 

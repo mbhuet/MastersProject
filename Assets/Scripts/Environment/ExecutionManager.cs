@@ -69,12 +69,13 @@ public class ExecutionManager : NetworkBehaviour
 	void BeginExecution ()
 	{
 		ProgramUI.Instance.controlCanvas.ShowRuntimeControls ();
+		ProgramUI.Instance.DisableInteractivity ();
 		PlayerManager.Instance.localPlayer.SetReady (false);
-
+		//Debug.Log ("Begin Execution");
 
 
 		//Use PlayerManager to get list of Players
-		for (int i = 0; i< PlayerManager.Instance.maxPlayers; i++) {
+		for (int i = 0; i< GameManager.Instance.numPlayers; i++) {
 			ProgramManager curProgramManager = PlayerManager.Instance.players [i].GetComponent<ProgramManager> ();
 			programManagers_inProgress.Add (curProgramManager);
 			currentCommandDict.Add (curProgramManager, Vector3.zero + Vector3.right * i);
@@ -119,6 +120,8 @@ public class ExecutionManager : NetworkBehaviour
 		Debug.Log ("----------------End Execution--------------");
 
 		ProgramUI.Instance.ResetPlayHead ();
+		ProgramUI.Instance.EnableInteractivity ();
+
 		currentCommandDict.Clear ();
 		programManagers_inProgress.Clear ();
 		programManagers_finished.Clear ();
@@ -138,7 +141,7 @@ public class ExecutionManager : NetworkBehaviour
 
 	void ExecuteStep ()
 	{
-//		Debug.Log ("Begin Execute Step");
+		Debug.Log ("Begin Execute Step");
 
 		List<ProgramManager> toRemove = new List<ProgramManager> ();
 
@@ -152,7 +155,7 @@ public class ExecutionManager : NetworkBehaviour
 		foreach (ProgramManager program in programManagers_inProgress) {
 			Vector3 currentComCoords;
 			currentCommandDict.TryGetValue (program, out currentComCoords);
-			//Debug.Log(currentComCoords);
+			Debug.Log(currentComCoords);
 			Command com = ProgramManager.GetCommand (currentComCoords);
 			if (com == Command.NONE) {
 				toRemove.Add (program);
@@ -171,7 +174,7 @@ public class ExecutionManager : NetworkBehaviour
 
 	protected void UpdateCommandCoordinates ()
 	{
-		//	Debug.Log ("Updating Command Coordinates");
+			Debug.Log ("Updating Command Coordinates");
 		foreach (ProgramManager program in programManagers_inProgress) {
 			Vector3 currentComCoords;
 			currentCommandDict.TryGetValue (program, out currentComCoords);
@@ -243,7 +246,7 @@ public class ExecutionManager : NetworkBehaviour
 	 */
 	private void DeclareVoxelIntention (DynamicVoxel vox, DynamicVoxel motivator, Vector3 intendedPos, Voxel.IntentionDelegate intendedFunc, bool involvesMovement, int priority, bool forceIntention)
 	{
-//		Debug.Log ("Declare Voxel Intention " + vox + " pos: " + intendedPos + " func: " + intendedFunc);
+		Debug.Log ("Declare Voxel Intention " + vox + " pos: " + intendedPos + " func: " + intendedFunc);
 		Vector3 oldIntendedPos = vox.GetIntendedPosition ();
 		if (intendedNextPositions.ContainsKey (oldIntendedPos) && intendedNextPositions [oldIntendedPos] == vox) {
 			intendedNextPositions.Remove (oldIntendedPos);
@@ -290,7 +293,7 @@ public class ExecutionManager : NetworkBehaviour
 	private void DeclareAntIntention (Ant ant, Command command)
 	{
 		Vector3 intendedPos = ant.positionAfterCommand (command);
-//		Debug.Log (ant + " intends to " + command + "\nintendedPos is " + intendedPos);
+		Debug.Log (ant + " intends to " + command + "\nintendedPos is " + intendedPos);
 		if (command == Command.BACKWARD ||
 			command == Command.FORWARD ||
 			command == Command.PUSH) {

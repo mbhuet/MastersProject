@@ -12,7 +12,7 @@ public class CommandSlot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IP
 
 	public void SetTile(CommandTile newTile){
 		newTile.transform.SetParent(this.transform, false);
-//		Debug.Log("set parent to slot");
+		Debug.Log("set parent to slot");
 		tile = newTile;
 		tile.slot = this;
 	}
@@ -57,7 +57,7 @@ public class CommandSlot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IP
 	
 	public void OnPointerEnter (PointerEventData eventData)
 	{
-//		Debug.Log("Pointer enter slot " + slotIndex);
+		Debug.Log("Pointer enter slot " + slotIndex);
 		if(Tile.tileBeingDragged != null){
 			functionZone.MakeGap(slotIndex);
 		}
@@ -77,10 +77,8 @@ public class CommandSlot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IP
 	
 	public void OnPointerExit (PointerEventData eventData)
 	{
+		Debug.Log("pointer exit slot " + slotIndex);
 		if(Tile.tileBeingDragged != null){
-
-//			Debug.Log("pointer exit slot " + slotIndex);
-
 			functionZone.CloseGaps();
 		}
 		/*
