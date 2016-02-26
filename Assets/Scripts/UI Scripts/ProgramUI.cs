@@ -10,7 +10,6 @@ public class ProgramUI : MonoBehaviour {
 
 	public GameObject functionZonePrefab;
 	public GameObject commandDockPrefab;
-	public ProgramButtonsControl controlCanvas;
 
 
 	public Text textPrefab;
@@ -64,7 +63,6 @@ public class ProgramUI : MonoBehaviour {
 	}
 
 	void Start(){
-		controlCanvas.Init ();
 	}
 
 	void FindFunctionZones(){

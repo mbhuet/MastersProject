@@ -21,7 +21,12 @@ public class ExecutionManager : NetworkBehaviour
 	
 	[SyncEvent]
 	public event BeginExecutionDelegate
-		EventBeginExecution;
+		EventBeginExecution_Sync;
+
+
+	public delegate void ExecutionEvent();
+	public static event ExecutionEvent BeginExecutionEvent;
+	public static event ExecutionEvent EndExecutionEvent;
 
 	public void Init ()
 	{
@@ -34,7 +39,7 @@ public class ExecutionManager : NetworkBehaviour
 		Instance = this;
 
 		Debug.Log ("ExecutionManager Awake");
-		EventBeginExecution += BeginExecution;
+		EventBeginExecution_Sync += BeginExecution;
 		currentCommandDict = new Dictionary<ProgramManager, Vector3> ();
 		intendedNextPositions = new Dictionary<Vector3, DynamicVoxel> ();
 		commandPriority = new Dictionary<Command, int>{
@@ -68,9 +73,9 @@ public class ExecutionManager : NetworkBehaviour
 
 	void BeginExecution ()
 	{
-		ProgramUI.Instance.controlCanvas.ShowRuntimeControls ();
 		ProgramUI.Instance.DisableInteractivity ();
 		PlayerManager.Instance.localPlayer.SetReady (false);
+		BeginExecutionEvent ();
 		//Debug.Log ("Begin Execution");
 
 
@@ -464,7 +469,7 @@ public class ExecutionManager : NetworkBehaviour
 	[Server]
 	public void TriggerExecutionEvent ()
 	{
-		EventBeginExecution ();
+		EventBeginExecution_Sync ();
 	}
 
 

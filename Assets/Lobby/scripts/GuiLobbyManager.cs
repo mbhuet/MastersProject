@@ -95,10 +95,6 @@ public class GuiLobbyManager : NetworkLobbyManager
 	public override void OnLobbyClientEnter()
 	{
 		lobbyCanvas.Show();
-		//Debug.Log(Network.isClient);
-		//if(Network.isServer){
-
-		//}
 		onlineCanvas.Show(onlineStatus);
 
 		exitToLobbyCanvas.Hide();

@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour {
 	List<Ant> allAnts;
 	List<Food> allFood;
 
-
 	public delegate void GameAction();
 	public static event GameAction OnLevelComplete;
 	

@@ -42,7 +42,6 @@ public class PlayerManager : MonoBehaviour {
 			if(players[i] != null && players[i].isReady) r++;
 		}
 		numReadyPlayers = r;
-		ProgramUI.Instance.controlCanvas.SetReadyButtonText ("Ready (" + numReadyPlayers + "/" + GameManager.Instance.numPlayers + ")");
 	}
 
 	public void ToggleLocalPlayerReady(){
