@@ -1,15 +1,27 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
+
 
 public class BluetoothConnectHooks : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+	public delegate void ButtonHook();
 	
+	public ButtonHook OnHost;
+	public ButtonHook OnFind;
+	
+	public Button hostButton;
+	public Button findButton;
+	
+	
+	public void UIHost(){
+		if (OnHost != null)
+			OnHost.Invoke();
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
+	public void UIFind(){
+		if (OnFind != null) {
+			OnFind.Invoke();
+		}
 	}
 }

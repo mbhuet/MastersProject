@@ -4,8 +4,6 @@ using UnityEngine.UI;
 
 public class ProgramButtonsHooks : MonoBehaviour{
 
-
-
 	public delegate void ButtonHook();
 
 	public ButtonHook OnPause;

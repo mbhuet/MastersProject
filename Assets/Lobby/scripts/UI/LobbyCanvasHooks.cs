@@ -7,6 +7,8 @@ public class LobbyCanvasHooks : MonoBehaviour
 
 	public CanvasHook OnAddPlayerHook;
 
+	public Button firstButton;
+
 	public void UIAddPlayer()
 	{
 		if (OnAddPlayerHook != null)

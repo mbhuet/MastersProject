@@ -15,7 +15,6 @@ public class GuiLobbyManager : NetworkLobbyManager
 	public MatchMakerCanvasControl matchMakerCanvas;
 	public JoinMatchCanvasControl joinMatchCanvas;
 
-
 	public string onlineStatus;
 	static public GuiLobbyManager s_Singleton;
 
@@ -35,7 +34,6 @@ public class GuiLobbyManager : NetworkLobbyManager
 		if (popupCanvas != null) popupCanvas.OnLevelWasLoaded();
 		if (matchMakerCanvas != null) matchMakerCanvas.OnLevelWasLoaded();
 		if (joinMatchCanvas != null) joinMatchCanvas.OnLevelWasLoaded();
-
 	}
 
 	public void SetFocusToAddPlayerButton()
@@ -52,6 +50,15 @@ public class GuiLobbyManager : NetworkLobbyManager
 	{
 		lobbyCanvas.Hide();
 		offlineCanvas.Show();
+	}
+
+	public override bool OnLobbyServerSceneLoadedForPlayer(GameObject lobbyPlayer, GameObject gamePlayer)
+	{
+		//This hook allows you to apply state data from the lobby-player to the game-player
+		//var cc = lobbyPlayer.GetComponent<ColorControl>();
+		//var playerX = gamePlayer.GetComponent<Player>();
+		//playerX.myColor = cc.myColor;
+		return true;
 	}
 
 	// ----------------- Client callbacks ------------------
@@ -111,36 +118,4 @@ public class GuiLobbyManager : NetworkLobbyManager
 			exitToLobbyCanvas.Show();
 		}
 	}
-
-	/*
-	public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerId)
-	{
-		GameObject thePlayer = (GameObject)Instantiate(base.playerPrefab, Vector3.zero, Quaternion.identity);
-		Player player = thePlayer.GetComponent<Player>();
-		NetworkServer.AddPlayerForConnection(conn, thePlayer, playerControllerId);
-		PlayerManager.Instance.RegisterPlayer(player);
-	}
-	*/
-
-	/*
-	public override GameObject OnLobbyServerCreateGamePlayer(NetworkConnection conn, short playerControllerId){
-		GameObject playerObj = (GameObject)Instantiate(base.gamePlayerPrefab, Vector3.zero, Quaternion.identity);
-		Debug.Log(playerObj);
-		Player player = playerObj.GetComponent<Player>();
-		PlayerManager.Instance.RegisterPlayer(player);
-		return playerObj;
-	}
-	*/
-
-
-
-	public override bool OnLobbyServerSceneLoadedForPlayer(GameObject lobbyPlayer, GameObject gamePlayer){
-		int playerNum = lobbyPlayer.GetComponent<NetworkLobbyPlayer>().slot;
-		gamePlayer.GetComponent<Player>().playerNum = playerNum;
-//		Debug.Log("OnLobbyServerSceneLoadedForPlayer " + playerNum);
-		//PlayerManager.Instance.RegisterPlayer(gamePlayer.GetComponent<Player>(), playerNum);
-		return true;
-	}
-
-
 }

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Runtime.Serialization.Formatters;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -69,7 +69,7 @@ public class LobbyCanvasControl : CanvasControl
 		if (hooks == null)
 			return;
 
-//		EventSystem.current.SetSelectedGameObject(hooks.firstButton.gameObject);
+		EventSystem.current.SetSelectedGameObject(hooks.firstButton.gameObject);
 	}
 }
 
@@ -398,6 +398,4 @@ public class PopupCanvasControl : CanvasControl
 		Hide();
 	}
 }
-
-
 

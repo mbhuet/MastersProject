@@ -24,6 +24,6 @@ public class LevelCanvasControl : CanvasControl
 	public void OnGUILevelSelected(string levelName){
 		//		Debug.Log("OnGUILevelSelected");
 		Hide ();
-		GuiLobbyManager.s_Singleton.ServerChangeScene(levelName);
+		BluetoothLobbyManager.Instance.ServerChangeScene(levelName);
 	}
 }
