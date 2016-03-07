@@ -19,10 +19,13 @@ public class PlayerLobby : NetworkLobbyPlayer
 	{
 		cc = GetComponent<ColorControl>();
 		lobbyPlayer = GetComponent<NetworkLobbyPlayer>();
+		Debug.Log ("PlayerLobby Awake");
 	}
 
 	public override void OnClientEnterLobby()
 	{
+		Debug.Log ("PlayerLobby OnClientEnterLobby");
+
 		if (playerCanvas == null)
 		{
 			playerCanvas = (Canvas)Instantiate(playerCanvasPrefab, Vector3.zero, Quaternion.identity);
@@ -53,7 +56,7 @@ public class PlayerLobby : NetworkLobbyPlayer
 
 	float GetPlayerPos(int slot)
 	{
-		var lobby = NetworkManager.singleton as GuiLobbyManager;
+		var lobby = NetworkManager.singleton as BluetoothLobbyManager;
 		if (lobby == null)
 		{
 			// no lobby?
@@ -69,6 +72,9 @@ public class PlayerLobby : NetworkLobbyPlayer
 
 	public override void OnStartLocalPlayer()
 	{
+
+		Debug.Log ("PlayerLobby OnStartLocalPlayer");
+
 		if (playerCanvas == null)
 		{
 			playerCanvas = (Canvas)Instantiate(playerCanvasPrefab, Vector3.zero, Quaternion.identity);
@@ -109,7 +115,7 @@ public class PlayerLobby : NetworkLobbyPlayer
 	[Command]
 	public void CmdExitToLobby()
 	{
-		var lobby = NetworkManager.singleton as GuiLobbyManager;
+		var lobby = NetworkManager.singleton as BluetoothLobbyManager;
 		if (lobby != null)
 		{
 			lobby.ServerReturnToLobby();
@@ -136,10 +142,10 @@ public class PlayerLobby : NetworkLobbyPlayer
 		{
 			ClientScene.RemovePlayer(lobbyPlayer.playerControllerId);
 
-			var lobby = NetworkManager.singleton as GuiLobbyManager;
+			var lobby = NetworkManager.singleton as BluetoothLobbyManager;
 			if (lobby != null)
 			{
-				lobby.SetFocusToAddPlayerButton();
+				//lobby.SetFocusToAddPlayerButton();
 			}
 		}
 	}

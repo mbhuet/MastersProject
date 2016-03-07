@@ -21,6 +21,7 @@ public class PlayerCanvasHooks : MonoBehaviour
 
 	void Awake()
 	{
+		Debug.Log ("PlayerCanvashooks Awake");
 		removeButton.gameObject.SetActive(false);
 	}
 
@@ -48,6 +49,7 @@ public class PlayerCanvasHooks : MonoBehaviour
 		nameText.text = "YOU";
 		readyText.text = "Play";
 		removeButton.gameObject.SetActive(true);
+		Debug.Log ("PlayerCanvasHooks localposition = " + transform.localPosition);
 	}
 
 	public void SetColor(Color color)

@@ -51,6 +51,16 @@ public class GameManager : MonoBehaviour {
 		return myAnts.ToArray();
 	}
 
+	public Ant[] getAntsForPlayerNum(int num){
+		List<Ant> myAnts = new List<Ant>();
+		foreach(Ant ant in allAnts){
+			if(ant.ownerPlayerNum == num){
+				myAnts.Add(ant);
+			}
+		}
+		return myAnts.ToArray();
+	}
+
 	public void RegisterFood(Food food){
 		allFood.Add (food);
 	}

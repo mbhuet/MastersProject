@@ -11,6 +11,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 public class ProgramBlueprint : System.Object
 {
 	public AntType antType;
+	public Ant[] ants;
 	public FunctionBlueprint[] availableFunctions;
 }
 
@@ -27,13 +28,13 @@ public class ProgramManager: NetworkBehaviour
 	{
 
 		antType = blueprint.antType;
+		myAnts = blueprint.ants;
 		functions = new AntFunction[blueprint.availableFunctions.Length];
 		for (int i = 0; i< blueprint.availableFunctions.Length; i++) {
 			AntFunction func = new AntFunction ();
 			func.LoadBlueprint (blueprint.availableFunctions [i]);
 			functions [i] = func;
 		}
-		Debug.Log ("gettign ants of type");
 	}
 
 	void Awake ()
@@ -46,7 +47,8 @@ public class ProgramManager: NetworkBehaviour
 
 	public Ant[] GetAnts ()
 	{
-		myAnts = GameManager.Instance.getAntsOfType (antType);
+		//myAnts = GameManager.Instance.getAntsOfType (antType);
+		//myAnts = GameManager.Instance.getAntsForPlayerNum (GetComponent<Player>().playerNum);
 
 		return myAnts;
 	}

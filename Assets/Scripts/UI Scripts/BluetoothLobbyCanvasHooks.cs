@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class BluetoothLobbyCanvasHooks : MonoBehaviour
 {
+	/*
 	public GameObject playerPanelPrefab;
 	
 	public delegate void CanvasHook();
@@ -32,5 +33,6 @@ public class BluetoothLobbyCanvasHooks : MonoBehaviour
 		panelHooks [i].RemovePlayer ();
 
 	}
+	*/
 	
 }

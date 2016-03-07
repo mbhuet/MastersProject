@@ -9,60 +9,59 @@ public enum AntType{
 	SNIPER,
 	MEDIC,
 	QUEEN,
-	SCOUT
+	SCOUT,
+	DEFAULT,
+	ALL
 }
 
 public class Ant : DynamicVoxel {
+	public int ownerPlayerNum;
 	public AntType type;
-
-
 	public ParticleSystem fireFX;
 	public ParticleSystem dustFX;
 	public Crate cratePrefab;
 	Crate buildCrate;
+	Animator anim;
 
 	// Use this for initialization
 	protected override void Start () {
 		base.Start ();
-		GameManager.Instance.RegisterAnt(this);
-	}
-
-
-
-	public void ExecuteCommand(Command com){
-			SnapToGrid ();
-			SnapDirection ();
-			//StartCoroutine(commandDict[com]);
+		if (GameManager.Instance != null) {
+			GameManager.Instance.RegisterAnt (this);
+		}
+		anim = transform.FindChild ("ant").GetComponent<Animator> ();
 	}
 
 	public void MoveForward(){
 		StartCoroutine ("Move", forwardDirection);
+		anim.SetTrigger("walk");
 	}
 
 	public void MoveBackward(){
 		StartCoroutine ("Move", -forwardDirection);
+		anim.SetTrigger("walkBack");
 	}
 
-
-
 	public void Wait(){
-		
+		anim.SetTrigger ("idle");
 	}
 
 	public void Push(){
 		//dustFX.duration = 1;//ExecutionManager.STEP_TIME;
 		dustFX.Play ();
 		StartCoroutine ("Move", forwardDirection);
+		anim.SetTrigger ("push");
 	}
 
 	public void Fire(){
 		fireFX.Emit (5);
+		anim.SetTrigger ("fire");
 	}
 
 	public void Build(){
 		buildCrate.Teleport(position + forwardDirection);
 		buildCrate = null;
-
+		anim.SetTrigger ("build");
 	}
 
 	public Crate GetBuildCrate(){

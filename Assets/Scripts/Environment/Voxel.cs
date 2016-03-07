@@ -33,8 +33,10 @@ public abstract class Voxel : MonoBehaviour {
 
 	// Use this for initialization
 	protected virtual void Start () {
-		if(!initialized)
-		VoxelInit ();
+		if (!initialized) {
+			if(Level.Instance != null)
+			VoxelInit ();
+		}
 	}
 
 	public virtual void VoxelInit(){
