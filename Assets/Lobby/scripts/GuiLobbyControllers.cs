@@ -69,7 +69,7 @@ public class LobbyCanvasControl : CanvasControl
 		if (hooks == null)
 			return;
 
-//		EventSystem.current.SetSelectedGameObject(hooks.firstButton.gameObject);
+		EventSystem.current.SetSelectedGameObject(hooks.firstButton.gameObject);
 	}
 }
 
@@ -396,28 +396,6 @@ public class PopupCanvasControl : CanvasControl
 	public void OnGUIExitPopup()
 	{
 		Hide();
-	}
-}
-
-[Serializable]
-public class LevelCanvasControl : CanvasControl
-{
-	public override void Show()
-	{
-		base.Show();
-		
-		var hooks = canvas.GetComponent<LevelCanvasHooks>();
-		if (hooks == null)
-			return;
-
-		hooks.OnLevelSelectHook += OnGUILevelSelected; 
-
-	}
-
-	public void OnGUILevelSelected(string levelName){
-//		Debug.Log("OnGUILevelSelected");
-		Hide ();
-		GuiLobbyManager.s_Singleton.ServerChangeScene(levelName);
 	}
 }
 

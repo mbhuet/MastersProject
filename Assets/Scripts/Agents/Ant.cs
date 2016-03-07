@@ -9,193 +9,73 @@ public enum AntType{
 	SNIPER,
 	MEDIC,
 	QUEEN,
-	SCOUT
+	SCOUT,
+	DEFAULT,
+	ALL
 }
 
-public class Ant : Voxel {
+public class Ant : DynamicVoxel {
+	public int ownerPlayerNum;
 	public AntType type;
-	public Vector3 forwardDirection;
-	Quaternion startRotation;
-
-	protected static Dictionary<Command, string> commandDict;
-
-	protected List<Command> availableCommands;
+	public ParticleSystem fireFX;
+	public ParticleSystem dustFX;
+	public Crate cratePrefab;
+	Crate buildCrate;
+	Animator anim;
 
 	// Use this for initialization
 	protected override void Start () {
 		base.Start ();
-		SnapDirection ();
-		startRotation = this.transform.rotation;
-		commandDict = new Dictionary<Command, string>{
-			{Command.FORWARD, "MoveForward"},
-			{Command.TURN_R, "TurnRight"},
-			{Command.TURN_L, "TurnLeft"},
-			{Command.WAIT, "Wait"},
-			{Command.BACKWARD, "MoveBackward"},
-			{Command.PUSH, "Push"},
-			{Command.FIRE, "Fire"}
-
-
-		};
-//		Debug.Log("Ant start at " + Time.time);
-		GameManager.Instance.RegisterAnt(this);
-	}
-
-	protected void SnapDirection(){
-		Vector3 forward = transform.forward;
-		Vector3 abs = new Vector3 (Mathf.Abs (forward.x), Mathf.Abs (forward.y), Mathf.Abs (forward.z));
-		int x = 0;
-		int y = 0;
-		int z = 0;
-		if (abs.x >= abs.y && abs.x >= abs.z) {
-			x = forward.x > 0 ? 1 : -1;
+		if (GameManager.Instance != null) {
+			GameManager.Instance.RegisterAnt (this);
 		}
-		else if (abs.y >= abs.x && abs.y >= abs.z) {
-			y = forward.y > 0 ? 1 : -1;
-		}
-		else if (abs.z >= abs.y && abs.z >= abs.x) {
-			z = forward.z > 0 ? 1 : -1;
-		}
-
-		Vector3 new_forward = new Vector3 (x, y, z);
-		transform.rotation = Quaternion.LookRotation (new_forward);
-		forwardDirection = new_forward;
+		anim = transform.FindChild ("ant").GetComponent<Animator> ();
 	}
 
-	public void ExecuteCommand(Command com){
-			SnapToGrid ();
-			SnapDirection ();
-
-				StartCoroutine(commandDict[com]);
+	public void MoveForward(){
+		StartCoroutine ("Move", forwardDirection);
+		anim.SetTrigger("walk");
 	}
 
-	protected IEnumerator MoveForward(){
-		float stepTime = ExecutionManager.STEP_TIME;
-		ExecutionManager.Instance.AddMovingVoxel (this);
-
-
-		float timer = 0;
-		Vector3 startPos = this.transform.position;
-		Vector3 endPos = this.transform.position + this.transform.forward;
-		Level.Instance.SetVoxel(this, endPos);
-
-		while(timer < stepTime){
-			timer += Time.deltaTime;
-			this.transform.position = Vector3.Lerp(startPos, endPos, timer/stepTime);
-			yield return null;
-		}
-		ExecutionManager.Instance.RemoveMovingVoxel (this);
-		this.transform.position = endPos;
-		SnapToGrid();
-
-	}
-	protected IEnumerator MoveBackward(){
-		float stepTime = ExecutionManager.STEP_TIME;
-		ExecutionManager.Instance.AddMovingVoxel (this);
-
-		float timer = 0;
-		Vector3 startPos = this.transform.position;
-		Vector3 endPos = this.transform.position - this.transform.forward;
-		Level.Instance.SetVoxel(this, endPos);
-
-		
-		while(timer < stepTime){
-			timer += Time.deltaTime;
-			this.transform.position = Vector3.Lerp(startPos, endPos, timer/stepTime);
-			yield return null;
-		}
-		ExecutionManager.Instance.RemoveMovingVoxel (this);
-		this.transform.position = endPos;
-		SnapToGrid();
+	public void MoveBackward(){
+		StartCoroutine ("Move", -forwardDirection);
+		anim.SetTrigger("walkBack");
 	}
 
-
-	protected IEnumerator TurnRight(){
-		float stepTime = ExecutionManager.STEP_TIME;
-		ExecutionManager.Instance.AddMovingVoxel (this);
-
-		float timer = 0;
-		Quaternion startRot = this.transform.rotation;
-		Quaternion endRot = this.transform.rotation * Quaternion.Euler(0,90,0);
-		
-		while(timer < stepTime){
-			timer += Time.deltaTime;
-			this.transform.rotation = Quaternion.Lerp(startRot, endRot, timer/stepTime);
-			yield return null;
-		}
-		ExecutionManager.Instance.RemoveMovingVoxel (this);
-		this.transform.rotation = endRot;
-		SnapDirection();
-	}
-	protected IEnumerator TurnLeft(){
-		float stepTime = ExecutionManager.STEP_TIME;
-		ExecutionManager.Instance.AddMovingVoxel (this);
-
-		float timer = 0;
-		Quaternion startRot = this.transform.rotation;
-		Quaternion endRot = this.transform.rotation * Quaternion.Euler(0,-90,0);
-		
-		while(timer < stepTime){
-			timer += Time.deltaTime;
-			this.transform.rotation = Quaternion.Lerp(startRot, endRot, timer/stepTime);
-			yield return null;
-		}
-		ExecutionManager.Instance.RemoveMovingVoxel (this);
-		this.transform.rotation = endRot;
-		SnapDirection();
+	public void Wait(){
+		anim.SetTrigger ("idle");
 	}
 
-	protected IEnumerator Wait(){
-		float stepTime = ExecutionManager.STEP_TIME;
-		ExecutionManager.Instance.AddMovingVoxel (this);
-		yield return new WaitForSeconds (stepTime);
-		ExecutionManager.Instance.RemoveMovingVoxel (this);
+	public void Push(){
+		//dustFX.duration = 1;//ExecutionManager.STEP_TIME;
+		dustFX.Play ();
+		StartCoroutine ("Move", forwardDirection);
+		anim.SetTrigger ("push");
 	}
 
-	protected IEnumerator Push(){
-		float stepTime = ExecutionManager.STEP_TIME;
-		ExecutionManager.Instance.AddMovingVoxel (this);
-
-		if (Level.Instance.GetVoxel (position + forwardDirection) == null || !Level.Instance.GetVoxel (position + forwardDirection).isPushable) {
-			Debug.LogError ("Ant " + this + " is trying to push something unpushable.");
-		} else {
-			Voxel pushVox = Level.Instance.GetVoxel(position + forwardDirection);
-			Debug.Log("pushing " + pushVox);
-			pushVox.PrintName();
-			pushVox.StartCoroutine("Move", forwardDirection);
-
-			float timer = 0;
-			Vector3 startPos = this.transform.position;
-			Vector3 endPos = this.transform.position + this.transform.forward;
-			Level.Instance.SetVoxel (this, endPos);
-		
-			while (timer < stepTime) {
-				timer += Time.deltaTime;
-				this.transform.position = Vector3.Lerp (startPos, endPos, timer / stepTime);
-				yield return null;
-			}
-			this.transform.position = endPos;
-
-		}
-
-		ExecutionManager.Instance.RemoveMovingVoxel (this);
-		SnapToGrid();
+	public void Fire(){
+		fireFX.Emit (5);
+		anim.SetTrigger ("fire");
 	}
 
-	protected IEnumerator Fire(){
-		float stepTime = ExecutionManager.STEP_TIME;
-		ExecutionManager.Instance.AddMovingVoxel (this);
-		yield return new WaitForSeconds (stepTime);
-		ExecutionManager.Instance.RemoveMovingVoxel (this);
-
+	public void Build(){
+		buildCrate.Teleport(position + forwardDirection);
+		buildCrate = null;
+		anim.SetTrigger ("build");
 	}
 
-	protected IEnumerator Build(){
-		float stepTime = ExecutionManager.STEP_TIME;
-		ExecutionManager.Instance.AddMovingVoxel (this);
-		yield return new WaitForSeconds (stepTime);
-		ExecutionManager.Instance.RemoveMovingVoxel (this);
+	public Crate GetBuildCrate(){
+		if (buildCrate == null)
+			MakeBuildCrate ();
+		return buildCrate;
+	}
 
+	void MakeBuildCrate(){
+		buildCrate = (Crate)GameObject.Instantiate (cratePrefab, Vector3.one * -1, Quaternion.identity);
+		buildCrate.VoxelInit ();
+		buildCrate.temporary = true;
+		buildCrate.isActive = false;
+		buildCrate.SetVisible (false);
 	}
 
 
@@ -214,11 +94,7 @@ public class Ant : Voxel {
 		case Command.WAIT:
 			break;
 		case Command.PUSH:
-			Voxel voxAhead = Level.Instance.GetVoxel(position + forwardDirection);
-			if(voxAhead != null && voxAhead.isPushable)
-				return position + forwardDirection;
-			else
-				return position;
+			return position + forwardDirection;
 		default:
 			break;
 			
@@ -227,13 +103,6 @@ public class Ant : Voxel {
 		return position;
 		
 	}
-
-	public override void Reset(){
-		base.Reset ();
-		this.transform.rotation = startRotation;
-		SnapDirection ();
-	}
-
 }
 
 

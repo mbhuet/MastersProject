@@ -11,6 +11,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 public class ProgramBlueprint : System.Object
 {
 	public AntType antType;
+	public Ant[] ants;
 	public FunctionBlueprint[] availableFunctions;
 }
 
@@ -27,13 +28,13 @@ public class ProgramManager: NetworkBehaviour
 	{
 
 		antType = blueprint.antType;
+		myAnts = blueprint.ants;
 		functions = new AntFunction[blueprint.availableFunctions.Length];
 		for (int i = 0; i< blueprint.availableFunctions.Length; i++) {
 			AntFunction func = new AntFunction ();
 			func.LoadBlueprint (blueprint.availableFunctions [i]);
 			functions [i] = func;
 		}
-		myAnts = GameManager.Instance.getAntsOfType (antType);
 	}
 
 	void Awake ()
@@ -46,9 +47,13 @@ public class ProgramManager: NetworkBehaviour
 
 	public Ant[] GetAnts ()
 	{
+		//myAnts = GameManager.Instance.getAntsOfType (antType);
+		//myAnts = GameManager.Instance.getAntsForPlayerNum (GetComponent<Player>().playerNum);
+
 		return myAnts;
 	}
 
+	/*
 	public void ExecuteCommand (Command com)
 	{
 		foreach (Ant ant in myAnts) {
@@ -59,13 +64,13 @@ public class ProgramManager: NetworkBehaviour
 				ant.ExecuteCommand (Command.WAIT);
 				ant.heldInPlace = false;
 			} else {
-				Debug.Log ("Execute Command " + com + " in ant " + ant);
-
+				//Debug.Log ("Execute Command " + com + " in ant " + ant);
 				ant.ExecuteCommand (com);
 
 			}
 		}
 	}
+	*/
 
 	public Vector3 ResolveCalls (Vector3 currentCoords)
 	{

@@ -6,16 +6,17 @@ using System.Collections.Generic;
 public class Level : MonoBehaviour {
 	public static Level Instance;
 	Dictionary<Vector3, Voxel> grid;
-	public List<Voxel> nonStaticVoxels;
+	public List<DynamicVoxel> dynamicVoxels;
 	public List<Crate> crates;
 	public List<Switch> switches;
 	public List<SwitchBlock> switchBlocks;
+	public List<DynamicVoxel> tempsToDestroy;
 
 
 
 	void Awake(){
 		Instance = this;
-		nonStaticVoxels = new List<Voxel>();
+		dynamicVoxels = new List<DynamicVoxel>();
 		grid = new Dictionary<Vector3, Voxel>();
 		crates = new List<Crate> ();
 		switches = new List<Switch> ();
@@ -25,12 +26,23 @@ public class Level : MonoBehaviour {
 	void Start(){
 	}
 
-	public void AddNonStaticVoxel(Voxel vox){
-		nonStaticVoxels.Add (vox);
+	public void AddDynamicVoxel(DynamicVoxel vox){
+		dynamicVoxels.Add (vox);
 	}
+
+	public void RemoveDynamicVoxel(DynamicVoxel vox){
+		if(dynamicVoxels.Contains(vox))
+			dynamicVoxels.Add (vox);
+	}
+
 
 	public void AddCrate(Crate crate){
 		crates.Add (crate);
+	}
+
+	public void RemoveCrate(Crate crate){
+		if(crates.Contains(crate))
+		crates.Remove (crate);
 	}
 
 	public void AddSwitch(Switch newSwitch){
@@ -42,9 +54,25 @@ public class Level : MonoBehaviour {
 	}
 
 	public void ResetLevel(){
-		foreach(Voxel vox in nonStaticVoxels){
+		foreach(DynamicVoxel vox in dynamicVoxels){
 			vox.Reset();
 		}
+		foreach(Switch floorSwitch in switches){
+			floorSwitch.Reset();
+		}
+		DestroyTemps ();
+	}
+
+	public void MarkTempForDestruction(DynamicVoxel tempVox){
+		tempsToDestroy.Add (tempVox);
+	}
+
+	void DestroyTemps(){
+		foreach (DynamicVoxel vox in tempsToDestroy) {
+			dynamicVoxels.Remove(vox);
+			GameObject.Destroy(vox.gameObject);
+		}
+		tempsToDestroy.Clear ();
 	}
 
 
@@ -63,7 +91,7 @@ public class Level : MonoBehaviour {
 
 	public Voxel GetVoxel(int col, int row, int height){
 		Voxel vox;
-		grid.TryGetValue (new Vector3 (col, row, height), out vox);
+		grid.TryGetValue (new Vector3 (col, height, row), out vox);
 		return vox;
 	}
 	public Voxel GetVoxel (Vector3 pos){
@@ -79,11 +107,16 @@ public class Level : MonoBehaviour {
 
 
 	//will check if there are any static floor voxels beneath this position that could make it possible
-	public bool positionInBounds(Vector3 pos){
+	public bool positionInBounds(Voxel vox, Vector3 pos){
 		//if there is a static voxel in this space, it is not in bounds
-		Voxel vox = GetVoxel(pos);
-		if(vox != null && vox.isStatic){
-			return false;
+		Voxel voxAtPos = GetVoxel(pos);
+		if(voxAtPos != null && voxAtPos.isStatic){
+			if(vox.GetComponent<Ant>() != null && voxAtPos.collectable){
+				//this is fine
+			}
+			else{
+				return false;
+			}
 		}
 
 		//if there is no ground below this space, it is not in bounds
@@ -95,7 +128,7 @@ public class Level : MonoBehaviour {
 				return true;
 			}
 		}
-		return false;
+		return true;//false;
 	}
 
 	public Dictionary<Vector3, Voxel> GetGrid(){

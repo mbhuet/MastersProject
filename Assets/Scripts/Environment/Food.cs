@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Food : Voxel {
+public class Food : DynamicVoxel {
 	public bool collected = false;
 	public GameObject visual;
 	ParticleSystem particleSys;
@@ -20,7 +20,7 @@ public class Food : Voxel {
 	
 	}
 
-	protected override void VoxelInit(){
+	public override void VoxelInit(){
 		base.VoxelInit();
 		GameManager.Instance.RegisterFood (this);
 	}

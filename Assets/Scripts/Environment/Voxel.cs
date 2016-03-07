@@ -2,31 +2,58 @@
 using System.Collections;
 
 public abstract class Voxel : MonoBehaviour {
-	public Vector3 position;
 	protected Vector3 startPosition;
+	protected Quaternion startRotation;
+
+	public Vector3 position;
+	public Vector3 forwardDirection;
 
 	public bool isStatic;
 	public bool canStackOn;
-	public bool isPushable;
 	public bool isBurnable;
+	public bool isPushable;
+	public bool collectable;
 
-	public bool heldInPlace = false;
+	public bool isActive = true;
+	public bool temporary = false;
+
+	protected bool initialized = false;
+
+
+	protected Vector3 intendedPosition;
+	protected int intentionPriority = -1;
+	protected Voxel intendedActor; //if another voxel is compelling this voxel to move, it is recorded here
+	
+	public delegate void IntentionDelegate();
+	public IntentionDelegate MoveAction;
+	public IntentionDelegate StillAction;
+
+	MeshRenderer[] renderers;
+
 
 	// Use this for initialization
 	protected virtual void Start () {
-		VoxelInit ();
-	}
-
-	protected virtual void VoxelInit(){
-		SnapToGrid ();
-		startPosition = position;
-		if (!isStatic) {
-			Level.Instance.AddNonStaticVoxel(this);
+		if (!initialized) {
+			if(Level.Instance != null)
+			VoxelInit ();
 		}
 	}
 
+	public virtual void VoxelInit(){
+		SnapToGrid ();
+		startPosition = position;
+		SnapDirection ();
+		startRotation = transform.rotation;
+		renderers = gameObject.GetComponentsInChildren<MeshRenderer> ();
+		initialized = true;
+	}
 
-	virtual protected void SnapToGrid(){
+	public abstract Vector3 GetIntendedPosition();
+
+
+
+
+	protected virtual void SnapToGrid(){
 		Level.Instance.RemoveVoxel(this, position);
 		int col = Mathf.Max((int)(transform.position.x + .5f), 0);
 		int row = Mathf.Max((int)(transform.position.z + .5f), 0);
@@ -37,44 +64,57 @@ public abstract class Voxel : MonoBehaviour {
 		Level.Instance.SetVoxel(this, position);
 	}
 
-	public void HoldForStep(){
-		heldInPlace = true;
-
-	}
-
-	public void ReturnToStartPosition(){
-		transform.position = startPosition;
-		SnapToGrid();
-	}
-
-	public IEnumerator Move(Vector3 direction){
-		ExecutionManager.Instance.AddMovingVoxel (this);
-		Debug.Log ("Voxel " + this + " is moving " + direction);
-		float stepTime = ExecutionManager.STEP_TIME;
-		float timer = 0;
-		Vector3 startPos = position;
-		Vector3 endPos = position + direction;
-		Level.Instance.SetVoxel(this, endPos);
-		
-		while(timer < stepTime){
-			timer += Time.deltaTime;
-			this.transform.position = Vector3.Lerp(startPos, endPos, timer/stepTime);
-			yield return null;
+	protected void SnapDirection(){
+		Vector3 forward = transform.forward;
+		Vector3 abs = new Vector3 (Mathf.Abs (forward.x), Mathf.Abs (forward.y), Mathf.Abs (forward.z));
+		int x = 0;
+		int y = 0;
+		int z = 0;
+		if (abs.x >= abs.y && abs.x >= abs.z) {
+			x = forward.x > 0 ? 1 : -1;
+		}
+		else if (abs.y >= abs.x && abs.y >= abs.z) {
+			y = forward.y > 0 ? 1 : -1;
+		}
+		else if (abs.z >= abs.y && abs.z >= abs.x) {
+			z = forward.z > 0 ? 1 : -1;
 		}
 		
-		this.transform.position = endPos;
-		SnapToGrid();
-		ExecutionManager.Instance.RemoveMovingVoxel (this);
+		Vector3 new_forward = new Vector3 (x, y, z);
+		transform.rotation = Quaternion.LookRotation (new_forward);
+		forwardDirection = new_forward;
 	}
+
+	public void Burn(){
+		SetVisible (false);
+		isActive = false;
+		Level.Instance.RemoveVoxel (this, this.position);
+	}
+	
+	public void Assemble(){
+		//this.transform.position = intendedPosition;
+		SnapToGrid ();
+		SetVisible (true);
+		isActive = true;
+	}
+
+
+
+	public void SetVisible(bool isVisible){
+		foreach (MeshRenderer mesh in renderers) {
+			mesh.enabled = isVisible;
+		}
+	}
+
 
 	public virtual void Reset(){
 		StopAllCoroutines ();
-		ReturnToStartPosition ();
+		SetVisible(true);
+		isActive = true;
+
+		if (temporary) {
+		}
 	}
 
-	public void PrintName(){
-		Debug.Log ("TEST PrintName " + this.name);
-
-	}
 
 }

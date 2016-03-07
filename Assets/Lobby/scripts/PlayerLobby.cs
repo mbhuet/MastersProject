@@ -7,9 +7,9 @@ using UnityEngine.EventSystems;
 
 public class PlayerLobby : NetworkLobbyPlayer
 {
-	public GameObject playerPanelPrefab;
+	public Canvas playerCanvasPrefab;
 
-	public GameObject playerPanel;
+	public Canvas playerCanvas;
 
 	// cached components
 	ColorControl cc;
@@ -19,42 +19,44 @@ public class PlayerLobby : NetworkLobbyPlayer
 	{
 		cc = GetComponent<ColorControl>();
 		lobbyPlayer = GetComponent<NetworkLobbyPlayer>();
+		Debug.Log ("PlayerLobby Awake");
 	}
 
 	public override void OnClientEnterLobby()
 	{
-		if (playerPanel == null)
+		Debug.Log ("PlayerLobby OnClientEnterLobby");
+
+		if (playerCanvas == null)
 		{
-			playerPanel = (GameObject)Instantiate(playerPanelPrefab, Vector3.zero, Quaternion.identity);
-			playerPanel.transform.SetParent(GuiLobbyManager.s_Singleton.lobbyCanvas.canvas.transform.GetChild(0).transform, false);
+			playerCanvas = (Canvas)Instantiate(playerCanvasPrefab, Vector3.zero, Quaternion.identity);
+			playerCanvas.sortingOrder = 1;
 		}
 
-		var hooks = playerPanel.GetComponent<PlayerCanvasHooks>();
-		//hooks.panelPos.localPosition = new Vector3(GetPlayerPos(lobbyPlayer.slot), 0, 0);
+		var hooks = playerCanvas.GetComponent<PlayerCanvasHooks>();
+		hooks.panelPos.localPosition = new Vector3(GetPlayerPos(lobbyPlayer.slot), 0, 0);
 		hooks.SetColor(cc.myColor);
 		hooks.SetReady(lobbyPlayer.readyToBegin);
 
-		//EventSystem.current.SetSelectedGameObject(hooks.colorButton.gameObject);
+		EventSystem.current.SetSelectedGameObject(hooks.colorButton.gameObject);
 	}
 
 	public override void OnClientExitLobby()
 	{
-		if (playerPanel != null)
+		if (playerCanvas != null)
 		{
-			Destroy(playerPanel.gameObject);
+			Destroy(playerCanvas.gameObject);
 		}
 	}
 
 	public override void OnClientReady(bool readyState)
 	{
-		var hooks = playerPanel.GetComponent<PlayerCanvasHooks>();
+		var hooks = playerCanvas.GetComponent<PlayerCanvasHooks>();
 		hooks.SetReady(readyState);
 	}
 
-	/*
 	float GetPlayerPos(int slot)
 	{
-		var lobby = NetworkManager.singleton as GuiLobbyManager;
+		var lobby = NetworkManager.singleton as BluetoothLobbyManager;
 		if (lobby == null)
 		{
 			// no lobby?
@@ -62,26 +64,26 @@ public class PlayerLobby : NetworkLobbyPlayer
 		}
 
 		// this spreads the player canvas panels out across the screen
-		var screenWidth = playerPanel.pixelRect.width;
+		var screenWidth = playerCanvas.pixelRect.width;
 		screenWidth -= 200; // border padding
 		var playerWidth = screenWidth / (lobby.maxPlayers-1);
 		return -(screenWidth / 2) + slot * playerWidth;
 	}
-	*/
 
 	public override void OnStartLocalPlayer()
 	{
-		if (playerPanel == null)
+
+		Debug.Log ("PlayerLobby OnStartLocalPlayer");
+
+		if (playerCanvas == null)
 		{
-			playerPanel = (GameObject)Instantiate(playerPanelPrefab, Vector3.zero, Quaternion.identity);
-//			playerPanel.sortingOrder = 1;
+			playerCanvas = (Canvas)Instantiate(playerCanvasPrefab, Vector3.zero, Quaternion.identity);
+			playerCanvas.sortingOrder = 1;
 		}
 
 		// setup button hooks
-		var hooks = playerPanel.GetComponent<PlayerCanvasHooks>();
-		//hooks.panelPos.localPosition = new Vector3(GetPlayerPos(lobbyPlayer.slot), 0, 0);
-		playerPanel.transform.SetParent(GuiLobbyManager.s_Singleton.lobbyCanvas.canvas.transform.GetChild(0).transform, false);
-
+		var hooks = playerCanvas.GetComponent<PlayerCanvasHooks>();
+		hooks.panelPos.localPosition = new Vector3(GetPlayerPos(lobbyPlayer.slot), 0, 0);
 		hooks.SetColor(cc.myColor);
 
 		hooks.OnColorChangeHook = OnGUIColorChange;
@@ -92,28 +94,28 @@ public class PlayerLobby : NetworkLobbyPlayer
 
 	void OnDestroy()
 	{
-		if (playerPanel != null)
+		if (playerCanvas != null)
 		{
-			Destroy(playerPanel.gameObject);
+			Destroy(playerCanvas.gameObject);
 		}
 	}
 
 	public void SetColor(Color color)
 	{
-		var hooks = playerPanel.GetComponent<PlayerCanvasHooks>();
+		var hooks = playerCanvas.GetComponent<PlayerCanvasHooks>();
 		hooks.SetColor(color);
 	}
 
 	public void SetReady(bool ready)
 	{
-		var hooks = playerPanel.GetComponent<PlayerCanvasHooks>();
+		var hooks = playerCanvas.GetComponent<PlayerCanvasHooks>();
 		hooks.SetReady(ready);
 	}
 
 	[Command]
 	public void CmdExitToLobby()
 	{
-		var lobby = NetworkManager.singleton as GuiLobbyManager;
+		var lobby = NetworkManager.singleton as BluetoothLobbyManager;
 		if (lobby != null)
 		{
 			lobby.ServerReturnToLobby();
@@ -140,10 +142,10 @@ public class PlayerLobby : NetworkLobbyPlayer
 		{
 			ClientScene.RemovePlayer(lobbyPlayer.playerControllerId);
 
-			var lobby = NetworkManager.singleton as GuiLobbyManager;
+			var lobby = NetworkManager.singleton as BluetoothLobbyManager;
 			if (lobby != null)
 			{
-				lobby.SetFocusToAddPlayerButton();
+				//lobby.SetFocusToAddPlayerButton();
 			}
 		}
 	}

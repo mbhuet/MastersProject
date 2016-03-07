@@ -5,6 +5,8 @@ using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour {
 	public static GameManager Instance;
+	public int numPlayers;
+
 	public ProgramBlueprint[] programProfiles = new ProgramBlueprint[4];
 	List<Ant> allAnts;
 	List<Food> allFood;
@@ -24,11 +26,14 @@ public class GameManager : MonoBehaviour {
 	void Start () {
 		Food.OnCollect += CheckForCompletion;
 		OnLevelComplete += LevelCompleted ;
+		PlayerManager.Instance.LoadLevelProfiles ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if (Input.GetKeyDown ("space")) {
+			GuiLobbyManager.s_Singleton.SendReturnToLobby ();
+		}
 	}
 
 	public void RegisterAnt(Ant ant){
@@ -40,6 +45,16 @@ public class GameManager : MonoBehaviour {
 		List<Ant> myAnts = new List<Ant>();
 		foreach(Ant ant in allAnts){
 			if(ant.type == type){
+				myAnts.Add(ant);
+			}
+		}
+		return myAnts.ToArray();
+	}
+
+	public Ant[] getAntsForPlayerNum(int num){
+		List<Ant> myAnts = new List<Ant>();
+		foreach(Ant ant in allAnts){
+			if(ant.ownerPlayerNum == num){
 				myAnts.Add(ant);
 			}
 		}
@@ -68,6 +83,8 @@ public class GameManager : MonoBehaviour {
 		Debug.Log("Level Completed");
 
 	}
+
+
 
 
 

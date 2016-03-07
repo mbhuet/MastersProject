@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+    <Tracking>
+        <CylinderTarget name="starrush_cylinder" sideLength="8.300000"/>
+        <ImageTarget name="nerdherd_small" size="200.000000 200.000000"/>
+        <ImageTarget name="nerdherd" size="1024.000000 1024.000000"/>
+        <ImageTarget name="StarRush_small" size="996.000000 996.000000"/>
+        <ImageTarget name="StarRush" size="1660.000000 1660.000000"/>
+        <ImageTarget name="CubeOfPower.Right" size="200.000000 200.000000"/>
+        <ImageTarget name="CubeOfPower.Back" size="200.000000 200.000000"/>
+        <ImageTarget name="CubeOfPower.Top" size="200.000000 200.000000"/>
+        <ImageTarget name="CubeOfPower.Front" size="200.000000 200.000000"/>
+        <ImageTarget name="CubeOfPower.Left" size="200.000000 200.000000"/>
+        <ImageTarget name="StarRushBox.Right" size="12.000000 5.007194"/>
+        <ImageTarget name="StarRushBox.Bottom" size="9.000000 12.000000"/>
+        <ImageTarget name="StarRushBox.Back" size="9.000000 5.009434"/>
+        <ImageTarget name="StarRushBox.Top" size="9.000000 12.000000"/>
+        <ImageTarget name="StarRushBox.Front" size="9.000000 5.009434"/>
+        <ImageTarget name="StarRushBox.Left" size="12.000000 5.007194"/>
+        <MultiTarget name="CubeOfPower">
+            <Part name="CubeOfPower.Left" translation="-100.0 0 0" rotation="AD: 0 1 0 -90"/>
+            <Part name="CubeOfPower.Right" translation="100.0 0 0" rotation="AD: 0 1 0 90"/>
+            <Part name="CubeOfPower.Front" translation="0 0 100.0" rotation="AD: 1 0 0 0"/>
+            <Part name="CubeOfPower.Back" translation="0 0 -100.0" rotation="AD: 0 1 0 180"/>
+            <Part name="CubeOfPower.Top" translation="0 100.0 0" rotation="AD: 1 0 0 -90"/>
+        </MultiTarget>
+        <MultiTarget name="StarRushBox">
+            <Part name="StarRushBox.Left" translation="-4.5 0 0" rotation="AD: 0 1 0 -90"/>
+            <Part name="StarRushBox.Right" translation="4.5 0 0" rotation="AD: 0 1 0 90"/>
+            <Part name="StarRushBox.Front" translation="0 0 6.0" rotation="AD: 1 0 0 0"/>
+            <Part name="StarRushBox.Back" translation="0 0 -6.0" rotation="AD: 0 1 0 180"/>
+            <Part name="StarRushBox.Top" translation="0 2.5 0" rotation="AD: 1 0 0 -90"/>
+            <Part name="StarRushBox.Bottom" translation="0 -2.5 0" rotation="AD: 1 0 0 90"/>
+        </MultiTarget>
+    </Tracking>
+</QCARConfig>

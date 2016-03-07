@@ -11,6 +11,8 @@ public class PlayerCanvasHooks : MonoBehaviour
 	public CanvasHook OnRemoveHook;
 
 	public Button playButton;
+	public Button colorButton;
+	public Button removeButton;
 	public Text readyText;
 	public Text nameText;
 	public RectTransform panelPos;
@@ -19,7 +21,8 @@ public class PlayerCanvasHooks : MonoBehaviour
 
 	void Awake()
 	{
-		//removeButton.gameObject.SetActive(false);
+		Debug.Log ("PlayerCanvashooks Awake");
+		removeButton.gameObject.SetActive(false);
 	}
 
 	public void UIReady()
@@ -45,12 +48,13 @@ public class PlayerCanvasHooks : MonoBehaviour
 		isLocalPlayer = true;
 		nameText.text = "YOU";
 		readyText.text = "Play";
-//		removeButton.gameObject.SetActive(true);
+		removeButton.gameObject.SetActive(true);
+		Debug.Log ("PlayerCanvasHooks localposition = " + transform.localPosition);
 	}
 
 	public void SetColor(Color color)
 	{
-//		colorButton.GetComponent<Image>().color = color;
+		colorButton.GetComponent<Image>().color = color;
 	}
 
 	public void SetReady(bool ready)

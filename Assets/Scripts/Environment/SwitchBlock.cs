@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SwitchBlock : Voxel
+public class SwitchBlock : DynamicVoxel
 {
 	public Vector3 moveDirection;
 	public bool willMove = false;
@@ -16,7 +16,7 @@ public class SwitchBlock : Voxel
 
 	public void Trigger (bool switchDown)
 	{
-		Debug.Log ("SwitchBlock trigger " + switchDown);
+//		Debug.Log ("SwitchBlock trigger " + switchDown);
 		willMove = true;
 	}
 

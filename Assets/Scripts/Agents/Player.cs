@@ -28,6 +28,7 @@ public class Player : NetworkBehaviour {
 		else{
 			Debug.Log("playerNum not getting set before Start()");
 		}
+		DontDestroyOnLoad (this.gameObject);
 	}
 
 	public override void OnStartLocalPlayer(){
@@ -41,13 +42,19 @@ public class Player : NetworkBehaviour {
 			return;
 		Debug.Log("RPC Register as player " + playerNum);
 		PlayerManager.Instance.AddPlayer(this, playerNum);
-		programManager.LoadBlueprint(GameManager.Instance.programProfiles[playerNum]);
 		if(isLocalPlayer){
 			PlayerManager.Instance.localPlayer = this;
-			BuildUI();
 		}
 		registered = true;
 	}
+
+	public void LoadLevelProfile(){
+		programManager.LoadBlueprint(GameManager.Instance.programProfiles[playerNum]);
+		if(isLocalPlayer){
+			BuildUI();
+		}
+	}
+
 
 	[ClientRpc]
 	public void RpcRegister(int num){

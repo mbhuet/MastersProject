@@ -1,0 +1,108 @@
+Mono path[0] = 'C:/Users/Marc/Unity/MastersProject/buildTest_Data/Managed'
+Mono path[1] = 'C:/Users/Marc/Unity/MastersProject/buildTest_Data/Mono'
+Mono config path = 'C:/Users/Marc/Unity/MastersProject/buildTest_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/Marc/Unity/MastersProject/buildTest_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55072
+Multi-casting "[IP] 128.61.26.67 [Port] 55072 [Flags] 3 [Guid] 1760368104 [EditorId] 3107555263 [Version] 1048832 [Id] WindowsPlayer(Marc-Lenovo) [Debug] 1" to [225.0.0.222:54997]...
+Waiting for connection from host on [128.61.26.67:55072]...
+PlayerConnection accepted from [128.61.26.67] handle:0x200
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56104
+PlayerConnection already initialized - listening to [128.61.26.67:55072]
+Initialize engine version: 5.2.2f1 (3757309da7e7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GT 750M   (ID=0xfe4)
+    Vendor:   NVIDIA
+    VRAM:     1986 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Marc\Unity\MastersProject\buildTest_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Marc\Unity\MastersProject\buildTest_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Marc\Unity\MastersProject\buildTest_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Marc\Unity\MastersProject\buildTest_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Marc\Unity\MastersProject\buildTest_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Marc\Unity\MastersProject\buildTest_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Marc\Unity\MastersProject\buildTest_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Marc\Unity\MastersProject\buildTest_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Marc\Unity\MastersProject\buildTest_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.479 seconds
+desktop: 1920x1080 59Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Marc\Unity\MastersProject\buildTest_Data\Managed\System.dll (this message is harmless)
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: e54 -> priority: 1 
+  Thread -> id: 1808 -> priority: 1 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.554536 ms
+PlayerManager Awake
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerManager:Awake() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Networking\PlayerManager.cs:23)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Networking/PlayerManager.cs Line: 23)
+
+False
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LevelSelectManager:Start() (at C:\Users\Marc\Unity\MastersProject\Assets\LevelSelectManager.cs:14)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/LevelSelectManager.cs Line: 14)
+
+System memory in use before: 25.2 MB.
+System memory in use after: 25.2 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 707.
+Total: 1.970536 ms (FindLiveObjects: 0.109046 ms CreateObjectMapping: 0.134277 ms MarkObjects: 1.694285 ms  DeleteObjects: 0.030789 ms)
+
+RPC Register as player 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:Register() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:43)
+Player:Start() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:27)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Agents/Player.cs Line: 43)
+
+RPC Register as player 1
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player:Register() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:43)
+Player:Start() (at C:\Users\Marc\Unity\MastersProject\Assets\Scripts\Agents\Player.cs:27)
+ 
+(Filename: C:/Users/Marc/Unity/MastersProject/Assets/Scripts/Agents/Player.cs Line: 43)
+
+Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:7777}
+UNet Client Disconnect Error: Timeout
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+UnityEngine.Networking.NetworkClient:GenerateDisconnectError(Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:614)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:569)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:774)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:910)
+ 
+(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkClient.cs Line: 614)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+NullReferenceException: Object reference not set to an instance of an object
+  at UnityEngine.Networking.NetworkClient.Update () [0x001d9] in C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:572 
+  at UnityEngine.Networking.NetworkClient.UpdateClients () [0x00017] in C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:774 
+  at UnityEngine.Networking.NetworkIdentity.UNetStaticUpdate () [0x00005] in C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:910 
+ 
+(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkClient.cs Line: 572)
+
+UnloadTime: 0.980992 ms
+Multiple NetworkManagers detected in the scene. Only one NetworkManager can exist at a time. The duplicate NetworkManager will not be used.
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogWarning(Object)
+UnityEngine.Networking.NetworkManager:Awake() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:157)
+ 
+(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkManager.cs Line: 157)
+
+System memory in use before: 25.4 MB.
+System memory in use after: 25.5 MB.
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 804.
+Total: 1.733627 ms (FindLiveObjects: 0.062434 ms CreateObjectMapping: 0.071842 ms MarkObjects: 1.580962 ms  DeleteObjects: 0.016677 ms)
+
+Waiting for finish

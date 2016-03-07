@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Switch : Voxel {
+public class Switch : StaticVoxel {
 	public bool pressed = false;
 
 	Vector3 buttonUpPos;
@@ -18,11 +18,7 @@ public class Switch : Voxel {
 		buttonDownPos = new Vector3 (0, .1f, 0);
 		Level.Instance.AddSwitch (this);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 
 	public override void Reset(){
 		base.Reset ();
