@@ -46,7 +46,7 @@ public class ProgramUI : MonoBehaviour
 		canvas = this.GetComponent<Canvas> ();
 		BuildCommandDictionary ();
 		functionZones = new List<FunctionZone> ();
-		FindFunctionZones ();
+		//FindFunctionZones ();
 		tileSize = Screen.height / 10;
 		playHead = transform.GetComponentInChildren<PlayHead> ();
 	}
@@ -55,12 +55,14 @@ public class ProgramUI : MonoBehaviour
 	{
 	}
 
+	/*
 	void FindFunctionZones ()
 	{
 		foreach (FunctionZone funcZone in gameObject.GetComponentsInChildren<FunctionZone>()) {
 			functionZones.Add (funcZone);
 		}
 	}
+	*/
 
 	public void SetLocalProgramManager (ProgramManager prog)
 	{
@@ -101,7 +103,7 @@ public class ProgramUI : MonoBehaviour
 		//ADD LOCAL FUNCTIONS
 		for (int i = 1; i<localProgramManager.functions.Length; i++) {
 			//if(!localProgramManager.functions[i].isGlobal){
-			int arg = PlayerManager.Instance.localPlayer.playerNum * 10 + i;
+			int arg =  PlayerManager.Instance.localPlayer.playerNum * 10 + i;
 			AddTileBankToCommandDock (Command.FUNCTION, commandDock, arg);
 			//}
 		}
@@ -217,6 +219,12 @@ public class ProgramUI : MonoBehaviour
 
 		foreach (FunctionZone funcZone in functionZones) {
 			funcZone.SetTileCollision (isOn);
+		}
+	}
+
+	public void CloseAllGaps(){
+		foreach (FunctionZone funcZone in functionZones) {
+			funcZone.CloseGaps ();
 		}
 	}
 

@@ -33,7 +33,7 @@ public class CommandTile : Tile {
 			Text text = GetComponentInChildren<Text>();
 			text.fontSize = ProgramUI.tileSize/2;
 			if (arg/10 == PlayerManager.Instance.localPlayer.playerNum){
-				text.text = "F" + arg/10+ arg%10;
+				text.text = "F" + arg%10;
 			}
 			else{
 				text.text = "G" + arg/10+ arg%10;
@@ -44,14 +44,14 @@ public class CommandTile : Tile {
 	#region IBeginDragHandler implementation
 	public override void OnBeginDrag (PointerEventData eventData)
 	{
-		Debug.Log("tile OnBeginDrag---------------------------------------------------------");
+		//Debug.Log("tile OnBeginDrag---------------------------------------------------------");
 		Canvas canvas = FindInParents<Canvas>(gameObject);
 		if (canvas == null)
 			return;
 		tileBeingDragged = this;
 
 		if(slot != null){
-			Debug.Log("removing picked up tile from slot");
+			//Debug.Log("removing picked up tile from slot");
 			slot.RemoveTile();
 		}
 
@@ -91,11 +91,16 @@ public class CommandTile : Tile {
 	
 	public override void OnEndDrag (PointerEventData eventData)
 	{
+
+		Debug.Log ("EndDrag " + eventData.position + 
+		           "\n--------------------" + 
+		           "\n--------------------" + 
+		           "\n--------------------");
 		tileBeingDragged = null;
 		GetComponent<CanvasGroup> ().blocksRaycasts = true;
 
 		if (transform.parent.GetComponent<Canvas>() != null) {
-			Debug.Log("Parented to " + this.transform.parent.name);
+			//Debug.Log("Parented to " + this.transform.parent.name);
 			Destroy(this.gameObject);
 		}
 		fromBank = false;
@@ -104,6 +109,7 @@ public class CommandTile : Tile {
 		if (canvas == null)
 			return;
 		canvas.GetComponent<ProgramUI>().SetCommandTileCollision(true);
+		ProgramUI.Instance.CloseAllGaps ();
 	}
 	
 	#endregion

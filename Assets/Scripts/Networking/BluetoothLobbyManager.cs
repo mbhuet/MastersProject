@@ -27,9 +27,25 @@ public class BluetoothLobbyManager : NetworkLobbyManager
 	private const int kPort = 28000; // Local server IP. Must be the same for client and server
 	
 	private bool _initResult;
+
+	
+
+	
+	void OnLevelWasLoaded()
+	{
+		if (lobbyCanvas != null) lobbyCanvas.OnLevelWasLoaded();
+		if (offlineCanvas != null) offlineCanvas.OnLevelWasLoaded();
+		if (onlineCanvas != null) onlineCanvas.OnLevelWasLoaded();
+		if (exitToLobbyCanvas != null) exitToLobbyCanvas.OnLevelWasLoaded();
+		if (connectingCanvas != null) connectingCanvas.OnLevelWasLoaded();
+		if (popupCanvas != null) popupCanvas.OnLevelWasLoaded();
+		if (matchMakerCanvas != null) matchMakerCanvas.OnLevelWasLoaded();
+		if (joinMatchCanvas != null) joinMatchCanvas.OnLevelWasLoaded();
+	}
+
+#if UNITY_ANDROID
 	private BluetoothMultiplayerMode _desiredMode = BluetoothMultiplayerMode.None;
-	
-	
+
 	// Don't forget to unregister the event delegates!
 	protected void OnDestroy() {
 		AndroidBluetoothMultiplayer.ListeningStarted -= OnBluetoothListeningStarted;
@@ -74,18 +90,6 @@ public class BluetoothLobbyManager : NetworkLobbyManager
 		AndroidBluetoothMultiplayer.ClientConnected += OnBluetoothClientConnected;
 		AndroidBluetoothMultiplayer.ClientDisconnected += OnBluetoothClientDisconnected;
 		AndroidBluetoothMultiplayer.DevicePicked += OnBluetoothDevicePicked;
-	}
-	
-	void OnLevelWasLoaded()
-	{
-		if (lobbyCanvas != null) lobbyCanvas.OnLevelWasLoaded();
-		if (offlineCanvas != null) offlineCanvas.OnLevelWasLoaded();
-		if (onlineCanvas != null) onlineCanvas.OnLevelWasLoaded();
-		if (exitToLobbyCanvas != null) exitToLobbyCanvas.OnLevelWasLoaded();
-		if (connectingCanvas != null) connectingCanvas.OnLevelWasLoaded();
-		if (popupCanvas != null) popupCanvas.OnLevelWasLoaded();
-		if (matchMakerCanvas != null) matchMakerCanvas.OnLevelWasLoaded();
-		if (joinMatchCanvas != null) joinMatchCanvas.OnLevelWasLoaded();
 	}
 
 	public void StartBluetoothHost(){
@@ -179,11 +183,7 @@ public class BluetoothLobbyManager : NetworkLobbyManager
 	
 	
 	
-	public override bool OnLobbyServerSceneLoadedForPlayer(GameObject lobbyPlayer, GameObject gamePlayer){
-		int playerNum = lobbyPlayer.GetComponent<NetworkLobbyPlayer>().slot;
-		gamePlayer.GetComponent<Player>().playerNum = playerNum;
-		return true;
-	}
+
 
 	#region Bluetooth events
 	
@@ -323,6 +323,86 @@ public class BluetoothLobbyManager : NetworkLobbyManager
 	}
 	
 	#endregion Network events
+#endif
+
+#if UNITY_EDITOR
+	void Start()
+	{
+		Instance = this;
+		offlineCanvas.Show();
+	}
+
+	public override void OnLobbyStopHost()
+	{
+		lobbyCanvas.Hide();
+		offlineCanvas.Show();
+	}
+
+	
+	// ----------------- Client callbacks ------------------
+	
+	public override void OnLobbyClientConnect(NetworkConnection conn)
+	{
+		connectingCanvas.Hide();
+	}
+	
+	public override void OnClientError(NetworkConnection conn, int errorCode)
+	{
+		connectingCanvas.Hide();
+		StopHost();
+		
+		popupCanvas.Show("Client Error", errorCode.ToString());
+	}
+	
+	public override void OnLobbyClientDisconnect(NetworkConnection conn)
+	{
+		lobbyCanvas.Hide();
+		offlineCanvas.Show();
+	}
+	
+	public override void OnLobbyStartClient(NetworkClient client)
+	{
+		if (matchInfo != null)
+		{
+			connectingCanvas.Show(matchInfo.address);
+		}
+		else
+		{
+			connectingCanvas.Show(networkAddress);
+		}
+	}
+	
+	public override void OnLobbyClientAddPlayerFailed()
+	{
+		popupCanvas.Show("Error", "No more players allowed.");
+	}
+	
+	public override void OnLobbyClientEnter()
+	{
+		lobbyCanvas.Show();
+		onlineCanvas.Show(onlineStatus);
+		
+		exitToLobbyCanvas.Hide();
+		
+	}
+	
+	public override void OnLobbyClientExit()
+	{
+		lobbyCanvas.Hide();
+		onlineCanvas.Hide();
+		
+		if (Application.loadedLevelName == base.playScene)
+		{
+			exitToLobbyCanvas.Show();
+		}
+	}
+#endif
+
+	public override bool OnLobbyServerSceneLoadedForPlayer(GameObject lobbyPlayer, GameObject gamePlayer){
+		int playerNum = lobbyPlayer.GetComponent<NetworkLobbyPlayer>().slot;
+		gamePlayer.GetComponent<Player>().playerNum = playerNum;
+		return true;
+	}
 	
 	
 }

@@ -31,7 +31,7 @@ public class PlayerManager : MonoBehaviour {
 
 	public void LoadLevelProfiles(){
 		for (int i = 0; i< GameManager.Instance.numPlayers; i++) {
-			if(players[i] == null) Debug.LogError("not enough players in this scene, that shouldn't happen");
+			if(players[i] == null) Debug.Log("not enough players in this scene, that shouldn't happen");
 			else players[i].LoadLevelProfile();
 		}
 	}

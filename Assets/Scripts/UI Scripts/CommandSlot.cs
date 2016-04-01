@@ -42,7 +42,7 @@ public class CommandSlot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IP
 	public void OnDrop (PointerEventData eventData)
 	{
 		if(tile!=null) return;
-//		Debug.Log ("Tile " + this + " OnDrop ");
+		Debug.Log ("Tile " + this + " OnDrop ");
 		SetTile(Tile.tileBeingDragged);
 		Tile.tileBeingDragged = null;
 		functionZone.AddCommand (tile.command, slotIndex, tile.argument);
@@ -77,10 +77,15 @@ public class CommandSlot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IP
 	
 	public void OnPointerExit (PointerEventData eventData)
 	{
-		Debug.Log("pointer exit slot " + slotIndex);
+		Debug.Log("pointer exit slot " + slotIndex +
+		          "\n---------------------" +
+		          "\n---------------------" +
+		          "\n---------------------" );
 		if(Tile.tileBeingDragged != null){
 			functionZone.CloseGaps();
 		}
+	
+
 		/*
 		if (eventData.pointerDrag == null)
 			return;
