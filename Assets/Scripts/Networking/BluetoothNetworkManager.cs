@@ -7,6 +7,7 @@ using LostPolygon.AndroidBluetoothMultiplayer.Examples;
 
 public class BluetoothNetworkManager: MonoBehaviour {
 
+#if UNITY_ANDROID
 	public int maxPlayers;
 	public int minPlayers;
 
@@ -222,4 +223,5 @@ public class BluetoothNetworkManager: MonoBehaviour {
 	}
 	
 	#endregion Network events
+#endif
 }

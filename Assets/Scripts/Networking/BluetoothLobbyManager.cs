@@ -27,33 +27,27 @@ public class BluetoothLobbyManager : NetworkLobbyManager
 	private const int kPort = 28000; // Local server IP. Must be the same for client and server
 	
 	private bool _initResult;
-	private BluetoothMultiplayerMode _desiredMode = BluetoothMultiplayerMode.None;
+
 	
-	
-	// Don't forget to unregister the event delegates!
-	protected void OnDestroy() {
-		AndroidBluetoothMultiplayer.ListeningStarted -= OnBluetoothListeningStarted;
-		AndroidBluetoothMultiplayer.ListeningStopped -= OnBluetoothListeningStopped;
-		AndroidBluetoothMultiplayer.AdapterEnabled -= OnBluetoothAdapterEnabled;
-		AndroidBluetoothMultiplayer.AdapterEnableFailed -= OnBluetoothAdapterEnableFailed;
-		AndroidBluetoothMultiplayer.AdapterDisabled -= OnBluetoothAdapterDisabled;
-		AndroidBluetoothMultiplayer.DiscoverabilityEnabled -= OnBluetoothDiscoverabilityEnabled;
-		AndroidBluetoothMultiplayer.DiscoverabilityEnableFailed -= OnBluetoothDiscoverabilityEnableFailed;
-		AndroidBluetoothMultiplayer.ConnectedToServer -= OnBluetoothConnectedToServer;
-		AndroidBluetoothMultiplayer.ConnectionToServerFailed -= OnBluetoothConnectionToServerFailed;
-		AndroidBluetoothMultiplayer.DisconnectedFromServer -= OnBluetoothDisconnectedFromServer;
-		AndroidBluetoothMultiplayer.ClientConnected -= OnBluetoothClientConnected;
-		AndroidBluetoothMultiplayer.ClientDisconnected -= OnBluetoothClientDisconnected;
-		AndroidBluetoothMultiplayer.DevicePicked -= OnBluetoothDevicePicked;
+	void OnLevelWasLoaded()
+	{
+		if (lobbyCanvas != null) lobbyCanvas.OnLevelWasLoaded();
+		if (offlineCanvas != null) offlineCanvas.OnLevelWasLoaded();
+		if (onlineCanvas != null) onlineCanvas.OnLevelWasLoaded();
+		if (exitToLobbyCanvas != null) exitToLobbyCanvas.OnLevelWasLoaded();
+		if (connectingCanvas != null) connectingCanvas.OnLevelWasLoaded();
+		if (popupCanvas != null) popupCanvas.OnLevelWasLoaded();
+		if (matchMakerCanvas != null) matchMakerCanvas.OnLevelWasLoaded();
+		if (joinMatchCanvas != null) joinMatchCanvas.OnLevelWasLoaded();
 	}
-	
-	
-	
+
+
 	void Start()
 	{
 		Instance = this;
 		offlineCanvas.Show();
-		
+
+#if UNITY_ANDROID
 		// Setting the UUID. Must be unique for every application
 		_initResult = AndroidBluetoothMultiplayer.Initialize("8ce255c0-200a-11e0-ac64-0800200c9a66");
 		
@@ -74,44 +68,10 @@ public class BluetoothLobbyManager : NetworkLobbyManager
 		AndroidBluetoothMultiplayer.ClientConnected += OnBluetoothClientConnected;
 		AndroidBluetoothMultiplayer.ClientDisconnected += OnBluetoothClientDisconnected;
 		AndroidBluetoothMultiplayer.DevicePicked += OnBluetoothDevicePicked;
-	}
-	
-	void OnLevelWasLoaded()
-	{
-		if (lobbyCanvas != null) lobbyCanvas.OnLevelWasLoaded();
-		if (offlineCanvas != null) offlineCanvas.OnLevelWasLoaded();
-		if (onlineCanvas != null) onlineCanvas.OnLevelWasLoaded();
-		if (exitToLobbyCanvas != null) exitToLobbyCanvas.OnLevelWasLoaded();
-		if (connectingCanvas != null) connectingCanvas.OnLevelWasLoaded();
-		if (popupCanvas != null) popupCanvas.OnLevelWasLoaded();
-		if (matchMakerCanvas != null) matchMakerCanvas.OnLevelWasLoaded();
-		if (joinMatchCanvas != null) joinMatchCanvas.OnLevelWasLoaded();
+		#endif
+
 	}
 
-	public void StartBluetoothHost(){
-		if (AndroidBluetoothMultiplayer.GetIsBluetoothEnabled ()) {
-			AndroidBluetoothMultiplayer.RequestEnableDiscoverability (120);
-			//Network.Disconnect (); // Just to be sure
-			AndroidBluetoothMultiplayer.StartServer (kPort);
-		} else {
-			// Otherwise we have to enable Bluetooth first and wait for callback
-			_desiredMode = BluetoothMultiplayerMode.Server;
-			AndroidBluetoothMultiplayer.RequestEnableDiscoverability (120);
-		}
-	}
-	
-	public void ConnectToBluetoothServer(){
-		if (AndroidBluetoothMultiplayer.GetIsBluetoothEnabled()) {
-			Network.Disconnect(); // Just to be sure
-			AndroidBluetoothMultiplayer.ShowDeviceList(); // Open device picker dialog
-		} else {
-			// Otherwise we have to enable Bluetooth first and wait for callback
-			_desiredMode = BluetoothMultiplayerMode.Client;
-			AndroidBluetoothMultiplayer.RequestEnableBluetooth();
-		}
-	}	
-	
-	
 	// ----------------- Server callbacks ------------------
 	
 	public override void OnLobbyStopHost()
@@ -184,6 +144,55 @@ public class BluetoothLobbyManager : NetworkLobbyManager
 		gamePlayer.GetComponent<Player>().playerNum = playerNum;
 		return true;
 	}
+
+#if UNITY_ANDROID
+	private BluetoothMultiplayerMode _desiredMode = BluetoothMultiplayerMode.None;
+
+	
+	// Don't forget to unregister the event delegates!
+	protected void OnDestroy() {
+		AndroidBluetoothMultiplayer.ListeningStarted -= OnBluetoothListeningStarted;
+		AndroidBluetoothMultiplayer.ListeningStopped -= OnBluetoothListeningStopped;
+		AndroidBluetoothMultiplayer.AdapterEnabled -= OnBluetoothAdapterEnabled;
+		AndroidBluetoothMultiplayer.AdapterEnableFailed -= OnBluetoothAdapterEnableFailed;
+		AndroidBluetoothMultiplayer.AdapterDisabled -= OnBluetoothAdapterDisabled;
+		AndroidBluetoothMultiplayer.DiscoverabilityEnabled -= OnBluetoothDiscoverabilityEnabled;
+		AndroidBluetoothMultiplayer.DiscoverabilityEnableFailed -= OnBluetoothDiscoverabilityEnableFailed;
+		AndroidBluetoothMultiplayer.ConnectedToServer -= OnBluetoothConnectedToServer;
+		AndroidBluetoothMultiplayer.ConnectionToServerFailed -= OnBluetoothConnectionToServerFailed;
+		AndroidBluetoothMultiplayer.DisconnectedFromServer -= OnBluetoothDisconnectedFromServer;
+		AndroidBluetoothMultiplayer.ClientConnected -= OnBluetoothClientConnected;
+		AndroidBluetoothMultiplayer.ClientDisconnected -= OnBluetoothClientDisconnected;
+		AndroidBluetoothMultiplayer.DevicePicked -= OnBluetoothDevicePicked;
+	}
+	
+	
+	
+
+
+	public void StartBluetoothHost(){
+		if (AndroidBluetoothMultiplayer.GetIsBluetoothEnabled ()) {
+			AndroidBluetoothMultiplayer.RequestEnableDiscoverability (120);
+			//Network.Disconnect (); // Just to be sure
+			AndroidBluetoothMultiplayer.StartServer (kPort);
+		} else {
+			// Otherwise we have to enable Bluetooth first and wait for callback
+			_desiredMode = BluetoothMultiplayerMode.Server;
+			AndroidBluetoothMultiplayer.RequestEnableDiscoverability (120);
+		}
+	}
+	
+	public void ConnectToBluetoothServer(){
+		if (AndroidBluetoothMultiplayer.GetIsBluetoothEnabled()) {
+			Network.Disconnect(); // Just to be sure
+			AndroidBluetoothMultiplayer.ShowDeviceList(); // Open device picker dialog
+		} else {
+			// Otherwise we have to enable Bluetooth first and wait for callback
+			_desiredMode = BluetoothMultiplayerMode.Client;
+			AndroidBluetoothMultiplayer.RequestEnableBluetooth();
+		}
+	}	
+
 
 	#region Bluetooth events
 	
@@ -323,6 +332,11 @@ public class BluetoothLobbyManager : NetworkLobbyManager
 	}
 	
 	#endregion Network events
+#endif
+	
+
+
+
 	
 	
 }

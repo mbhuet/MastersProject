@@ -20,6 +20,8 @@ public class Ant : DynamicVoxel {
 	public ParticleSystem fireFX;
 	public ParticleSystem dustFX;
 	public Crate cratePrefab;
+	public AntPopup popupPrefab;
+
 	Crate buildCrate;
 	Animator anim;
 
@@ -30,6 +32,7 @@ public class Ant : DynamicVoxel {
 			GameManager.Instance.RegisterAnt (this);
 		}
 		anim = transform.FindChild ("ant").GetComponent<Animator> ();
+		//SpawnPopup ("YOU");
 	}
 
 	public void MoveForward(){
@@ -102,6 +105,19 @@ public class Ant : DynamicVoxel {
 
 		return position;
 		
+	}
+
+	public void SpawnPopup(string message){
+		AntPopup popup = GameObject.Instantiate (popupPrefab, transform.position, Quaternion.identity) as AntPopup;
+		popup.transform.SetParent (this.transform);
+		popup.Init (message, true);
+	}
+
+	protected void SpawnPopup(string message, float duration){
+		AntPopup popup = GameObject.Instantiate (popupPrefab, transform.position, Quaternion.identity) as AntPopup;
+		popup.transform.SetParent (this.transform);
+		popup.Init (message, true);
+		popup.StartTimer (duration);
 	}
 }
 

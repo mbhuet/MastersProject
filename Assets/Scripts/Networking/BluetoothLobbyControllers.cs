@@ -24,7 +24,12 @@ public class BluetoothConnectCanvasControl : CanvasControl
 
 	void OnGUIStartHost(){
 		Debug.Log ("OnGUIStartHost");
+#if UNITY_ANDROID
 		BluetoothLobbyManager.Instance.StartBluetoothHost ();
+#else
+		BluetoothLobbyManager.Instance.StartHost();
+
+#endif
 		//BluetoothLobbyManager.Instance.lobbyCanvas.Show ();
 		BluetoothLobbyManager.Instance.onlineCanvas.Show("Host");
 		BluetoothLobbyManager.Instance.offlineCanvas.Hide ();
@@ -33,7 +38,12 @@ public class BluetoothConnectCanvasControl : CanvasControl
 	void OnGUIFindGame(){
 		Debug.Log ("OnGUIFindGame");
 		//BluetoothLobbyManager.Instance.StartClientBluetooth();
+#if UNITY_ANDROID
 		BluetoothLobbyManager.Instance.ConnectToBluetoothServer ();
+#else
+		BluetoothLobbyManager.Instance.networkAddress = "127.0.0.1";
+		BluetoothLobbyManager.Instance.StartClient();
+#endif
 		BluetoothLobbyManager.Instance.onlineCanvas.Show("Client");
 		BluetoothLobbyManager.Instance.offlineCanvas.Hide ();
 

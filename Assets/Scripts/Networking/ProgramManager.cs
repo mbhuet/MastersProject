@@ -29,6 +29,11 @@ public class ProgramManager: NetworkBehaviour
 
 		antType = blueprint.antType;
 		myAnts = blueprint.ants;
+
+		foreach(Ant ant in myAnts){
+			ant.SpawnPopup("YOU");
+		}
+
 		functions = new AntFunction[blueprint.availableFunctions.Length];
 		for (int i = 0; i< blueprint.availableFunctions.Length; i++) {
 			AntFunction func = new AntFunction ();
