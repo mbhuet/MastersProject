@@ -42,7 +42,8 @@ public class LevelCanvasHooks : MonoBehaviour{
 
 			Button button = buttonObject.GetComponent<Button>();
 			Button b2 = button;
-			b2.onClick.AddListener(() => { UILoadLevel(info.fileName); });
+			string file = info.fileName;
+			b2.onClick.AddListener(() => { UILoadLevel(file); });
 			//button.onClick.AddListener(Test);
 
 			Text textObj = buttonObject.transform.FindChild("Text").GetComponent<Text>();

@@ -67,6 +67,12 @@ public class ProgramUI : MonoBehaviour
 		localProgramManager = prog;
 	}
 
+	public void CloseAllGaps(){
+				foreach (FunctionZone funcZone in functionZones) {
+						funcZone.CloseGaps ();
+					}
+			}
+
 	public CommandTile[] GetCommandTilesFromFunctionZone (int index)
 	{
 		if (index >= functionZones.Count)

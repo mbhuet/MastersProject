@@ -33,10 +33,10 @@ public class CommandTile : Tile {
 			Text text = GetComponentInChildren<Text>();
 			text.fontSize = ProgramUI.tileSize/2;
 			if (arg/10 == PlayerManager.Instance.localPlayer.playerNum){
-				text.text = "F" + arg/10+ arg%10;
+				text.text = "F" + arg%10;
 			}
 			else{
-				text.text = "G" + arg/10+ arg%10;
+				text.text = "F";
 			}
 		}
 	}
@@ -104,6 +104,8 @@ public class CommandTile : Tile {
 		if (canvas == null)
 			return;
 		canvas.GetComponent<ProgramUI>().SetCommandTileCollision(true);
+		ProgramUI.Instance.CloseAllGaps ();
+
 	}
 	
 	#endregion
