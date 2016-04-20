@@ -16,6 +16,8 @@ public class LevelCanvasControl : CanvasControl
 		var hooks = canvas.GetComponent<LevelCanvasHooks>();
 		if (hooks == null)
 			return;
+
+		hooks.MakeButtons ();
 		
 		hooks.OnLevelSelectHook += OnGUILevelSelected; 
 		
